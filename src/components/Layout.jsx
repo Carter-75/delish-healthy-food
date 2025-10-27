@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
       <footer className="relative z-10 py-8 px-4 border-t border-white/10">
         <div className="container mx-auto text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Delish Protein Dishes. Fuel Your Fitness Journey.
+            © 2025 Delish Protein Dishes. Fuel Your Fitness Journey.
           </p>
         </div>
       </footer>

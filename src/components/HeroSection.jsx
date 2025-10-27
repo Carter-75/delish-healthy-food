@@ -46,7 +46,7 @@ const HeroSection = () => {
             style={{ animationDelay: '0.4s' }}>
             <div className={`glass-effect rounded-xl p-6 border ${theme.border || 'border-white/10'} hover-lift`}>
               <TrendingUp className={`w-8 h-8 ${theme.text || 'text-green-400'} mx-auto mb-3`} />
-              <p className="text-3xl font-bold text-white mb-1">10+</p>
+              <p className="text-3xl font-bold text-white mb-1">25+</p>
               <p className="text-gray-400 text-sm">Recipes</p>
             </div>
             <div className={`glass-effect rounded-xl p-6 border ${theme.border || 'border-white/10'} hover-lift`}>

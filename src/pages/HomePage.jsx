@@ -17,11 +17,13 @@ const HomePage = () => {
     // Load categories
     loadRecipeCategories()
       .then(data => {
-        setCategories(data);
+        console.log('Loaded categories:', data);
+        setCategories(data || []);
         setLoading(false);
       })
       .catch(err => {
         console.error('Failed to load categories:', err);
+        setCategories([]);
         setLoading(false);
       });
   }, [setTheme]);
@@ -51,15 +53,23 @@ const HomePage = () => {
             </span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {categories.map((category, index) => (
-              <CategoryCard 
-                key={category.id} 
-                category={category} 
-                delay={index * 0.1}
-              />
-            ))}
-          </div>
+          {categories.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {categories.map((category, index) => (
+                <CategoryCard 
+                  key={category.id} 
+                  category={category} 
+                  delay={index * 0.1}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-12">
+              <p className="text-gray-400 text-lg">
+                Loading recipe categories...
+              </p>
+            </div>
+          )}
         </div>
 
         {/* Additional Info Section */}
@@ -71,7 +81,7 @@ const HomePage = () => {
             </h3>
             <p className="text-gray-300 leading-relaxed">
               We're constantly adding new high-protein recipes to help you reach your fitness goals. 
-              Stay tuned for smoothie bowls, desserts, protein snacks, and quick lunch options!
+              Stay tuned for more smoothie bowls and additional recipe categories!
             </p>
           </div>
         </div>
