@@ -5,10 +5,16 @@
 @layer base {
   body {
     @apply bg-slate-950 text-white font-sans antialiased;
+    overflow-x: hidden;
   }
   
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  * {
+    box-sizing: border-box;
   }
 }
 

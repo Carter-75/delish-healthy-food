@@ -4,7 +4,7 @@ import BackgroundEffects from './BackgroundEffects';
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="min-h-screen relative overflow-x-hidden w-full">
       <BackgroundEffects />
       <Navigation />
       <main className="relative z-10 pb-20">

@@ -6,7 +6,7 @@ const HeroSection = () => {
   const { theme } = useTheme();
 
   return (
-    <div className="relative py-16 sm:py-24 px-4 overflow-hidden">
+    <div className="relative py-16 sm:py-24 px-4 overflow-hidden w-full max-w-full">
       {/* Animated accent lines */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className={`absolute top-0 left-1/4 w-px h-full ${theme.accent || 'bg-blue-500'} opacity-20 animate-shimmer`} />
@@ -35,8 +35,8 @@ const HeroSection = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className={`text-xl sm:text-2xl ${theme.text || 'text-blue-400'} max-w-3xl mx-auto 
-            leading-relaxed animate-fadeInUp font-medium`} 
+          <p className={`text-lg sm:text-xl lg:text-2xl ${theme.text || 'text-blue-400'} max-w-3xl mx-auto 
+            leading-relaxed animate-fadeInUp font-medium px-4`} 
             style={{ animationDelay: '0.2s' }}>
             Discover protein-packed recipes crafted for your fitness goals!
           </p>
