@@ -32,12 +32,12 @@
   {
     "id": "protein-snacks",
     "title": "Protein-Rich Snacks",
-    "description": "17 Quick Bites",
+    "description": "18 Quick Bites",
     "cookingTime": "5-15 mins",
     "icon": "Apple",
     "hasBase": false,
     "hasVariations": false,
-    "totalRecipes": 17
+    "totalRecipes": 18
   },
   {
     "id": "quick-lunches",

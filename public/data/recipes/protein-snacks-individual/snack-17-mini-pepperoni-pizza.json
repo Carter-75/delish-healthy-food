@@ -1,0 +1,35 @@
+{
+  "id": 17,
+  "name": "High Protein Mini Pepperoni Pizza",
+  "type": "individual",
+  "servings": 6,
+  "ingredients": [
+    "2 cups Cottage cheese",
+    "4 Large eggs",
+    "1 cup Oat flour or almond flour (add more for thicker dough)",
+    "1 tsp Baking powder",
+    "1/2 tsp Salt",
+    "1/2 cup Shredded mozzarella",
+    "1/2 cup Shredded cheddar",
+    "1/4 cup Mini pepperoni (or chopped regular pepperoni)",
+    "1/4 cup Tomato or pizza sauce",
+    "Optional: oregano or chili flakes"
+  ],
+  "instructions": [
+    "Preheat oven to 400°F (200°C) and line a baking sheet with parchment paper",
+    "Blend cottage cheese and eggs until smooth using a stick blender",
+    "Stir in oat flour, baking powder, and salt until combined",
+    "The texture should be thick but scoopable—add a bit more oat flour if it's too runny",
+    "Spoon batter into 6 small rounds on the baking sheet and flatten slightly to form mini pizza bases",
+    "Top each with a spoon of pizza sauce, mozzarella, cheddar, and pepperoni",
+    "Add oregano or chili flakes if desired",
+    "Bake 15-20 minutes until lightly golden and set",
+    "Cool for a few minutes before serving to firm up"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 310,
+    "proteinPerServing": 32,
+    "carbsPerServing": 18,
+    "fatPerServing": 14
+  }
+}

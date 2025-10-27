@@ -206,7 +206,8 @@ export const loadProteinSnack = async (snackId) => {
       13: 'snack-13-apple-pie-oats-bars.json',
       14: 'snack-14-chocolate-covered-strawberries.json',
       15: 'snack-15-protein-ranch-pretzel-bites.json',
-      16: 'snack-16-cinnamon-swirl-rice-cakes.json'
+      16: 'snack-16-cinnamon-swirl-rice-cakes.json',
+      17: 'snack-17-mini-pepperoni-pizza.json'
     };
     
     const fileName = fileMap[snackId];
@@ -223,7 +224,7 @@ export const loadProteinSnack = async (snackId) => {
 // Load all protein snacks
 export const loadProteinSnacks = async () => {
   try {
-    const snackIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+    const snackIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
     const snacks = await Promise.all(
       snackIds.map(id => loadProteinSnack(id))
     );
