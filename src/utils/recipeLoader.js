@@ -29,7 +29,13 @@ export const loadChickenOmeletteVariation = async (variationId) => {
       3: 'variation-3-fresh-herb.json',
       4: 'variation-4-bbq.json',
       5: 'variation-5-sharp-cheddar.json',
-      6: 'variation-6-spicy-mexican.json'
+      6: 'variation-6-spicy-mexican.json',
+      7: 'variation-7-sun-dried-tomato.json',
+      8: 'variation-8-honey-mustard.json',
+      9: 'variation-9-spicy-chipotle.json',
+      10: 'variation-10-garlic-parmesan.json',
+      11: 'variation-11-creamy-basil.json',
+      12: 'variation-12-spicy-cajun.json'
     };
     
     const fileName = fileMap[variationId];
@@ -47,7 +53,7 @@ export const loadChickenOmeletteVariation = async (variationId) => {
 export const loadChickenOmelettesVariations = async () => {
   try {
     // Try loading from individual files first
-    const variationIds = [0, 1, 2, 3, 4, 5, 6];
+    const variationIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
     const variations = await Promise.all(
       variationIds.map(id => loadChickenOmeletteVariation(id))
     );
@@ -74,7 +80,13 @@ export const loadProteinBowl = async (bowlId) => {
     const fileMap = {
       0: 'bowl-0-asian-fusion.json',
       1: 'bowl-1-mediterranean.json',
-      2: 'bowl-2-tex-mex.json'
+      2: 'bowl-2-tex-mex.json',
+      3: 'bowl-3-honey-garlic.json',
+      4: 'bowl-4-avocado-fiesta.json',
+      5: 'bowl-5-mediterranean-chicken.json',
+      6: 'bowl-6-creamy-salsa-chicken.json',
+      7: 'bowl-7-crispy-chickpea.json',
+      8: 'bowl-8-teriyaki-pineapple.json'
     };
     
     const fileName = fileMap[bowlId];
@@ -92,7 +104,7 @@ export const loadProteinBowl = async (bowlId) => {
 export const loadProteinBowls = async () => {
   try {
     // Try loading from individual files first
-    const bowlIds = [0, 1, 2];
+    const bowlIds = [0, 1, 2, 3, 4, 5, 6, 7, 8];
     const bowls = await Promise.all(
       bowlIds.map(id => loadProteinBowl(id))
     );
@@ -127,7 +139,18 @@ export const loadDessert = async (dessertId) => {
       7: 'dessert-7-pumpkin-spice-bites.json',
       8: 'dessert-8-toffee-chocolate-chip-cookies.json',
       9: 'dessert-9-fudgy-brownie-cookies.json',
-      10: 'dessert-10-crackly-brownie-cookies.json'
+      10: 'dessert-10-crackly-brownie-cookies.json',
+      11: 'dessert-11-double-chocolate-brownies.json',
+      12: 'dessert-12-cookie-dough-bars.json',
+      13: 'dessert-13-chocolate-chip-cookie-dough-cups.json',
+      14: 'dessert-14-cherry-brownie-bars.json',
+      15: 'dessert-15-birthday-cake-truffles.json',
+      16: 'dessert-16-chocolate-pb-brownie-bites.json',
+      17: 'dessert-17-protein-cinnamon-rolls.json',
+      18: 'dessert-18-oreo-protein-cinnamon-rolls.json',
+      19: 'dessert-19-cinnamon-apple-pie-rolls.json',
+      20: 'dessert-20-pumpkin-spice-cinnamon-rolls.json',
+      21: 'dessert-21-chocolate-chip-cinnamon-rolls.json'
     };
     
     const fileName = fileMap[dessertId];
@@ -144,7 +167,7 @@ export const loadDessert = async (dessertId) => {
 // Load all desserts
 export const loadDesserts = async () => {
   try {
-    const dessertIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const dessertIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
     const desserts = await Promise.all(
       dessertIds.map(id => loadDessert(id))
     );
@@ -169,7 +192,21 @@ export const loadProteinSnack = async (snackId) => {
     const fileMap = {
       0: 'snack-0-protein-banana-pancake.json',
       1: 'snack-1-brookie-protein-cookie-dough-cup.json',
-      2: 'snack-2-high-protein-cinnamon-bites.json'
+      2: 'snack-2-high-protein-cinnamon-bites.json',
+      3: 'snack-3-churro-bites.json',
+      4: 'snack-4-lemon-cheesecake-bars.json',
+      5: 'snack-5-pizza-bagel-bites.json',
+      6: 'snack-6-almond-joy-cups.json',
+      7: 'snack-7-pretzel-nuggets.json',
+      8: 'snack-8-pb-banana-bars.json',
+      9: 'snack-9-brownie-batter-dip.json',
+      10: 'snack-10-strawberry-cheesecake-cups.json',
+      11: 'snack-11-cottage-cheese-nacho-dip.json',
+      12: 'snack-12-salted-pb-fudge.json',
+      13: 'snack-13-apple-pie-oats-bars.json',
+      14: 'snack-14-chocolate-covered-strawberries.json',
+      15: 'snack-15-protein-ranch-pretzel-bites.json',
+      16: 'snack-16-cinnamon-swirl-rice-cakes.json'
     };
     
     const fileName = fileMap[snackId];
@@ -186,7 +223,7 @@ export const loadProteinSnack = async (snackId) => {
 // Load all protein snacks
 export const loadProteinSnacks = async () => {
   try {
-    const snackIds = [0, 1, 2];
+    const snackIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
     const snacks = await Promise.all(
       snackIds.map(id => loadProteinSnack(id))
     );
@@ -209,7 +246,18 @@ export const loadProteinSnacks = async () => {
 export const loadQuickLunch = async (lunchId) => {
   try {
     const fileMap = {
-      0: 'lunch-0-chicken-alfredo-garlic-bread.json'
+      0: 'lunch-0-chicken-alfredo-garlic-bread.json',
+      1: 'lunch-1-pesto-quesadilla.json',
+      2: 'lunch-2-bbq-ranch-pita.json',
+      3: 'lunch-3-mac-cheese-bowl.json',
+      4: 'lunch-4-protein-pizza-rollups.json',
+      5: 'lunch-5-buffalo-chicken-rice-cakes.json',
+      6: 'lunch-6-chicken-taco-flatbread.json',
+      7: 'lunch-7-garlic-herb-chicken-melt.json',
+      8: 'lunch-8-chicken-alfredo-pizza-toast.json',
+      9: 'lunch-9-bbq-chicken-nacho-plate.json',
+      10: 'lunch-10-chicken-pesto-stuffed-tortilla.json',
+      11: 'lunch-11-chicken-caesar-melt.json'
     };
     
     const fileName = fileMap[lunchId];
@@ -226,7 +274,7 @@ export const loadQuickLunch = async (lunchId) => {
 // Load all quick lunches
 export const loadQuickLunches = async () => {
   try {
-    const lunchIds = [0];
+    const lunchIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
     const lunches = await Promise.all(
       lunchIds.map(id => loadQuickLunch(id))
     );
@@ -241,6 +289,46 @@ export const loadQuickLunches = async () => {
     return await response.json();
   } catch (error) {
     console.error('Failed to load quick lunches:', error);
+    return [];
+  }
+};
+
+// Load individual smoothie bowl
+export const loadSmoothieBowl = async (bowlId) => {
+  try {
+    const fileMap = {
+      0: 'bowl-0-mint-chocolate.json',
+      1: 'bowl-1-mango-cream.json'
+    };
+    
+    const fileName = fileMap[bowlId];
+    if (!fileName) throw new Error('Invalid smoothie bowl ID');
+    
+    const response = await fetch(`/data/recipes/smoothie-bowls-individual/${fileName}`);
+    return await response.json();
+  } catch (error) {
+    console.error('Failed to load smoothie bowl:', error);
+    return null;
+  }
+};
+
+// Load all smoothie bowls
+export const loadSmoothieBowls = async () => {
+  try {
+    const bowlIds = [0, 1];
+    const bowls = await Promise.all(
+      bowlIds.map(id => loadSmoothieBowl(id))
+    );
+    
+    const validBowls = bowls.filter(b => b !== null);
+    
+    if (validBowls.length > 0) {
+      return validBowls;
+    }
+    
+    return [];
+  } catch (error) {
+    console.error('Failed to load smoothie bowls:', error);
     return [];
   }
 };
@@ -270,6 +358,10 @@ export const loadRecipesByCategory = async (categoryId) => {
       const lunches = await loadQuickLunches();
       return { base: null, recipes: lunches };
     
+    case 'smoothie-bowls':
+      const smoothieBowls = await loadSmoothieBowls();
+      return { base: null, recipes: smoothieBowls };
+    
     default:
       return { base: null, recipes: [] };
   }
@@ -295,6 +387,8 @@ export const loadSingleRecipe = async (categoryId, recipeId) => {
     recipe = await loadProteinSnack(numericId);
   } else if (categoryId === 'quick-lunches') {
     recipe = await loadQuickLunch(numericId);
+  } else if (categoryId === 'smoothie-bowls') {
+    recipe = await loadSmoothieBowl(numericId);
   }
   
   // If individual file loading failed, fall back to loading all recipes
