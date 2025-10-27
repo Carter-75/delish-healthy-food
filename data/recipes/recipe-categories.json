@@ -1,0 +1,66 @@
+[
+  {
+    "id": "chicken-omelettes",
+    "title": "Chicken Egg Omelettes",
+    "description": "7 Delicious Variations",
+    "cookingTime": "30-40 mins",
+    "icon": "ChefHat",
+    "hasBase": true,
+    "hasVariations": true,
+    "totalRecipes": 7
+  },
+  {
+    "id": "protein-bowls",
+    "title": "Protein Power Bowls",
+    "description": "3 Global Flavors",
+    "cookingTime": "25-35 mins",
+    "icon": "UtensilsCrossed",
+    "hasBase": false,
+    "hasVariations": false,
+    "totalRecipes": 3
+  },
+  {
+    "id": "smoothie-bowls",
+    "title": "Smoothie Bowls",
+    "description": "Coming Soon",
+    "cookingTime": "10-15 mins",
+    "icon": "IceCream",
+    "hasBase": false,
+    "hasVariations": false,
+    "totalRecipes": 0,
+    "comingSoon": true
+  },
+  {
+    "id": "desserts",
+    "title": "Simple Delicious Desserts",
+    "description": "Coming Soon",
+    "cookingTime": "20-30 mins",
+    "icon": "IceCream",
+    "hasBase": false,
+    "hasVariations": false,
+    "totalRecipes": 0,
+    "comingSoon": true
+  },
+  {
+    "id": "protein-snacks",
+    "title": "Protein-Rich Snacks",
+    "description": "Coming Soon",
+    "cookingTime": "5-15 mins",
+    "icon": "Apple",
+    "hasBase": false,
+    "hasVariations": false,
+    "totalRecipes": 0,
+    "comingSoon": true
+  },
+  {
+    "id": "quick-lunches",
+    "title": "3-Minute Protein Lunches",
+    "description": "Coming Soon",
+    "cookingTime": "3-5 mins",
+    "icon": "Clock",
+    "hasBase": false,
+    "hasVariations": false,
+    "totalRecipes": 0,
+    "comingSoon": true
+  }
+]

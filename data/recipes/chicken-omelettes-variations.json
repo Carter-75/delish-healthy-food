@@ -1,0 +1,178 @@
+[
+  {
+    "id": 0,
+    "name": "Original Creamy Sauce",
+    "ingredients": [
+      "5.3 oz Plain Nonfat Greek Yogurt",
+      "2 oz Reduced-Fat Cream Cheese",
+      "One small scoop Ranch Seasoning",
+      "1 cup Chicken Bone Broth",
+      "2 scoops Unflavored Whey Protein"
+    ],
+    "nutrition": {
+      "totalCalories": 2115,
+      "perServingCalories": 529,
+      "totalProtein": 180,
+      "perServingProtein": 45
+    },
+    "instructions": [
+      "Blend base ingredients with chicken bone broth until smooth",
+      "Pour mixture into pan and cook on medium heat",
+      "Add yogurt, cream cheese, ranch seasoning, and whey protein",
+      "Cook for 10-15 minutes, stirring occasionally",
+      "When nearly set, flip with plate to cook other side",
+      "Add mozzarella on top and cover until melted"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Marinara Style",
+    "ingredients": [
+      "1 cup Sugar-Free Marinara Sauce",
+      "2 tbsp Italian Seasoning",
+      "1/2 cup Chicken Bone Broth",
+      "2 cloves Minced Garlic",
+      "2 scoops Unflavored Whey Protein"
+    ],
+    "nutrition": {
+      "totalCalories": 2050,
+      "perServingCalories": 512,
+      "totalProtein": 175,
+      "perServingProtein": 44
+    },
+    "instructions": [
+      "Blend base ingredients with chicken bone broth until smooth",
+      "Pour mixture into pan and cook on medium heat",
+      "Add marinara sauce, garlic, Italian seasoning, and whey protein",
+      "Cook for 10-15 minutes, stirring occasionally",
+      "When nearly set, flip with plate to cook other side",
+      "Add mozzarella on top and cover until melted"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Light Alfredo",
+    "ingredients": [
+      "1 cup Cauliflower Alfredo Sauce",
+      "1/4 cup Unsweetened Almond Milk",
+      "2 tbsp Nutritional Yeast",
+      "1 tsp Garlic Powder",
+      "2 scoops Unflavored Whey Protein"
+    ],
+    "nutrition": {
+      "totalCalories": 2080,
+      "perServingCalories": 520,
+      "totalProtein": 178,
+      "perServingProtein": 45
+    },
+    "instructions": [
+      "Blend base ingredients with almond milk until smooth",
+      "Pour mixture into pan and cook on medium heat",
+      "Add alfredo sauce, nutritional yeast, garlic powder, and whey protein",
+      "Cook for 10-15 minutes, stirring occasionally",
+      "When nearly set, flip with plate to cook other side",
+      "Add mozzarella on top and cover until melted"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Fresh Herb",
+    "ingredients": [
+      "1 cup Fresh Basil",
+      "1/2 cup Fresh Parsley",
+      "1/4 cup Olive Oil",
+      "2 cloves Garlic",
+      "2 scoops Unflavored Whey Protein",
+      "Lemon Juice to taste"
+    ],
+    "nutrition": {
+      "totalCalories": 2200,
+      "perServingCalories": 550,
+      "totalProtein": 182,
+      "perServingProtein": 46
+    },
+    "instructions": [
+      "Blend base ingredients with olive oil until smooth",
+      "Pour mixture into pan and cook on medium heat",
+      "Add blended herbs, garlic, lemon juice, and whey protein",
+      "Cook for 10-15 minutes, stirring occasionally",
+      "When nearly set, flip with plate to cook other side",
+      "Add mozzarella on top and cover until melted"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "BBQ Style",
+    "ingredients": [
+      "1/2 cup Sugar-Free BBQ Sauce",
+      "1/4 cup Apple Cider Vinegar",
+      "1 tbsp Smoked Paprika",
+      "1 tsp Chipotle Powder",
+      "2 scoops Unflavored Whey Protein"
+    ],
+    "nutrition": {
+      "totalCalories": 2150,
+      "perServingCalories": 537,
+      "totalProtein": 176,
+      "perServingProtein": 44
+    },
+    "instructions": [
+      "Blend base ingredients with apple cider vinegar until smooth",
+      "Pour mixture into pan and cook on medium heat",
+      "Add BBQ sauce, spices, and whey protein, mixing well",
+      "Cook for 10-15 minutes, stirring occasionally",
+      "When nearly set, flip with plate to cook other side",
+      "Add mozzarella on top and cover until melted"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Sharp Cheddar",
+    "ingredients": [
+      "4 oz Reduced-Fat Sharp Cheddar",
+      "1/4 cup Greek Yogurt",
+      "1 tsp Mustard Powder",
+      "1/2 cup Chicken Bone Broth",
+      "2 scoops Unflavored Whey Protein"
+    ],
+    "nutrition": {
+      "totalCalories": 2180,
+      "perServingCalories": 545,
+      "totalProtein": 185,
+      "perServingProtein": 46
+    },
+    "instructions": [
+      "Blend base ingredients with chicken bone broth until smooth",
+      "Pour mixture into pan and cook on medium heat",
+      "Add cheddar cheese, yogurt, mustard powder, and whey protein",
+      "Cook for 10-15 minutes, stirring occasionally",
+      "When nearly set, flip with plate to cook other side",
+      "Add mozzarella on top and cover until melted"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Spicy Mexican",
+    "ingredients": [
+      "1 cup Salsa Verde",
+      "2 tbsp Taco Seasoning",
+      "1/2 cup Chicken Bone Broth",
+      "1 Jalapeño (diced)",
+      "2 scoops Unflavored Whey Protein"
+    ],
+    "nutrition": {
+      "totalCalories": 2100,
+      "perServingCalories": 525,
+      "totalProtein": 177,
+      "perServingProtein": 44
+    },
+    "instructions": [
+      "Blend base ingredients with chicken bone broth until smooth",
+      "Pour mixture into pan and cook on medium heat",
+      "Add salsa verde, taco seasoning, jalapeño, and whey protein",
+      "Cook for 10-15 minutes, stirring occasionally",
+      "When nearly set, flip with plate to cook other side",
+      "Add mozzarella on top and cover until melted"
+    ]
+  }
+]

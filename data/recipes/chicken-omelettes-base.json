@@ -1,0 +1,21 @@
+{
+  "name": "Chicken Omelette Base",
+  "type": "base",
+  "servings": 4,
+  "ingredients": [
+    "24 oz Chicken Breast (cut into chunks)",
+    "10 Raw Eggs",
+    "Handful Mixed Greens Pack",
+    "Handful Fresh Spinach",
+    "One scoop Cooked Lentils",
+    "One scoop Pumpkin Seeds",
+    "One scoop Chia Seeds",
+    "4-5 oz Shredded Fat-Free Mozzarella"
+  ],
+  "nutrition": {
+    "totalCalories": 1845,
+    "perServingCalories": 461,
+    "totalProtein": 165,
+    "perServingProtein": 41
+  }
+}

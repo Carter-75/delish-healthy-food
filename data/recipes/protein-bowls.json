@@ -1,0 +1,96 @@
+[
+  {
+    "id": 0,
+    "name": "Asian Fusion Bowl",
+    "category": "protein-bowl",
+    "servings": 4,
+    "ingredients": [
+      "24 oz Chicken Breast (cubed)",
+      "2 cups Cooked Brown Rice",
+      "2 cups Mixed Vegetables",
+      "3 tbsp Soy Sauce (low sodium)",
+      "2 tbsp Sesame Oil",
+      "1 tbsp Ginger (minced)",
+      "2 cloves Garlic (minced)",
+      "Green Onions for garnish"
+    ],
+    "nutrition": {
+      "totalCalories": 1920,
+      "perServingCalories": 480,
+      "totalProtein": 160,
+      "perServingProtein": 40
+    },
+    "instructions": [
+      "Cook chicken breast in sesame oil until golden",
+      "Add garlic and ginger, sauté for 1 minute",
+      "Toss in vegetables and stir-fry for 5 minutes",
+      "Add soy sauce and cook for 2 more minutes",
+      "Serve over brown rice and garnish with green onions"
+    ],
+    "cookingTime": "25 minutes"
+  },
+  {
+    "id": 1,
+    "name": "Mediterranean Bowl",
+    "category": "protein-bowl",
+    "servings": 4,
+    "ingredients": [
+      "24 oz Chicken Breast (cubed)",
+      "2 cups Quinoa (cooked)",
+      "1 cup Cherry Tomatoes (halved)",
+      "1 cup Cucumber (diced)",
+      "1/2 cup Kalamata Olives",
+      "4 oz Feta Cheese (crumbled)",
+      "3 tbsp Olive Oil",
+      "2 tbsp Lemon Juice",
+      "Fresh Oregano"
+    ],
+    "nutrition": {
+      "totalCalories": 2100,
+      "perServingCalories": 525,
+      "totalProtein": 165,
+      "perServingProtein": 41
+    },
+    "instructions": [
+      "Season and grill chicken breast until cooked through",
+      "Prepare quinoa according to package directions",
+      "Chop vegetables and combine in a bowl",
+      "Whisk olive oil, lemon juice, and oregano for dressing",
+      "Assemble bowls with quinoa base, chicken, vegetables, and feta",
+      "Drizzle with dressing before serving"
+    ],
+    "cookingTime": "30 minutes"
+  },
+  {
+    "id": 2,
+    "name": "Tex-Mex Bowl",
+    "category": "protein-bowl",
+    "servings": 4,
+    "ingredients": [
+      "24 oz Chicken Breast (cubed)",
+      "2 cups Black Beans (cooked)",
+      "2 cups Corn",
+      "1 cup Salsa",
+      "1 Avocado (sliced)",
+      "1 cup Greek Yogurt (plain)",
+      "2 tbsp Taco Seasoning",
+      "Fresh Cilantro",
+      "Lime Wedges"
+    ],
+    "nutrition": {
+      "totalCalories": 2050,
+      "perServingCalories": 512,
+      "totalProtein": 170,
+      "perServingProtein": 43
+    },
+    "instructions": [
+      "Season chicken with taco seasoning and cook until done",
+      "Warm black beans and corn in separate pans",
+      "Dice chicken into bite-sized pieces",
+      "Layer black beans, corn, chicken, and salsa in bowls",
+      "Top with avocado slices, Greek yogurt, and cilantro",
+      "Serve with lime wedges"
+    ],
+    "cookingTime": "25 minutes"
+  }
+]
