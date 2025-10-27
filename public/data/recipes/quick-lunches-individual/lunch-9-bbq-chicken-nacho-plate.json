@@ -1,6 +1,7 @@
 {
   "id": 9,
   "name": "BBQ Chicken Nacho Plate",
+  "category": "quick-lunches",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -17,10 +18,17 @@
     "Optional: Sprinkle cheese and microwave 30 seconds to melt",
     "Serve immediately"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "calories": 520,
-    "protein": 44,
-    "carbs": 48,
-    "fat": 16
+    "totalCalories": 520,
+    "perServingCalories": 520,
+    "totalProtein": 44,
+    "perServingProtein": 44,
+    "totalCarbs": 48,
+    "perServingCarbs": 48,
+    "totalFat": 16,
+    "perServingFat": 16,
+    "perServingFiber": 7,
+    "totalFiber": 7
   }
 }

@@ -1,6 +1,7 @@
 {
   "id": 17,
   "name": "Protein Cinnamon Rolls",
+  "category": "desserts",
   "type": "individual",
   "servings": 8,
   "ingredients": [
@@ -21,10 +22,17 @@
     "Mix cream cheese with almond milk for frosting",
     "Top warm rolls with frosting"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "caloriesPerServing": 210,
-    "proteinPerServing": 14,
-    "carbsPerServing": 28,
-    "fatPerServing": 4
+    "perServingCalories": 210,
+    "totalCalories": 1680,
+    "perServingProtein": 14,
+    "totalProtein": 112,
+    "perServingCarbs": 28,
+    "totalCarbs": 224,
+    "perServingFat": 4,
+    "totalFat": 32,
+    "perServingFiber": 3,
+    "totalFiber": 24
   }
 }

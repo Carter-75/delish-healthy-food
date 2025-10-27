@@ -1,7 +1,7 @@
 {
   "id": 0,
   "name": "Asian Fusion Bowl",
-  "category": "protein-bowl",
+  "category": "protein-bowls",
   "servings": 4,
   "ingredients": [
     "24 oz Chicken Breast (cubed)",
@@ -17,7 +17,13 @@
     "totalCalories": 1920,
     "perServingCalories": 480,
     "totalProtein": 160,
-    "perServingProtein": 40
+    "perServingProtein": 40,
+    "perServingCarbs": 55,
+    "totalCarbs": 220,
+    "perServingFat": 11,
+    "totalFat": 44,
+    "perServingFiber": 7,
+    "totalFiber": 28
   },
   "instructions": [
     "Cook chicken breast in sesame oil until golden",

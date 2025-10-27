@@ -1,6 +1,7 @@
 {
   "id": 1,
   "name": "Chicken Pesto Quesadilla",
+  "category": "quick-lunches",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -18,10 +19,17 @@
     "Cheese should be melted and tortilla crispy",
     "Cut into wedges and serve"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "calories": 520,
-    "protein": 47,
-    "carbs": 28,
-    "fat": 24
+    "totalCalories": 520,
+    "perServingCalories": 520,
+    "totalProtein": 47,
+    "perServingProtein": 47,
+    "totalCarbs": 28,
+    "perServingCarbs": 28,
+    "totalFat": 24,
+    "perServingFat": 24,
+    "perServingFiber": 7,
+    "totalFiber": 7
   }
 }

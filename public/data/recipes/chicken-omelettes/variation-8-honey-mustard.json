@@ -1,12 +1,24 @@
 {
   "id": 8,
   "name": "Honey Mustard",
-  "type": "variation",
-  "additionalIngredients": [
+  "category": "chicken-omelettes",
+  "ingredients": [
     "Sugar-free honey mustard sauce",
     "Dijon mustard",
     "Cheddar cheese"
   ],
+  "nutrition": {
+    "totalCalories": 2160,
+    "perServingCalories": 540,
+    "totalProtein": 184,
+    "perServingProtein": 46,
+    "perServingCarbs": 62,
+    "totalCarbs": 248,
+    "perServingFat": 12,
+    "totalFat": 48,
+    "perServingFiber": 7,
+    "totalFiber": 28
+  },
   "instructions": [
     "Cook chicken chunks, mixing in honey mustard and dijon while cooking",
     "Prepare omelette with eggs, cheddar cheese, and spinach",
@@ -14,10 +26,5 @@
     "Top with mixed greens, lentils, pumpkin seeds, and chia seeds",
     "Fold and serve hot"
   ],
-  "nutrition": {
-    "totalCalories": 2160,
-    "perServingCalories": 540,
-    "totalProtein": 184,
-    "perServingProtein": 46
-  }
+  "cookingTime": "30-40 minutes"
 }

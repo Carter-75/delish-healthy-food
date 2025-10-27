@@ -13,7 +13,13 @@
     "totalCalories": 2150,
     "perServingCalories": 537,
     "totalProtein": 176,
-    "perServingProtein": 44
+    "perServingProtein": 44,
+    "perServingCarbs": 63,
+    "totalCarbs": 252,
+    "perServingFat": 12,
+    "totalFat": 48,
+    "perServingFiber": 8,
+    "totalFiber": 32
   },
   "instructions": [
     "Blend base ingredients with apple cider vinegar until smooth",
@@ -22,5 +28,6 @@
     "Cook for 10-15 minutes, stirring occasionally",
     "When nearly set, flip with plate to cook other side",
     "Add mozzarella on top and cover until melted"
-  ]
+  ],
+  "cookingTime": "30-40 minutes"
 }

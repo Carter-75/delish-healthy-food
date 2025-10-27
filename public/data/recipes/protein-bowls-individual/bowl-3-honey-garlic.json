@@ -1,6 +1,7 @@
 {
   "id": 3,
   "name": "Honey Garlic Power Bowl",
+  "category": "protein-bowls",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -18,10 +19,17 @@
     "Top with chicken and broccoli",
     "Sprinkle with sesame seeds and serve"
   ],
+  "cookingTime": "25-35 minutes",
   "nutrition": {
-    "calories": 510,
-    "protein": 42,
-    "carbs": 58,
-    "fat": 9
+    "totalCalories": 510,
+    "perServingCalories": 510,
+    "totalProtein": 42,
+    "perServingProtein": 42,
+    "totalCarbs": 58,
+    "perServingCarbs": 58,
+    "totalFat": 9,
+    "perServingFat": 9,
+    "perServingFiber": 7,
+    "totalFiber": 7
   }
 }

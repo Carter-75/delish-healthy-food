@@ -1,6 +1,7 @@
 {
   "id": 16,
   "name": "Chocolate Peanut Butter Protein Brownie Bites",
+  "category": "desserts",
   "type": "individual",
   "servings": 12,
   "ingredients": [
@@ -18,10 +19,17 @@
     "Bake for 12 minutes until set",
     "Cool before removing from tin"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "caloriesPerServing": 145,
-    "proteinPerServing": 12,
-    "carbsPerServing": 10,
-    "fatPerServing": 7
+    "perServingCalories": 145,
+    "totalCalories": 1740,
+    "perServingProtein": 12,
+    "totalProtein": 144,
+    "perServingCarbs": 10,
+    "totalCarbs": 120,
+    "perServingFat": 7,
+    "totalFat": 84,
+    "perServingFiber": 2,
+    "totalFiber": 24
   }
 }

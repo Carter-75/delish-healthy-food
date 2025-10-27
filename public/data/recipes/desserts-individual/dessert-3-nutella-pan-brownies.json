@@ -17,7 +17,9 @@
     "totalCarbs": 16,
     "perServingCarbs": 4,
     "totalFat": 24,
-    "perServingFat": 6
+    "perServingFat": 6,
+    "perServingFiber": 2,
+    "totalFiber": 8
   },
   "instructions": [
     "Mix all ingredients in a non-stick pan",

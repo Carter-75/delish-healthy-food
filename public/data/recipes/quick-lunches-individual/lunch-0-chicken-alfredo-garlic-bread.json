@@ -28,7 +28,9 @@
     "totalCarbs": 180,
     "perServingCarbs": 30,
     "totalFat": 240,
-    "perServingFat": 40
+    "perServingFat": 40,
+    "perServingFiber": 10,
+    "totalFiber": 60
   },
   "instructions": [
     "Cook seasoned chicken in butter until internal temperature reaches 165°F",

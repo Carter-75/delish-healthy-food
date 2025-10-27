@@ -1,6 +1,7 @@
 {
   "id": 12,
   "name": "Cookie Dough Protein Bars",
+  "category": "desserts",
   "type": "individual",
   "servings": 8,
   "ingredients": [
@@ -17,10 +18,17 @@
     "Slice into 8 bars",
     "Store in refrigerator"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "caloriesPerServing": 210,
-    "proteinPerServing": 14,
-    "carbsPerServing": 12,
-    "fatPerServing": 13
+    "perServingCalories": 210,
+    "totalCalories": 1680,
+    "perServingProtein": 14,
+    "totalProtein": 112,
+    "perServingCarbs": 12,
+    "totalCarbs": 96,
+    "perServingFat": 13,
+    "totalFat": 104,
+    "perServingFiber": 3,
+    "totalFiber": 24
   }
 }

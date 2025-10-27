@@ -1,6 +1,7 @@
 {
   "id": 7,
   "name": "Garlic Herb Chicken Melt Sandwich",
+  "category": "quick-lunches",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -20,10 +21,17 @@
     "Toast in skillet over medium heat until golden and cheese melts",
     "Serve hot"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "calories": 495,
-    "protein": 44,
-    "carbs": 32,
-    "fat": 20
+    "totalCalories": 495,
+    "perServingCalories": 495,
+    "totalProtein": 44,
+    "perServingProtein": 44,
+    "totalCarbs": 32,
+    "perServingCarbs": 32,
+    "totalFat": 20,
+    "perServingFat": 20,
+    "perServingFiber": 7,
+    "totalFiber": 7
   }
 }

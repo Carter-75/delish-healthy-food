@@ -1,6 +1,7 @@
 {
   "id": 8,
   "name": "Peanut Butter Banana Protein Bars",
+  "category": "protein-snacks",
   "type": "individual",
   "servings": 8,
   "ingredients": [
@@ -18,10 +19,17 @@
     "Slice into 8 bars",
     "Store in refrigerator"
   ],
+  "cookingTime": "10 minutes",
   "nutrition": {
-    "caloriesPerServing": 225,
-    "proteinPerServing": 15,
-    "carbsPerServing": 32,
-    "fatPerServing": 5
+    "perServingCalories": 225,
+    "totalCalories": 1800,
+    "perServingProtein": 15,
+    "totalProtein": 120,
+    "perServingCarbs": 32,
+    "totalCarbs": 256,
+    "perServingFat": 5,
+    "totalFat": 40,
+    "perServingFiber": 3,
+    "totalFiber": 24
   }
 }

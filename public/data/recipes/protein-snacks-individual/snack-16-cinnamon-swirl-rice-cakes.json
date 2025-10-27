@@ -1,6 +1,7 @@
 {
   "id": 16,
   "name": "High-Protein Cinnamon Swirl Rice Cakes",
+  "category": "protein-snacks",
   "type": "individual",
   "servings": 4,
   "ingredients": [
@@ -18,10 +19,17 @@
     "Serve immediately or refrigerate",
     "Best consumed within 2 hours"
   ],
+  "cookingTime": "10 minutes",
   "nutrition": {
-    "caloriesPerServing": 165,
-    "proteinPerServing": 14,
-    "carbsPerServing": 22,
-    "fatPerServing": 2
+    "perServingCalories": 165,
+    "totalCalories": 660,
+    "perServingProtein": 14,
+    "totalProtein": 56,
+    "perServingCarbs": 22,
+    "totalCarbs": 88,
+    "perServingFat": 2,
+    "totalFat": 8,
+    "perServingFiber": 2,
+    "totalFiber": 8
   }
 }

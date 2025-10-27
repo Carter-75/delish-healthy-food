@@ -24,7 +24,9 @@
     "totalFat": 168,
     "perServingFat": 7,
     "totalSugar": 24,
-    "perServingSugar": 1
+    "perServingSugar": 1,
+    "perServingFiber": 1,
+    "totalFiber": 24
   },
   "instructions": [
     "Mix wet ingredients and sweetener together",

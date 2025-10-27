@@ -1,6 +1,7 @@
 {
   "id": 6,
   "name": "Chicken Taco Flatbread",
+  "category": "quick-lunches",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -18,10 +19,17 @@
     "Bake at 400°F for 8-10 minutes until cheese melts",
     "Slice and serve hot"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "calories": 520,
-    "protein": 46,
-    "carbs": 38,
-    "fat": 18
+    "totalCalories": 520,
+    "perServingCalories": 520,
+    "totalProtein": 46,
+    "perServingProtein": 46,
+    "totalCarbs": 38,
+    "perServingCarbs": 38,
+    "totalFat": 18,
+    "perServingFat": 18,
+    "perServingFiber": 7,
+    "totalFiber": 7
   }
 }

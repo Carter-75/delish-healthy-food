@@ -1,6 +1,7 @@
 {
   "id": 0,
   "name": "Mint Chocolate Crunch Smoothie Bowl",
+  "category": "smoothie-bowls",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -20,9 +21,16 @@
     "Serve immediately with a spoon"
   ],
   "nutrition": {
-    "calories": 350,
-    "protein": 32,
-    "carbs": 42,
-    "fat": 8
-  }
+    "totalCalories": 350,
+    "perServingCalories": 350,
+    "totalProtein": 32,
+    "perServingProtein": 32,
+    "totalCarbs": 42,
+    "perServingCarbs": 42,
+    "totalFat": 8,
+    "perServingFat": 8,
+    "perServingFiber": 5,
+    "totalFiber": 5
+  },
+  "cookingTime": "10 minutes"
 }

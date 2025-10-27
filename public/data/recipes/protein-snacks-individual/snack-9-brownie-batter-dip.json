@@ -1,6 +1,7 @@
 {
   "id": 9,
   "name": "Brownie Batter Protein Dip",
+  "category": "protein-snacks",
   "type": "individual",
   "servings": 4,
   "ingredients": [
@@ -17,10 +18,17 @@
     "Serve with fresh fruit, pretzels, or graham crackers",
     "Store in refrigerator up to 3 days"
   ],
+  "cookingTime": "10 minutes",
   "nutrition": {
-    "caloriesPerServing": 130,
-    "proteinPerServing": 18,
-    "carbsPerServing": 10,
-    "fatPerServing": 2
+    "perServingCalories": 130,
+    "totalCalories": 520,
+    "perServingProtein": 18,
+    "totalProtein": 72,
+    "perServingCarbs": 10,
+    "totalCarbs": 40,
+    "perServingFat": 2,
+    "totalFat": 8,
+    "perServingFiber": 1,
+    "totalFiber": 4
   }
 }

@@ -1,6 +1,7 @@
 {
   "id": 17,
   "name": "High Protein Mini Pepperoni Pizza",
+  "category": "protein-snacks",
   "type": "individual",
   "servings": 6,
   "ingredients": [
@@ -26,10 +27,17 @@
     "Bake 15-20 minutes until lightly golden and set",
     "Cool for a few minutes before serving to firm up"
   ],
+  "cookingTime": "10 minutes",
   "nutrition": {
-    "caloriesPerServing": 310,
-    "proteinPerServing": 32,
-    "carbsPerServing": 18,
-    "fatPerServing": 14
+    "perServingCalories": 310,
+    "totalCalories": 1860,
+    "perServingProtein": 32,
+    "totalProtein": 192,
+    "perServingCarbs": 18,
+    "totalCarbs": 108,
+    "perServingFat": 14,
+    "totalFat": 84,
+    "perServingFiber": 4,
+    "totalFiber": 24
   }
 }

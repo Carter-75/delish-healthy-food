@@ -13,7 +13,13 @@
     "totalCalories": 2080,
     "perServingCalories": 520,
     "totalProtein": 178,
-    "perServingProtein": 45
+    "perServingProtein": 45,
+    "perServingCarbs": 60,
+    "totalCarbs": 240,
+    "perServingFat": 11,
+    "totalFat": 44,
+    "perServingFiber": 7,
+    "totalFiber": 28
   },
   "instructions": [
     "Blend base ingredients with almond milk until smooth",
@@ -22,5 +28,6 @@
     "Cook for 10-15 minutes, stirring occasionally",
     "When nearly set, flip with plate to cook other side",
     "Add mozzarella on top and cover until melted"
-  ]
+  ],
+  "cookingTime": "30-40 minutes"
 }

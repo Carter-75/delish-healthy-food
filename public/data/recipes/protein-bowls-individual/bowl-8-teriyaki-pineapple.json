@@ -1,6 +1,7 @@
 {
   "id": 8,
   "name": "Teriyaki Pineapple Bowl",
+  "category": "protein-bowls",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -19,10 +20,17 @@
     "Garnish with sliced green onions",
     "Serve hot"
   ],
+  "cookingTime": "25-35 minutes",
   "nutrition": {
-    "calories": 515,
-    "protein": 44,
-    "carbs": 62,
-    "fat": 8
+    "totalCalories": 515,
+    "perServingCalories": 515,
+    "totalProtein": 44,
+    "perServingProtein": 44,
+    "totalCarbs": 62,
+    "perServingCarbs": 62,
+    "totalFat": 8,
+    "perServingFat": 8,
+    "perServingFiber": 7,
+    "totalFiber": 7
   }
 }

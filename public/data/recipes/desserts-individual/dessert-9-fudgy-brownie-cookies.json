@@ -20,7 +20,9 @@
     "totalCarbs": 480,
     "perServingCarbs": 30,
     "totalFat": 64,
-    "perServingFat": 4
+    "perServingFat": 4,
+    "perServingFiber": 3,
+    "totalFiber": 48
   },
   "instructions": [
     "Preheat oven to 350°F and line baking sheet with parchment",

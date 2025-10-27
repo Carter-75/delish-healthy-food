@@ -1,6 +1,7 @@
 {
   "id": 3,
   "name": "Protein Cinnamon Churro Bites",
+  "category": "protein-snacks",
   "type": "individual",
   "servings": 10,
   "ingredients": [
@@ -18,10 +19,17 @@
     "Mix cinnamon and sweetener in a bowl",
     "Coat warm bites in cinnamon mixture and serve"
   ],
+  "cookingTime": "10 minutes",
   "nutrition": {
-    "caloriesPerServing": 105,
-    "proteinPerServing": 7,
-    "carbsPerServing": 16,
-    "fatPerServing": 1
+    "perServingCalories": 105,
+    "totalCalories": 1050,
+    "perServingProtein": 7,
+    "totalProtein": 70,
+    "perServingCarbs": 16,
+    "totalCarbs": 160,
+    "perServingFat": 1,
+    "totalFat": 10,
+    "perServingFiber": 2,
+    "totalFiber": 20
   }
 }

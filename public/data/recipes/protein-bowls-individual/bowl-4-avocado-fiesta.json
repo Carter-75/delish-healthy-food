@@ -1,6 +1,7 @@
 {
   "id": 4,
   "name": "Avocado Fiesta Bowl",
+  "category": "protein-bowls",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -20,10 +21,17 @@
     "Top with sliced chicken, pico de gallo, and avocado",
     "Add black beans, squeeze lime, and garnish with cilantro"
   ],
+  "cookingTime": "25-35 minutes",
   "nutrition": {
-    "calories": 525,
-    "protein": 45,
-    "carbs": 52,
-    "fat": 14
+    "totalCalories": 525,
+    "perServingCalories": 525,
+    "totalProtein": 45,
+    "perServingProtein": 45,
+    "totalCarbs": 52,
+    "perServingCarbs": 52,
+    "totalFat": 14,
+    "perServingFat": 14,
+    "perServingFiber": 7,
+    "totalFiber": 7
   }
 }

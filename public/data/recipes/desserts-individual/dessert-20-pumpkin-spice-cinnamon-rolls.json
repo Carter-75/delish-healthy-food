@@ -1,6 +1,7 @@
 {
   "id": 20,
   "name": "Pumpkin Spice Cinnamon Rolls",
+  "category": "desserts",
   "type": "individual",
   "servings": 8,
   "ingredients": [
@@ -21,10 +22,17 @@
     "Mix cream cheese with almond milk for frosting",
     "Frost while warm and serve"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "caloriesPerServing": 225,
-    "proteinPerServing": 10,
-    "carbsPerServing": 32,
-    "fatPerServing": 5
+    "perServingCalories": 225,
+    "totalCalories": 1800,
+    "perServingProtein": 10,
+    "totalProtein": 80,
+    "perServingCarbs": 32,
+    "totalCarbs": 256,
+    "perServingFat": 5,
+    "totalFat": 40,
+    "perServingFiber": 4,
+    "totalFiber": 32
   }
 }

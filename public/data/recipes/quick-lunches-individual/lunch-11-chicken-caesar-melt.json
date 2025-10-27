@@ -1,6 +1,7 @@
 {
   "id": 11,
   "name": "Chicken Caesar Melt",
+  "category": "quick-lunches",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -19,10 +20,17 @@
     "Open sandwich and add fresh romaine lettuce",
     "Serve immediately"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "calories": 500,
-    "protein": 46,
-    "carbs": 32,
-    "fat": 20
+    "totalCalories": 500,
+    "perServingCalories": 500,
+    "totalProtein": 46,
+    "perServingProtein": 46,
+    "totalCarbs": 32,
+    "perServingCarbs": 32,
+    "totalFat": 20,
+    "perServingFat": 20,
+    "perServingFiber": 6,
+    "totalFiber": 6
   }
 }

@@ -1,6 +1,7 @@
 {
   "id": 6,
   "name": "Almond Joy Protein Cups",
+  "category": "protein-snacks",
   "type": "individual",
   "servings": 8,
   "ingredients": [
@@ -18,10 +19,17 @@
     "Freeze for 1 hour until firm",
     "Pop out of molds and store in freezer"
   ],
+  "cookingTime": "10 minutes",
   "nutrition": {
-    "caloriesPerServing": 175,
-    "proteinPerServing": 12,
-    "carbsPerServing": 10,
-    "fatPerServing": 10
+    "perServingCalories": 175,
+    "totalCalories": 1400,
+    "perServingProtein": 12,
+    "totalProtein": 96,
+    "perServingCarbs": 10,
+    "totalCarbs": 80,
+    "perServingFat": 10,
+    "totalFat": 80,
+    "perServingFiber": 3,
+    "totalFiber": 24
   }
 }

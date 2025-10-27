@@ -1,7 +1,7 @@
 {
   "id": 1,
   "name": "Mediterranean Bowl",
-  "category": "protein-bowl",
+  "category": "protein-bowls",
   "servings": 4,
   "ingredients": [
     "24 oz Chicken Breast (cubed)",
@@ -18,7 +18,13 @@
     "totalCalories": 2100,
     "perServingCalories": 525,
     "totalProtein": 165,
-    "perServingProtein": 41
+    "perServingProtein": 41,
+    "perServingCarbs": 63,
+    "totalCarbs": 252,
+    "perServingFat": 12,
+    "totalFat": 48,
+    "perServingFiber": 8,
+    "totalFiber": 32
   },
   "instructions": [
     "Season and grill chicken breast until cooked through",

@@ -1,6 +1,7 @@
 {
   "id": 11,
   "name": "Cottage Cheese Nacho Dip",
+  "category": "protein-snacks",
   "type": "individual",
   "servings": 4,
   "ingredients": [
@@ -16,10 +17,17 @@
     "Serve with bell pepper strips, cucumber slices, or baked tortilla chips",
     "Store in refrigerator up to 3 days"
   ],
+  "cookingTime": "10 minutes",
   "nutrition": {
-    "caloriesPerServing": 110,
-    "proteinPerServing": 14,
-    "carbsPerServing": 8,
-    "fatPerServing": 3
+    "perServingCalories": 110,
+    "totalCalories": 440,
+    "perServingProtein": 14,
+    "totalProtein": 56,
+    "perServingCarbs": 8,
+    "totalCarbs": 32,
+    "perServingFat": 3,
+    "totalFat": 12,
+    "perServingFiber": 1,
+    "totalFiber": 4
   }
 }

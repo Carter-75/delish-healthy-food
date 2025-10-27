@@ -1,6 +1,7 @@
 {
   "id": 15,
   "name": "Birthday Cake Protein Truffles",
+  "category": "desserts",
   "type": "individual",
   "servings": 10,
   "ingredients": [
@@ -16,10 +17,17 @@
     "Chill in refrigerator for 30 minutes",
     "Store in refrigerator up to 5 days"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "caloriesPerServing": 105,
-    "proteinPerServing": 8,
-    "carbsPerServing": 12,
-    "fatPerServing": 2
+    "perServingCalories": 105,
+    "totalCalories": 1050,
+    "perServingProtein": 8,
+    "totalProtein": 80,
+    "perServingCarbs": 12,
+    "totalCarbs": 120,
+    "perServingFat": 2,
+    "totalFat": 20,
+    "perServingFiber": 2,
+    "totalFiber": 20
   }
 }

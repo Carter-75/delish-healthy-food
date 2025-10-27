@@ -1,6 +1,7 @@
 {
   "id": 14,
   "name": "Cherry Brownie Protein Bars",
+  "category": "desserts",
   "type": "individual",
   "servings": 9,
   "ingredients": [
@@ -20,10 +21,17 @@
     "Bake for 18-22 minutes until set",
     "Cool completely before slicing into 9 bars"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "caloriesPerServing": 195,
-    "proteinPerServing": 14,
-    "carbsPerServing": 13,
-    "fatPerServing": 10
+    "perServingCalories": 195,
+    "totalCalories": 1755,
+    "perServingProtein": 14,
+    "totalProtein": 126,
+    "perServingCarbs": 13,
+    "totalCarbs": 117,
+    "perServingFat": 10,
+    "totalFat": 90,
+    "perServingFiber": 3,
+    "totalFiber": 27
   }
 }

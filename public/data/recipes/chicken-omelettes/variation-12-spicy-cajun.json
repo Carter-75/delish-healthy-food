@@ -1,12 +1,24 @@
 {
   "id": 12,
   "name": "Spicy Cajun",
-  "type": "variation",
-  "additionalIngredients": [
+  "category": "chicken-omelettes",
+  "ingredients": [
     "Cajun seasoning",
     "Diced bell peppers",
     "Pepper jack cheese"
   ],
+  "nutrition": {
+    "totalCalories": 2240,
+    "perServingCalories": 560,
+    "totalProtein": 192,
+    "perServingProtein": 48,
+    "perServingCarbs": 65,
+    "totalCarbs": 260,
+    "perServingFat": 12,
+    "totalFat": 48,
+    "perServingFiber": 8,
+    "totalFiber": 32
+  },
   "instructions": [
     "Cook chicken chunks with Cajun seasoning and diced bell peppers",
     "Make omelette with pepper jack cheese and spinach",
@@ -14,10 +26,5 @@
     "Top with mixed greens, lentils, pumpkin seeds, and chia seeds",
     "Fold and serve hot"
   ],
-  "nutrition": {
-    "totalCalories": 2240,
-    "perServingCalories": 560,
-    "totalProtein": 192,
-    "perServingProtein": 48
-  }
+  "cookingTime": "30-40 minutes"
 }

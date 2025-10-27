@@ -1,6 +1,7 @@
 {
   "id": 7,
   "name": "High-Protein Pretzel Nuggets",
+  "category": "protein-snacks",
   "type": "individual",
   "servings": 6,
   "ingredients": [
@@ -18,10 +19,17 @@
     "Air fry at 375°F for 8 minutes until golden brown",
     "Serve warm"
   ],
+  "cookingTime": "10 minutes",
   "nutrition": {
-    "caloriesPerServing": 115,
-    "proteinPerServing": 8,
-    "carbsPerServing": 18,
-    "fatPerServing": 2
+    "perServingCalories": 115,
+    "totalCalories": 690,
+    "perServingProtein": 8,
+    "totalProtein": 48,
+    "perServingCarbs": 18,
+    "totalCarbs": 108,
+    "perServingFat": 2,
+    "totalFat": 12,
+    "perServingFiber": 2,
+    "totalFiber": 12
   }
 }

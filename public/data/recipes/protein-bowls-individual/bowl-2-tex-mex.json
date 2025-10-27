@@ -1,7 +1,7 @@
 {
   "id": 2,
   "name": "Tex-Mex Bowl",
-  "category": "protein-bowl",
+  "category": "protein-bowls",
   "servings": 4,
   "ingredients": [
     "24 oz Chicken Breast (cubed)",
@@ -18,7 +18,13 @@
     "totalCalories": 2050,
     "perServingCalories": 512,
     "totalProtein": 170,
-    "perServingProtein": 43
+    "perServingProtein": 43,
+    "perServingCarbs": 60,
+    "totalCarbs": 240,
+    "perServingFat": 11,
+    "totalFat": 44,
+    "perServingFiber": 7,
+    "totalFiber": 28
   },
   "instructions": [
     "Season chicken with taco seasoning and cook until done",

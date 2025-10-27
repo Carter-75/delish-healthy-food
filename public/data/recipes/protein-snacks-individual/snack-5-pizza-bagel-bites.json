@@ -1,6 +1,7 @@
 {
   "id": 5,
   "name": "Pizza Protein Bagel Bites",
+  "category": "protein-snacks",
   "type": "individual",
   "servings": 4,
   "ingredients": [
@@ -17,10 +18,17 @@
     "Add pepperoni minis",
     "Broil for 2-3 minutes until cheese is melted and bubbly"
   ],
+  "cookingTime": "10 minutes",
   "nutrition": {
-    "caloriesPerServing": 190,
-    "proteinPerServing": 16,
-    "carbsPerServing": 18,
-    "fatPerServing": 6
+    "perServingCalories": 190,
+    "totalCalories": 760,
+    "perServingProtein": 16,
+    "totalProtein": 64,
+    "perServingCarbs": 18,
+    "totalCarbs": 72,
+    "perServingFat": 6,
+    "totalFat": 24,
+    "perServingFiber": 3,
+    "totalFiber": 12
   }
 }

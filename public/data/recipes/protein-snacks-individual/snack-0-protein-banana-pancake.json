@@ -19,7 +19,9 @@
     "perServingCarbs": 26,
     "netCarbsPerServing": 5,
     "totalFat": 5,
-    "perServingFat": 5
+    "perServingFat": 5,
+    "perServingFiber": 4,
+    "totalFiber": 4
   },
   "instructions": [
     "Blend all ingredients until smooth",

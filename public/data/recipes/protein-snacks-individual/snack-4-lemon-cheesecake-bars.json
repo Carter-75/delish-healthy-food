@@ -1,6 +1,7 @@
 {
   "id": 4,
   "name": "Lemon Cheesecake Protein Bars",
+  "category": "protein-snacks",
   "type": "individual",
   "servings": 8,
   "ingredients": [
@@ -20,10 +21,17 @@
     "Bake for 20 minutes until set",
     "Chill for 2 hours before slicing into 8 bars"
   ],
+  "cookingTime": "10 minutes",
   "nutrition": {
-    "caloriesPerServing": 180,
-    "proteinPerServing": 13,
-    "carbsPerServing": 8,
-    "fatPerServing": 11
+    "perServingCalories": 180,
+    "totalCalories": 1440,
+    "perServingProtein": 13,
+    "totalProtein": 104,
+    "perServingCarbs": 8,
+    "totalCarbs": 64,
+    "perServingFat": 11,
+    "totalFat": 88,
+    "perServingFiber": 3,
+    "totalFiber": 24
   }
 }

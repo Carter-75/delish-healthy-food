@@ -1,6 +1,7 @@
 {
   "id": 12,
   "name": "Salted Peanut Butter Protein Fudge",
+  "category": "protein-snacks",
   "type": "individual",
   "servings": 12,
   "ingredients": [
@@ -18,10 +19,17 @@
     "Cut into 12 pieces",
     "Store in freezer"
   ],
+  "cookingTime": "10 minutes",
   "nutrition": {
-    "caloriesPerServing": 150,
-    "proteinPerServing": 10,
-    "carbsPerServing": 8,
-    "fatPerServing": 10
+    "perServingCalories": 150,
+    "totalCalories": 1800,
+    "perServingProtein": 10,
+    "totalProtein": 120,
+    "perServingCarbs": 8,
+    "totalCarbs": 96,
+    "perServingFat": 10,
+    "totalFat": 120,
+    "perServingFiber": 2,
+    "totalFiber": 24
   }
 }

@@ -1,6 +1,7 @@
 {
   "id": 1,
   "name": "Mango Cream Smoothie Bowl",
+  "category": "smoothie-bowls",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -20,9 +21,16 @@
     "Serve immediately with a spoon"
   ],
   "nutrition": {
-    "calories": 345,
-    "protein": 31,
-    "carbs": 45,
-    "fat": 6
-  }
+    "totalCalories": 345,
+    "perServingCalories": 345,
+    "totalProtein": 31,
+    "perServingProtein": 31,
+    "totalCarbs": 45,
+    "perServingCarbs": 45,
+    "totalFat": 6,
+    "perServingFat": 6,
+    "perServingFiber": 5,
+    "totalFiber": 5
+  },
+  "cookingTime": "10 minutes"
 }

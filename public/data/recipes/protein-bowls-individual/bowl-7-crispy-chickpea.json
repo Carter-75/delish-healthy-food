@@ -1,6 +1,7 @@
 {
   "id": 7,
   "name": "Crispy Chickpea Chicken Bowl",
+  "category": "protein-bowls",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -19,10 +20,17 @@
     "Top with crispy chickpeas",
     "Drizzle with tahini and serve"
   ],
+  "cookingTime": "25-35 minutes",
   "nutrition": {
-    "calories": 530,
-    "protein": 43,
-    "carbs": 54,
-    "fat": 14
+    "totalCalories": 530,
+    "perServingCalories": 530,
+    "totalProtein": 43,
+    "perServingProtein": 43,
+    "totalCarbs": 54,
+    "perServingCarbs": 54,
+    "totalFat": 14,
+    "perServingFat": 14,
+    "perServingFiber": 8,
+    "totalFiber": 8
   }
 }

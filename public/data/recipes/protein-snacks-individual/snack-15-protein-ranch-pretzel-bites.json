@@ -1,6 +1,7 @@
 {
   "id": 15,
   "name": "Protein Ranch Pretzel Bites",
+  "category": "protein-snacks",
   "type": "individual",
   "servings": 8,
   "ingredients": [
@@ -18,10 +19,17 @@
     "Air fry at 375°F for 8-10 minutes until golden",
     "Serve warm"
   ],
+  "cookingTime": "10 minutes",
   "nutrition": {
-    "caloriesPerServing": 115,
-    "proteinPerServing": 9,
-    "carbsPerServing": 17,
-    "fatPerServing": 2
+    "perServingCalories": 115,
+    "totalCalories": 920,
+    "perServingProtein": 9,
+    "totalProtein": 72,
+    "perServingCarbs": 17,
+    "totalCarbs": 136,
+    "perServingFat": 2,
+    "totalFat": 16,
+    "perServingFiber": 2,
+    "totalFiber": 16
   }
 }

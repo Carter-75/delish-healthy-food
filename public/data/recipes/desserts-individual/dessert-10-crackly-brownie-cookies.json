@@ -19,7 +19,9 @@
     "totalCarbs": 480,
     "perServingCarbs": 80,
     "totalFat": 48,
-    "perServingFat": 8
+    "perServingFat": 8,
+    "perServingFiber": 7,
+    "totalFiber": 42
   },
   "instructions": [
     "Preheat oven to 350°F and line 2 baking sheets",

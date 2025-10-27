@@ -1,6 +1,7 @@
 {
   "id": 5,
   "name": "Buffalo Chicken Rice Cakes",
+  "category": "quick-lunches",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -16,10 +17,17 @@
     "Serve immediately",
     "Can be eaten cold or warm"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "calories": 195,
-    "protein": 20,
-    "carbs": 18,
-    "fat": 5
+    "totalCalories": 195,
+    "perServingCalories": 195,
+    "totalProtein": 20,
+    "perServingProtein": 20,
+    "totalCarbs": 18,
+    "perServingCarbs": 18,
+    "totalFat": 5,
+    "perServingFat": 5,
+    "perServingFiber": 2,
+    "totalFiber": 2
   }
 }

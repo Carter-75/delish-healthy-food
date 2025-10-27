@@ -1,6 +1,7 @@
 {
   "id": 13,
   "name": "Chocolate Chip Cookie Dough Protein Cups",
+  "category": "desserts",
   "type": "individual",
   "servings": 6,
   "ingredients": [
@@ -16,10 +17,17 @@
     "Pop out of molds and serve",
     "Store in refrigerator"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "caloriesPerServing": 165,
-    "proteinPerServing": 13,
-    "carbsPerServing": 10,
-    "fatPerServing": 9
+    "perServingCalories": 165,
+    "totalCalories": 990,
+    "perServingProtein": 13,
+    "totalProtein": 78,
+    "perServingCarbs": 10,
+    "totalCarbs": 60,
+    "perServingFat": 9,
+    "totalFat": 54,
+    "perServingFiber": 2,
+    "totalFiber": 12
   }
 }

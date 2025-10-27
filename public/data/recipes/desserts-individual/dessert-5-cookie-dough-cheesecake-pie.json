@@ -28,7 +28,9 @@
     "totalFat": 372,
     "perServingFat": 31,
     "totalSugar": 12,
-    "perServingSugar": 1
+    "perServingSugar": 1,
+    "perServingFiber": 7,
+    "totalFiber": 84
   },
   "instructions": [
     "Press ⅔ of cookie dough into pie pan",

@@ -23,7 +23,9 @@
     "totalCarbs": 360,
     "perServingCarbs": 15,
     "totalFat": 144,
-    "perServingFat": 6
+    "perServingFat": 6,
+    "perServingFiber": 2,
+    "totalFiber": 48
   },
   "instructions": [
     "Preheat oven to 350°F",

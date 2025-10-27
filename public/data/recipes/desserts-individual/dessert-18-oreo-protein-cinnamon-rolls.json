@@ -1,6 +1,7 @@
 {
   "id": 18,
   "name": "Oreo Protein Cinnamon Rolls",
+  "category": "desserts",
   "type": "individual",
   "servings": 8,
   "ingredients": [
@@ -21,10 +22,17 @@
     "Mix vanilla protein powder with almond milk for frosting",
     "Top warm rolls with vanilla protein frosting"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "caloriesPerServing": 255,
-    "proteinPerServing": 16,
-    "carbsPerServing": 32,
-    "fatPerServing": 6
+    "perServingCalories": 255,
+    "totalCalories": 2040,
+    "perServingProtein": 16,
+    "totalProtein": 128,
+    "perServingCarbs": 32,
+    "totalCarbs": 256,
+    "perServingFat": 6,
+    "totalFat": 48,
+    "perServingFiber": 4,
+    "totalFiber": 32
   }
 }

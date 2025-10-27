@@ -1,6 +1,7 @@
 {
   "id": 8,
   "name": "Chicken Alfredo Pizza Toast",
+  "category": "quick-lunches",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -17,10 +18,17 @@
     "Broil for 2-3 minutes until cheese is bubbly",
     "Serve hot"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "calories": 510,
-    "protein": 45,
-    "carbs": 34,
-    "fat": 22
+    "totalCalories": 510,
+    "perServingCalories": 510,
+    "totalProtein": 45,
+    "perServingProtein": 45,
+    "totalCarbs": 34,
+    "perServingCarbs": 34,
+    "totalFat": 22,
+    "perServingFat": 22,
+    "perServingFiber": 7,
+    "totalFiber": 7
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from '../hooks/useTheme';
-import { Flame, Beef, Users, TrendingUp } from 'lucide-react';
+import { Flame, Beef, Users, TrendingUp, Wheat, Droplet, Apple } from 'lucide-react';
 
 const NutritionCard = ({ nutrition, servings = 4 }) => {
   const { theme } = useTheme();
@@ -8,34 +8,51 @@ const NutritionCard = ({ nutrition, servings = 4 }) => {
   const nutritionItems = [
     {
       icon: Flame,
-      label: 'Total Calories',
-      value: nutrition?.totalCalories || 0,
+      label: 'Calories',
+      value: nutrition?.perServingCalories || 0,
+      suffix: 'cal',
       color: 'text-orange-400',
       bgColor: 'bg-orange-500/20'
     },
     {
-      icon: Flame,
-      label: 'Per Serving',
-      value: nutrition?.perServingCalories || 0,
-      suffix: 'cal',
-      color: 'text-yellow-400',
-      bgColor: 'bg-yellow-500/20'
-    },
-    {
       icon: Beef,
-      label: 'Total Protein',
-      value: nutrition?.totalProtein || 0,
+      label: 'Protein',
+      value: nutrition?.perServingProtein || 0,
       suffix: 'g',
       color: 'text-red-400',
       bgColor: 'bg-red-500/20'
     },
     {
-      icon: TrendingUp,
-      label: 'Protein/Serving',
-      value: nutrition?.perServingProtein || 0,
+      icon: Wheat,
+      label: 'Carbs',
+      value: nutrition?.perServingCarbs || 0,
+      suffix: 'g',
+      color: 'text-amber-400',
+      bgColor: 'bg-amber-500/20'
+    },
+    {
+      icon: Droplet,
+      label: 'Fat',
+      value: nutrition?.perServingFat || 0,
+      suffix: 'g',
+      color: 'text-blue-400',
+      bgColor: 'bg-blue-500/20'
+    },
+    {
+      icon: Apple,
+      label: 'Fiber',
+      value: nutrition?.perServingFiber || 0,
       suffix: 'g',
       color: 'text-green-400',
       bgColor: 'bg-green-500/20'
+    },
+    {
+      icon: TrendingUp,
+      label: 'Total Calories',
+      value: nutrition?.totalCalories || 0,
+      suffix: 'cal',
+      color: 'text-purple-400',
+      bgColor: 'bg-purple-500/20'
     }
   ];
 
@@ -58,7 +75,7 @@ const NutritionCard = ({ nutrition, servings = 4 }) => {
       </div>
 
       {/* Nutrition Grid */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
         {nutritionItems.map((item, index) => {
           const Icon = item.icon;
           return (

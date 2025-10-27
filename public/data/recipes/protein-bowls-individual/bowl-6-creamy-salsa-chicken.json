@@ -1,6 +1,7 @@
 {
   "id": 6,
   "name": "Creamy Salsa Chicken Bowl",
+  "category": "protein-bowls",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -19,10 +20,17 @@
     "Top with creamy salsa chicken mixture",
     "Serve immediately"
   ],
+  "cookingTime": "25-35 minutes",
   "nutrition": {
-    "calories": 470,
-    "protein": 44,
-    "carbs": 38,
-    "fat": 12
+    "totalCalories": 470,
+    "perServingCalories": 470,
+    "totalProtein": 44,
+    "perServingProtein": 44,
+    "totalCarbs": 38,
+    "perServingCarbs": 38,
+    "totalFat": 12,
+    "perServingFat": 12,
+    "perServingFiber": 6,
+    "totalFiber": 6
   }
 }

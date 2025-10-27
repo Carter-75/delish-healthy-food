@@ -1,6 +1,7 @@
 {
   "id": 10,
   "name": "Chicken Pesto Stuffed Tortilla",
+  "category": "quick-lunches",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -19,10 +20,17 @@
     "Cheese should be melted inside",
     "Slice and serve hot"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "calories": 535,
-    "protein": 48,
-    "carbs": 32,
-    "fat": 24
+    "totalCalories": 535,
+    "perServingCalories": 535,
+    "totalProtein": 48,
+    "perServingProtein": 48,
+    "totalCarbs": 32,
+    "perServingCarbs": 32,
+    "totalFat": 24,
+    "perServingFat": 24,
+    "perServingFiber": 7,
+    "totalFiber": 7
   }
 }

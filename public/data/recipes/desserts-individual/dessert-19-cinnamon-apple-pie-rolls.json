@@ -1,6 +1,7 @@
 {
   "id": 19,
   "name": "Cinnamon Apple Pie Rolls",
+  "category": "desserts",
   "type": "individual",
   "servings": 8,
   "ingredients": [
@@ -20,10 +21,17 @@
     "Drizzle with sugar-free caramel while warm",
     "Serve immediately"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "caloriesPerServing": 240,
-    "proteinPerServing": 6,
-    "carbsPerServing": 42,
-    "fatPerServing": 5
+    "perServingCalories": 240,
+    "totalCalories": 1920,
+    "perServingProtein": 6,
+    "totalProtein": 48,
+    "perServingCarbs": 42,
+    "totalCarbs": 336,
+    "perServingFat": 5,
+    "totalFat": 40,
+    "perServingFiber": 5,
+    "totalFiber": 40
   }
 }

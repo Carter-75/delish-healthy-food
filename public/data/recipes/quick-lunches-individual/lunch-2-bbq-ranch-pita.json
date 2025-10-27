@@ -1,6 +1,7 @@
 {
   "id": 2,
   "name": "BBQ Ranch Chicken Pita",
+  "category": "quick-lunches",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -18,10 +19,17 @@
     "Stuff with BBQ ranch chicken mixture",
     "Serve immediately"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "calories": 495,
-    "protein": 44,
-    "carbs": 42,
-    "fat": 12
+    "totalCalories": 495,
+    "perServingCalories": 495,
+    "totalProtein": 44,
+    "perServingProtein": 44,
+    "totalCarbs": 42,
+    "perServingCarbs": 42,
+    "totalFat": 12,
+    "perServingFat": 12,
+    "perServingFiber": 7,
+    "totalFiber": 7
   }
 }

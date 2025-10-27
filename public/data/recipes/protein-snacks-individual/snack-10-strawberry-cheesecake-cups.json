@@ -1,6 +1,7 @@
 {
   "id": 10,
   "name": "Strawberry Cheesecake Protein Cups",
+  "category": "protein-snacks",
   "type": "individual",
   "servings": 6,
   "ingredients": [
@@ -17,10 +18,17 @@
     "Chill in refrigerator for 2 hours to set",
     "Store in refrigerator up to 4 days"
   ],
+  "cookingTime": "10 minutes",
   "nutrition": {
-    "caloriesPerServing": 185,
-    "proteinPerServing": 15,
-    "carbsPerServing": 14,
-    "fatPerServing": 8
+    "perServingCalories": 185,
+    "totalCalories": 1110,
+    "perServingProtein": 15,
+    "totalProtein": 90,
+    "perServingCarbs": 14,
+    "totalCarbs": 84,
+    "perServingFat": 8,
+    "totalFat": 48,
+    "perServingFiber": 3,
+    "totalFiber": 18
   }
 }

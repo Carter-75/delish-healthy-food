@@ -21,7 +21,9 @@
     "totalCarbs": 48,
     "perServingCarbs": 24,
     "totalFat": 16,
-    "perServingFat": 8
+    "perServingFat": 8,
+    "perServingFiber": 3,
+    "totalFiber": 6
   },
   "instructions": [
     "Mix all dry ingredients except cocoa powder, add milk and vanilla to form dough",

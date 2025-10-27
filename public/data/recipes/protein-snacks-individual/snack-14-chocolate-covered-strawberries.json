@@ -1,6 +1,7 @@
 {
   "id": 14,
   "name": "Chocolate Covered Protein Strawberries",
+  "category": "protein-snacks",
   "type": "individual",
   "servings": 4,
   "ingredients": [
@@ -18,10 +19,17 @@
     "Serve chilled (3 strawberries per serving)",
     "Best consumed within 24 hours"
   ],
+  "cookingTime": "10 minutes",
   "nutrition": {
-    "caloriesPerServing": 90,
-    "proteinPerServing": 6,
-    "carbsPerServing": 12,
-    "fatPerServing": 2
+    "perServingCalories": 90,
+    "totalCalories": 360,
+    "perServingProtein": 6,
+    "totalProtein": 24,
+    "perServingCarbs": 12,
+    "totalCarbs": 48,
+    "perServingFat": 2,
+    "totalFat": 8,
+    "perServingFiber": 1,
+    "totalFiber": 4
   }
 }

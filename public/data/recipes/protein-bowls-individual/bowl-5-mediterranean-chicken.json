@@ -1,6 +1,7 @@
 {
   "id": 5,
   "name": "Mediterranean Chicken Power Bowl",
+  "category": "protein-bowls",
   "type": "individual",
   "servings": 1,
   "ingredients": [
@@ -23,10 +24,17 @@
     "Mix lightly with lemon juice and olive oil",
     "Serve immediately"
   ],
+  "cookingTime": "25-35 minutes",
   "nutrition": {
-    "calories": 510,
-    "protein": 42,
-    "carbs": 48,
-    "fat": 16
+    "totalCalories": 510,
+    "perServingCalories": 510,
+    "totalProtein": 42,
+    "perServingProtein": 42,
+    "totalCarbs": 48,
+    "perServingCarbs": 48,
+    "totalFat": 16,
+    "perServingFat": 16,
+    "perServingFiber": 7,
+    "totalFiber": 7
   }
 }

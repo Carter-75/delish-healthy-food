@@ -13,7 +13,13 @@
     "totalCalories": 2050,
     "perServingCalories": 512,
     "totalProtein": 175,
-    "perServingProtein": 44
+    "perServingProtein": 44,
+    "perServingCarbs": 59,
+    "totalCarbs": 236,
+    "perServingFat": 11,
+    "totalFat": 44,
+    "perServingFiber": 7,
+    "totalFiber": 28
   },
   "instructions": [
     "Blend base ingredients with chicken bone broth until smooth",
@@ -22,5 +28,6 @@
     "Cook for 10-15 minutes, stirring occasionally",
     "When nearly set, flip with plate to cook other side",
     "Add mozzarella on top and cover until melted"
-  ]
+  ],
+  "cookingTime": "30-40 minutes"
 }

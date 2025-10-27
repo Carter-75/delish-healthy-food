@@ -1,6 +1,7 @@
 {
   "id": 21,
   "name": "Chocolate Chip Cinnamon Rolls",
+  "category": "desserts",
   "type": "individual",
   "servings": 8,
   "ingredients": [
@@ -21,10 +22,17 @@
     "Top warm rolls with icing",
     "Serve immediately"
   ],
+  "cookingTime": "30 minutes",
   "nutrition": {
-    "caloriesPerServing": 260,
-    "proteinPerServing": 7,
-    "carbsPerServing": 38,
-    "fatPerServing": 9
+    "perServingCalories": 260,
+    "totalCalories": 2080,
+    "perServingProtein": 7,
+    "totalProtein": 56,
+    "perServingCarbs": 38,
+    "totalCarbs": 304,
+    "perServingFat": 9,
+    "totalFat": 72,
+    "perServingFiber": 5,
+    "totalFiber": 40
   }
 }

@@ -1,6 +1,7 @@
 {
   "id": 13,
   "name": "Apple Pie Protein Oats Bars",
+  "category": "protein-snacks",
   "type": "individual",
   "servings": 8,
   "ingredients": [
@@ -19,10 +20,17 @@
     "Slice into 8 bars",
     "Store in refrigerator"
   ],
+  "cookingTime": "10 minutes",
   "nutrition": {
-    "caloriesPerServing": 210,
-    "proteinPerServing": 13,
-    "carbsPerServing": 30,
-    "fatPerServing": 5
+    "perServingCalories": 210,
+    "totalCalories": 1680,
+    "perServingProtein": 13,
+    "totalProtein": 104,
+    "perServingCarbs": 30,
+    "totalCarbs": 240,
+    "perServingFat": 5,
+    "totalFat": 40,
+    "perServingFiber": 3,
+    "totalFiber": 24
   }
 }
