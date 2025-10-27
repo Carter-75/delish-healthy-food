@@ -1,0 +1,41 @@
+{
+  "id": 5,
+  "name": "Cookie Dough Cheesecake Pie",
+  "category": "desserts",
+  "servings": 12,
+  "ingredients": [
+    "1 cup browned butter",
+    "¼ cup monk fruit sugar",
+    "1 ½ cups Swerve brown",
+    "2 eggs + 1 yolk",
+    "1 tbsp vanilla",
+    "2 ¼ cups almond flour",
+    "2 tsp baking soda",
+    "1 tsp salt",
+    "Sugar-free chocolate chips",
+    "16 oz cream cheese (cheesecake)",
+    "2 eggs (cheesecake)",
+    "¾ cup powdered sweetener (cheesecake)",
+    "2 tsp vanilla (cheesecake)"
+  ],
+  "nutrition": {
+    "totalCalories": 4176,
+    "perServingCalories": 348,
+    "totalProtein": 108,
+    "perServingProtein": 9,
+    "totalCarbs": 84,
+    "perServingCarbs": 7,
+    "totalFat": 372,
+    "perServingFat": 31,
+    "totalSugar": 12,
+    "perServingSugar": 1
+  },
+  "instructions": [
+    "Press ⅔ of cookie dough into pie pan",
+    "Pour cheesecake mixture on top",
+    "Drop remaining dough on surface",
+    "Bake at 350°F for 45-55 minutes",
+    "Chill overnight before serving"
+  ],
+  "cookingTime": "1 hour + overnight chill"
+}

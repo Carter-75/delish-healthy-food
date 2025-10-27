@@ -1,0 +1,37 @@
+{
+  "id": 4,
+  "name": "Reese's Peanut Butter Cup Cookies",
+  "category": "desserts",
+  "servings": 24,
+  "ingredients": [
+    "½ cup butter",
+    "½ cup peanut butter",
+    "1 egg",
+    "¾ tsp baking soda",
+    "1 ¼ cups almond flour",
+    "½ cup monk fruit sweetener",
+    "½ tsp vanilla",
+    "½ tsp salt",
+    "24 sugar-free mini peanut butter cups"
+  ],
+  "nutrition": {
+    "totalCalories": 2112,
+    "perServingCalories": 88,
+    "totalProtein": 72,
+    "perServingProtein": 3,
+    "totalCarbs": 48,
+    "perServingCarbs": 2,
+    "totalFat": 168,
+    "perServingFat": 7,
+    "totalSugar": 24,
+    "perServingSugar": 1
+  },
+  "instructions": [
+    "Mix wet ingredients and sweetener together",
+    "Add almond flour, baking soda and salt",
+    "Roll into 1 inch balls and place in mini muffin tin",
+    "Bake at 350°F for 10-12 minutes",
+    "Push a peanut butter cup into each cookie while warm"
+  ],
+  "cookingTime": "15-20 minutes"
+}

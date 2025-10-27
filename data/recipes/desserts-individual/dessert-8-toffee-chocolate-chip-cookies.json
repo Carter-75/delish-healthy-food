@@ -1,0 +1,45 @@
+{
+  "id": 8,
+  "name": "Toffee Brown Butter Chocolate Chip Cookies",
+  "category": "desserts",
+  "servings": 14,
+  "ingredients": [
+    "½ cup butter (toffee)",
+    "1 cup light brown sugar (toffee)",
+    "Pinch salt (toffee)",
+    "2 cups all-purpose flour",
+    "1½ tsp salt",
+    "1 tsp baking soda",
+    "1 cup browned butter",
+    "2 tbsp room temp water",
+    "1 cup dark brown sugar",
+    "½ cup white sugar",
+    "1 tsp vanilla",
+    "1 tsp espresso powder (optional)",
+    "1 egg + 1 yolk",
+    "1½ cups semisweet chocolate chunks",
+    "½ cup dark chocolate chunks",
+    "1 cup chopped toffee"
+  ],
+  "nutrition": {
+    "totalCalories": 5600,
+    "perServingCalories": 400,
+    "totalProtein": 56,
+    "perServingProtein": 4,
+    "totalCarbs": 672,
+    "perServingCarbs": 48,
+    "totalFat": 280,
+    "perServingFat": 20
+  },
+  "instructions": [
+    "Make toffee: cook butter and brown sugar to 300°F, spread, cool, and break into pieces",
+    "Brown butter and cool for 30 minutes",
+    "Whisk together dry ingredients",
+    "Beat sugars and butter, then add vanilla and eggs",
+    "Mix in dry ingredients",
+    "Fold in chocolate chunks and toffee pieces",
+    "Scoop 3 tbsp portions and chill for 3 hours",
+    "Bake at 350°F for 15 minutes, then cool on rack"
+  ],
+  "cookingTime": "3 hours 30 minutes"
+}

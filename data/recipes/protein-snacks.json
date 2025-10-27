@@ -1,0 +1,100 @@
+[
+  {
+    "id": 0,
+    "name": "60g Protein Banana Pancake",
+    "category": "protein-snacks",
+    "servings": 1,
+    "ingredients": [
+      "1 banana (or 2 tbsp keto syrup)",
+      "3 egg whites",
+      "1 scoop whey protein",
+      "1 tbsp Greek yogurt",
+      "½ tsp baking powder"
+    ],
+    "nutrition": {
+      "totalCalories": 315,
+      "perServingCalories": 315,
+      "totalProtein": 38,
+      "perServingProtein": 38,
+      "totalCarbs": 26,
+      "perServingCarbs": 26,
+      "netCarbsPerServing": 5,
+      "totalFat": 5,
+      "perServingFat": 5
+    },
+    "instructions": [
+      "Blend all ingredients until smooth",
+      "Heat non-stick pan over medium heat",
+      "Pour batter and cook for 2-3 minutes per side",
+      "Flip when bubbles form on surface"
+    ],
+    "cookingTime": "10 minutes"
+  },
+  {
+    "id": 1,
+    "name": "Brookie Protein Cookie Dough Cup",
+    "category": "protein-snacks",
+    "servings": 2,
+    "ingredients": [
+      "30g oat flour",
+      "25g vanilla protein powder",
+      "10g powdered peanut butter",
+      "5g cocoa powder",
+      "10g dark chocolate",
+      "5-10g chocolate chips",
+      "50-100 ml milk",
+      "Splash vanilla extract"
+    ],
+    "nutrition": {
+      "totalCalories": 420,
+      "perServingCalories": 210,
+      "totalProtein": 32,
+      "perServingProtein": 16,
+      "totalCarbs": 48,
+      "perServingCarbs": 24,
+      "totalFat": 16,
+      "perServingFat": 8
+    },
+    "instructions": [
+      "Mix all dry ingredients except cocoa powder, add milk and vanilla to form dough",
+      "Split dough in half",
+      "Add cocoa powder to one half to make brownie dough",
+      "In small bowl: place cookie dough on bottom, brownie dough on top",
+      "Melt dark chocolate and spread over top",
+      "Refrigerate for 2-4 hours before serving"
+    ],
+    "cookingTime": "2-4 hours chill time"
+  },
+  {
+    "id": 2,
+    "name": "High Protein Cinnamon Bites",
+    "category": "protein-snacks",
+    "servings": 10,
+    "ingredients": [
+      "120g white bread flour",
+      "1 tsp baking powder",
+      "¼ tsp salt",
+      "180g 0% Greek yogurt",
+      "Cooking spray or egg wash"
+    ],
+    "nutrition": {
+      "totalCalories": 800,
+      "perServingCalories": 80,
+      "totalProtein": 50,
+      "perServingProtein": 5,
+      "totalCarbs": 140,
+      "perServingCarbs": 14,
+      "totalFat": 10,
+      "perServingFat": 1
+    },
+    "instructions": [
+      "Preheat oven to 375°F",
+      "Mix flour, baking powder, and salt",
+      "Add Greek yogurt and mix until dough forms",
+      "Divide into 10 equal balls",
+      "Coat lightly with cooking spray or egg wash",
+      "Bake for 13-15 minutes until golden"
+    ],
+    "cookingTime": "20 minutes"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "id": 6,
+  "name": "Cottage Cheese Brownies",
+  "category": "desserts",
+  "servings": 9,
+  "ingredients": [
+    "3 bananas (or ½ cup keto syrup)",
+    "2 eggs",
+    "1 cup cottage cheese",
+    "¼ cup cocoa powder",
+    "1-2 tbsp keto syrup"
+  ],
+  "nutrition": {
+    "totalCalories": 1098,
+    "perServingCalories": 122,
+    "totalProtein": 81,
+    "perServingProtein": 9,
+    "totalCarbs": 108,
+    "perServingCarbs": 12,
+    "netCarbsPerServing": 4,
+    "totalFat": 27,
+    "perServingFat": 3
+  },
+  "instructions": [
+    "Blend all ingredients until smooth",
+    "Pour into parchment-lined pan",
+    "Bake at 350°F for 25-30 minutes",
+    "Cool and cut into 9 brownies"
+  ],
+  "cookingTime": "30-35 minutes"
+}

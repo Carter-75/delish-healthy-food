@@ -1,0 +1,48 @@
+{
+  "id": 1,
+  "name": "Oreo Cinnamon Rolls",
+  "category": "desserts",
+  "servings": 12,
+  "ingredients": [
+    "1 cup warm milk (110°F)",
+    "2¼ tsp yeast",
+    "½ cup monk fruit sweetener",
+    "2 eggs",
+    "6 tbsp melted butter",
+    "4 ½ cups all-purpose flour",
+    "1 tsp salt",
+    "6 tbsp softened butter (filling)",
+    "½ cup Swerve brown (filling)",
+    "2 tbsp cocoa powder (filling)",
+    "10-12 crushed Oreos (filling)",
+    "4 oz cream cheese (glaze)",
+    "½ cup powdered sweetener (glaze)",
+    "2-3 tbsp milk (glaze)",
+    "½ tsp vanilla (glaze)",
+    "1-2 crushed Oreos (glaze)"
+  ],
+  "nutrition": {
+    "totalCalories": 3060,
+    "perServingCalories": 255,
+    "totalProtein": 60,
+    "perServingProtein": 5,
+    "totalCarbs": 456,
+    "perServingCarbs": 38,
+    "totalFiber": 12,
+    "perServingFiber": 1,
+    "totalFat": 120,
+    "perServingFat": 10,
+    "totalSugar": 84,
+    "perServingSugar": 7
+  },
+  "instructions": [
+    "Bloom yeast in warm milk with 1 tbsp sweetener for 10 minutes",
+    "Add remaining dough ingredients and knead for 8 minutes",
+    "Let dough rise for 1 hour",
+    "Roll out dough, spread filling mixture, roll up and slice into 12 rolls",
+    "Let rolls rise for 20-30 minutes",
+    "Bake at 375°F for 20-25 minutes",
+    "Mix glaze ingredients and spread over warm rolls"
+  ],
+  "cookingTime": "2 hours 30 minutes"
+}

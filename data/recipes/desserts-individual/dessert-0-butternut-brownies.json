@@ -1,0 +1,36 @@
+{
+  "id": 0,
+  "name": "Butternut Brownies",
+  "category": "desserts",
+  "description": "Low-Carb, Vegan Option",
+  "servings": 9,
+  "ingredients": [
+    "1 ½ cups cooked butternut squash puree",
+    "½ cup unsweetened cocoa powder",
+    "¼ cup keto maple syrup",
+    "1 tsp vanilla (optional)",
+    "Pinch salt (optional)"
+  ],
+  "nutrition": {
+    "totalCalories": 639,
+    "perServingCalories": 71,
+    "totalProtein": 27,
+    "perServingProtein": 3,
+    "totalCarbs": 72,
+    "perServingCarbs": 8,
+    "totalFiber": 27,
+    "perServingFiber": 3,
+    "totalFat": 9,
+    "perServingFat": 1,
+    "totalSugar": 18,
+    "perServingSugar": 2
+  },
+  "instructions": [
+    "Preheat oven to 350°F",
+    "Mix all ingredients until smooth",
+    "Spread mixture in 8×8 inch pan lined with parchment paper",
+    "Bake for 25-30 minutes",
+    "Cool completely, then slice into 9 brownies"
+  ],
+  "cookingTime": "30-35 minutes"
+}

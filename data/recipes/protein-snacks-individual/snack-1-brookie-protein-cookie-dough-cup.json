@@ -1,0 +1,35 @@
+{
+  "id": 1,
+  "name": "Brookie Protein Cookie Dough Cup",
+  "category": "protein-snacks",
+  "servings": 2,
+  "ingredients": [
+    "30g oat flour",
+    "25g vanilla protein powder",
+    "10g powdered peanut butter",
+    "5g cocoa powder",
+    "10g dark chocolate",
+    "5-10g chocolate chips",
+    "50-100 ml milk",
+    "Splash vanilla extract"
+  ],
+  "nutrition": {
+    "totalCalories": 420,
+    "perServingCalories": 210,
+    "totalProtein": 32,
+    "perServingProtein": 16,
+    "totalCarbs": 48,
+    "perServingCarbs": 24,
+    "totalFat": 16,
+    "perServingFat": 8
+  },
+  "instructions": [
+    "Mix all dry ingredients except cocoa powder, add milk and vanilla to form dough",
+    "Split dough in half",
+    "Add cocoa powder to one half to make brownie dough",
+    "In small bowl: place cookie dough on bottom, brownie dough on top",
+    "Melt dark chocolate and spread over top",
+    "Refrigerate for 2-4 hours before serving"
+  ],
+  "cookingTime": "2-4 hours chill time"
+}

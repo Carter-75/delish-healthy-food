@@ -1,0 +1,31 @@
+{
+  "id": 0,
+  "name": "60g Protein Banana Pancake",
+  "category": "protein-snacks",
+  "servings": 1,
+  "ingredients": [
+    "1 banana (or 2 tbsp keto syrup)",
+    "3 egg whites",
+    "1 scoop whey protein",
+    "1 tbsp Greek yogurt",
+    "½ tsp baking powder"
+  ],
+  "nutrition": {
+    "totalCalories": 315,
+    "perServingCalories": 315,
+    "totalProtein": 38,
+    "perServingProtein": 38,
+    "totalCarbs": 26,
+    "perServingCarbs": 26,
+    "netCarbsPerServing": 5,
+    "totalFat": 5,
+    "perServingFat": 5
+  },
+  "instructions": [
+    "Blend all ingredients until smooth",
+    "Heat non-stick pan over medium heat",
+    "Pour batter and cook for 2-3 minutes per side",
+    "Flip when bubbles form on surface"
+  ],
+  "cookingTime": "10 minutes"
+}

@@ -1,0 +1,34 @@
+{
+  "id": 10,
+  "name": "Crackly Chewy Brownie Cookies",
+  "category": "desserts",
+  "servings": 6,
+  "ingredients": [
+    "3 cups powdered sugar",
+    "½ cup cocoa powder",
+    "½ tsp salt",
+    "½ cup egg whites (3 eggs)",
+    "½ cup semisweet chocolate chips",
+    "1 tsp vanilla"
+  ],
+  "nutrition": {
+    "totalCalories": 2160,
+    "perServingCalories": 360,
+    "totalProtein": 24,
+    "perServingProtein": 4,
+    "totalCarbs": 480,
+    "perServingCarbs": 80,
+    "totalFat": 48,
+    "perServingFat": 8
+  },
+  "instructions": [
+    "Preheat oven to 350°F and line 2 baking sheets",
+    "Whisk together powdered sugar, cocoa powder, and salt",
+    "Whisk in egg whites and vanilla until glossy",
+    "Fold in chocolate chips",
+    "Portion 2 tbsp per cookie onto baking sheets",
+    "Bake for 10 minutes",
+    "Cool on sheet for 5 minutes, then transfer to rack"
+  ],
+  "cookingTime": "20-25 minutes"
+}

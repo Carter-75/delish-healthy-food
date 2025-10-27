@@ -1,0 +1,426 @@
+[
+  {
+    "id": 0,
+    "name": "Butternut Brownies",
+    "category": "desserts",
+    "description": "Low-Carb, Vegan Option",
+    "servings": 9,
+    "ingredients": [
+      "1 ½ cups cooked butternut squash puree",
+      "½ cup unsweetened cocoa powder",
+      "¼ cup keto maple syrup",
+      "1 tsp vanilla (optional)",
+      "Pinch salt (optional)"
+    ],
+    "nutrition": {
+      "totalCalories": 639,
+      "perServingCalories": 71,
+      "totalProtein": 27,
+      "perServingProtein": 3,
+      "totalCarbs": 72,
+      "perServingCarbs": 8,
+      "totalFiber": 27,
+      "perServingFiber": 3,
+      "totalFat": 9,
+      "perServingFat": 1,
+      "totalSugar": 18,
+      "perServingSugar": 2
+    },
+    "instructions": [
+      "Preheat oven to 350°F",
+      "Mix all ingredients until smooth",
+      "Spread mixture in 8×8 inch pan lined with parchment paper",
+      "Bake for 25-30 minutes",
+      "Cool completely, then slice into 9 brownies"
+    ],
+    "cookingTime": "30-35 minutes"
+  },
+  {
+    "id": 1,
+    "name": "Oreo Cinnamon Rolls",
+    "category": "desserts",
+    "servings": 12,
+    "ingredients": [
+      "1 cup warm milk (110°F)",
+      "2¼ tsp yeast",
+      "½ cup monk fruit sweetener",
+      "2 eggs",
+      "6 tbsp melted butter",
+      "4 ½ cups all-purpose flour",
+      "1 tsp salt",
+      "6 tbsp softened butter (filling)",
+      "½ cup Swerve brown (filling)",
+      "2 tbsp cocoa powder (filling)",
+      "10-12 crushed Oreos (filling)",
+      "4 oz cream cheese (glaze)",
+      "½ cup powdered sweetener (glaze)",
+      "2-3 tbsp milk (glaze)",
+      "½ tsp vanilla (glaze)",
+      "1-2 crushed Oreos (glaze)"
+    ],
+    "nutrition": {
+      "totalCalories": 3060,
+      "perServingCalories": 255,
+      "totalProtein": 60,
+      "perServingProtein": 5,
+      "totalCarbs": 456,
+      "perServingCarbs": 38,
+      "totalFiber": 12,
+      "perServingFiber": 1,
+      "totalFat": 120,
+      "perServingFat": 10,
+      "totalSugar": 84,
+      "perServingSugar": 7
+    },
+    "instructions": [
+      "Bloom yeast in warm milk with 1 tbsp sweetener for 10 minutes",
+      "Add remaining dough ingredients and knead for 8 minutes",
+      "Let dough rise for 1 hour",
+      "Roll out dough, spread filling mixture, roll up and slice into 12 rolls",
+      "Let rolls rise for 20-30 minutes",
+      "Bake at 375°F for 20-25 minutes",
+      "Mix glaze ingredients and spread over warm rolls"
+    ],
+    "cookingTime": "2 hours 30 minutes"
+  },
+  {
+    "id": 2,
+    "name": "Oreo Cinnamon Rolls with Cream",
+    "category": "desserts",
+    "servings": 12,
+    "ingredients": [
+      "1 cup warm milk (110°F)",
+      "2¼ tsp yeast",
+      "½ cup monk fruit sweetener",
+      "2 eggs",
+      "6 tbsp melted butter",
+      "4 ½ cups all-purpose flour",
+      "1 tsp salt",
+      "6 tbsp softened butter (filling)",
+      "½ cup Swerve brown (filling)",
+      "2 tbsp cocoa powder (filling)",
+      "10-12 crushed Oreos (filling)",
+      "½ cup heavy cream (extra)",
+      "4 oz cream cheese (glaze)",
+      "½ cup powdered sweetener (glaze)",
+      "2-3 tbsp milk (glaze)",
+      "½ tsp vanilla (glaze)",
+      "1-2 crushed Oreos (glaze)"
+    ],
+    "nutrition": {
+      "totalCalories": 3420,
+      "perServingCalories": 285,
+      "totalProtein": 60,
+      "perServingProtein": 5,
+      "totalCarbs": 456,
+      "perServingCarbs": 38,
+      "totalFiber": 12,
+      "perServingFiber": 1,
+      "totalFat": 156,
+      "perServingFat": 13,
+      "totalSugar": 84,
+      "perServingSugar": 7
+    },
+    "instructions": [
+      "Bloom yeast in warm milk with 1 tbsp sweetener for 10 minutes",
+      "Add remaining dough ingredients and knead for 8 minutes",
+      "Let dough rise for 1 hour",
+      "Roll out dough, spread filling mixture, roll up and slice into 12 rolls",
+      "Let rolls rise for 20-30 minutes",
+      "Pour ½ cup heavy cream over rolls before baking",
+      "Bake at 375°F for 20-25 minutes",
+      "Mix glaze ingredients and spread over warm rolls"
+    ],
+    "cookingTime": "2 hours 30 minutes"
+  },
+  {
+    "id": 3,
+    "name": "Nutella Pan Brownies",
+    "category": "desserts",
+    "servings": 4,
+    "ingredients": [
+      "2 tbsp sugar-free hazelnut spread",
+      "2 eggs",
+      "3 tbsp milk",
+      "3 tbsp almond flour"
+    ],
+    "nutrition": {
+      "totalCalories": 420,
+      "perServingCalories": 105,
+      "totalProtein": 20,
+      "perServingProtein": 5,
+      "totalCarbs": 16,
+      "perServingCarbs": 4,
+      "totalFat": 24,
+      "perServingFat": 6
+    },
+    "instructions": [
+      "Mix all ingredients in a non-stick pan",
+      "Cover and cook on low heat for 12-15 minutes",
+      "Cool slightly and slice into 4 bars"
+    ],
+    "cookingTime": "15-20 minutes"
+  },
+  {
+    "id": 4,
+    "name": "Reese's Peanut Butter Cup Cookies",
+    "category": "desserts",
+    "servings": 24,
+    "ingredients": [
+      "½ cup butter",
+      "½ cup peanut butter",
+      "1 egg",
+      "¾ tsp baking soda",
+      "1 ¼ cups almond flour",
+      "½ cup monk fruit sweetener",
+      "½ tsp vanilla",
+      "½ tsp salt",
+      "24 sugar-free mini peanut butter cups"
+    ],
+    "nutrition": {
+      "totalCalories": 2112,
+      "perServingCalories": 88,
+      "totalProtein": 72,
+      "perServingProtein": 3,
+      "totalCarbs": 48,
+      "perServingCarbs": 2,
+      "totalFat": 168,
+      "perServingFat": 7,
+      "totalSugar": 24,
+      "perServingSugar": 1
+    },
+    "instructions": [
+      "Mix wet ingredients and sweetener together",
+      "Add almond flour, baking soda and salt",
+      "Roll into 1 inch balls and place in mini muffin tin",
+      "Bake at 350°F for 10-12 minutes",
+      "Push a peanut butter cup into each cookie while warm"
+    ],
+    "cookingTime": "15-20 minutes"
+  },
+  {
+    "id": 5,
+    "name": "Cookie Dough Cheesecake Pie",
+    "category": "desserts",
+    "servings": 12,
+    "ingredients": [
+      "1 cup browned butter",
+      "¼ cup monk fruit sugar",
+      "1 ½ cups Swerve brown",
+      "2 eggs + 1 yolk",
+      "1 tbsp vanilla",
+      "2 ¼ cups almond flour",
+      "2 tsp baking soda",
+      "1 tsp salt",
+      "Sugar-free chocolate chips",
+      "16 oz cream cheese (cheesecake)",
+      "2 eggs (cheesecake)",
+      "¾ cup powdered sweetener (cheesecake)",
+      "2 tsp vanilla (cheesecake)"
+    ],
+    "nutrition": {
+      "totalCalories": 4176,
+      "perServingCalories": 348,
+      "totalProtein": 108,
+      "perServingProtein": 9,
+      "totalCarbs": 84,
+      "perServingCarbs": 7,
+      "totalFat": 372,
+      "perServingFat": 31,
+      "totalSugar": 12,
+      "perServingSugar": 1
+    },
+    "instructions": [
+      "Press ⅔ of cookie dough into pie pan",
+      "Pour cheesecake mixture on top",
+      "Drop remaining dough on surface",
+      "Bake at 350°F for 45-55 minutes",
+      "Chill overnight before serving"
+    ],
+    "cookingTime": "1 hour + overnight chill"
+  },
+  {
+    "id": 6,
+    "name": "Cottage Cheese Brownies",
+    "category": "desserts",
+    "servings": 9,
+    "ingredients": [
+      "3 bananas (or ½ cup keto syrup)",
+      "2 eggs",
+      "1 cup cottage cheese",
+      "¼ cup cocoa powder",
+      "1-2 tbsp keto syrup"
+    ],
+    "nutrition": {
+      "totalCalories": 1098,
+      "perServingCalories": 122,
+      "totalProtein": 81,
+      "perServingProtein": 9,
+      "totalCarbs": 108,
+      "perServingCarbs": 12,
+      "netCarbsPerServing": 4,
+      "totalFat": 27,
+      "perServingFat": 3
+    },
+    "instructions": [
+      "Blend all ingredients until smooth",
+      "Pour into parchment-lined pan",
+      "Bake at 350°F for 25-30 minutes",
+      "Cool and cut into 9 brownies"
+    ],
+    "cookingTime": "30-35 minutes"
+  },
+  {
+    "id": 7,
+    "name": "Pumpkin Spice Bites",
+    "category": "desserts",
+    "servings": 24,
+    "ingredients": [
+      "1 can refrigerated biscuits",
+      "2 tbsp pumpkin purée",
+      "½ cup melted butter",
+      "1 cup brown sugar (use brown Swerve for low-carb)",
+      "2 tsp cinnamon",
+      "1½ tsp pumpkin pie spice",
+      "4 oz cream cheese, room temp (topping)",
+      "½ cup powdered sweetener (topping)",
+      "2 tbsp softened butter (topping)",
+      "1 tsp pumpkin pie spice (topping)"
+    ],
+    "nutrition": {
+      "totalCalories": 2880,
+      "perServingCalories": 120,
+      "totalProtein": 48,
+      "perServingProtein": 2,
+      "totalCarbs": 360,
+      "perServingCarbs": 15,
+      "totalFat": 144,
+      "perServingFat": 6
+    },
+    "instructions": [
+      "Preheat oven to 350°F",
+      "Mix pumpkin purée, melted butter, brown sugar, cinnamon, and pumpkin pie spice",
+      "Cut each biscuit into quarters and roll into balls",
+      "Coat in pumpkin mixture",
+      "Place into 9×9 inch pan",
+      "Bake for 25 minutes or until golden brown",
+      "Mix topping ingredients until smooth",
+      "Spread on warm bites"
+    ],
+    "cookingTime": "30-35 minutes"
+  },
+  {
+    "id": 8,
+    "name": "Toffee Brown Butter Chocolate Chip Cookies",
+    "category": "desserts",
+    "servings": 14,
+    "ingredients": [
+      "½ cup butter (toffee)",
+      "1 cup light brown sugar (toffee)",
+      "Pinch salt (toffee)",
+      "2 cups all-purpose flour",
+      "1½ tsp salt",
+      "1 tsp baking soda",
+      "1 cup browned butter",
+      "2 tbsp room temp water",
+      "1 cup dark brown sugar",
+      "½ cup white sugar",
+      "1 tsp vanilla",
+      "1 tsp espresso powder (optional)",
+      "1 egg + 1 yolk",
+      "1½ cups semisweet chocolate chunks",
+      "½ cup dark chocolate chunks",
+      "1 cup chopped toffee"
+    ],
+    "nutrition": {
+      "totalCalories": 5600,
+      "perServingCalories": 400,
+      "totalProtein": 56,
+      "perServingProtein": 4,
+      "totalCarbs": 672,
+      "perServingCarbs": 48,
+      "totalFat": 280,
+      "perServingFat": 20
+    },
+    "instructions": [
+      "Make toffee: cook butter and brown sugar to 300°F, spread, cool, and break into pieces",
+      "Brown butter and cool for 30 minutes",
+      "Whisk together dry ingredients",
+      "Beat sugars and butter, then add vanilla and eggs",
+      "Mix in dry ingredients",
+      "Fold in chocolate chunks and toffee pieces",
+      "Scoop 3 tbsp portions and chill for 3 hours",
+      "Bake at 350°F for 15 minutes, then cool on rack"
+    ],
+    "cookingTime": "3 hours 30 minutes"
+  },
+  {
+    "id": 9,
+    "name": "Fudgy & Chewy Brownie Cookies",
+    "category": "desserts",
+    "servings": 16,
+    "ingredients": [
+      "350g powdered sugar",
+      "60-65g cocoa powder",
+      "½ tsp salt",
+      "3 egg whites (≈120g)",
+      "1 tsp vanilla bean paste (optional)",
+      "1 tsp instant coffee (optional)",
+      "1-1½ cups chocolate chips"
+    ],
+    "nutrition": {
+      "totalCalories": 2560,
+      "perServingCalories": 160,
+      "totalProtein": 32,
+      "perServingProtein": 2,
+      "totalCarbs": 480,
+      "perServingCarbs": 30,
+      "totalFat": 64,
+      "perServingFat": 4
+    },
+    "instructions": [
+      "Preheat oven to 350°F and line baking sheet with parchment",
+      "Mix powdered sugar, cocoa powder, salt, and instant coffee",
+      "Add egg whites and vanilla to form thick glossy batter",
+      "Fold in chocolate chips",
+      "Scoop 2-3 tbsp mounds spaced apart on baking sheet",
+      "Bake for 8-10 minutes (8 minutes for fudgy texture)",
+      "Cool, then use cup to gently round edges if desired"
+    ],
+    "cookingTime": "15-20 minutes"
+  },
+  {
+    "id": 10,
+    "name": "Crackly Chewy Brownie Cookies",
+    "category": "desserts",
+    "servings": 6,
+    "ingredients": [
+      "3 cups powdered sugar",
+      "½ cup cocoa powder",
+      "½ tsp salt",
+      "½ cup egg whites (3 eggs)",
+      "½ cup semisweet chocolate chips",
+      "1 tsp vanilla"
+    ],
+    "nutrition": {
+      "totalCalories": 2160,
+      "perServingCalories": 360,
+      "totalProtein": 24,
+      "perServingProtein": 4,
+      "totalCarbs": 480,
+      "perServingCarbs": 80,
+      "totalFat": 48,
+      "perServingFat": 8
+    },
+    "instructions": [
+      "Preheat oven to 350°F and line 2 baking sheets",
+      "Whisk together powdered sugar, cocoa powder, and salt",
+      "Whisk in egg whites and vanilla until glossy",
+      "Fold in chocolate chips",
+      "Portion 2 tbsp per cookie onto baking sheets",
+      "Bake for 10 minutes",
+      "Cool on sheet for 5 minutes, then transfer to rack"
+    ],
+    "cookingTime": "20-25 minutes"
+  }
+]

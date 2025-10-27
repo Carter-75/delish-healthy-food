@@ -1,0 +1,35 @@
+{
+  "id": 9,
+  "name": "Fudgy & Chewy Brownie Cookies",
+  "category": "desserts",
+  "servings": 16,
+  "ingredients": [
+    "350g powdered sugar",
+    "60-65g cocoa powder",
+    "½ tsp salt",
+    "3 egg whites (≈120g)",
+    "1 tsp vanilla bean paste (optional)",
+    "1 tsp instant coffee (optional)",
+    "1-1½ cups chocolate chips"
+  ],
+  "nutrition": {
+    "totalCalories": 2560,
+    "perServingCalories": 160,
+    "totalProtein": 32,
+    "perServingProtein": 2,
+    "totalCarbs": 480,
+    "perServingCarbs": 30,
+    "totalFat": 64,
+    "perServingFat": 4
+  },
+  "instructions": [
+    "Preheat oven to 350°F and line baking sheet with parchment",
+    "Mix powdered sugar, cocoa powder, salt, and instant coffee",
+    "Add egg whites and vanilla to form thick glossy batter",
+    "Fold in chocolate chips",
+    "Scoop 2-3 tbsp mounds spaced apart on baking sheet",
+    "Bake for 8-10 minutes (8 minutes for fudgy texture)",
+    "Cool, then use cup to gently round edges if desired"
+  ],
+  "cookingTime": "15-20 minutes"
+}

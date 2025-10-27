@@ -1,0 +1,42 @@
+{
+  "id": 0,
+  "name": "Chicken Alfredo Garlic Bread",
+  "category": "quick-lunches",
+  "servings": 6,
+  "ingredients": [
+    "1 lb chicken breast, halved flat",
+    "Salt and pepper to taste",
+    "1 tbsp paprika",
+    "1 tsp garlic powder",
+    "1 tsp onion powder",
+    "2 tbsp butter or oil",
+    "2 tbsp minced garlic (sauce)",
+    "2 tbsp butter (sauce)",
+    "1 cup heavy cream (sauce)",
+    "½ cup Parmesan (sauce)",
+    "½ cup softened butter (garlic butter)",
+    "1 tbsp minced garlic (garlic butter)",
+    "1 tbsp chopped parsley (garlic butter)",
+    "1 loaf Italian bread, split",
+    "1 cup mozzarella cheese"
+  ],
+  "nutrition": {
+    "totalCalories": 3600,
+    "perServingCalories": 600,
+    "totalProtein": 180,
+    "perServingProtein": 30,
+    "totalCarbs": 180,
+    "perServingCarbs": 30,
+    "totalFat": 240,
+    "perServingFat": 40
+  },
+  "instructions": [
+    "Cook seasoned chicken in butter until internal temperature reaches 165°F",
+    "Make Alfredo sauce: melt butter, add garlic, pour in heavy cream and simmer, then add Parmesan",
+    "Mix softened butter with garlic and parsley for garlic butter",
+    "Spread garlic butter on split bread halves",
+    "Add mozzarella cheese, sliced chicken, and drizzle Alfredo sauce",
+    "Bake at 350°F for 20-25 minutes until cheese is melted and golden"
+  ],
+  "cookingTime": "35-40 minutes"
+}

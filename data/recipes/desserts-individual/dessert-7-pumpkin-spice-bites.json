@@ -1,0 +1,39 @@
+{
+  "id": 7,
+  "name": "Pumpkin Spice Bites",
+  "category": "desserts",
+  "servings": 24,
+  "ingredients": [
+    "1 can refrigerated biscuits",
+    "2 tbsp pumpkin purée",
+    "½ cup melted butter",
+    "1 cup brown sugar (use brown Swerve for low-carb)",
+    "2 tsp cinnamon",
+    "1½ tsp pumpkin pie spice",
+    "4 oz cream cheese, room temp (topping)",
+    "½ cup powdered sweetener (topping)",
+    "2 tbsp softened butter (topping)",
+    "1 tsp pumpkin pie spice (topping)"
+  ],
+  "nutrition": {
+    "totalCalories": 2880,
+    "perServingCalories": 120,
+    "totalProtein": 48,
+    "perServingProtein": 2,
+    "totalCarbs": 360,
+    "perServingCarbs": 15,
+    "totalFat": 144,
+    "perServingFat": 6
+  },
+  "instructions": [
+    "Preheat oven to 350°F",
+    "Mix pumpkin purée, melted butter, brown sugar, cinnamon, and pumpkin pie spice",
+    "Cut each biscuit into quarters and roll into balls",
+    "Coat in pumpkin mixture",
+    "Place into 9×9 inch pan",
+    "Bake for 25 minutes or until golden brown",
+    "Mix topping ingredients until smooth",
+    "Spread on warm bites"
+  ],
+  "cookingTime": "30-35 minutes"
+}

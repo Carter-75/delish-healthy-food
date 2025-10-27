@@ -20,44 +20,41 @@
     "totalRecipes": 3
   },
   {
+    "id": "desserts",
+    "title": "Simple Delicious Desserts",
+    "description": "11 Sweet Treats",
+    "cookingTime": "15-60 mins",
+    "icon": "IceCream",
+    "hasBase": false,
+    "hasVariations": false,
+    "totalRecipes": 11
+  },
+  {
+    "id": "protein-snacks",
+    "title": "Protein-Rich Snacks",
+    "description": "3 Quick Bites",
+    "cookingTime": "5-15 mins",
+    "icon": "Apple",
+    "hasBase": false,
+    "hasVariations": false,
+    "totalRecipes": 3
+  },
+  {
+    "id": "quick-lunches",
+    "title": "Quick Protein Lunches",
+    "description": "1 Easy Meal",
+    "cookingTime": "30-40 mins",
+    "icon": "Clock",
+    "hasBase": false,
+    "hasVariations": false,
+    "totalRecipes": 1
+  },
+  {
     "id": "smoothie-bowls",
     "title": "Smoothie Bowls",
     "description": "Coming Soon",
     "cookingTime": "10-15 mins",
     "icon": "IceCream",
-    "hasBase": false,
-    "hasVariations": false,
-    "totalRecipes": 0,
-    "comingSoon": true
-  },
-  {
-    "id": "desserts",
-    "title": "Simple Delicious Desserts",
-    "description": "Coming Soon",
-    "cookingTime": "20-30 mins",
-    "icon": "IceCream",
-    "hasBase": false,
-    "hasVariations": false,
-    "totalRecipes": 0,
-    "comingSoon": true
-  },
-  {
-    "id": "protein-snacks",
-    "title": "Protein-Rich Snacks",
-    "description": "Coming Soon",
-    "cookingTime": "5-15 mins",
-    "icon": "Apple",
-    "hasBase": false,
-    "hasVariations": false,
-    "totalRecipes": 0,
-    "comingSoon": true
-  },
-  {
-    "id": "quick-lunches",
-    "title": "3-Minute Protein Lunches",
-    "description": "Coming Soon",
-    "cookingTime": "3-5 mins",
-    "icon": "Clock",
     "hasBase": false,
     "hasVariations": false,
     "totalRecipes": 0,

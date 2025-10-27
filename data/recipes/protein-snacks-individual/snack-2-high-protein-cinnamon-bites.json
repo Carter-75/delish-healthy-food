@@ -1,0 +1,32 @@
+{
+  "id": 2,
+  "name": "High Protein Cinnamon Bites",
+  "category": "protein-snacks",
+  "servings": 10,
+  "ingredients": [
+    "120g white bread flour",
+    "1 tsp baking powder",
+    "¼ tsp salt",
+    "180g 0% Greek yogurt",
+    "Cooking spray or egg wash"
+  ],
+  "nutrition": {
+    "totalCalories": 800,
+    "perServingCalories": 80,
+    "totalProtein": 50,
+    "perServingProtein": 5,
+    "totalCarbs": 140,
+    "perServingCarbs": 14,
+    "totalFat": 10,
+    "perServingFat": 1
+  },
+  "instructions": [
+    "Preheat oven to 375°F",
+    "Mix flour, baking powder, and salt",
+    "Add Greek yogurt and mix until dough forms",
+    "Divide into 10 equal balls",
+    "Coat lightly with cooking spray or egg wash",
+    "Bake for 13-15 minutes until golden"
+  ],
+  "cookingTime": "20 minutes"
+}

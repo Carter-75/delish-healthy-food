@@ -1,0 +1,28 @@
+{
+  "id": 3,
+  "name": "Nutella Pan Brownies",
+  "category": "desserts",
+  "servings": 4,
+  "ingredients": [
+    "2 tbsp sugar-free hazelnut spread",
+    "2 eggs",
+    "3 tbsp milk",
+    "3 tbsp almond flour"
+  ],
+  "nutrition": {
+    "totalCalories": 420,
+    "perServingCalories": 105,
+    "totalProtein": 20,
+    "perServingProtein": 5,
+    "totalCarbs": 16,
+    "perServingCarbs": 4,
+    "totalFat": 24,
+    "perServingFat": 6
+  },
+  "instructions": [
+    "Mix all ingredients in a non-stick pan",
+    "Cover and cook on low heat for 12-15 minutes",
+    "Cool slightly and slice into 4 bars"
+  ],
+  "cookingTime": "15-20 minutes"
+}
