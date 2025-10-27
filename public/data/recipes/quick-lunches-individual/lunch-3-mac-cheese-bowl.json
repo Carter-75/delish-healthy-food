@@ -1,0 +1,26 @@
+{
+  "id": 3,
+  "name": "Chicken Mac & Cheese Protein Bowl",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "6 oz Chicken breast (cooked and diced)",
+    "1.5 cups High-protein pasta (cooked)",
+    "1/2 cup Light cheese sauce",
+    "1 cup Steamed broccoli"
+  ],
+  "instructions": [
+    "Cook high-protein pasta according to package directions",
+    "Steam broccoli until tender-crisp",
+    "Heat light cheese sauce in a pot",
+    "Combine cooked pasta with cheese sauce",
+    "Add diced chicken and broccoli",
+    "Stir well and serve hot"
+  ],
+  "nutrition": {
+    "calories": 560,
+    "protein": 48,
+    "carbs": 52,
+    "fat": 14
+  }
+}

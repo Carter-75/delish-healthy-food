@@ -1,0 +1,29 @@
+{
+  "id": 4,
+  "name": "Avocado Fiesta Bowl",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "6 oz Chicken breast (sliced)",
+    "1 cup Brown rice (cooked)",
+    "1/2 cup Pico de gallo",
+    "1/2 Avocado (sliced)",
+    "1/2 cup Black beans (heated)",
+    "1 Lime wedge",
+    "Fresh cilantro"
+  ],
+  "instructions": [
+    "Cook brown rice according to package directions",
+    "Heat black beans in a small pot",
+    "Season and cook chicken breast until done",
+    "Build bowl with rice as base",
+    "Top with sliced chicken, pico de gallo, and avocado",
+    "Add black beans, squeeze lime, and garnish with cilantro"
+  ],
+  "nutrition": {
+    "calories": 525,
+    "protein": 45,
+    "carbs": 52,
+    "fat": 14
+  }
+}

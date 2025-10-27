@@ -1,0 +1,26 @@
+{
+  "id": 5,
+  "name": "Pizza Protein Bagel Bites",
+  "type": "individual",
+  "servings": 4,
+  "ingredients": [
+    "2 Greek yogurt mini bagels (homemade: 1 cup flour + 1 cup Greek yogurt)",
+    "1/2 cup Sugar-free marinara sauce",
+    "1 cup Shredded mozzarella",
+    "12 Pepperoni minis"
+  ],
+  "instructions": [
+    "If making bagels: Mix flour and yogurt, shape into 4 mini bagels, bake at 375°F for 20 min",
+    "Slice mini bagels in half",
+    "Spread marinara sauce on each half",
+    "Top with mozzarella cheese",
+    "Add pepperoni minis",
+    "Broil for 2-3 minutes until cheese is melted and bubbly"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 190,
+    "proteinPerServing": 16,
+    "carbsPerServing": 18,
+    "fatPerServing": 6
+  }
+}

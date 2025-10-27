@@ -1,0 +1,27 @@
+{
+  "id": 3,
+  "name": "Honey Garlic Power Bowl",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "6 oz Chicken breast (sliced)",
+    "1 cup Jasmine rice (cooked)",
+    "1 cup Roasted broccoli",
+    "2 tbsp Sugar-free honey garlic sauce",
+    "1 tsp Sesame seeds"
+  ],
+  "instructions": [
+    "Cook jasmine rice according to package directions",
+    "Roast or steam broccoli until tender",
+    "Cook chicken breast with honey garlic sauce until caramelized",
+    "Assemble bowl with rice as base",
+    "Top with chicken and broccoli",
+    "Sprinkle with sesame seeds and serve"
+  ],
+  "nutrition": {
+    "calories": 510,
+    "protein": 42,
+    "carbs": 58,
+    "fat": 9
+  }
+}

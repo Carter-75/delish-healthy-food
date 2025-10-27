@@ -1,0 +1,29 @@
+{
+  "id": 11,
+  "name": "Double Chocolate Protein Brownies",
+  "type": "individual",
+  "servings": 12,
+  "ingredients": [
+    "1/2 cup Cocoa powder",
+    "2 scoops Chocolate whey protein",
+    "3 Eggs",
+    "1 cup Almond flour",
+    "1 tsp Baking powder",
+    "1/2 cup Sugar-free chocolate chips"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F",
+    "Mix all dry ingredients in a bowl",
+    "Beat eggs and fold into dry mixture",
+    "Fold in chocolate chips",
+    "Pour into greased 8x8 pan",
+    "Bake for 20-24 minutes until set",
+    "Cool completely before slicing into 12 squares"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 130,
+    "proteinPerServing": 12,
+    "carbsPerServing": 8,
+    "fatPerServing": 7
+  }
+}

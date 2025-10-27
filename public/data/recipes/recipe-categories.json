@@ -2,62 +2,61 @@
   {
     "id": "chicken-omelettes",
     "title": "Chicken Egg Omelettes",
-    "description": "7 Delicious Variations",
+    "description": "9 Delicious Variations",
     "cookingTime": "30-40 mins",
     "icon": "ChefHat",
     "hasBase": true,
     "hasVariations": true,
-    "totalRecipes": 7
+    "totalRecipes": 9
   },
   {
     "id": "protein-bowls",
     "title": "Protein Power Bowls",
-    "description": "3 Global Flavors",
+    "description": "5 Global Flavors",
     "cookingTime": "25-35 mins",
     "icon": "UtensilsCrossed",
     "hasBase": false,
     "hasVariations": false,
-    "totalRecipes": 3
+    "totalRecipes": 5
   },
   {
     "id": "desserts",
     "title": "Simple Delicious Desserts",
-    "description": "11 Sweet Treats",
+    "description": "12 Sweet Treats",
     "cookingTime": "15-60 mins",
     "icon": "IceCream",
     "hasBase": false,
     "hasVariations": false,
-    "totalRecipes": 11
+    "totalRecipes": 12
   },
   {
     "id": "protein-snacks",
     "title": "Protein-Rich Snacks",
-    "description": "3 Quick Bites",
+    "description": "9 Quick Bites",
     "cookingTime": "5-15 mins",
     "icon": "Apple",
     "hasBase": false,
     "hasVariations": false,
-    "totalRecipes": 3
+    "totalRecipes": 9
   },
   {
     "id": "quick-lunches",
     "title": "Quick Protein Lunches",
-    "description": "1 Easy Meal",
+    "description": "4 Easy Meals",
     "cookingTime": "30-40 mins",
     "icon": "Clock",
     "hasBase": false,
     "hasVariations": false,
-    "totalRecipes": 1
+    "totalRecipes": 4
   },
   {
     "id": "smoothie-bowls",
     "title": "Smoothie Bowls",
-    "description": "Coming Soon",
+    "description": "1 Refreshing Bowl",
     "cookingTime": "10-15 mins",
     "icon": "IceCream",
     "hasBase": false,
     "hasVariations": false,
-    "totalRecipes": 0,
-    "comingSoon": true
+    "totalRecipes": 1
   }
 ]

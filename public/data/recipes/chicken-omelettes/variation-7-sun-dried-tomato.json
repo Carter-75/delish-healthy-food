@@ -1,0 +1,25 @@
+{
+  "id": 7,
+  "name": "Creamy Sun-Dried Tomato",
+  "type": "variation",
+  "additionalIngredients": [
+    "Sun-dried tomatoes (chopped)",
+    "Light cream cheese",
+    "Fresh basil",
+    "Garlic powder"
+  ],
+  "instructions": [
+    "Season and cook chicken chunks with garlic powder until golden",
+    "Make omelette with eggs and fresh spinach",
+    "Mix light cream cheese with chopped sun-dried tomatoes and basil",
+    "Layer cooked chicken on omelette, add creamy tomato sauce",
+    "Top with mixed greens, lentils, pumpkin seeds, and chia seeds",
+    "Fold and serve hot"
+  ],
+  "nutrition": {
+    "totalCalories": 2208,
+    "perServingCalories": 552,
+    "totalProtein": 188,
+    "perServingProtein": 47
+  }
+}

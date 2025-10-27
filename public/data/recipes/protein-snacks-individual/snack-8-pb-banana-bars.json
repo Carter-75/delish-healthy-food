@@ -1,0 +1,27 @@
+{
+  "id": 8,
+  "name": "Peanut Butter Banana Protein Bars",
+  "type": "individual",
+  "servings": 8,
+  "ingredients": [
+    "2 Ripe bananas (mashed)",
+    "1/4 cup Peanut butter powder",
+    "2 scoops Vanilla protein powder",
+    "1 cup Rolled oats"
+  ],
+  "instructions": [
+    "Mash bananas in a large bowl",
+    "Mix in peanut butter powder and protein powder",
+    "Fold in rolled oats until well combined",
+    "Press mixture firmly into an 8x8 pan lined with parchment",
+    "Refrigerate for 2 hours until firm",
+    "Slice into 8 bars",
+    "Store in refrigerator"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 225,
+    "proteinPerServing": 15,
+    "carbsPerServing": 32,
+    "fatPerServing": 5
+  }
+}

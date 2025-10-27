@@ -1,0 +1,27 @@
+{
+  "id": 6,
+  "name": "Almond Joy Protein Cups",
+  "type": "individual",
+  "servings": 8,
+  "ingredients": [
+    "1 cup Coconut yogurt",
+    "2 scoops Chocolate whey protein",
+    "1/4 cup Almond slivers",
+    "1/2 cup Sugar-free chocolate coating (melted)"
+  ],
+  "instructions": [
+    "Mix coconut yogurt with chocolate whey protein until smooth",
+    "Place silicone cupcake molds on a tray",
+    "Spoon yogurt mixture into molds, filling halfway",
+    "Sprinkle almond slivers on top",
+    "Drizzle with melted sugar-free chocolate",
+    "Freeze for 1 hour until firm",
+    "Pop out of molds and store in freezer"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 175,
+    "proteinPerServing": 12,
+    "carbsPerServing": 10,
+    "fatPerServing": 10
+  }
+}

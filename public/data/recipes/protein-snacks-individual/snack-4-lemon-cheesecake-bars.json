@@ -1,0 +1,29 @@
+{
+  "id": 4,
+  "name": "Lemon Cheesecake Protein Bars",
+  "type": "individual",
+  "servings": 8,
+  "ingredients": [
+    "8 oz Light cream cheese (softened)",
+    "1/2 cup Greek yogurt (non-fat)",
+    "3 tbsp Fresh lemon juice",
+    "2 scoops Vanilla protein powder",
+    "1 cup Almond flour (for crust)",
+    "2 tbsp Melted butter (for crust)"
+  ],
+  "instructions": [
+    "Preheat oven to 325°F",
+    "Mix almond flour and melted butter, press into 8x8 pan",
+    "Bake crust for 8 minutes",
+    "Blend cream cheese, Greek yogurt, lemon juice, and protein powder",
+    "Pour filling over baked crust",
+    "Bake for 20 minutes until set",
+    "Chill for 2 hours before slicing into 8 bars"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 180,
+    "proteinPerServing": 13,
+    "carbsPerServing": 8,
+    "fatPerServing": 11
+  }
+}

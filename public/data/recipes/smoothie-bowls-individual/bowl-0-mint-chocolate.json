@@ -1,0 +1,28 @@
+{
+  "id": 0,
+  "name": "Mint Chocolate Crunch Smoothie Bowl",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "1 Frozen banana",
+    "2 scoops Chocolate whey protein",
+    "1/4 tsp Mint extract",
+    "1 cup Fresh spinach",
+    "1/2 cup Almond milk (unsweetened)",
+    "2 tbsp Cacao nibs (for topping)"
+  ],
+  "instructions": [
+    "Add frozen banana, chocolate whey, mint extract, spinach, and almond milk to blender",
+    "Blend on high until thick and creamy (should be thicker than a regular smoothie)",
+    "Pour into a bowl",
+    "Top with cacao nibs",
+    "Optional: Add more toppings like sliced banana, coconut flakes, or granola",
+    "Serve immediately with a spoon"
+  ],
+  "nutrition": {
+    "calories": 350,
+    "protein": 32,
+    "carbs": 42,
+    "fat": 8
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 2,
+  "name": "BBQ Ranch Chicken Pita",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "6 oz Chicken breast (cooked and diced)",
+    "1 Whole wheat pita",
+    "2 tbsp Sugar-free BBQ sauce",
+    "2 tbsp Greek yogurt ranch",
+    "Handful Lettuce"
+  ],
+  "instructions": [
+    "Mix diced chicken with BBQ sauce and Greek yogurt ranch",
+    "Warm pita bread slightly",
+    "Open pita pocket",
+    "Line inside with fresh lettuce",
+    "Stuff with BBQ ranch chicken mixture",
+    "Serve immediately"
+  ],
+  "nutrition": {
+    "calories": 495,
+    "protein": 44,
+    "carbs": 42,
+    "fat": 12
+  }
+}

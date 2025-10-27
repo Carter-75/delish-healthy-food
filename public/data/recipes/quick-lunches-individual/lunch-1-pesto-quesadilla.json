@@ -1,0 +1,27 @@
+{
+  "id": 1,
+  "name": "Chicken Pesto Quesadilla",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "6 oz Chicken breast (cooked and sliced)",
+    "1 Low-carb tortilla",
+    "2 tbsp Pesto sauce",
+    "1/2 cup Shredded mozzarella"
+  ],
+  "instructions": [
+    "Spread pesto sauce evenly on one side of tortilla",
+    "Add sliced chicken breast on half of the tortilla",
+    "Sprinkle mozzarella cheese over chicken",
+    "Fold tortilla in half",
+    "Toast in a pan over medium heat until golden on both sides",
+    "Cheese should be melted and tortilla crispy",
+    "Cut into wedges and serve"
+  ],
+  "nutrition": {
+    "calories": 520,
+    "protein": 47,
+    "carbs": 28,
+    "fat": 24
+  }
+}

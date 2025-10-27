@@ -1,0 +1,27 @@
+{
+  "id": 3,
+  "name": "Protein Cinnamon Churro Bites",
+  "type": "individual",
+  "servings": 10,
+  "ingredients": [
+    "1 cup Self-rising flour",
+    "1 cup Greek yogurt (non-fat)",
+    "2 tsp Cinnamon",
+    "3 tbsp Erythritol sweetener",
+    "1 tsp Vanilla extract"
+  ],
+  "instructions": [
+    "Mix flour and Greek yogurt to form dough",
+    "Add vanilla extract and knead until smooth",
+    "Roll dough into small balls",
+    "Air fry at 375°F for 6-8 minutes until golden",
+    "Mix cinnamon and sweetener in a bowl",
+    "Coat warm bites in cinnamon mixture and serve"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 105,
+    "proteinPerServing": 7,
+    "carbsPerServing": 16,
+    "fatPerServing": 1
+  }
+}
