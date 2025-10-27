@@ -35,7 +35,7 @@ const AboutPage = () => {
         <div className="text-center mb-16 animate-fadeInUp">
           <Sparkles className={`w-12 h-12 ${theme.text || 'text-blue-400'} mx-auto mb-6 animate-pulseGlow`} />
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            About Delish Protein Dishes
+            About Delish Healthy Food
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed">
             Your ultimate destination for delicious, protein-packed recipes that support your fitness journey.

@@ -27,10 +27,10 @@ const ContactPage = () => {
             <h3 className="text-xl font-bold text-white mb-2">Email Us</h3>
             <p className="text-gray-400 mb-4">Drop us a line anytime</p>
             <a
-              href="mailto:hello@delishprotein.com"
+              href="mailto:hello@delishhealthyfood.com"
               className={`${theme.text || 'text-blue-400'} hover:underline`}
             >
-              hello@delishprotein.com
+              hello@delishhealthyfood.com
             </a>
           </div>
 
@@ -40,10 +40,10 @@ const ContactPage = () => {
             <h3 className="text-xl font-bold text-white mb-2">Feedback</h3>
             <p className="text-gray-400 mb-4">Share your thoughts</p>
             <a
-              href="mailto:feedback@delishprotein.com"
+              href="mailto:feedback@delishhealthyfood.com"
               className={`${theme.text || 'text-blue-400'} hover:underline`}
             >
-              feedback@delishprotein.com
+              feedback@delishhealthyfood.com
             </a>
           </div>
         </div>

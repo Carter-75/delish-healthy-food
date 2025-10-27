@@ -39,7 +39,7 @@ const Navigation = () => {
             </div>
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-white flex items-center gap-2">
-                Delish Protein
+                Delish Healthy Food
                 <Sparkles className={`w-5 h-5 ${theme.text || 'text-blue-400'} animate-pulseGlow`} />
               </h1>
             </div>
