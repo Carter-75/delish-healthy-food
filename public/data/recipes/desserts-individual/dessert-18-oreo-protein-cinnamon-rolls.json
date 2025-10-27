@@ -1,0 +1,30 @@
+{
+  "id": 18,
+  "name": "Oreo Protein Cinnamon Rolls",
+  "type": "individual",
+  "servings": 8,
+  "ingredients": [
+    "1 cup Self-rising flour",
+    "1 cup Greek yogurt (non-fat)",
+    "6 Oreos or sugar-free sandwich cookies (crushed)",
+    "1 tsp Cinnamon",
+    "2 scoops Vanilla protein powder (for frosting)",
+    "2 tbsp Almond milk (for frosting)"
+  ],
+  "instructions": [
+    "Mix flour and Greek yogurt to form dough",
+    "Roll dough into rectangle",
+    "Press crushed Oreos and cinnamon into dough",
+    "Roll up and slice into 8 rolls",
+    "Place in greased baking dish",
+    "Bake at 375°F for 20 minutes",
+    "Mix vanilla protein powder with almond milk for frosting",
+    "Top warm rolls with vanilla protein frosting"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 255,
+    "proteinPerServing": 16,
+    "carbsPerServing": 32,
+    "fatPerServing": 6
+  }
+}

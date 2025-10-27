@@ -1,0 +1,27 @@
+{
+  "id": 12,
+  "name": "Salted Peanut Butter Protein Fudge",
+  "type": "individual",
+  "servings": 12,
+  "ingredients": [
+    "1/2 cup Peanut butter (natural)",
+    "2 scoops Vanilla protein powder",
+    "2 tbsp Coconut oil (melted)",
+    "Pinch sea salt"
+  ],
+  "instructions": [
+    "Melt peanut butter and coconut oil together",
+    "Mix in vanilla protein powder until smooth",
+    "Add pinch of sea salt and stir",
+    "Pour into small tray lined with parchment",
+    "Freeze for 1 hour until solid",
+    "Cut into 12 pieces",
+    "Store in freezer"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 150,
+    "proteinPerServing": 10,
+    "carbsPerServing": 8,
+    "fatPerServing": 10
+  }
+}

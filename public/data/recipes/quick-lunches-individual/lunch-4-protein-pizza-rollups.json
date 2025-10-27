@@ -1,0 +1,27 @@
+{
+  "id": 4,
+  "name": "Protein Pizza Roll-Ups",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "1 Low-carb wrap or tortilla",
+    "3 tbsp Marinara sauce",
+    "1/2 cup Shredded mozzarella",
+    "3 oz Chicken breast (diced)"
+  ],
+  "instructions": [
+    "Lay low-carb wrap flat",
+    "Spread marinara sauce evenly",
+    "Sprinkle shredded mozzarella",
+    "Add diced chicken pieces",
+    "Roll up tightly",
+    "Air fry at 375°F for 5-7 minutes until crispy",
+    "Slice and serve hot"
+  ],
+  "nutrition": {
+    "calories": 355,
+    "protein": 34,
+    "carbs": 26,
+    "fat": 14
+  }
+}

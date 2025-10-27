@@ -1,0 +1,25 @@
+{
+  "id": 15,
+  "name": "Birthday Cake Protein Truffles",
+  "type": "individual",
+  "servings": 10,
+  "ingredients": [
+    "2 scoops Vanilla protein powder",
+    "1/2 cup Greek yogurt (non-fat)",
+    "3 tbsp Sugar-free sprinkles"
+  ],
+  "instructions": [
+    "Combine vanilla protein powder with Greek yogurt",
+    "Mix until dough forms (add more yogurt if too dry)",
+    "Roll mixture into 10 small balls",
+    "Roll each ball in sugar-free sprinkles",
+    "Chill in refrigerator for 30 minutes",
+    "Store in refrigerator up to 5 days"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 105,
+    "proteinPerServing": 8,
+    "carbsPerServing": 12,
+    "fatPerServing": 2
+  }
+}

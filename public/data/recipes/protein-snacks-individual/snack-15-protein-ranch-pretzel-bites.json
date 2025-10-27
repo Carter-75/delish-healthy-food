@@ -1,0 +1,27 @@
+{
+  "id": 15,
+  "name": "Protein Ranch Pretzel Bites",
+  "type": "individual",
+  "servings": 8,
+  "ingredients": [
+    "1 cup Self-rising flour",
+    "1 cup Greek yogurt (non-fat)",
+    "2 tbsp Ranch seasoning",
+    "1 Egg (beaten, for wash)"
+  ],
+  "instructions": [
+    "Mix flour and Greek yogurt to form dough",
+    "Knead dough until smooth",
+    "Roll dough and cut into small pretzel bite pieces",
+    "Brush each piece with beaten egg wash",
+    "Sprinkle ranch seasoning over bites",
+    "Air fry at 375°F for 8-10 minutes until golden",
+    "Serve warm"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 115,
+    "proteinPerServing": 9,
+    "carbsPerServing": 17,
+    "fatPerServing": 2
+  }
+}

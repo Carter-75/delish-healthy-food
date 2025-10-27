@@ -1,0 +1,32 @@
+{
+  "id": 5,
+  "name": "Mediterranean Chicken Power Bowl",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "6 oz Chicken breast (sliced)",
+    "1 cup Couscous (cooked)",
+    "1/2 cup Cherry tomatoes (halved)",
+    "1/2 cup Cucumber (diced)",
+    "2 tbsp Red onion (diced)",
+    "2 tbsp Olives (sliced)",
+    "2 tbsp Feta cheese (crumbled)",
+    "1 tbsp Olive oil",
+    "1 Lemon wedge"
+  ],
+  "instructions": [
+    "Cook couscous according to package directions",
+    "Season and cook chicken breast, then slice",
+    "Arrange couscous as base in bowl",
+    "Add sliced chicken, cherry tomatoes, cucumber, red onion, and olives",
+    "Top with crumbled feta cheese",
+    "Mix lightly with lemon juice and olive oil",
+    "Serve immediately"
+  ],
+  "nutrition": {
+    "calories": 510,
+    "protein": 42,
+    "carbs": 48,
+    "fat": 16
+  }
+}

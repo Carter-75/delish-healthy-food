@@ -2,61 +2,61 @@
   {
     "id": "chicken-omelettes",
     "title": "Chicken Egg Omelettes",
-    "description": "9 Delicious Variations",
+    "description": "13 Delicious Variations",
     "cookingTime": "30-40 mins",
     "icon": "ChefHat",
     "hasBase": true,
     "hasVariations": true,
-    "totalRecipes": 9
+    "totalRecipes": 13
   },
   {
     "id": "protein-bowls",
     "title": "Protein Power Bowls",
-    "description": "5 Global Flavors",
+    "description": "9 Global Flavors",
     "cookingTime": "25-35 mins",
     "icon": "UtensilsCrossed",
     "hasBase": false,
     "hasVariations": false,
-    "totalRecipes": 5
+    "totalRecipes": 9
   },
   {
     "id": "desserts",
     "title": "Simple Delicious Desserts",
-    "description": "12 Sweet Treats",
+    "description": "22 Sweet Treats",
     "cookingTime": "15-60 mins",
     "icon": "IceCream",
+    "hasBase": false,
+    "hasVariations": false,
+    "totalRecipes": 22
+  },
+  {
+    "id": "protein-snacks",
+    "title": "Protein-Rich Snacks",
+    "description": "17 Quick Bites",
+    "cookingTime": "5-15 mins",
+    "icon": "Apple",
+    "hasBase": false,
+    "hasVariations": false,
+    "totalRecipes": 17
+  },
+  {
+    "id": "quick-lunches",
+    "title": "Quick Protein Lunches",
+    "description": "12 Easy Meals",
+    "cookingTime": "30-40 mins",
+    "icon": "Clock",
     "hasBase": false,
     "hasVariations": false,
     "totalRecipes": 12
   },
   {
-    "id": "protein-snacks",
-    "title": "Protein-Rich Snacks",
-    "description": "9 Quick Bites",
-    "cookingTime": "5-15 mins",
-    "icon": "Apple",
-    "hasBase": false,
-    "hasVariations": false,
-    "totalRecipes": 9
-  },
-  {
-    "id": "quick-lunches",
-    "title": "Quick Protein Lunches",
-    "description": "4 Easy Meals",
-    "cookingTime": "30-40 mins",
-    "icon": "Clock",
-    "hasBase": false,
-    "hasVariations": false,
-    "totalRecipes": 4
-  },
-  {
     "id": "smoothie-bowls",
     "title": "Smoothie Bowls",
-    "description": "1 Refreshing Bowl",
+    "description": "2 Refreshing Bowls",
     "cookingTime": "10-15 mins",
     "icon": "IceCream",
     "hasBase": false,
     "hasVariations": false,
-    "totalRecipes": 1
+    "totalRecipes": 2
   }
 ]

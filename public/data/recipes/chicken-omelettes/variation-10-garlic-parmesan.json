@@ -1,0 +1,24 @@
+{
+  "id": 10,
+  "name": "Garlic Parmesan",
+  "type": "variation",
+  "additionalIngredients": [
+    "Parmesan cheese (grated)",
+    "Garlic powder",
+    "Light alfredo sauce (drizzle)"
+  ],
+  "instructions": [
+    "Season and cook chicken chunks with garlic powder",
+    "Make omelette with parmesan cheese and spinach",
+    "Add garlic chicken to omelette",
+    "Drizzle with light alfredo sauce",
+    "Top with mixed greens, lentils, pumpkin seeds, and chia seeds",
+    "Fold and serve hot"
+  ],
+  "nutrition": {
+    "totalCalories": 2220,
+    "perServingCalories": 555,
+    "totalProtein": 192,
+    "perServingProtein": 48
+  }
+}

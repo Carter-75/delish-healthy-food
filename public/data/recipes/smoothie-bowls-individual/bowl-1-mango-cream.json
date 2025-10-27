@@ -1,0 +1,28 @@
+{
+  "id": 1,
+  "name": "Mango Cream Smoothie Bowl",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "1 cup Frozen mango chunks",
+    "1/2 cup Greek yogurt (non-fat)",
+    "1 scoop Vanilla whey protein",
+    "1/4 cup Almond milk (unsweetened)",
+    "2 tbsp Light granola (for topping)"
+  ],
+  "instructions": [
+    "Add frozen mango, Greek yogurt, vanilla whey, and almond milk to blender",
+    "Blend on high until thick and creamy",
+    "Should be thicker than a regular smoothie",
+    "Pour into a bowl",
+    "Top with light granola",
+    "Optional: Add fresh mango slices, coconut flakes, or chia seeds",
+    "Serve immediately with a spoon"
+  ],
+  "nutrition": {
+    "calories": 345,
+    "protein": 31,
+    "carbs": 45,
+    "fat": 6
+  }
+}

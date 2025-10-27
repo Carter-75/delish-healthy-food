@@ -1,0 +1,29 @@
+{
+  "id": 14,
+  "name": "Cherry Brownie Protein Bars",
+  "type": "individual",
+  "servings": 9,
+  "ingredients": [
+    "1/2 cup Cocoa powder",
+    "2 scoops Chocolate whey protein",
+    "1 cup Almond flour",
+    "1/2 cup Cherries (chopped)",
+    "3 Eggs",
+    "1 tsp Baking powder"
+  ],
+  "instructions": [
+    "Preheat oven to 350°F",
+    "Mix all dry ingredients in a bowl",
+    "Beat eggs and fold into dry mixture",
+    "Fold in chopped cherries",
+    "Pour into greased 8x8 pan",
+    "Bake for 18-22 minutes until set",
+    "Cool completely before slicing into 9 bars"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 195,
+    "proteinPerServing": 14,
+    "carbsPerServing": 13,
+    "fatPerServing": 10
+  }
+}

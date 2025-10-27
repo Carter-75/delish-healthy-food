@@ -1,0 +1,27 @@
+{
+  "id": 16,
+  "name": "High-Protein Cinnamon Swirl Rice Cakes",
+  "type": "individual",
+  "servings": 4,
+  "ingredients": [
+    "4 Rice cakes",
+    "1/2 cup Greek yogurt (non-fat)",
+    "1 scoop Vanilla protein powder",
+    "2 tsp Cinnamon",
+    "Extra cinnamon for dusting"
+  ],
+  "instructions": [
+    "Mix Greek yogurt with vanilla protein powder",
+    "Add 1 tsp cinnamon to yogurt mixture",
+    "Spread protein cinnamon yogurt frosting on each rice cake",
+    "Dust with extra cinnamon on top",
+    "Serve immediately or refrigerate",
+    "Best consumed within 2 hours"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 165,
+    "proteinPerServing": 14,
+    "carbsPerServing": 22,
+    "fatPerServing": 2
+  }
+}

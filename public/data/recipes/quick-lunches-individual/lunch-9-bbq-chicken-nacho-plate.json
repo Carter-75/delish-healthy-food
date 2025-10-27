@@ -1,0 +1,26 @@
+{
+  "id": 9,
+  "name": "BBQ Chicken Nacho Plate",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "6 oz Chicken breast (shredded)",
+    "2 tbsp Greek yogurt ranch",
+    "2 tbsp Sugar-free BBQ sauce",
+    "2 oz Baked tortilla chips",
+    "Optional: shredded cheese for melting"
+  ],
+  "instructions": [
+    "Mix shredded chicken with Greek yogurt ranch and BBQ sauce",
+    "Arrange baked tortilla chips on plate",
+    "Top chips with BBQ ranch chicken mixture",
+    "Optional: Sprinkle cheese and microwave 30 seconds to melt",
+    "Serve immediately"
+  ],
+  "nutrition": {
+    "calories": 520,
+    "protein": 44,
+    "carbs": 48,
+    "fat": 16
+  }
+}

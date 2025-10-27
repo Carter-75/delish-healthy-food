@@ -1,0 +1,25 @@
+{
+  "id": 11,
+  "name": "Cottage Cheese Nacho Dip",
+  "type": "individual",
+  "servings": 4,
+  "ingredients": [
+    "1 cup Cottage cheese (low-fat)",
+    "2 tsp Taco seasoning",
+    "1/4 cup Salsa"
+  ],
+  "instructions": [
+    "Add cottage cheese and taco seasoning to blender",
+    "Blend until smooth and creamy",
+    "Transfer to serving bowl",
+    "Swirl salsa into the cottage cheese mixture",
+    "Serve with bell pepper strips, cucumber slices, or baked tortilla chips",
+    "Store in refrigerator up to 3 days"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 110,
+    "proteinPerServing": 14,
+    "carbsPerServing": 8,
+    "fatPerServing": 3
+  }
+}

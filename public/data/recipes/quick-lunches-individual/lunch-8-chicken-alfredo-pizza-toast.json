@@ -1,0 +1,26 @@
+{
+  "id": 8,
+  "name": "Chicken Alfredo Pizza Toast",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "2 slices Low-carb toast",
+    "4 oz Chicken breast (diced)",
+    "1/4 cup Cauliflower alfredo sauce",
+    "1/2 cup Shredded mozzarella"
+  ],
+  "instructions": [
+    "Toast bread slices until lightly crispy",
+    "Spread cauliflower alfredo sauce on each slice",
+    "Add diced chicken pieces",
+    "Top with shredded mozzarella",
+    "Broil for 2-3 minutes until cheese is bubbly",
+    "Serve hot"
+  ],
+  "nutrition": {
+    "calories": 510,
+    "protein": 45,
+    "carbs": 34,
+    "fat": 22
+  }
+}

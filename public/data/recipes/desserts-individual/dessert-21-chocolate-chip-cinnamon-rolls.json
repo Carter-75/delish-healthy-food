@@ -1,0 +1,30 @@
+{
+  "id": 21,
+  "name": "Chocolate Chip Cinnamon Rolls",
+  "type": "individual",
+  "servings": 8,
+  "ingredients": [
+    "1 package Yeast dough (store-bought or homemade)",
+    "2 tsp Cinnamon",
+    "1/2 cup Sugar-free chocolate chips",
+    "3 tbsp Brown sugar alternative",
+    "1/4 cup Light cream cheese (for icing)",
+    "1 tbsp Almond milk (for icing)"
+  ],
+  "instructions": [
+    "Roll out yeast dough into rectangle",
+    "Sprinkle dough with cinnamon, brown sugar alternative, and chocolate chips",
+    "Roll up tightly and slice into 8 rolls",
+    "Place in greased baking dish",
+    "Bake at 375°F for 20-25 minutes until golden",
+    "Mix cream cheese with almond milk for icing",
+    "Top warm rolls with icing",
+    "Serve immediately"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 260,
+    "proteinPerServing": 7,
+    "carbsPerServing": 38,
+    "fatPerServing": 9
+  }
+}

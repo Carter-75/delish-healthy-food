@@ -1,0 +1,27 @@
+{
+  "id": 14,
+  "name": "Chocolate Covered Protein Strawberries",
+  "type": "individual",
+  "servings": 4,
+  "ingredients": [
+    "12 Fresh strawberries",
+    "2 scoops Chocolate protein powder",
+    "2 tbsp Cocoa powder",
+    "1/4 cup Almond milk"
+  ],
+  "instructions": [
+    "Mix chocolate protein powder, cocoa powder, and almond milk",
+    "Stir until smooth chocolate coating forms (add more milk if too thick)",
+    "Dip each strawberry into chocolate protein coating",
+    "Place dipped strawberries on parchment-lined tray",
+    "Refrigerate for 30 minutes until coating sets",
+    "Serve chilled (3 strawberries per serving)",
+    "Best consumed within 24 hours"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 90,
+    "proteinPerServing": 6,
+    "carbsPerServing": 12,
+    "fatPerServing": 2
+  }
+}

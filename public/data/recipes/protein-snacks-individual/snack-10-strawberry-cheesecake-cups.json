@@ -1,0 +1,26 @@
+{
+  "id": 10,
+  "name": "Strawberry Cheesecake Protein Cups",
+  "type": "individual",
+  "servings": 6,
+  "ingredients": [
+    "1 cup Greek yogurt (non-fat)",
+    "4 oz Light cream cheese (softened)",
+    "1/2 cup Crushed strawberries",
+    "2 scoops Vanilla protein powder"
+  ],
+  "instructions": [
+    "Whip Greek yogurt and light cream cheese together until smooth",
+    "Add vanilla protein powder and mix well",
+    "Fold in crushed strawberries",
+    "Divide mixture into 6 small cups or silicone molds",
+    "Chill in refrigerator for 2 hours to set",
+    "Store in refrigerator up to 4 days"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 185,
+    "proteinPerServing": 15,
+    "carbsPerServing": 14,
+    "fatPerServing": 8
+  }
+}

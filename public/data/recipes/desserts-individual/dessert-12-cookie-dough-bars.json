@@ -1,0 +1,26 @@
+{
+  "id": 12,
+  "name": "Cookie Dough Protein Bars",
+  "type": "individual",
+  "servings": 8,
+  "ingredients": [
+    "1 cup Almond flour",
+    "2 scoops Vanilla protein powder",
+    "1/4 cup Peanut butter",
+    "1/2 cup Sugar-free chocolate chips"
+  ],
+  "instructions": [
+    "Mix almond flour, protein powder, and peanut butter into dough",
+    "Fold in sugar-free chocolate chips",
+    "Press firmly into an 8x8 pan lined with parchment",
+    "Chill in refrigerator until firm (2-3 hours)",
+    "Slice into 8 bars",
+    "Store in refrigerator"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 210,
+    "proteinPerServing": 14,
+    "carbsPerServing": 12,
+    "fatPerServing": 13
+  }
+}

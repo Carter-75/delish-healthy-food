@@ -1,0 +1,25 @@
+{
+  "id": 13,
+  "name": "Chocolate Chip Cookie Dough Protein Cups",
+  "type": "individual",
+  "servings": 6,
+  "ingredients": [
+    "1 cup Vanilla protein yogurt",
+    "1/2 cup Almond flour",
+    "1/3 cup Sugar-free chocolate chips"
+  ],
+  "instructions": [
+    "Mix vanilla protein yogurt with almond flour until dough forms",
+    "Fold in sugar-free chocolate chips",
+    "Press mixture into silicone cupcake molds",
+    "Chill in refrigerator for 1 hour until firm",
+    "Pop out of molds and serve",
+    "Store in refrigerator"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 165,
+    "proteinPerServing": 13,
+    "carbsPerServing": 10,
+    "fatPerServing": 9
+  }
+}

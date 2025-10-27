@@ -1,0 +1,30 @@
+{
+  "id": 17,
+  "name": "Protein Cinnamon Rolls",
+  "type": "individual",
+  "servings": 8,
+  "ingredients": [
+    "1 cup Self-rising flour",
+    "1 cup Greek yogurt (non-fat)",
+    "2 tsp Cinnamon",
+    "3 tbsp Erythritol sweetener",
+    "1/4 cup Light cream cheese (for frosting)",
+    "1 tbsp Almond milk (for frosting)"
+  ],
+  "instructions": [
+    "Mix flour and Greek yogurt to form dough",
+    "Roll dough into rectangle on floured surface",
+    "Mix cinnamon and erythritol, spread over dough",
+    "Roll up tightly and slice into 8 rolls",
+    "Place in greased baking dish",
+    "Bake at 375°F for 18-20 minutes",
+    "Mix cream cheese with almond milk for frosting",
+    "Top warm rolls with frosting"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 210,
+    "proteinPerServing": 14,
+    "carbsPerServing": 28,
+    "fatPerServing": 4
+  }
+}

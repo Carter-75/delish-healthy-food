@@ -1,0 +1,29 @@
+{
+  "id": 19,
+  "name": "Cinnamon Apple Pie Rolls",
+  "type": "individual",
+  "servings": 8,
+  "ingredients": [
+    "1 package Yeast dough (store-bought or homemade)",
+    "1 cup Diced apples",
+    "2 tsp Cinnamon",
+    "3 tbsp Erythritol sweetener",
+    "2 tbsp Sugar-free caramel sauce (for drizzle)"
+  ],
+  "instructions": [
+    "Roll out yeast dough into rectangle",
+    "Sauté diced apples with cinnamon and sweetener until soft",
+    "Spread apple mixture over dough",
+    "Roll up tightly and slice into 8 rolls",
+    "Place in greased baking dish",
+    "Bake at 375°F for 22-25 minutes until golden",
+    "Drizzle with sugar-free caramel while warm",
+    "Serve immediately"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 240,
+    "proteinPerServing": 6,
+    "carbsPerServing": 42,
+    "fatPerServing": 5
+  }
+}

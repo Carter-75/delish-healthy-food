@@ -1,0 +1,26 @@
+{
+  "id": 9,
+  "name": "Brownie Batter Protein Dip",
+  "type": "individual",
+  "servings": 4,
+  "ingredients": [
+    "1 cup Greek yogurt (non-fat)",
+    "2 scoops Chocolate whey protein",
+    "2 tbsp Cocoa powder",
+    "3 tbsp Almond milk (unsweetened)"
+  ],
+  "instructions": [
+    "Add all ingredients to a bowl",
+    "Mix until creamy and smooth",
+    "Adjust consistency with more almond milk if needed",
+    "Chill in refrigerator until ready to serve",
+    "Serve with fresh fruit, pretzels, or graham crackers",
+    "Store in refrigerator up to 3 days"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 130,
+    "proteinPerServing": 18,
+    "carbsPerServing": 10,
+    "fatPerServing": 2
+  }
+}

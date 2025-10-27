@@ -1,0 +1,30 @@
+{
+  "id": 20,
+  "name": "Pumpkin Spice Cinnamon Rolls",
+  "type": "individual",
+  "servings": 8,
+  "ingredients": [
+    "1 cup Self-rising flour",
+    "1 cup Greek yogurt (non-fat)",
+    "1/2 cup Pumpkin puree",
+    "2 tsp Pumpkin spice",
+    "1/4 cup Light cream cheese (for frosting)",
+    "1 tbsp Almond milk (for frosting)"
+  ],
+  "instructions": [
+    "Mix flour and Greek yogurt to form dough",
+    "Roll dough into rectangle",
+    "Mix pumpkin puree with pumpkin spice and spread over dough",
+    "Roll up and slice into 8 rolls",
+    "Place in greased baking dish",
+    "Bake at 375°F for 20-22 minutes",
+    "Mix cream cheese with almond milk for frosting",
+    "Frost while warm and serve"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 225,
+    "proteinPerServing": 10,
+    "carbsPerServing": 32,
+    "fatPerServing": 5
+  }
+}

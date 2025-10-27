@@ -1,0 +1,28 @@
+{
+  "id": 13,
+  "name": "Apple Pie Protein Oats Bars",
+  "type": "individual",
+  "servings": 8,
+  "ingredients": [
+    "2 cups Rolled oats",
+    "2 scoops Cinnamon protein powder",
+    "1 cup Diced apples",
+    "1 tsp Cinnamon",
+    "1/2 cup Almond milk"
+  ],
+  "instructions": [
+    "Cook oats with almond milk until thick",
+    "Add diced apples and cinnamon, cook 3-4 minutes",
+    "Mix in cinnamon protein powder",
+    "Press mixture firmly into 8x8 pan",
+    "Chill in refrigerator for 2 hours",
+    "Slice into 8 bars",
+    "Store in refrigerator"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 210,
+    "proteinPerServing": 13,
+    "carbsPerServing": 30,
+    "fatPerServing": 5
+  }
+}

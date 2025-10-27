@@ -1,0 +1,28 @@
+{
+  "id": 7,
+  "name": "Crispy Chickpea Chicken Bowl",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "6 oz Chicken breast (sliced)",
+    "1/2 cup Chickpeas (roasted)",
+    "1 cup Brown rice (cooked)",
+    "1 cup Fresh spinach",
+    "2 tbsp Tahini drizzle"
+  ],
+  "instructions": [
+    "Roast chickpeas at 400°F for 20-25 minutes until crispy",
+    "Cook brown rice according to package directions",
+    "Season and cook chicken breast",
+    "Layer bowl with fresh spinach as base",
+    "Add brown rice and sliced chicken",
+    "Top with crispy chickpeas",
+    "Drizzle with tahini and serve"
+  ],
+  "nutrition": {
+    "calories": 530,
+    "protein": 43,
+    "carbs": 54,
+    "fat": 14
+  }
+}

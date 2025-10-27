@@ -1,0 +1,28 @@
+{
+  "id": 11,
+  "name": "Chicken Caesar Melt",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "2 slices Low-carb bread",
+    "6 oz Chicken breast (diced)",
+    "3 tbsp Greek yogurt Caesar dressing",
+    "2 tbsp Parmesan cheese (grated)",
+    "Handful romaine lettuce"
+  ],
+  "instructions": [
+    "Mix diced chicken with Greek yogurt Caesar dressing",
+    "Place chicken Caesar mixture on one slice of bread",
+    "Sprinkle with parmesan cheese",
+    "Top with second slice of bread",
+    "Toast in skillet until bread is golden and cheese melts",
+    "Open sandwich and add fresh romaine lettuce",
+    "Serve immediately"
+  ],
+  "nutrition": {
+    "calories": 500,
+    "protein": 46,
+    "carbs": 32,
+    "fat": 20
+  }
+}

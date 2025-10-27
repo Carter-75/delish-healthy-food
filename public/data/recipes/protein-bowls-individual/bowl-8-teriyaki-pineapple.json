@@ -1,0 +1,28 @@
+{
+  "id": 8,
+  "name": "Teriyaki Pineapple Bowl",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "6 oz Chicken breast (diced)",
+    "1/2 cup Pineapple chunks (fresh or canned)",
+    "1 cup Steamed rice (white or brown)",
+    "3 tbsp Sugar-free teriyaki sauce",
+    "2 tbsp Green onions (sliced)"
+  ],
+  "instructions": [
+    "Cook rice and keep warm",
+    "Cook chicken in sugar-free teriyaki sauce until glazed",
+    "Plate rice as base in bowl",
+    "Add teriyaki chicken over rice",
+    "Top with pineapple chunks",
+    "Garnish with sliced green onions",
+    "Serve hot"
+  ],
+  "nutrition": {
+    "calories": 515,
+    "protein": 44,
+    "carbs": 62,
+    "fat": 8
+  }
+}

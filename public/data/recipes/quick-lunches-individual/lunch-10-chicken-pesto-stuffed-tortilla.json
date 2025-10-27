@@ -1,0 +1,28 @@
+{
+  "id": 10,
+  "name": "Chicken Pesto Stuffed Tortilla",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "1 Large tortilla",
+    "6 oz Chicken breast (sliced)",
+    "2 tbsp Pesto sauce",
+    "1/2 cup Shredded mozzarella",
+    "Handful fresh spinach"
+  ],
+  "instructions": [
+    "Lay tortilla flat",
+    "Spread pesto sauce in center",
+    "Layer sliced chicken, mozzarella, and spinach",
+    "Fold tortilla sides in and roll tightly",
+    "Pan-toast over medium heat until golden on all sides",
+    "Cheese should be melted inside",
+    "Slice and serve hot"
+  ],
+  "nutrition": {
+    "calories": 535,
+    "protein": 48,
+    "carbs": 32,
+    "fat": 24
+  }
+}

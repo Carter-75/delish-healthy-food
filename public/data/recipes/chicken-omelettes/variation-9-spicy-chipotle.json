@@ -1,0 +1,23 @@
+{
+  "id": 9,
+  "name": "Spicy Chipotle",
+  "type": "variation",
+  "additionalIngredients": [
+    "Chipotle sauce (sugar-free)",
+    "Smoked paprika",
+    "Cheddar cheese"
+  ],
+  "instructions": [
+    "Cook chicken chunks with chipotle sauce and smoked paprika",
+    "Make omelette with cheddar cheese and fresh spinach",
+    "Add spicy chipotle chicken to omelette",
+    "Top with mixed greens, lentils, pumpkin seeds, and chia seeds",
+    "Fold and serve hot"
+  ],
+  "nutrition": {
+    "totalCalories": 2180,
+    "perServingCalories": 545,
+    "totalProtein": 184,
+    "perServingProtein": 46
+  }
+}

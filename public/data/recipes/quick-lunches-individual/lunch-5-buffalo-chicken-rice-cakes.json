@@ -1,0 +1,25 @@
+{
+  "id": 5,
+  "name": "Buffalo Chicken Rice Cakes",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "2 Rice cakes",
+    "4 oz Chicken breast (shredded)",
+    "2 tbsp Buffalo sauce",
+    "2 tbsp Greek yogurt ranch drizzle"
+  ],
+  "instructions": [
+    "Mix shredded chicken with buffalo sauce",
+    "Spread buffalo chicken mixture on rice cakes",
+    "Drizzle with Greek yogurt ranch",
+    "Serve immediately",
+    "Can be eaten cold or warm"
+  ],
+  "nutrition": {
+    "calories": 195,
+    "protein": 20,
+    "carbs": 18,
+    "fat": 5
+  }
+}

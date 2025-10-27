@@ -1,0 +1,28 @@
+{
+  "id": 6,
+  "name": "Creamy Salsa Chicken Bowl",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "6 oz Chicken breast (diced)",
+    "2 cups Cauliflower rice",
+    "1/4 cup Salsa",
+    "3 tbsp Greek yogurt (non-fat)",
+    "1 cup Shredded lettuce"
+  ],
+  "instructions": [
+    "Heat cauliflower rice in a pan until tender",
+    "Cook diced chicken until done",
+    "Mix chicken with salsa and Greek yogurt",
+    "Build bowl with cauliflower rice as base",
+    "Add shredded lettuce",
+    "Top with creamy salsa chicken mixture",
+    "Serve immediately"
+  ],
+  "nutrition": {
+    "calories": 470,
+    "protein": 44,
+    "carbs": 38,
+    "fat": 12
+  }
+}

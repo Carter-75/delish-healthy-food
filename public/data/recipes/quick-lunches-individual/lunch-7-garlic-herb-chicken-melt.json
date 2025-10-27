@@ -1,0 +1,29 @@
+{
+  "id": 7,
+  "name": "Garlic Herb Chicken Melt Sandwich",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "2 slices Low-carb bread",
+    "6 oz Chicken breast (sliced)",
+    "3 tbsp Greek yogurt",
+    "1 tsp Garlic powder",
+    "1 tsp Mixed herbs (basil, oregano, parsley)",
+    "2 slices Provolone cheese"
+  ],
+  "instructions": [
+    "Mix Greek yogurt with garlic powder and herbs for spread",
+    "Spread yogurt herb sauce on both slices of bread",
+    "Layer sliced chicken on one slice",
+    "Add provolone cheese slices",
+    "Top with second slice of bread",
+    "Toast in skillet over medium heat until golden and cheese melts",
+    "Serve hot"
+  ],
+  "nutrition": {
+    "calories": 495,
+    "protein": 44,
+    "carbs": 32,
+    "fat": 20
+  }
+}

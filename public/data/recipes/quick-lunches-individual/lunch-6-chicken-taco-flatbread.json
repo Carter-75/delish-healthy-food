@@ -1,0 +1,27 @@
+{
+  "id": 6,
+  "name": "Chicken Taco Flatbread",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "1 High-protein flatbread",
+    "6 oz Chicken breast (diced)",
+    "1 tbsp Taco seasoning",
+    "1/2 cup Shredded cheese (Mexican blend)",
+    "3 tbsp Salsa"
+  ],
+  "instructions": [
+    "Season chicken with taco seasoning and cook",
+    "Spread salsa evenly on flatbread",
+    "Add seasoned chicken pieces",
+    "Sprinkle shredded cheese on top",
+    "Bake at 400°F for 8-10 minutes until cheese melts",
+    "Slice and serve hot"
+  ],
+  "nutrition": {
+    "calories": 520,
+    "protein": 46,
+    "carbs": 38,
+    "fat": 18
+  }
+}

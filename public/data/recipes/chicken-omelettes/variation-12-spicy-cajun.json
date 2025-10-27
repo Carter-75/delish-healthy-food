@@ -1,0 +1,23 @@
+{
+  "id": 12,
+  "name": "Spicy Cajun",
+  "type": "variation",
+  "additionalIngredients": [
+    "Cajun seasoning",
+    "Diced bell peppers",
+    "Pepper jack cheese"
+  ],
+  "instructions": [
+    "Cook chicken chunks with Cajun seasoning and diced bell peppers",
+    "Make omelette with pepper jack cheese and spinach",
+    "Add spicy Cajun chicken and peppers to omelette",
+    "Top with mixed greens, lentils, pumpkin seeds, and chia seeds",
+    "Fold and serve hot"
+  ],
+  "nutrition": {
+    "totalCalories": 2240,
+    "perServingCalories": 560,
+    "totalProtein": 192,
+    "perServingProtein": 48
+  }
+}
