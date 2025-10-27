@@ -1,0 +1,32 @@
+{
+  "id": 2,
+  "name": "Tex-Mex Bowl",
+  "category": "protein-bowl",
+  "servings": 4,
+  "ingredients": [
+    "24 oz Chicken Breast (cubed)",
+    "2 cups Black Beans (cooked)",
+    "2 cups Corn",
+    "1 cup Salsa",
+    "1 Avocado (sliced)",
+    "1 cup Greek Yogurt (plain)",
+    "2 tbsp Taco Seasoning",
+    "Fresh Cilantro",
+    "Lime Wedges"
+  ],
+  "nutrition": {
+    "totalCalories": 2050,
+    "perServingCalories": 512,
+    "totalProtein": 170,
+    "perServingProtein": 43
+  },
+  "instructions": [
+    "Season chicken with taco seasoning and cook until done",
+    "Warm black beans and corn in separate pans",
+    "Dice chicken into bite-sized pieces",
+    "Layer black beans, corn, chicken, and salsa in bowls",
+    "Top with avocado slices, Greek yogurt, and cilantro",
+    "Serve with lime wedges"
+  ],
+  "cookingTime": "25 minutes"
+}

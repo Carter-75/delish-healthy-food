@@ -1,0 +1,26 @@
+{
+  "id": 5,
+  "name": "Sharp Cheddar",
+  "category": "chicken-omelettes",
+  "ingredients": [
+    "4 oz Reduced-Fat Sharp Cheddar",
+    "1/4 cup Greek Yogurt",
+    "1 tsp Mustard Powder",
+    "1/2 cup Chicken Bone Broth",
+    "2 scoops Unflavored Whey Protein"
+  ],
+  "nutrition": {
+    "totalCalories": 2180,
+    "perServingCalories": 545,
+    "totalProtein": 185,
+    "perServingProtein": 46
+  },
+  "instructions": [
+    "Blend base ingredients with chicken bone broth until smooth",
+    "Pour mixture into pan and cook on medium heat",
+    "Add cheddar cheese, yogurt, mustard powder, and whey protein",
+    "Cook for 10-15 minutes, stirring occasionally",
+    "When nearly set, flip with plate to cook other side",
+    "Add mozzarella on top and cover until melted"
+  ]
+}

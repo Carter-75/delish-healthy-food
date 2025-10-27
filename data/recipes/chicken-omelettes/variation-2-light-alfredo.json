@@ -1,0 +1,26 @@
+{
+  "id": 2,
+  "name": "Light Alfredo",
+  "category": "chicken-omelettes",
+  "ingredients": [
+    "1 cup Cauliflower Alfredo Sauce",
+    "1/4 cup Unsweetened Almond Milk",
+    "2 tbsp Nutritional Yeast",
+    "1 tsp Garlic Powder",
+    "2 scoops Unflavored Whey Protein"
+  ],
+  "nutrition": {
+    "totalCalories": 2080,
+    "perServingCalories": 520,
+    "totalProtein": 178,
+    "perServingProtein": 45
+  },
+  "instructions": [
+    "Blend base ingredients with almond milk until smooth",
+    "Pour mixture into pan and cook on medium heat",
+    "Add alfredo sauce, nutritional yeast, garlic powder, and whey protein",
+    "Cook for 10-15 minutes, stirring occasionally",
+    "When nearly set, flip with plate to cook other side",
+    "Add mozzarella on top and cover until melted"
+  ]
+}

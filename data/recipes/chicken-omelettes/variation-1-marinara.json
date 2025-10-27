@@ -1,0 +1,26 @@
+{
+  "id": 1,
+  "name": "Marinara Style",
+  "category": "chicken-omelettes",
+  "ingredients": [
+    "1 cup Sugar-Free Marinara Sauce",
+    "2 tbsp Italian Seasoning",
+    "1/2 cup Chicken Bone Broth",
+    "2 cloves Minced Garlic",
+    "2 scoops Unflavored Whey Protein"
+  ],
+  "nutrition": {
+    "totalCalories": 2050,
+    "perServingCalories": 512,
+    "totalProtein": 175,
+    "perServingProtein": 44
+  },
+  "instructions": [
+    "Blend base ingredients with chicken bone broth until smooth",
+    "Pour mixture into pan and cook on medium heat",
+    "Add marinara sauce, garlic, Italian seasoning, and whey protein",
+    "Cook for 10-15 minutes, stirring occasionally",
+    "When nearly set, flip with plate to cook other side",
+    "Add mozzarella on top and cover until melted"
+  ]
+}

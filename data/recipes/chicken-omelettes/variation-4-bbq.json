@@ -1,0 +1,26 @@
+{
+  "id": 4,
+  "name": "BBQ Style",
+  "category": "chicken-omelettes",
+  "ingredients": [
+    "1/2 cup Sugar-Free BBQ Sauce",
+    "1/4 cup Apple Cider Vinegar",
+    "1 tbsp Smoked Paprika",
+    "1 tsp Chipotle Powder",
+    "2 scoops Unflavored Whey Protein"
+  ],
+  "nutrition": {
+    "totalCalories": 2150,
+    "perServingCalories": 537,
+    "totalProtein": 176,
+    "perServingProtein": 44
+  },
+  "instructions": [
+    "Blend base ingredients with apple cider vinegar until smooth",
+    "Pour mixture into pan and cook on medium heat",
+    "Add BBQ sauce, spices, and whey protein, mixing well",
+    "Cook for 10-15 minutes, stirring occasionally",
+    "When nearly set, flip with plate to cook other side",
+    "Add mozzarella on top and cover until melted"
+  ]
+}

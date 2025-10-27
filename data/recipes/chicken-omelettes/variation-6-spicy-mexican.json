@@ -1,0 +1,26 @@
+{
+  "id": 6,
+  "name": "Spicy Mexican",
+  "category": "chicken-omelettes",
+  "ingredients": [
+    "1 cup Salsa Verde",
+    "2 tbsp Taco Seasoning",
+    "1/2 cup Chicken Bone Broth",
+    "1 Jalapeño (diced)",
+    "2 scoops Unflavored Whey Protein"
+  ],
+  "nutrition": {
+    "totalCalories": 2100,
+    "perServingCalories": 525,
+    "totalProtein": 177,
+    "perServingProtein": 44
+  },
+  "instructions": [
+    "Blend base ingredients with chicken bone broth until smooth",
+    "Pour mixture into pan and cook on medium heat",
+    "Add salsa verde, taco seasoning, jalapeño, and whey protein",
+    "Cook for 10-15 minutes, stirring occasionally",
+    "When nearly set, flip with plate to cook other side",
+    "Add mozzarella on top and cover until melted"
+  ]
+}

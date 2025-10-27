@@ -1,0 +1,32 @@
+{
+  "id": 1,
+  "name": "Mediterranean Bowl",
+  "category": "protein-bowl",
+  "servings": 4,
+  "ingredients": [
+    "24 oz Chicken Breast (cubed)",
+    "2 cups Quinoa (cooked)",
+    "1 cup Cherry Tomatoes (halved)",
+    "1 cup Cucumber (diced)",
+    "1/2 cup Kalamata Olives",
+    "4 oz Feta Cheese (crumbled)",
+    "3 tbsp Olive Oil",
+    "2 tbsp Lemon Juice",
+    "Fresh Oregano"
+  ],
+  "nutrition": {
+    "totalCalories": 2100,
+    "perServingCalories": 525,
+    "totalProtein": 165,
+    "perServingProtein": 41
+  },
+  "instructions": [
+    "Season and grill chicken breast until cooked through",
+    "Prepare quinoa according to package directions",
+    "Chop vegetables and combine in a bowl",
+    "Whisk olive oil, lemon juice, and oregano for dressing",
+    "Assemble bowls with quinoa base, chicken, vegetables, and feta",
+    "Drizzle with dressing before serving"
+  ],
+  "cookingTime": "30 minutes"
+}

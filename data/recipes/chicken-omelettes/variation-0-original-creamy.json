@@ -1,0 +1,26 @@
+{
+  "id": 0,
+  "name": "Original Creamy Sauce",
+  "category": "chicken-omelettes",
+  "ingredients": [
+    "5.3 oz Plain Nonfat Greek Yogurt",
+    "2 oz Reduced-Fat Cream Cheese",
+    "One small scoop Ranch Seasoning",
+    "1 cup Chicken Bone Broth",
+    "2 scoops Unflavored Whey Protein"
+  ],
+  "nutrition": {
+    "totalCalories": 2115,
+    "perServingCalories": 529,
+    "totalProtein": 180,
+    "perServingProtein": 45
+  },
+  "instructions": [
+    "Blend base ingredients with chicken bone broth until smooth",
+    "Pour mixture into pan and cook on medium heat",
+    "Add yogurt, cream cheese, ranch seasoning, and whey protein",
+    "Cook for 10-15 minutes, stirring occasionally",
+    "When nearly set, flip with plate to cook other side",
+    "Add mozzarella on top and cover until melted"
+  ]
+}

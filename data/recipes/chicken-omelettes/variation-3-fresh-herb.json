@@ -1,0 +1,27 @@
+{
+  "id": 3,
+  "name": "Fresh Herb",
+  "category": "chicken-omelettes",
+  "ingredients": [
+    "1 cup Fresh Basil",
+    "1/2 cup Fresh Parsley",
+    "1/4 cup Olive Oil",
+    "2 cloves Garlic",
+    "2 scoops Unflavored Whey Protein",
+    "Lemon Juice to taste"
+  ],
+  "nutrition": {
+    "totalCalories": 2200,
+    "perServingCalories": 550,
+    "totalProtein": 182,
+    "perServingProtein": 46
+  },
+  "instructions": [
+    "Blend base ingredients with olive oil until smooth",
+    "Pour mixture into pan and cook on medium heat",
+    "Add blended herbs, garlic, lemon juice, and whey protein",
+    "Cook for 10-15 minutes, stirring occasionally",
+    "When nearly set, flip with plate to cook other side",
+    "Add mozzarella on top and cover until melted"
+  ]
+}
