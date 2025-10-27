@@ -40,14 +40,15 @@ const HomePage = () => {
 
   return (
     <div className="space-y-16">
+      {/* Hero Section - Amber/Orange Theme */}
       <HeroSection />
       
       <div className="container mx-auto px-4">
-        {/* Categories Section */}
+        {/* Categories Section - Green/Emerald Theme */}
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12 animate-fadeInUp">
             Explore Our
-            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 
+            <span className="bg-gradient-to-r from-emerald-400 via-green-400 to-teal-400 
               bg-clip-text text-transparent ml-3">
               Recipe Categories
             </span>
@@ -72,14 +73,15 @@ const HomePage = () => {
           )}
         </div>
 
-        {/* Additional Info Section */}
+        {/* Additional Info Section - Purple/Violet Theme */}
         <div className="max-w-4xl mx-auto mt-20 text-center animate-fadeInUp">
-          <div className="glass-effect rounded-2xl p-8 border border-white/10">
-            <Sparkles className="w-12 h-12 text-blue-400 mx-auto mb-4 animate-pulseGlow" />
-            <h3 className="text-2xl font-bold text-white mb-4">
+          <div className="glass-effect rounded-2xl p-8 border border-violet-500/20 bg-gradient-to-br from-violet-900/20 via-purple-900/20 to-fuchsia-900/20">
+            <Sparkles className="w-12 h-12 text-violet-400 mx-auto mb-4 animate-pulseGlow" />
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-violet-400 via-purple-400 to-fuchsia-400 
+              bg-clip-text text-transparent mb-4">
               More Delicious Recipes Coming Soon!
             </h3>
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-violet-200 leading-relaxed">
               We're constantly adding new high-protein recipes to help you reach your fitness goals. 
               Stay tuned for more smoothie bowls and additional recipe categories!
             </p>

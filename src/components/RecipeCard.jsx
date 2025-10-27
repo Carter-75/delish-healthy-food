@@ -6,7 +6,10 @@ import {
   Flame, 
   Beef,
   ChevronRight,
-  Sparkles
+  Sparkles,
+  Wheat,
+  Droplet,
+  Apple
 } from 'lucide-react';
 
 const RecipeCard = ({ recipe, categoryId, delay = 0 }) => {
@@ -42,23 +45,59 @@ const RecipeCard = ({ recipe, categoryId, delay = 0 }) => {
               transform group-hover:translate-x-1 transition-transform flex-shrink-0`} />
           </div>
 
-          {/* Nutrition Info */}
-          <div className="grid grid-cols-2 gap-4 mb-4">
+          {/* Nutrition Info - Full Macros */}
+          <div className="grid grid-cols-2 gap-3 mb-4">
+            {/* Calories */}
             <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'}`}>
-              <Flame className={`w-5 h-5 ${theme.text || 'text-orange-400'}`} />
+              <Flame className={`w-4 h-4 ${theme.text || 'text-orange-400'}`} />
               <div>
                 <p className="text-xs text-gray-400">Calories</p>
-                <p className={`font-bold ${theme.text || 'text-blue-400'}`}>
+                <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>
                   {recipe.nutrition?.perServingCalories || 'N/A'}
                 </p>
               </div>
             </div>
+            
+            {/* Protein */}
             <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'}`}>
-              <Beef className={`w-5 h-5 ${theme.text || 'text-red-400'}`} />
+              <Beef className={`w-4 h-4 ${theme.text || 'text-red-400'}`} />
               <div>
                 <p className="text-xs text-gray-400">Protein</p>
-                <p className={`font-bold ${theme.text || 'text-blue-400'}`}>
+                <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>
                   {recipe.nutrition?.perServingProtein || 'N/A'}g
+                </p>
+              </div>
+            </div>
+            
+            {/* Carbs */}
+            <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'}`}>
+              <Wheat className={`w-4 h-4 ${theme.text || 'text-yellow-400'}`} />
+              <div>
+                <p className="text-xs text-gray-400">Carbs</p>
+                <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>
+                  {recipe.nutrition?.perServingCarbs || 'N/A'}g
+                </p>
+              </div>
+            </div>
+            
+            {/* Fat */}
+            <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'}`}>
+              <Droplet className={`w-4 h-4 ${theme.text || 'text-blue-400'}`} />
+              <div>
+                <p className="text-xs text-gray-400">Fat</p>
+                <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>
+                  {recipe.nutrition?.perServingFat || 'N/A'}g
+                </p>
+              </div>
+            </div>
+            
+            {/* Fiber */}
+            <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'} col-span-2`}>
+              <Apple className={`w-4 h-4 ${theme.text || 'text-green-400'}`} />
+              <div>
+                <p className="text-xs text-gray-400">Fiber</p>
+                <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>
+                  {recipe.nutrition?.perServingFiber || 'N/A'}g
                 </p>
               </div>
             </div>
