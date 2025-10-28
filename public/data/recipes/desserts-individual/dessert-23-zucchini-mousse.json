@@ -1,0 +1,47 @@
+{
+  "id": 23,
+  "name": "Zucchini Mousse (Customizable)",
+  "category": "desserts",
+  "description": "Healthy, Creamy, Hidden Veggie Base - Add Whatever You Want!",
+  "servings": 4,
+  "ingredients": [
+    "2 cups raw zucchini, peeled and chopped",
+    "Your choice of flavor (see variations below)",
+    "2-3 tbsp maple syrup or honey (adjust to taste)",
+    "1 tsp vanilla extract (optional)",
+    "Pinch of salt"
+  ],
+  "nutrition": {
+    "totalCalories": 160,
+    "perServingCalories": 40,
+    "totalProtein": 6,
+    "perServingProtein": 1.5,
+    "totalCarbs": 40,
+    "perServingCarbs": 10,
+    "totalFiber": 8,
+    "perServingFiber": 2,
+    "totalFat": 2,
+    "perServingFat": 0.5,
+    "totalSugar": 24,
+    "perServingSugar": 6
+  },
+  "instructions": [
+    "Peel and chop zucchini into chunks",
+    "Choose your flavor variation and add to blender with zucchini",
+    "Add maple syrup/honey, vanilla (if using), and salt",
+    "Blend on high until completely smooth and creamy (2-3 minutes)",
+    "Taste and adjust sweetness if needed",
+    "Pour mixture into small cups or bowls",
+    "Refrigerate overnight (or at least 4 hours) to thicken",
+    "Top with optional toppings and serve chilled!",
+    "",
+    "FLAVOR VARIATIONS:",
+    "• Chocolate: Add 3 tbsp cocoa powder + chocolate chips on top",
+    "• Strawberry: Add 1 cup strawberries + fresh strawberry slices on top",
+    "• Peanut Butter: Add 3-4 tbsp peanut butter + crushed peanuts on top",
+    "• Vanilla: Just use vanilla extract (simple and clean!)",
+    "• Banana: Add 1 ripe banana + banana slices on top",
+    "• Mix & Match: Get creative with whatever flavors you like!"
+  ],
+  "cookingTime": "5 minutes prep + overnight refrigeration"
+}
