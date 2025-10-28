@@ -85,8 +85,15 @@ const AllIngredientsPage = () => {
                 .replace(/\bof\b/gi, '')
                 // Remove + signs and remaining numbers
                 .replace(/\+/g, '')
-                // Remove descriptive prefixes (cooking instructions)
-                .replace(/\b(fresh|frozen|raw|cooked|diced|chopped|sliced|shredded|minced|crushed|melted|softened|baked|roasted|steamed|halved|peeled|split|room temp|warm|cold)\s+/gi, '')
+                // Remove common -ed/-ing ending adjectives (cooked, diced, melted, etc.)
+                .replace(/\b\w+(ed|ing)\s+/gi, (match) => {
+                  // Keep words ending in -ed/-ing that are likely food items
+                  const keepWords = ['seed', 'weed', 'feed', 'fried', 'dried', 'powdered', 'sweetened', 'unsweetened', 'reduced', 'shredded'];
+                  const word = match.trim().toLowerCase();
+                  return keepWords.some(keep => word.includes(keep)) ? match : '';
+                })
+                // Remove common temperature/state descriptors
+                .replace(/\b(room\s+temp|warm|cold|hot|chilled)\s*/gi, '')
                 // Remove extra spaces
                 .replace(/\s+/g, ' ')
                 .trim();
@@ -125,14 +132,29 @@ const AllIngredientsPage = () => {
                     .replace(/\bprotein\s+powder\b/gi, 'whey protein')
                     .trim();
                   
-                  // Filter out action words and incomplete fragments
-                  const actionWords = ['chopped', 'dusting', 'melting', 'peeled', 'split', 'halved', 'sliced', 'diced', 'minced', 'crushed', 'shredded', 'to taste'];
-                  const isActionWord = actionWords.includes(singularized);
-                  const hasTrailingLetter = /\s+[a-z]$/.test(singularized); // ends with space + single letter
+                  // Smart filtering using patterns instead of word lists
                   
-                  if (singularized && singularized.length > 2 && !isActionWord && !hasTrailingLetter) {
-                    ingredientsSet.add(singularized);
-                  }
+                  // Filter 1: Remove if ends with space + single letter (incomplete fragment)
+                  if (/\s+[a-z]$/.test(singularized)) return;
+                  
+                  // Filter 2: Remove if it's ONLY an -ing/-ed word without a noun
+                  if (/^(ing|ed|en)$/i.test(singularized)) return;
+                  
+                  // Filter 3: Remove if it's a standalone preposition/article
+                  if (/^(to|for|with|the|a|an)$/i.test(singularized)) return;
+                  
+                  // Filter 4: Must contain at least one vowel (real words have vowels)
+                  if (!/[aeiou]/.test(singularized)) return;
+                  
+                  // Filter 5: Must be at least 3 characters
+                  if (singularized.length < 3) return;
+                  
+                  // Filter 6: Remove if it's ONLY a single common verb
+                  const singleVerbs = /^(taste|wash|spray|temp|water)$/i;
+                  if (singleVerbs.test(singularized)) return;
+                  
+                  // If it passes all filters, it's likely a real ingredient
+                  ingredientsSet.add(singularized);
                 }
               });
             });
