@@ -69,18 +69,24 @@ const AllIngredientsPage = () => {
                 .toLowerCase()
                 // Remove unicode fractions (¼, ½, ¾, etc.)
                 .replace(/[¼½¾⅐⅑⅒⅓⅔⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞]/g, '')
-                // Remove fractions and numbers with measurements
-                .replace(/^-?\d+\.?\d*\/?\d*\s*/g, '')
-                // Remove measurement units
-                .replace(/^(cup|cups|tbsp|tsp|teaspoon|teaspoons|tablespoon|tablespoons|oz|ounce|ounces|g|gram|grams|lb|lbs|pound|pounds|packet|packets|scoop|scoops|ml|l|kg)\s+/gi, '')
-                // Remove "of" after measurements
-                .replace(/^of\s+/i, '')
-                // Remove anything in parentheses
+                // Remove anything in parentheses first
                 .replace(/\(.*?\)/g, '')
+                // Remove percentages (0%, 2%, etc.)
+                .replace(/\d+%\s*/g, '')
+                // Remove numbers with or without decimals/fractions
+                .replace(/\d+\.?\d*\/?\d*/g, '')
+                // Remove measurement units (case insensitive)
+                .replace(/\b(cup|cups|tbsp|tsp|teaspoon|teaspoons|tablespoon|tablespoons|oz|ounce|ounces|g|gram|grams|lb|lbs|pound|pounds|packet|packets|scoop|scoops|ml|l|kg)\b/gi, '')
+                // Remove "of" 
+                .replace(/\bof\b/gi, '')
+                // Remove + signs and remaining numbers
+                .replace(/\+/g, '')
+                // Remove extra spaces
+                .replace(/\s+/g, ' ')
                 .trim();
               
               // Remove leading dashes or slashes
-              normalized = normalized.replace(/^[-\/]+\s*/, '');
+              normalized = normalized.replace(/^[-\/]+\s*/, '').trim();
               
               if (normalized && normalized.length > 2) {
                 ingredientsSet.add(normalized);
