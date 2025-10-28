@@ -71,6 +71,8 @@ const AllIngredientsPage = () => {
                 .replace(/^optional:\s*/i, '')
                 // Remove "for topping" or "for garnish" suffixes
                 .replace(/\s*(for topping|for garnish|for serving).*$/i, '')
+                // Remove "to taste" suffix
+                .replace(/\s+to\s+taste\s*$/i, '')
                 // Remove unicode fractions (¼, ½, ¾, etc.)
                 .replace(/[¼½¾⅐⅑⅒⅓⅔⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞]/g, '')
                 // Remove anything in parentheses AND the opening parenthesis
@@ -85,10 +87,18 @@ const AllIngredientsPage = () => {
                 .replace(/\bof\b/gi, '')
                 // Remove + signs and remaining numbers
                 .replace(/\+/g, '')
-                // Remove cooking action words ending in -ed/-ing ONLY if followed by a noun
+                // Remove quantity descriptors
+                .replace(/\b(handful|splash|pinch|dash|drizzle|sprinkle|bunch|clove|cloves|can|pack|package|loaf|slices?)\s+/gi, '')
+                // Remove size descriptors
+                .replace(/\b(large|small|medium|mini|extra)\s+/gi, '')
+                // Remove state/preparation descriptors
+                .replace(/\b(fresh|frozen|raw|ripe)\s+/gi, '')
+                // Remove cooking action words
                 .replace(/\b(chopped|diced|sliced|minced|crushed|melted|softened|cooked|baked|roasted|steamed|grilled|sauteed|peeled|halved|quartered)\s+/gi, '')
                 // Remove common temperature/state descriptors
                 .replace(/\b(room\s+temp|warm|cold|hot|chilled)\s*/gi, '')
+                // Remove trailing commas/punctuation
+                .replace(/[,;.]+$/g, '')
                 // Remove extra spaces
                 .replace(/\s+/g, ' ')
                 .trim();
@@ -133,7 +143,7 @@ const AllIngredientsPage = () => {
                   if (/\s+[a-z]$/.test(singularized)) return;
                   
                   // Filter 2: Remove if it's ONLY an -ing/-ed word without a noun
-                  if (/^(ing|ed|en)$/i.test(singularized)) return;
+                  if (/^(ing|ed|en|chopped|dusting|melting|split|flat)$/i.test(singularized)) return;
                   
                   // Filter 3: Remove if it's a standalone preposition/article
                   if (/^(to|for|with|the|a|an)$/i.test(singularized)) return;
@@ -144,9 +154,12 @@ const AllIngredientsPage = () => {
                   // Filter 5: Must be at least 3 characters
                   if (singularized.length < 3) return;
                   
-                  // Filter 6: Remove if it's ONLY a single common verb
-                  const singleVerbs = /^(taste|wash|spray|temp|water)$/i;
+                  // Filter 6: Remove if it's ONLY a single common verb/action
+                  const singleVerbs = /^(taste|wash|spray|temp|water|dusting|melting|split)$/i;
                   if (singleVerbs.test(singularized)) return;
+                  
+                  // Filter 7: Normalize unicode variations (é → e, etc.)
+                  singularized = singularized.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
                   
                   // If it passes all filters, it's likely a real ingredient
                   ingredientsSet.add(singularized);
