@@ -73,8 +73,8 @@ const AllIngredientsPage = () => {
                 .replace(/\s*(for topping|for garnish|for serving).*$/i, '')
                 // Remove unicode fractions (¼, ½, ¾, etc.)
                 .replace(/[¼½¾⅐⅑⅒⅓⅔⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞]/g, '')
-                // Remove anything in parentheses first
-                .replace(/\(.*?\)/g, '')
+                // Remove anything in parentheses AND the opening parenthesis
+                .replace(/\([^)]*\)?/g, '')
                 // Remove percentages (0%, 2%, etc.)
                 .replace(/\d+%\s*/g, '')
                 // Remove numbers with or without decimals/fractions
@@ -85,6 +85,8 @@ const AllIngredientsPage = () => {
                 .replace(/\bof\b/gi, '')
                 // Remove + signs and remaining numbers
                 .replace(/\+/g, '')
+                // Remove descriptive prefixes (cooking instructions)
+                .replace(/\b(fresh|frozen|raw|cooked|diced|chopped|sliced|shredded|minced|crushed|melted|softened|baked|roasted|steamed|halved|peeled|split|room temp|warm|cold)\s+/gi, '')
                 // Remove extra spaces
                 .replace(/\s+/g, ' ')
                 .trim();
@@ -102,12 +104,13 @@ const AllIngredientsPage = () => {
                   // Normalize common variations to singular form
                   let singularized = part
                     // Convert common plurals to singular
-                    .replace(/\b(egg|chip|bean|pepper|onion|tomato|carrot|mushroom|olive|strawberr|blueberr|raspberr|blackberr)s\b/gi, '$1')
+                    .replace(/\b(egg|chip|bean|pepper|onion|tomato|carrot|mushroom|olive|strawberr|blueberr|raspberr|blackberr|banana)s\b/gi, '$1')
                     .replace(/\bstrawberr\b/gi, 'strawberry')
                     .replace(/\bblueberr\b/gi, 'blueberry')
                     .replace(/\braspberr\b/gi, 'raspberry')
                     .replace(/\bblackberr\b/gi, 'blackberry')
                     .replace(/\bcherries\b/gi, 'cherry')
+                    .replace(/\bwedges\b/gi, 'wedge')
                     // Normalize yolk variations
                     .replace(/\begg\s+yolks?\b/gi, 'egg yolk')
                     .replace(/\beggs?\s+yolks?\b/gi, 'egg yolk')
@@ -115,13 +118,19 @@ const AllIngredientsPage = () => {
                     .replace(/\begg\s+whites?\b/gi, 'egg white')
                     .replace(/\beggs?\s+whites?\b/gi, 'egg white')
                     // Standardize protein powder word order: "flavor whey protein"
-                    .replace(/\bwhey\s+(vanilla|chocolate|strawberry|banana)\s+protein\b/gi, '$1 whey protein')
-                    .replace(/\bprotein\s+(vanilla|chocolate|strawberry|banana)\s+whey\b/gi, '$1 whey protein')
-                    .replace(/\b(vanilla|chocolate|strawberry|banana)\s+protein\s+powder\b/gi, '$1 whey protein')
+                    .replace(/\bwhey\s+(vanilla|chocolate|strawberry|banana|cinnamon)\s+protein\b/gi, '$1 whey protein')
+                    .replace(/\bprotein\s+(vanilla|chocolate|strawberry|banana|cinnamon)\s+whey\b/gi, '$1 whey protein')
+                    .replace(/\b(vanilla|chocolate|strawberry|banana|cinnamon)\s+protein\s+powder\b/gi, '$1 whey protein')
+                    .replace(/\bunflavored\s+whey\s+protein\b/gi, 'whey protein')
                     .replace(/\bprotein\s+powder\b/gi, 'whey protein')
                     .trim();
                   
-                  if (singularized && singularized.length > 2) {
+                  // Filter out action words and incomplete fragments
+                  const actionWords = ['chopped', 'dusting', 'melting', 'peeled', 'split', 'halved', 'sliced', 'diced', 'minced', 'crushed', 'shredded', 'to taste'];
+                  const isActionWord = actionWords.includes(singularized);
+                  const hasTrailingLetter = /\s+[a-z]$/.test(singularized); // ends with space + single letter
+                  
+                  if (singularized && singularized.length > 2 && !isActionWord && !hasTrailingLetter) {
                     ingredientsSet.add(singularized);
                   }
                 }
