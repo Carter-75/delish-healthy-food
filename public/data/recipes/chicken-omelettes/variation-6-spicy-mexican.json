@@ -6,28 +6,29 @@
     "1 cup Salsa Verde",
     "2 tbsp Taco Seasoning",
     "1/2 cup Chicken Bone Broth",
-    "1 Jalapeño (diced)",
+    "1 Jalape\u00f1o (diced)",
     "2 scoops Unflavored Whey Protein"
   ],
   "nutrition": {
-    "totalCalories": 2100,
-    "perServingCalories": 525,
-    "totalProtein": 177,
-    "perServingProtein": 44,
-    "perServingCarbs": 60,
+    "totalCalories": 3945,
+    "totalProtein": 342,
     "totalCarbs": 240,
-    "perServingFat": 12,
     "totalFat": 48,
-    "perServingFiber": 7,
-    "totalFiber": 28
+    "totalFiber": 28,
+    "perServingCalories": 986,
+    "perServingProtein": 85,
+    "perServingCarbs": 60,
+    "perServingFat": 12,
+    "perServingFiber": 7
   },
   "instructions": [
     "Blend base ingredients with chicken bone broth until smooth",
     "Pour mixture into pan and cook on medium heat",
-    "Add salsa verde, taco seasoning, jalapeño, and whey protein",
+    "Add salsa verde, taco seasoning, jalape\u00f1o, and whey protein",
     "Cook for 10-15 minutes, stirring occasionally",
     "When nearly set, flip with plate to cook other side",
     "Add mozzarella on top and cover until melted"
   ],
-  "cookingTime": "30-40 minutes"
+  "cookingTime": "30-40 minutes",
+  "servings": 4
 }

@@ -1,9 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTheme } from '../hooks/useTheme';
-import { Mail, MessageSquare, Sparkles, Send } from 'lucide-react';
+import { Mail, MessageSquare, Sparkles, Send, Check } from 'lucide-react';
 
 const ContactPage = () => {
   const { theme } = useTheme();
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you would typically send the form data to a backend
+    // For now, we'll just show a success message
+    console.log('Form submitted:', formData);
+    setSubmitted(true);
+    setTimeout(() => {
+      setSubmitted(false);
+      setFormData({ name: '', email: '', message: '' });
+    }, 3000);
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -56,11 +77,15 @@ const ContactPage = () => {
             Send Us a Message
           </h2>
           
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label className="block text-gray-300 mb-2 font-medium">Your Name</label>
               <input
                 type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
                 className={`w-full px-4 py-3 rounded-lg bg-slate-900/50 border ${theme.border || 'border-white/10'} 
                   text-white placeholder-gray-500 focus:outline-none focus:border-blue-500/50 
                   transition-colors-smooth`}
@@ -72,6 +97,10 @@ const ContactPage = () => {
               <label className="block text-gray-300 mb-2 font-medium">Email Address</label>
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
                 className={`w-full px-4 py-3 rounded-lg bg-slate-900/50 border ${theme.border || 'border-white/10'} 
                   text-white placeholder-gray-500 focus:outline-none focus:border-blue-500/50 
                   transition-colors-smooth`}
@@ -83,6 +112,10 @@ const ContactPage = () => {
               <label className="block text-gray-300 mb-2 font-medium">Message</label>
               <textarea
                 rows="6"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
                 className={`w-full px-4 py-3 rounded-lg bg-slate-900/50 border ${theme.border || 'border-white/10'} 
                   text-white placeholder-gray-500 focus:outline-none focus:border-blue-500/50 
                   transition-colors-smooth resize-none`}
@@ -90,14 +123,33 @@ const ContactPage = () => {
               />
             </div>
 
+            {submitted && (
+              <div className={`p-4 rounded-lg ${theme.highlight || 'bg-green-900/30'} border border-green-500/20 
+                flex items-center gap-3 animate-fadeInUp`}>
+                <Check className="w-5 h-5 text-green-400" />
+                <p className="text-green-400 font-medium">Thank you! Your message has been sent successfully.</p>
+              </div>
+            )}
+
             <button
               type="submit"
+              disabled={submitted}
               className={`w-full px-6 py-3 rounded-lg ${theme.highlight || 'bg-blue-900/40'} 
                 border ${theme.border || 'border-blue-500/20'} ${theme.text || 'text-blue-400'} 
-                font-semibold hover-lift transition-all-smooth flex items-center justify-center gap-2`}
+                font-semibold hover-lift transition-all-smooth flex items-center justify-center gap-2
+                disabled:opacity-50 disabled:cursor-not-allowed`}
             >
-              <Send className="w-5 h-5" />
-              Send Message
+              {submitted ? (
+                <>
+                  <Check className="w-5 h-5" />
+                  Sent!
+                </>
+              ) : (
+                <>
+                  <Send className="w-5 h-5" />
+                  Send Message
+                </>
+              )}
             </button>
           </form>
         </div>

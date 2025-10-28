@@ -10,16 +10,16 @@
     "2 scoops Unflavored Whey Protein"
   ],
   "nutrition": {
-    "totalCalories": 2150,
-    "perServingCalories": 537,
-    "totalProtein": 176,
-    "perServingProtein": 44,
-    "perServingCarbs": 63,
+    "totalCalories": 3995,
+    "totalProtein": 341,
     "totalCarbs": 252,
-    "perServingFat": 12,
     "totalFat": 48,
-    "perServingFiber": 8,
-    "totalFiber": 32
+    "totalFiber": 32,
+    "perServingCalories": 998,
+    "perServingProtein": 85,
+    "perServingCarbs": 63,
+    "perServingFat": 12,
+    "perServingFiber": 8
   },
   "instructions": [
     "Blend base ingredients with apple cider vinegar until smooth",
@@ -29,5 +29,6 @@
     "When nearly set, flip with plate to cook other side",
     "Add mozzarella on top and cover until melted"
   ],
-  "cookingTime": "30-40 minutes"
+  "cookingTime": "30-40 minutes",
+  "servings": 4
 }
