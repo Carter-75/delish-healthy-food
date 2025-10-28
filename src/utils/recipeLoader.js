@@ -150,7 +150,8 @@ export const loadDessert = async (dessertId) => {
       18: 'dessert-18-oreo-protein-cinnamon-rolls.json',
       19: 'dessert-19-cinnamon-apple-pie-rolls.json',
       20: 'dessert-20-pumpkin-spice-cinnamon-rolls.json',
-      21: 'dessert-21-chocolate-chip-cinnamon-rolls.json'
+      21: 'dessert-21-chocolate-chip-cinnamon-rolls.json',
+      22: 'dessert-22-fudgiest-oreo-brownies.json'
     };
     
     const fileName = fileMap[dessertId];
@@ -167,7 +168,7 @@ export const loadDessert = async (dessertId) => {
 // Load all desserts
 export const loadDesserts = async () => {
   try {
-    const dessertIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
+    const dessertIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
     const desserts = await Promise.all(
       dessertIds.map(id => loadDessert(id))
     );

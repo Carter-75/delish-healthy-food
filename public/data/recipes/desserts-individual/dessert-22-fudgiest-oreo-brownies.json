@@ -1,0 +1,31 @@
+{
+  "id": 22,
+  "name": "The Fudgiest Oreo Brownies",
+  "type": "individual",
+  "servings": 12,
+  "ingredients": [
+    "270g Caster sugar",
+    "3 Eggs",
+    "200g Unsalted butter (melted)",
+    "200g Milk chocolate (melted)",
+    "100g Plain flour",
+    "50g Cocoa powder",
+    "1 pack Oreos (crushed)"
+  ],
+  "instructions": [
+    "In a bowl, whisk together sugar and eggs until smooth",
+    "Add melted butter and melted chocolate, whisk until fully combined",
+    "Sift in flour and cocoa powder, fold gently with a spatula",
+    "Pour mixture into a lined baking dish",
+    "Top evenly with crushed Oreos",
+    "Bake at 180°C (350°F) for 25 minutes, until edges are set but center remains fudgy",
+    "Cool completely before slicing for clean, chewy squares",
+    "Enjoy warm or chilled!"
+  ],
+  "nutrition": {
+    "caloriesPerServing": 345,
+    "proteinPerServing": 5,
+    "carbsPerServing": 42,
+    "fatPerServing": 18
+  }
+}
