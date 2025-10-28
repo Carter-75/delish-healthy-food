@@ -92,8 +92,8 @@ const AllIngredientsPage = () => {
               // Remove leading dashes or slashes
               normalized = normalized.replace(/^[-\/]+\s*/, '').trim();
               
-              // Split on commas, "and", "&" to separate compound ingredients
-              const parts = normalized.split(/\s*(?:,|and|&)\s+/i);
+              // Split on commas, "and", "&", "or" to separate compound ingredients
+              const parts = normalized.split(/\s*(?:,|and|&|or)\s+/i);
               
               parts.forEach(part => {
                 part = part.trim();
@@ -108,15 +108,17 @@ const AllIngredientsPage = () => {
                     .replace(/\braspberr\b/gi, 'raspberry')
                     .replace(/\bblackberr\b/gi, 'blackberry')
                     .replace(/\bcherries\b/gi, 'cherry')
-                    // Normalize "whey protein" variations
-                    .replace(/\b(vanilla|chocolate|strawberry)\s+whey\s+protein\b/gi, 'whey protein')
-                    .replace(/\bprotein\s+powder\b/gi, 'whey protein')
                     // Normalize yolk variations
                     .replace(/\begg\s+yolks?\b/gi, 'egg yolk')
                     .replace(/\beggs?\s+yolks?\b/gi, 'egg yolk')
                     // Normalize white variations
                     .replace(/\begg\s+whites?\b/gi, 'egg white')
                     .replace(/\beggs?\s+whites?\b/gi, 'egg white')
+                    // Standardize protein powder word order: "flavor whey protein"
+                    .replace(/\bwhey\s+(vanilla|chocolate|strawberry|banana)\s+protein\b/gi, '$1 whey protein')
+                    .replace(/\bprotein\s+(vanilla|chocolate|strawberry|banana)\s+whey\b/gi, '$1 whey protein')
+                    .replace(/\b(vanilla|chocolate|strawberry|banana)\s+protein\s+powder\b/gi, '$1 whey protein')
+                    .replace(/\bprotein\s+powder\b/gi, 'whey protein')
                     .trim();
                   
                   if (singularized && singularized.length > 2) {
