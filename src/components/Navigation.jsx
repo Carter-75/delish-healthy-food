@@ -8,7 +8,8 @@ import {
   Menu, 
   X,
   Utensils,
-  Sparkles
+  Sparkles,
+  ShoppingCart
 } from 'lucide-react';
 
 const Navigation = () => {
@@ -18,6 +19,7 @@ const Navigation = () => {
 
   const navItems = [
     { path: '/', label: 'Home', icon: Home },
+    { path: '/all-ingredients', label: 'All Ingredients', icon: ShoppingCart },
     { path: '/about', label: 'About', icon: Info },
     { path: '/contact', label: 'Contact', icon: Mail }
   ];
