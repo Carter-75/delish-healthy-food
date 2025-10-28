@@ -67,10 +67,12 @@ const AllIngredientsPage = () => {
               // Remove quantities and normalize
               let normalized = ingredient
                 .toLowerCase()
+                // Remove unicode fractions (¼, ½, ¾, etc.)
+                .replace(/[¼½¾⅐⅑⅒⅓⅔⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞]/g, '')
                 // Remove fractions and numbers with measurements
                 .replace(/^-?\d+\.?\d*\/?\d*\s*/g, '')
                 // Remove measurement units
-                .replace(/^(cup|cups|tbsp|tsp|teaspoon|teaspoons|tablespoon|tablespoons|oz|ounce|ounces|g|gram|grams|lb|lbs|pound|pounds|packet|packets|scoop|scoops|ml|l|kg)\s+/i, '')
+                .replace(/^(cup|cups|tbsp|tsp|teaspoon|teaspoons|tablespoon|tablespoons|oz|ounce|ounces|g|gram|grams|lb|lbs|pound|pounds|packet|packets|scoop|scoops|ml|l|kg)\s+/gi, '')
                 // Remove "of" after measurements
                 .replace(/^of\s+/i, '')
                 // Remove anything in parentheses
