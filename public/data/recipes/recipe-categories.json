@@ -22,12 +22,12 @@
   {
     "id": "desserts",
     "title": "Simple Delicious Desserts",
-    "description": "23 Sweet Treats",
+    "description": "24 Sweet Treats",
     "cookingTime": "15-60 mins",
     "icon": "IceCream",
     "hasBase": false,
     "hasVariations": false,
-    "totalRecipes": 23
+    "totalRecipes": 24
   },
   {
     "id": "protein-snacks",
@@ -52,11 +52,11 @@
   {
     "id": "smoothie-bowls",
     "title": "Smoothie Bowls",
-    "description": "2 Refreshing Bowls",
+    "description": "13 Refreshing Bowls",
     "cookingTime": "10-15 mins",
     "icon": "IceCream",
     "hasBase": false,
     "hasVariations": false,
-    "totalRecipes": 2
+    "totalRecipes": 13
   }
 ]
