@@ -10,16 +10,16 @@
     "2 scoops Unflavored Whey Protein"
   ],
   "nutrition": {
-    "totalCalories": 2080,
-    "perServingCalories": 520,
-    "totalProtein": 178,
-    "perServingProtein": 45,
-    "perServingCarbs": 60,
+    "totalCalories": 3925,
+    "totalProtein": 343,
     "totalCarbs": 240,
-    "perServingFat": 11,
     "totalFat": 44,
-    "perServingFiber": 7,
-    "totalFiber": 28
+    "totalFiber": 28,
+    "perServingCalories": 981,
+    "perServingProtein": 85,
+    "perServingCarbs": 60,
+    "perServingFat": 11,
+    "perServingFiber": 7
   },
   "instructions": [
     "Blend base ingredients with almond milk until smooth",
@@ -29,5 +29,6 @@
     "When nearly set, flip with plate to cook other side",
     "Add mozzarella on top and cover until melted"
   ],
-  "cookingTime": "30-40 minutes"
+  "cookingTime": "30-40 minutes",
+  "servings": 4
 }

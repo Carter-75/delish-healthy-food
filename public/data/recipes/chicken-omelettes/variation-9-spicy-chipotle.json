@@ -8,16 +8,16 @@
     "Cheddar cheese"
   ],
   "nutrition": {
-    "totalCalories": 2180,
-    "perServingCalories": 545,
-    "totalProtein": 184,
-    "perServingProtein": 46,
-    "perServingCarbs": 63,
+    "totalCalories": 4025,
+    "totalProtein": 349,
     "totalCarbs": 252,
-    "perServingFat": 12,
     "totalFat": 48,
-    "perServingFiber": 8,
-    "totalFiber": 32
+    "totalFiber": 32,
+    "perServingCalories": 1006,
+    "perServingProtein": 87,
+    "perServingCarbs": 63,
+    "perServingFat": 12,
+    "perServingFiber": 8
   },
   "instructions": [
     "Cook chicken chunks with chipotle sauce and smoked paprika",
@@ -26,5 +26,6 @@
     "Top with mixed greens, lentils, pumpkin seeds, and chia seeds",
     "Fold and serve hot"
   ],
-  "cookingTime": "30-40 minutes"
+  "cookingTime": "30-40 minutes",
+  "servings": 4
 }

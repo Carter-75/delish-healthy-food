@@ -1,7 +1,8 @@
 {
   "id": 22,
   "name": "The Fudgiest Oreo Brownies",
-  "type": "individual",
+  "category": "desserts",
+  "description": "Rich & Decadent Chocolate Treat",
   "servings": 12,
   "ingredients": [
     "270g Caster sugar",
@@ -12,6 +13,20 @@
     "50g Cocoa powder",
     "1 pack Oreos (crushed)"
   ],
+  "nutrition": {
+    "totalCalories": 6384,
+    "perServingCalories": 532,
+    "totalProtein": 71,
+    "perServingProtein": 6,
+    "totalCarbs": 810,
+    "perServingCarbs": 68,
+    "totalFiber": 36,
+    "perServingFiber": 3,
+    "totalFat": 329,
+    "perServingFat": 27,
+    "totalSugar": 585,
+    "perServingSugar": 49
+  },
   "instructions": [
     "In a bowl, whisk together sugar and eggs until smooth",
     "Add melted butter and melted chocolate, whisk until fully combined",
@@ -22,10 +37,5 @@
     "Cool completely before slicing for clean, chewy squares",
     "Enjoy warm or chilled!"
   ],
-  "nutrition": {
-    "caloriesPerServing": 345,
-    "proteinPerServing": 5,
-    "carbsPerServing": 42,
-    "fatPerServing": 18
-  }
+  "cookingTime": "30-35 minutes"
 }

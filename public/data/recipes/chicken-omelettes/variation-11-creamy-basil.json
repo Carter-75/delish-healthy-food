@@ -8,16 +8,16 @@
     "Mozzarella cheese"
   ],
   "nutrition": {
-    "totalCalories": 2200,
-    "perServingCalories": 550,
-    "totalProtein": 188,
-    "perServingProtein": 47,
-    "perServingCarbs": 64,
+    "totalCalories": 4045,
+    "totalProtein": 353,
     "totalCarbs": 256,
-    "perServingFat": 12,
     "totalFat": 48,
-    "perServingFiber": 8,
-    "totalFiber": 32
+    "totalFiber": 32,
+    "perServingCalories": 1011,
+    "perServingProtein": 88,
+    "perServingCarbs": 64,
+    "perServingFat": 12,
+    "perServingFiber": 8
   },
   "instructions": [
     "Cook chicken chunks until golden",
@@ -27,5 +27,6 @@
     "Top with mixed greens, lentils, pumpkin seeds, and chia seeds",
     "Fold and serve hot"
   ],
-  "cookingTime": "30-40 minutes"
+  "cookingTime": "30-40 minutes",
+  "servings": 4
 }
