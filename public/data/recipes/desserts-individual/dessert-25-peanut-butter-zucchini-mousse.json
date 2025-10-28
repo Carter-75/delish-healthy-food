@@ -1,0 +1,40 @@
+{
+  "id": 25,
+  "name": "Peanut Butter Zucchini Mousse",
+  "category": "desserts",
+  "description": "Protein-Packed, Creamy, Hidden Veggie Dessert",
+  "servings": 4,
+  "ingredients": [
+    "2 cups raw zucchini, peeled and chopped",
+    "3-4 tbsp peanut butter (or any nut butter)",
+    "2-3 tbsp maple syrup or honey",
+    "1 tsp vanilla extract",
+    "Pinch of salt",
+    "Optional: chocolate chips or crushed peanuts for topping"
+  ],
+  "nutrition": {
+    "totalCalories": 400,
+    "perServingCalories": 100,
+    "totalProtein": 16,
+    "perServingProtein": 4,
+    "totalCarbs": 48,
+    "perServingCarbs": 12,
+    "totalFiber": 12,
+    "perServingFiber": 3,
+    "totalFat": 20,
+    "perServingFat": 5,
+    "totalSugar": 28,
+    "perServingSugar": 7
+  },
+  "instructions": [
+    "Peel and chop zucchini into chunks",
+    "Add all ingredients to a blender (zucchini, peanut butter, maple syrup, vanilla, salt)",
+    "Blend on high until completely smooth and creamy (2-3 minutes)",
+    "Taste and adjust sweetness if needed",
+    "Pour mixture into small cups or bowls",
+    "Refrigerate overnight (or at least 4 hours) to thicken",
+    "Optional: top with chocolate chips or crushed peanuts before serving",
+    "Serve chilled and enjoy!"
+  ],
+  "cookingTime": "5 minutes prep + overnight refrigeration"
+}
