@@ -85,13 +85,8 @@ const AllIngredientsPage = () => {
                 .replace(/\bof\b/gi, '')
                 // Remove + signs and remaining numbers
                 .replace(/\+/g, '')
-                // Remove common -ed/-ing ending adjectives (cooked, diced, melted, etc.)
-                .replace(/\b\w+(ed|ing)\s+/gi, (match) => {
-                  // Keep words ending in -ed/-ing that are likely food items
-                  const keepWords = ['seed', 'weed', 'feed', 'fried', 'dried', 'powdered', 'sweetened', 'unsweetened', 'reduced', 'shredded'];
-                  const word = match.trim().toLowerCase();
-                  return keepWords.some(keep => word.includes(keep)) ? match : '';
-                })
+                // Remove cooking action words ending in -ed/-ing ONLY if followed by a noun
+                .replace(/\b(chopped|diced|sliced|minced|crushed|melted|softened|cooked|baked|roasted|steamed|grilled|sauteed|peeled|halved|quartered)\s+/gi, '')
                 // Remove common temperature/state descriptors
                 .replace(/\b(room\s+temp|warm|cold|hot|chilled)\s*/gi, '')
                 // Remove extra spaces
