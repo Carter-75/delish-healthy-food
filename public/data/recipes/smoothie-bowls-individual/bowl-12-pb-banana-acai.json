@@ -1,0 +1,37 @@
+{
+  "id": 12,
+  "name": "Peanut Butter Banana Acai Bowl",
+  "category": "smoothie-bowls",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "1 packet Frozen acai puree (100g)",
+    "2 Frozen bananas",
+    "2 tbsp Peanut butter",
+    "1 scoop Vanilla whey protein",
+    "1/2 cup Almond milk (unsweetened)",
+    "2 tbsp Sliced banana, crushed peanuts, and granola (for topping)"
+  ],
+  "instructions": [
+    "Add frozen acai puree, bananas, peanut butter, vanilla whey, and almond milk to blender",
+    "Blend on high until thick and creamy",
+    "Should be thicker than a regular smoothie",
+    "Pour into a bowl",
+    "Top with sliced banana, crushed peanuts, and granola",
+    "Optional: Add honey drizzle, chia seeds, or coconut flakes",
+    "Serve immediately with a spoon"
+  ],
+  "nutrition": {
+    "totalCalories": 450,
+    "perServingCalories": 450,
+    "totalProtein": 34,
+    "perServingProtein": 34,
+    "totalCarbs": 58,
+    "perServingCarbs": 58,
+    "totalFat": 14,
+    "perServingFat": 14,
+    "perServingFiber": 11,
+    "totalFiber": 11
+  },
+  "cookingTime": "10 minutes"
+}
