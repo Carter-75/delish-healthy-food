@@ -27,8 +27,8 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div className="max-w-3xl mx-auto">
+    <div className="container mx-auto px-4 py-12 relative">
+      <div className="max-w-3xl mx-auto relative">
         {/* Header */}
         <div className="text-center mb-12 animate-fadeInUp">
           <Sparkles className={`w-12 h-12 ${theme.text || 'text-blue-400'} mx-auto mb-6 animate-pulseGlow`} />
@@ -159,6 +159,26 @@ const ContactPage = () => {
           <p className="text-gray-400">
             We typically respond within 24-48 hours during business days.
           </p>
+        </div>
+
+        {/* Coming Soon Overlay with Heavy Fog */}
+        <div className="absolute inset-0 flex items-center justify-center z-50 pointer-events-none">
+          {/* Heavy fog backdrop */}
+          <div className="absolute inset-0 bg-slate-900/95 backdrop-blur-3xl"></div>
+          
+          {/* Coming Soon Message */}
+          <div className="relative z-10 text-center animate-fadeInUp pointer-events-none">
+            <Sparkles className="w-20 h-20 text-blue-400 mx-auto mb-6 animate-pulseGlow" />
+            <h2 className="text-5xl sm:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              Coming Soon
+            </h2>
+            <p className="text-xl text-gray-300 mb-2">
+              We're setting up our contact system
+            </p>
+            <p className="text-gray-400">
+              Check back soon to get in touch!
+            </p>
+          </div>
         </div>
       </div>
     </div>
