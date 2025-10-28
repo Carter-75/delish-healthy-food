@@ -65,11 +65,20 @@ const AllIngredientsPage = () => {
           if (recipe.ingredients && Array.isArray(recipe.ingredients)) {
             recipe.ingredients.forEach(ingredient => {
               // Remove quantities and normalize
-              const normalized = ingredient
+              let normalized = ingredient
                 .toLowerCase()
-                .replace(/^\d+\.?\d*\s*(cup|cups|tbsp|tsp|oz|g|lb|packet|scoop|scoops)?\s*/i, '')
-                .replace(/\(.*?\)/g, '') // Remove anything in parentheses
+                // Remove fractions and numbers with measurements
+                .replace(/^-?\d+\.?\d*\/?\d*\s*/g, '')
+                // Remove measurement units
+                .replace(/^(cup|cups|tbsp|tsp|teaspoon|teaspoons|tablespoon|tablespoons|oz|ounce|ounces|g|gram|grams|lb|lbs|pound|pounds|packet|packets|scoop|scoops|ml|l|kg)\s+/i, '')
+                // Remove "of" after measurements
+                .replace(/^of\s+/i, '')
+                // Remove anything in parentheses
+                .replace(/\(.*?\)/g, '')
                 .trim();
+              
+              // Remove leading dashes or slashes
+              normalized = normalized.replace(/^[-\/]+\s*/, '');
               
               if (normalized && normalized.length > 2) {
                 ingredientsSet.add(normalized);
