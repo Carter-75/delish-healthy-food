@@ -67,6 +67,10 @@ const AllIngredientsPage = () => {
               // Remove quantities and normalize
               let normalized = ingredient
                 .toLowerCase()
+                // Remove "optional:" prefix
+                .replace(/^optional:\s*/i, '')
+                // Remove "for topping" or "for garnish" suffixes
+                .replace(/\s*(for topping|for garnish|for serving).*$/i, '')
                 // Remove unicode fractions (¼, ½, ¾, etc.)
                 .replace(/[¼½¾⅐⅑⅒⅓⅔⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞]/g, '')
                 // Remove anything in parentheses first
@@ -88,9 +92,38 @@ const AllIngredientsPage = () => {
               // Remove leading dashes or slashes
               normalized = normalized.replace(/^[-\/]+\s*/, '').trim();
               
-              if (normalized && normalized.length > 2) {
-                ingredientsSet.add(normalized);
-              }
+              // Split on commas, "and", "&" to separate compound ingredients
+              const parts = normalized.split(/\s*(?:,|and|&)\s+/i);
+              
+              parts.forEach(part => {
+                part = part.trim();
+                
+                if (part && part.length > 2) {
+                  // Normalize common variations to singular form
+                  let singularized = part
+                    // Convert common plurals to singular
+                    .replace(/\b(egg|chip|bean|pepper|onion|tomato|carrot|mushroom|olive|strawberr|blueberr|raspberr|blackberr)s\b/gi, '$1')
+                    .replace(/\bstrawberr\b/gi, 'strawberry')
+                    .replace(/\bblueberr\b/gi, 'blueberry')
+                    .replace(/\braspberr\b/gi, 'raspberry')
+                    .replace(/\bblackberr\b/gi, 'blackberry')
+                    .replace(/\bcherries\b/gi, 'cherry')
+                    // Normalize "whey protein" variations
+                    .replace(/\b(vanilla|chocolate|strawberry)\s+whey\s+protein\b/gi, 'whey protein')
+                    .replace(/\bprotein\s+powder\b/gi, 'whey protein')
+                    // Normalize yolk variations
+                    .replace(/\begg\s+yolks?\b/gi, 'egg yolk')
+                    .replace(/\beggs?\s+yolks?\b/gi, 'egg yolk')
+                    // Normalize white variations
+                    .replace(/\begg\s+whites?\b/gi, 'egg white')
+                    .replace(/\beggs?\s+whites?\b/gi, 'egg white')
+                    .trim();
+                  
+                  if (singularized && singularized.length > 2) {
+                    ingredientsSet.add(singularized);
+                  }
+                }
+              });
             });
           }
         });
