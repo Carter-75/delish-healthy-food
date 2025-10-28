@@ -1,0 +1,38 @@
+{
+  "id": 11,
+  "name": "Green Acai Bowl",
+  "category": "smoothie-bowls",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "1 packet Frozen acai puree (100g)",
+    "1 Frozen banana",
+    "1 cup Fresh spinach",
+    "1/2 cup Frozen pineapple",
+    "1 scoop Vanilla whey protein",
+    "1/2 cup Almond milk (unsweetened)",
+    "2 tbsp Granola, kiwi slices, and chia seeds (for topping)"
+  ],
+  "instructions": [
+    "Add frozen acai puree, banana, spinach, pineapple, vanilla whey, and almond milk to blender",
+    "Blend on high until thick and creamy",
+    "Should be thicker than a regular smoothie",
+    "Pour into a bowl",
+    "Top with granola, kiwi slices, and chia seeds",
+    "Optional: Add fresh berries, hemp hearts, or coconut flakes",
+    "Serve immediately with a spoon"
+  ],
+  "nutrition": {
+    "totalCalories": 360,
+    "perServingCalories": 360,
+    "totalProtein": 31,
+    "perServingProtein": 31,
+    "totalCarbs": 52,
+    "perServingCarbs": 52,
+    "totalFat": 7,
+    "perServingFat": 7,
+    "perServingFiber": 11,
+    "totalFiber": 11
+  },
+  "cookingTime": "10 minutes"
+}

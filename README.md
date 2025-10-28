@@ -13,7 +13,7 @@ This is a beautiful React-based recipe website showcasing delicious protein-rich
 - 🌈 Color-coded recipe categories with dynamic themes
 - 📊 Detailed nutrition information for every recipe
 - ⚡ Fast performance with modern React and Vite
-- 🍽️ 77+ high-protein recipes across 6 categories
+- 🍽️ 87+ high-protein recipes across 6 categories
 - 📋 Easy-to-follow instructions with cooking times
 - 📱 Mobile-friendly navigation with smooth animations
 
@@ -25,7 +25,7 @@ This is a beautiful React-based recipe website showcasing delicious protein-rich
 - **Simple Delicious Desserts** - 23 sweet treats
 - **Protein-Rich Snacks** - 18 quick bites
 - **Quick Protein Lunches** - 12 easy meals
-- **Smoothie Bowls** - 2 refreshing bowls
+- **Smoothie Bowls** - 12 refreshing bowls (5 smoothie bowls + 5 acai bowls + 2 original)
 
 ### Coming Soon
 More delicious recipes being added regularly!

@@ -1,0 +1,36 @@
+{
+  "id": 3,
+  "name": "Peanut Butter Banana Smoothie Bowl",
+  "category": "smoothie-bowls",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "2 Frozen bananas",
+    "2 tbsp Peanut butter",
+    "1 scoop Vanilla whey protein",
+    "1/2 cup Almond milk (unsweetened)",
+    "2 tbsp Sliced banana and crushed peanuts (for topping)"
+  ],
+  "instructions": [
+    "Add frozen bananas, peanut butter, vanilla whey, and almond milk to blender",
+    "Blend on high until thick and creamy",
+    "Should be thicker than a regular smoothie",
+    "Pour into a bowl",
+    "Top with sliced banana and crushed peanuts",
+    "Optional: Add chocolate chips, granola, or honey drizzle",
+    "Serve immediately with a spoon"
+  ],
+  "nutrition": {
+    "totalCalories": 420,
+    "perServingCalories": 420,
+    "totalProtein": 32,
+    "perServingProtein": 32,
+    "totalCarbs": 52,
+    "perServingCarbs": 52,
+    "totalFat": 12,
+    "perServingFat": 12,
+    "perServingFiber": 6,
+    "totalFiber": 6
+  },
+  "cookingTime": "10 minutes"
+}

@@ -1,0 +1,37 @@
+{
+  "id": 8,
+  "name": "Chocolate Acai Bowl",
+  "category": "smoothie-bowls",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "1 packet Frozen acai puree (100g)",
+    "1 Frozen banana",
+    "2 tbsp Cocoa powder",
+    "1 scoop Chocolate whey protein",
+    "1/2 cup Almond milk (unsweetened)",
+    "2 tbsp Chocolate chips, cacao nibs, and banana slices (for topping)"
+  ],
+  "instructions": [
+    "Add frozen acai puree, banana, cocoa powder, chocolate whey, and almond milk to blender",
+    "Blend on high until thick and creamy",
+    "Should be thicker than a regular smoothie",
+    "Pour into a bowl",
+    "Top with chocolate chips, cacao nibs, and banana slices",
+    "Optional: Add coconut flakes, granola, or strawberry slices",
+    "Serve immediately with a spoon"
+  ],
+  "nutrition": {
+    "totalCalories": 380,
+    "perServingCalories": 380,
+    "totalProtein": 32,
+    "perServingProtein": 32,
+    "totalCarbs": 52,
+    "perServingCarbs": 52,
+    "totalFat": 9,
+    "perServingFat": 9,
+    "perServingFiber": 10,
+    "totalFiber": 10
+  },
+  "cookingTime": "10 minutes"
+}

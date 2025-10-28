@@ -1,0 +1,37 @@
+{
+  "id": 6,
+  "name": "Strawberry Cheesecake Smoothie Bowl",
+  "category": "smoothie-bowls",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "1 cup Frozen strawberries",
+    "1/2 cup Greek yogurt (non-fat)",
+    "2 tbsp Cream cheese (light)",
+    "1 scoop Vanilla whey protein",
+    "1/4 cup Almond milk (unsweetened)",
+    "2 tbsp Graham cracker crumbs and fresh strawberries (for topping)"
+  ],
+  "instructions": [
+    "Add frozen strawberries, Greek yogurt, cream cheese, vanilla whey, and almond milk to blender",
+    "Blend on high until thick and creamy",
+    "Should be thicker than a regular smoothie",
+    "Pour into a bowl",
+    "Top with graham cracker crumbs and fresh strawberry slices",
+    "Optional: Add whipped cream or honey drizzle",
+    "Serve immediately with a spoon"
+  ],
+  "nutrition": {
+    "totalCalories": 360,
+    "perServingCalories": 360,
+    "totalProtein": 35,
+    "perServingProtein": 35,
+    "totalCarbs": 40,
+    "perServingCarbs": 40,
+    "totalFat": 8,
+    "perServingFat": 8,
+    "perServingFiber": 4,
+    "totalFiber": 4
+  },
+  "cookingTime": "10 minutes"
+}

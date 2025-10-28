@@ -1,0 +1,37 @@
+{
+  "id": 4,
+  "name": "Tropical Paradise Smoothie Bowl",
+  "category": "smoothie-bowls",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "1 cup Frozen pineapple chunks",
+    "1/2 cup Frozen mango",
+    "1/2 Frozen banana",
+    "1 scoop Vanilla whey protein",
+    "1/2 cup Coconut milk (unsweetened)",
+    "2 tbsp Shredded coconut and kiwi slices (for topping)"
+  ],
+  "instructions": [
+    "Add frozen pineapple, mango, banana, vanilla whey, and coconut milk to blender",
+    "Blend on high until thick and creamy",
+    "Should be thicker than a regular smoothie",
+    "Pour into a bowl",
+    "Top with shredded coconut and kiwi slices",
+    "Optional: Add fresh pineapple, passion fruit, or granola",
+    "Serve immediately with a spoon"
+  ],
+  "nutrition": {
+    "totalCalories": 340,
+    "perServingCalories": 340,
+    "totalProtein": 29,
+    "perServingProtein": 29,
+    "totalCarbs": 50,
+    "perServingCarbs": 50,
+    "totalFat": 7,
+    "perServingFat": 7,
+    "perServingFiber": 6,
+    "totalFiber": 6
+  },
+  "cookingTime": "10 minutes"
+}

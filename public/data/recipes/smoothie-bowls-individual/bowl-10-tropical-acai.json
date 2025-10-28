@@ -1,0 +1,38 @@
+{
+  "id": 10,
+  "name": "Tropical Acai Bowl",
+  "category": "smoothie-bowls",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "1 packet Frozen acai puree (100g)",
+    "1/2 cup Frozen mango",
+    "1/2 cup Frozen pineapple",
+    "1/2 Frozen banana",
+    "1 scoop Vanilla whey protein",
+    "1/4 cup Coconut milk (unsweetened)",
+    "2 tbsp Fresh mango, pineapple, coconut flakes, and granola (for topping)"
+  ],
+  "instructions": [
+    "Add frozen acai puree, mango, pineapple, banana, vanilla whey, and coconut milk to blender",
+    "Blend on high until thick and creamy",
+    "Should be thicker than a regular smoothie",
+    "Pour into a bowl",
+    "Top with fresh mango, pineapple, coconut flakes, and granola",
+    "Optional: Add kiwi slices, passion fruit, or chia seeds",
+    "Serve immediately with a spoon"
+  ],
+  "nutrition": {
+    "totalCalories": 370,
+    "perServingCalories": 370,
+    "totalProtein": 30,
+    "perServingProtein": 30,
+    "totalCarbs": 55,
+    "perServingCarbs": 55,
+    "totalFat": 8,
+    "perServingFat": 8,
+    "perServingFiber": 9,
+    "totalFiber": 9
+  },
+  "cookingTime": "10 minutes"
+}

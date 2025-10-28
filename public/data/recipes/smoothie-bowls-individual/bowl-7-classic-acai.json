@@ -1,0 +1,37 @@
+{
+  "id": 7,
+  "name": "Classic Acai Bowl",
+  "category": "smoothie-bowls",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "1 packet Frozen acai puree (100g)",
+    "1 Frozen banana",
+    "1/2 cup Frozen mixed berries",
+    "1 scoop Vanilla whey protein",
+    "1/4 cup Almond milk (unsweetened)",
+    "2 tbsp Granola, fresh berries, and banana slices (for topping)"
+  ],
+  "instructions": [
+    "Add frozen acai puree, banana, mixed berries, vanilla whey, and almond milk to blender",
+    "Blend on high until thick and creamy",
+    "Should be thicker than a regular smoothie",
+    "Pour into a bowl",
+    "Top with granola, fresh berries, and banana slices",
+    "Optional: Add honey drizzle, coconut flakes, or chia seeds",
+    "Serve immediately with a spoon"
+  ],
+  "nutrition": {
+    "totalCalories": 350,
+    "perServingCalories": 350,
+    "totalProtein": 30,
+    "perServingProtein": 30,
+    "totalCarbs": 50,
+    "perServingCarbs": 50,
+    "totalFat": 6,
+    "perServingFat": 6,
+    "perServingFiber": 9,
+    "totalFiber": 9
+  },
+  "cookingTime": "10 minutes"
+}
