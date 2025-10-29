@@ -8,9 +8,12 @@ const ContactPage = () => {
   const [submitted, setSubmitted] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  // Prevent flash - wait for content to load
+  // Prevent flash - delay overlay slightly to ensure content renders first
   useEffect(() => {
-    setIsLoaded(true);
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 50); // 50ms delay ensures content renders first
+    return () => clearTimeout(timer);
   }, []);
 
   const handleSubmit = (e) => {
