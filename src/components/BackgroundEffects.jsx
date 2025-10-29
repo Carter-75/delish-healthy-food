@@ -15,7 +15,7 @@ const BackgroundEffects = () => {
       {/* Animated pulse overlay */}
       <div 
         className={`fixed inset-0 bg-gradient-to-br ${theme.pulseGradient || 'from-blue-500/10 via-purple-500/10 to-pink-500/10'} 
-        opacity-12 animate-pulseGlow transition-all duration-1000`}
+        opacity-10 animate-pulseGlow transition-all duration-1000`}
       />
       
       {/* Moving gradient */}
