@@ -159,24 +159,21 @@ const ContactPage = () => {
     <div className="relative min-h-screen">
       {/* Full viewport blur overlay with Coming Soon message - ONE unified overlay */}
       {isLoaded && (
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-40" style={{ 
-        willChange: 'transform',
-        transform: 'translateZ(0)',
-        backfaceVisibility: 'hidden',
-        WebkitBackfaceVisibility: 'hidden'
-      }}>
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-40">
         {/* Base backdrop blur */}
-        <div className="absolute inset-0 bg-slate-900/20" style={{ 
-          backdropFilter: 'blur(8px)', 
-          WebkitBackdropFilter: 'blur(8px)',
-          transform: 'translateZ(0)'
-        }}></div>
+        <div
+          className="absolute inset-0 bg-slate-900/20"
+          style={{
+            backdropFilter: 'blur(8px)',
+            WebkitBackdropFilter: 'blur(8px)'
+          }}
+        />
         
-        {/* Randomized blur spots scattered across entire viewport - optimized for mobile */}
+        {/* Static blur spots across entire viewport */}
         {blurSpots.map(spot => (
           <div
             key={spot.id}
-            className="absolute"
+            className="absolute animate-none md:animate-float"
             style={{
               left: `${spot.x}%`,
               top: `${spot.y}%`,
@@ -184,10 +181,9 @@ const ContactPage = () => {
               height: `${spot.size}px`,
               background: `radial-gradient(circle, ${spot.color} 0%, transparent 70%)`,
               filter: `blur(${spot.blurAmount}px)`,
-              transform: 'translate(-50%, -50%) translateZ(0)',
-              willChange: 'transform',
-              backfaceVisibility: 'hidden',
-              WebkitBackfaceVisibility: 'hidden'
+              transform: 'translate(-50%, -50%)',
+              animationDelay: `${spot.animationDelay}s`,
+              animationDuration: `${spot.animationDuration}s`
             }}
           />
         ))}
@@ -195,13 +191,14 @@ const ContactPage = () => {
         {/* Coming Soon Message with circular blur background */}
         <div className="absolute inset-0 flex items-center justify-center z-10">
           {/* Circular blur sized just for the Coming Soon message */}
-          <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px]" style={{ 
-            background: 'radial-gradient(circle, rgba(236, 72, 153, 0.6) 0%, rgba(147, 51, 234, 0.5) 30%, rgba(217, 70, 239, 0.4) 60%, transparent 100%)', 
-            filter: 'blur(80px)', 
-            transform: 'translate(-50%, -50%) translateZ(0)',
-            willChange: 'transform',
-            backfaceVisibility: 'hidden'
-          }}></div>
+          <div
+            className="absolute top-1/2 left-1/2 w-[400px] h-[400px]"
+            style={{
+              background: 'radial-gradient(circle, rgba(236, 72, 153, 0.6) 0%, rgba(147, 51, 234, 0.5) 30%, rgba(217, 70, 239, 0.4) 60%, transparent 100%)',
+              filter: 'blur(80px)',
+              transform: 'translate(-50%, -50%)'
+            }}
+          />
           
           {/* Coming Soon text on top */}
           <div className="relative z-10 text-center animate-fadeInUp">
