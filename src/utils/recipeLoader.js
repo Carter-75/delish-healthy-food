@@ -4,14 +4,7 @@ const CATEGORY_DATA_PATH = '/data/recipes/recipe-categories.json';
 let categoriesCache = null;
 const jsonCache = new Map();
 
-const COLLECTION_PATHS = {
-  'chicken-omelettes-variations': '/data/recipes/chicken-omelettes-variations.json',
-  'protein-bowls': '/data/recipes/protein-bowls.json',
-  'desserts': '/data/recipes/desserts.json',
-  'protein-snacks': '/data/recipes/protein-snacks.json',
-  'quick-lunches': '/data/recipes/quick-lunches.json',
-  'smoothie-bowls': '/data/recipes/smoothie-bowls.json'
-};
+// All recipe locations come from recipe-categories.json; no hardcoded paths below
 
 const fetchJSONWithCache = async (path) => {
   if (!path) {
@@ -20,11 +13,32 @@ const fetchJSONWithCache = async (path) => {
 
   if (!jsonCache.has(path)) {
     const promise = (async () => {
-      const response = await fetch(path, { cache: 'no-store' });
-      if (!response.ok) {
-        throw new Error(`Request failed with status ${response.status}`);
+      const base = (import.meta && import.meta.env && import.meta.env.BASE_URL) || '/';
+      const candidates = [];
+      // original path
+      candidates.push(path);
+      // base + path (for apps deployed under a subpath)
+      if (path.startsWith('/')) {
+        candidates.push(base.replace(/\/$/, '') + path);
+      } else {
+        candidates.push(base.replace(/\/$/, '') + '/' + path);
+        candidates.push('/' + path);
       }
-      return await response.json();
+
+      let lastError;
+      for (const url of candidates) {
+        try {
+          const response = await fetch(url, { cache: 'no-store' });
+          if (!response.ok) {
+            lastError = new Error(`Request failed with status ${response.status}`);
+            continue;
+          }
+          return await response.json();
+        } catch (err) {
+          lastError = err;
+        }
+      }
+      throw lastError || new Error(`Failed to load ${path}`);
     })().catch((error) => {
       console.error(`Failed to load data from ${path}:`, error);
       jsonCache.delete(path);
@@ -57,19 +71,24 @@ const findCategoryById = async (categoryId) => {
   return categories.find((category) => category.id === categoryId) || null;
 };
 
-const loadCollection = async (pathKeyOrPath) => {
-  const path = COLLECTION_PATHS[pathKeyOrPath] || pathKeyOrPath;
-  if (!path) {
-    return [];
-  }
-
+const loadCollection = async (categoryIdOrPath) => {
   try {
-    const data = await fetchJSONWithCache(path);
-    return Array.isArray(data) ? data : [];
+    // If this looks like a path, fetch it directly
+    if (typeof categoryIdOrPath === 'string' && (categoryIdOrPath.startsWith('/') || categoryIdOrPath.endsWith('.json'))) {
+      const direct = await fetchJSONWithCache(categoryIdOrPath);
+      return Array.isArray(direct) ? direct : [];
+    }
+
+    // Otherwise treat as category id and resolve via recipe-categories.json
+    const category = await findCategoryById(categoryIdOrPath);
+    if (category?.data?.itemsPath) {
+      const items = await fetchJSONWithCache(category.data.itemsPath);
+      return Array.isArray(items) ? items : [];
+    }
   } catch (error) {
-    // fetchJSONWithCache already logs the error
-    return [];
+    // error already logged by fetchJSONWithCache
   }
+  return [];
 };
 
 const replaceCountInDescription = (description, total) => {
@@ -132,12 +151,14 @@ export const loadRecipeCategories = async () => {
 
 export const loadChickenOmelettesBase = async () => {
   try {
-    const response = await fetch('/data/recipes/chicken-omelettes-base.json');
-    return await response.json();
+    const category = await findCategoryById('chicken-omelettes');
+    if (category?.data?.basePath) {
+      return await fetchJSONWithCache(category.data.basePath);
+    }
   } catch (error) {
     console.error('Failed to load chicken omelettes base:', error);
-    return null;
   }
+  return null;
 };
 
 // Load individual chicken omelette variation
@@ -273,87 +294,30 @@ export const loadSmoothieBowls = async () => {
 };
 
 export const loadRecipesByCategory = async (categoryId) => {
-  switch (categoryId) {
-    case 'chicken-omelettes':
-      const [base, variations] = await Promise.all([
-        loadChickenOmelettesBase(),
-        loadChickenOmelettesVariations()
-      ]);
-      return { base, recipes: variations };
-    
-    case 'protein-bowls':
-      const bowls = await loadProteinBowls();
-      return { base: null, recipes: bowls };
-    
-    case 'desserts':
-      const desserts = await loadDesserts();
-      return { base: null, recipes: desserts };
-    
-    case 'protein-snacks':
-      const snacks = await loadProteinSnacks();
-      return { base: null, recipes: snacks };
-    
-    case 'quick-lunches':
-      const lunches = await loadQuickLunches();
-      return { base: null, recipes: lunches };
-    
-    case 'smoothie-bowls':
-      const smoothieBowls = await loadSmoothieBowls();
-      return { base: null, recipes: smoothieBowls };
-    
-    default: {
-      const category = await findCategoryById(categoryId);
-      if (category?.data?.itemsPath) {
-        try {
-          const [baseData, items] = await Promise.all([
-            category.data.basePath ? fetchJSONWithCache(category.data.basePath) : Promise.resolve(null),
-            fetchJSONWithCache(category.data.itemsPath)
-          ]);
+  const category = await findCategoryById(categoryId);
+  if (!category || !category.data) {
+    return { base: null, recipes: [] };
+  }
 
-          return {
-            base: baseData,
-            recipes: Array.isArray(items) ? items : []
-          };
-        } catch (error) {
-          // Errors already logged by fetchJSONWithCache
-        }
-      }
+  try {
+    const [baseData, items] = await Promise.all([
+      category.data.basePath ? fetchJSONWithCache(category.data.basePath) : Promise.resolve(null),
+      category.data.itemsPath ? fetchJSONWithCache(category.data.itemsPath) : Promise.resolve([])
+    ]);
 
-      return { base: null, recipes: [] };
-    }
+    return {
+      base: baseData,
+      recipes: Array.isArray(items) ? items : []
+    };
+  } catch (error) {
+    // errors are already logged inside fetchJSONWithCache
+    return { base: null, recipes: [] };
   }
 };
 
 export const loadSingleRecipe = async (categoryId, recipeId) => {
   const numericId = Number(recipeId);
-  
-  // Try loading individual files first for better performance
-  let recipe = null;
-  let base = null;
-  
-  if (categoryId === 'chicken-omelettes') {
-    [recipe, base] = await Promise.all([
-      loadChickenOmeletteVariation(numericId),
-      loadChickenOmelettesBase()
-    ]);
-  } else if (categoryId === 'protein-bowls') {
-    recipe = await loadProteinBowl(numericId);
-  } else if (categoryId === 'desserts') {
-    recipe = await loadDessert(numericId);
-  } else if (categoryId === 'protein-snacks') {
-    recipe = await loadProteinSnack(numericId);
-  } else if (categoryId === 'quick-lunches') {
-    recipe = await loadQuickLunch(numericId);
-  } else if (categoryId === 'smoothie-bowls') {
-    recipe = await loadSmoothieBowl(numericId);
-  }
-  
-  // If individual file loading failed, fall back to loading all recipes
-  if (!recipe) {
-    const { base: categoryBase, recipes } = await loadRecipesByCategory(categoryId);
-    recipe = recipes.find(r => Number(r.id) === numericId);
-    base = categoryBase;
-  }
-  
+  const { base, recipes } = await loadRecipesByCategory(categoryId);
+  const recipe = (recipes || []).find(r => Number(r.id) === numericId) || null;
   return { base, recipe };
 };
