@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useTheme } from '../hooks/useTheme';
 import { Mail, MessageSquare, Sparkles, Send, Check } from 'lucide-react';
 
@@ -6,19 +6,6 @@ const ContactPage = () => {
   const { theme } = useTheme();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
-  const [showOverlay, setShowOverlay] = useState(false);
-
-  useEffect(() => {
-    // Force a reflow before showing to ensure content is painted first
-    const handleShow = () => {
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          setShowOverlay(true);
-        });
-      });
-    };
-    handleShow();
-  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -94,54 +81,7 @@ const ContactPage = () => {
 
   return (
     <div className="relative min-h-screen">
-      {/* Full viewport blur overlay with Coming Soon message - ONE unified overlay */}
-      {showOverlay && (
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-40">
-        {/* Base backdrop blur */}
-        <div className="absolute inset-0 bg-slate-900/20" style={{ backdropFilter: 'blur(8px)' }}></div>
-        
-        {/* Randomized blur spots scattered across entire viewport */}
-        {blurSpots.map(spot => (
-          <div
-            key={spot.id}
-            className="absolute animate-float"
-            style={{
-              left: `${spot.x}%`,
-              top: `${spot.y}%`,
-              width: `${spot.size}px`,
-              height: `${spot.size}px`,
-              background: `radial-gradient(circle, ${spot.color} 0%, transparent 70%)`,
-              filter: `blur(${spot.blurAmount}px)`,
-              transform: 'translate(-50%, -50%)',
-              animationDelay: `${spot.animationDelay}s`,
-              animationDuration: `${4 + Math.random() * 3}s`
-            }}
-          />
-        ))}
-        
-        {/* Coming Soon Message with circular blur background */}
-        <div className="absolute inset-0 flex items-center justify-center z-10">
-          {/* Circular blur sized just for the Coming Soon message */}
-          <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px]" style={{ background: 'radial-gradient(circle, rgba(236, 72, 153, 0.6) 0%, rgba(147, 51, 234, 0.5) 30%, rgba(217, 70, 239, 0.4) 60%, transparent 100%)', filter: 'blur(80px)', transform: 'translate(-50%, -50%)' }}></div>
-          
-          {/* Coming Soon text on top */}
-          <div className="relative z-10 text-center animate-fadeInUp">
-            <Sparkles className="w-20 h-20 text-blue-400 mx-auto mb-6 animate-pulseGlow" />
-            <h2 className="text-5xl sm:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-pink-400 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(236,72,153,0.5)]">
-              Coming Soon
-            </h2>
-            <p className="text-xl text-gray-300 mb-2">
-              We're setting up our contact system
-            </p>
-            <p className="text-gray-400">
-              Check back soon to get in touch!
-            </p>
-          </div>
-        </div>
-      </div>
-      )}
-
-      {/* Content */}
+      {/* Content - renders FIRST in DOM but z-10 keeps it on top */}
       <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="max-w-3xl mx-auto relative">
           {/* Header */}
@@ -260,6 +200,51 @@ const ContactPage = () => {
           <div className="mt-12 text-center animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
             <p className="text-gray-400">
               We typically respond within 24-48 hours during business days.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Full viewport blur overlay - renders AFTER content but z-index keeps it behind */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        {/* Base backdrop blur */}
+        <div className="absolute inset-0 bg-slate-900/20" style={{ backdropFilter: 'blur(8px)' }}></div>
+        
+        {/* Randomized blur spots scattered across entire viewport */}
+        {blurSpots.map(spot => (
+          <div
+            key={spot.id}
+            className="absolute animate-float"
+            style={{
+              left: `${spot.x}%`,
+              top: `${spot.y}%`,
+              width: `${spot.size}px`,
+              height: `${spot.size}px`,
+              background: `radial-gradient(circle, ${spot.color} 0%, transparent 70%)`,
+              filter: `blur(${spot.blurAmount}px)`,
+              transform: 'translate(-50%, -50%)',
+              animationDelay: `${spot.animationDelay}s`,
+              animationDuration: `${4 + Math.random() * 3}s`
+            }}
+          />
+        ))}
+        
+        {/* Coming Soon Message with circular blur background */}
+        <div className="absolute inset-0 flex items-center justify-center z-10">
+          {/* Circular blur sized just for the Coming Soon message */}
+          <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px]" style={{ background: 'radial-gradient(circle, rgba(236, 72, 153, 0.6) 0%, rgba(147, 51, 234, 0.5) 30%, rgba(217, 70, 239, 0.4) 60%, transparent 100%)', filter: 'blur(80px)', transform: 'translate(-50%, -50%)' }}></div>
+          
+          {/* Coming Soon text on top */}
+          <div className="relative z-10 text-center">
+            <Sparkles className="w-20 h-20 text-blue-400 mx-auto mb-6 animate-pulseGlow" />
+            <h2 className="text-5xl sm:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-pink-400 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(236,72,153,0.5)]">
+              Coming Soon
+            </h2>
+            <p className="text-xl text-gray-300 mb-2">
+              We're setting up our contact system
+            </p>
+            <p className="text-gray-400">
+              Check back soon to get in touch!
             </p>
           </div>
         </div>
