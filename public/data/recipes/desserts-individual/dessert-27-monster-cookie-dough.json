@@ -1,0 +1,38 @@
+{
+  "id": 27,
+  "name": "Monster Cookie Dough",
+  "category": "desserts",
+  "description": "Low-Calorie, High-Protein Edible Cookie Dough",
+  "servings": 1,
+  "ingredients": [
+    "2 tbsp oat flour",
+    "2 tbsp PB2",
+    "1 scoop vanilla protein powder",
+    "1 tbsp sweetener",
+    "Pinch of salt",
+    "1/4 cup water (slowly add, may need less or more)",
+    "Optional: mini chocolate chips and/or M&Ms"
+  ],
+  "nutrition": {
+    "totalCalories": 260,
+    "perServingCalories": 260,
+    "totalProtein": 31,
+    "perServingProtein": 31,
+    "totalCarbs": 28,
+    "perServingCarbs": 28,
+    "totalFiber": 4,
+    "perServingFiber": 4,
+    "totalFat": 4,
+    "perServingFat": 4,
+    "totalSugar": 2,
+    "perServingSugar": 2
+  },
+  "instructions": [
+    "In a bowl, combine oat flour, PB2, vanilla protein powder, sweetener, and a pinch of salt",
+    "Slowly add 1/4 cup water, mixing as you go (you may need less or more water)",
+    "Mix until cookie dough consistency is reached",
+    "Add optional mini chocolate chips and/or M&Ms if desired",
+    "Enjoy immediately or refrigerate for firmer texture"
+  ],
+  "cookingTime": "5 minutes"
+}
