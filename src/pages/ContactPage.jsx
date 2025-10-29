@@ -163,21 +163,12 @@ const ContactPage = () => {
         willChange: 'transform',
         transform: 'translateZ(0)',
         backfaceVisibility: 'hidden',
-        WebkitBackfaceVisibility: 'hidden',
-        perspective: 1000,
-        WebkitPerspective: 1000
+        WebkitBackfaceVisibility: 'hidden'
       }}>
-        {/* Additional solid overlay layer to ensure content blocking */}
-        <div className="absolute inset-0 bg-slate-900/60" style={{
-          willChange: 'transform',
-          transform: 'translateZ(0)'
-        }}></div>
-        
-        {/* Base backdrop blur - with hardware acceleration */}
-        <div className="absolute inset-0" style={{ 
-          backdropFilter: 'blur(16px)', 
-          WebkitBackdropFilter: 'blur(16px)',
-          willChange: 'transform',
+        {/* Base backdrop blur */}
+        <div className="absolute inset-0 bg-slate-900/20" style={{ 
+          backdropFilter: 'blur(8px)', 
+          WebkitBackdropFilter: 'blur(8px)',
           transform: 'translateZ(0)'
         }}></div>
         
