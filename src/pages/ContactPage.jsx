@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useTheme } from '../hooks/useTheme';
 import { Mail, MessageSquare, Sparkles, Send, Check } from 'lucide-react';
 
@@ -6,6 +6,11 @@ const ContactPage = () => {
   const { theme } = useTheme();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -82,7 +87,7 @@ const ContactPage = () => {
   return (
     <div className="relative min-h-screen">
       {/* Full viewport blur overlay with Coming Soon message - ONE unified overlay */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-40">
+      <div className={`fixed inset-0 overflow-hidden pointer-events-none z-40 ${mounted ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
         {/* Base backdrop blur */}
         <div className="absolute inset-0 bg-slate-900/20" style={{ backdropFilter: 'blur(8px)' }}></div>
         
