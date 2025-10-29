@@ -1,6 +1,129 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTheme } from '../hooks/useTheme';
 import { Mail, MessageSquare, Sparkles, Send, Check } from 'lucide-react';
+
+const STATIC_BLUR_SPOTS = [
+  {
+    id: 'spot-1',
+    x: 22,
+    y: 28,
+    size: 520,
+    color: 'rgba(236, 72, 153, 0.35)',
+    blurAmount: 120,
+    animationDelay: 0,
+    animationDuration: 6
+  },
+  {
+    id: 'spot-2',
+    x: 72,
+    y: 24,
+    size: 460,
+    color: 'rgba(217, 70, 239, 0.3)',
+    blurAmount: 110,
+    animationDelay: 1.2,
+    animationDuration: 7
+  },
+  {
+    id: 'spot-3',
+    x: 16,
+    y: 68,
+    size: 420,
+    color: 'rgba(147, 51, 234, 0.28)',
+    blurAmount: 105,
+    animationDelay: 0.6,
+    animationDuration: 6.5
+  },
+  {
+    id: 'spot-4',
+    x: 78,
+    y: 70,
+    size: 560,
+    color: 'rgba(139, 92, 246, 0.32)',
+    blurAmount: 130,
+    animationDelay: 1.6,
+    animationDuration: 7.2
+  },
+  {
+    id: 'spot-5',
+    x: 48,
+    y: 16,
+    size: 380,
+    color: 'rgba(236, 72, 153, 0.26)',
+    blurAmount: 95,
+    animationDelay: 0.8,
+    animationDuration: 5.8
+  },
+  {
+    id: 'spot-6',
+    x: 54,
+    y: 82,
+    size: 480,
+    color: 'rgba(192, 132, 252, 0.25)',
+    blurAmount: 115,
+    animationDelay: 2,
+    animationDuration: 6.8
+  },
+  {
+    id: 'spot-7',
+    x: 10,
+    y: 42,
+    size: 340,
+    color: 'rgba(217, 70, 239, 0.22)',
+    blurAmount: 90,
+    animationDelay: 1.1,
+    animationDuration: 6.2
+  },
+  {
+    id: 'spot-8',
+    x: 88,
+    y: 44,
+    size: 360,
+    color: 'rgba(236, 72, 153, 0.24)',
+    blurAmount: 100,
+    animationDelay: 0.4,
+    animationDuration: 5.6
+  },
+  {
+    id: 'spot-9',
+    x: 34,
+    y: 84,
+    size: 300,
+    color: 'rgba(147, 51, 234, 0.2)',
+    blurAmount: 85,
+    animationDelay: 1.4,
+    animationDuration: 6.4
+  },
+  {
+    id: 'spot-10',
+    x: 64,
+    y: 8,
+    size: 320,
+    color: 'rgba(139, 92, 246, 0.26)',
+    blurAmount: 90,
+    animationDelay: 2.4,
+    animationDuration: 6.1
+  },
+  {
+    id: 'spot-11',
+    x: 4,
+    y: 18,
+    size: 260,
+    color: 'rgba(192, 132, 252, 0.18)',
+    blurAmount: 80,
+    animationDelay: 0.2,
+    animationDuration: 5.4
+  },
+  {
+    id: 'spot-12',
+    x: 94,
+    y: 80,
+    size: 280,
+    color: 'rgba(217, 70, 239, 0.2)',
+    blurAmount: 88,
+    animationDelay: 1.8,
+    animationDuration: 6.6
+  }
+];
 
 const ContactPage = () => {
   const { theme } = useTheme();
@@ -30,60 +153,7 @@ const ContactPage = () => {
     });
   };
 
-  // Generate randomized blur spots - more in center, fewer and smaller towards edges
-  const blurSpots = useMemo(() => {
-    const spots = [];
-    const centerX = 50;
-    const centerY = 50;
-    
-    // Generate 40 random blur spots
-    for (let i = 0; i < 40; i++) {
-      // Random position
-      const x = Math.random() * 120 - 10; // -10% to 110% (extends beyond viewport)
-      const y = Math.random() * 120 - 10;
-      
-      // Calculate distance from center (0 to ~70)
-      const distanceFromCenter = Math.sqrt(Math.pow(x - centerX, 2) + Math.pow(y - centerY, 2));
-      
-      // Probability decreases with distance - much faster dropoff
-      const probabilityThreshold = Math.max(0, 1 - (distanceFromCenter / 40));
-      if (Math.random() > probabilityThreshold) continue;
-      
-      // Size decreases with distance (80px to 700px, smaller when farther)
-      const maxSize = 700 - (distanceFromCenter * 12);
-      const size = Math.max(80, maxSize + (Math.random() * 150 - 75));
-      
-      // Opacity decreases with distance - fades to 0 much faster
-      const opacity = Math.max(0, 0.4 - (distanceFromCenter / 35));
-      if (opacity <= 0.02) continue; // Skip nearly invisible spots
-      
-      // Blur amount decreases with distance - fades faster
-      const blurAmount = Math.max(30, 150 - (distanceFromCenter * 2.5));
-      
-      // Random color - more pink/purple as requested
-      const colors = [
-        `rgba(236, 72, 153, ${opacity})`, // pink
-        `rgba(217, 70, 239, ${opacity})`, // fuchsia
-        `rgba(147, 51, 234, ${opacity})`, // purple
-        `rgba(192, 132, 252, ${opacity})`, // light purple
-        `rgba(139, 92, 246, ${opacity})`, // violet
-        `rgba(59, 130, 246, ${opacity * 0.7})`, // blue (less frequent)
-      ];
-      const color = colors[Math.floor(Math.random() * colors.length)];
-      
-      spots.push({
-        id: i,
-        x,
-        y,
-        size,
-        color,
-        blurAmount,
-        animationDelay: Math.random() * 3
-      });
-    }
-    
-    return spots;
-  }, []);
+  const blurSpots = STATIC_BLUR_SPOTS;
 
   return (
     <div className="relative min-h-screen">
@@ -107,7 +177,7 @@ const ContactPage = () => {
               filter: `blur(${spot.blurAmount}px)`,
               transform: 'translate(-50%, -50%)',
               animationDelay: `${spot.animationDelay}s`,
-              animationDuration: `${4 + Math.random() * 3}s`
+              animationDuration: `${spot.animationDuration}s`
             }}
           />
         ))}
