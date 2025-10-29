@@ -139,7 +139,7 @@ const RecipeDetailPage = () => {
                       key={index}
                       className={`flex items-start gap-3 p-3 rounded-lg ${theme.highlight || 'bg-blue-900/20'} 
                         stagger-item`}
-                      style={{ animationDelay: `${index * 0.05}s` }}
+                      style={{ '--stagger-delay': `${index * 0.05}s` }}
                     >
                       <div className={`w-2 h-2 mt-2 ${theme.accent || 'bg-blue-500'} rounded-full flex-shrink-0`} />
                       <span className="text-gray-200">{ingredient}</span>
@@ -184,7 +184,7 @@ const RecipeDetailPage = () => {
                 <li
                   key={index}
                   className={`flex gap-4 stagger-item`}
-                  style={{ animationDelay: `${index * 0.1}s` }}
+                  style={{ '--stagger-delay': `${index * 0.1}s` }}
                 >
                   <div className={`flex-shrink-0 w-8 h-8 rounded-full ${theme.highlight || 'bg-blue-900/30'} 
                     border ${theme.border || 'border-blue-500/20'} flex items-center justify-center`}>

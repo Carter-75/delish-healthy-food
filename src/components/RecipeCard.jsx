@@ -23,7 +23,7 @@ const RecipeCard = ({ recipe, categoryId, delay = 0 }) => {
   return (
     <div
       className="stagger-item hover-lift cursor-pointer group"
-      style={{ animationDelay: `${delay}s` }}
+      style={{ '--stagger-delay': `${delay}s` }}
       onClick={handleClick}
     >
       <div className={`relative glass-effect rounded-2xl overflow-hidden border ${theme.border || 'border-white/10'}

@@ -77,7 +77,7 @@ const RecipeCategoryPage = () => {
                   key={index}
                   className={`flex items-center gap-3 p-3 rounded-lg ${theme.highlight || 'bg-blue-900/20'} 
                     stagger-item`}
-                  style={{ animationDelay: `${index * 0.05}s` }}
+                  style={{ '--stagger-delay': `${index * 0.05}s` }}
                 >
                   <div className={`w-2 h-2 ${theme.accent || 'bg-blue-500'} rounded-full flex-shrink-0`} />
                   <span className="text-gray-200">{ingredient}</span>

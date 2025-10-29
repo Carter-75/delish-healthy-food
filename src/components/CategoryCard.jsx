@@ -33,7 +33,7 @@ const CategoryCard = ({ category, delay = 0 }) => {
   return (
     <div
       className="stagger-item"
-      style={{ animationDelay: `${delay}s` }}
+      style={{ '--stagger-delay': `${delay}s` }}
     >
       <div
         onClick={handleClick}
