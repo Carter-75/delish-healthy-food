@@ -138,28 +138,42 @@ const ContactPage = () => {
 
   // Stabilize fixed overlay height on mobile browsers
   useEffect(() => {
-    const updateViewportHeight = () => {
-      const viewport = window.visualViewport;
-      const height = viewport ? viewport.height : window.innerHeight;
-      document.documentElement.style.setProperty('--contact-vh', `${height * 0.01}px`);
+    let rafId = null;
+
+    const updateViewportMetrics = () => {
+      if (rafId) {
+        cancelAnimationFrame(rafId);
+      }
+
+      rafId = requestAnimationFrame(() => {
+        const viewport = window.visualViewport;
+        const height = viewport ? viewport.height : window.innerHeight;
+        const offsetTop = viewport ? viewport.offsetTop : 0;
+
+        document.documentElement.style.setProperty('--contact-vh', `${height}px`);
+        document.documentElement.style.setProperty('--contact-vt', `${offsetTop}px`);
+      });
     };
 
-    updateViewportHeight();
+    updateViewportMetrics();
 
-    window.addEventListener('resize', updateViewportHeight);
-    window.addEventListener('orientationchange', updateViewportHeight);
+    window.addEventListener('resize', updateViewportMetrics);
+    window.addEventListener('orientationchange', updateViewportMetrics);
 
     if (window.visualViewport) {
-      window.visualViewport.addEventListener('resize', updateViewportHeight);
-      window.visualViewport.addEventListener('scroll', updateViewportHeight);
+      window.visualViewport.addEventListener('resize', updateViewportMetrics);
+      window.visualViewport.addEventListener('scroll', updateViewportMetrics);
     }
 
     return () => {
-      window.removeEventListener('resize', updateViewportHeight);
-      window.removeEventListener('orientationchange', updateViewportHeight);
+      if (rafId) {
+        cancelAnimationFrame(rafId);
+      }
+      window.removeEventListener('resize', updateViewportMetrics);
+      window.removeEventListener('orientationchange', updateViewportMetrics);
       if (window.visualViewport) {
-        window.visualViewport.removeEventListener('resize', updateViewportHeight);
-        window.visualViewport.removeEventListener('scroll', updateViewportHeight);
+        window.visualViewport.removeEventListener('resize', updateViewportMetrics);
+        window.visualViewport.removeEventListener('scroll', updateViewportMetrics);
       }
     };
   }, []);
@@ -188,10 +202,11 @@ const ContactPage = () => {
       {/* Full viewport blur overlay with Coming Soon message - ONE unified overlay */}
       {isLoaded && (
       <div
-        className="fixed inset-0 overflow-hidden pointer-events-none z-40"
+        className="fixed left-0 right-0 overflow-hidden pointer-events-none z-40"
         style={{
-          height: 'calc(var(--contact-vh, 1vh) * 100)',
-          maxHeight: 'calc(var(--contact-vh, 1vh) * 100)'
+          top: 'var(--contact-vt, 0px)',
+          height: 'var(--contact-vh, 100vh)',
+          maxHeight: 'var(--contact-vh, 100vh)'
         }}
       >
         {/* Base backdrop blur */}
