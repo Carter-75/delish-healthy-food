@@ -105,19 +105,14 @@ const ContactPage = () => {
           />
         ))}
         
-        {/* Coming Soon Message with its own background blur circles */}
+        {/* Coming Soon Message with circular blur background */}
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          {/* Purple/Pink/Magenta background blur circles behind the message */}
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px]" style={{ background: 'radial-gradient(circle, rgba(236, 72, 153, 0.4) 0%, rgba(217, 70, 239, 0.3) 30%, transparent 70%)', filter: 'blur(100px)', transform: 'translate(-50%, -50%)' }}></div>
-            <div className="absolute top-1/3 left-1/3 w-[500px] h-[500px]" style={{ background: 'radial-gradient(circle, rgba(147, 51, 234, 0.35) 0%, rgba(139, 92, 246, 0.2) 40%, transparent 70%)', filter: 'blur(90px)', transform: 'translate(-50%, -50%)' }}></div>
-            <div className="absolute bottom-1/3 right-1/3 w-[500px] h-[500px]" style={{ background: 'radial-gradient(circle, rgba(217, 70, 239, 0.35) 0%, rgba(192, 132, 252, 0.2) 40%, transparent 70%)', filter: 'blur(90px)', transform: 'translate(50%, 50%)' }}></div>
-            <div className="absolute top-2/3 left-2/3 w-[400px] h-[400px]" style={{ background: 'radial-gradient(circle, rgba(236, 72, 153, 0.3) 0%, rgba(219, 39, 119, 0.15) 50%, transparent 70%)', filter: 'blur(80px)', transform: 'translate(-50%, -50%)' }}></div>
-          </div>
+          {/* Single large circular blur behind entire Coming Soon section */}
+          <div className="absolute top-1/2 left-1/2 w-[700px] h-[700px]" style={{ background: 'radial-gradient(circle, rgba(236, 72, 153, 0.5) 0%, rgba(147, 51, 234, 0.4) 25%, rgba(217, 70, 239, 0.3) 50%, transparent 100%)', filter: 'blur(120px)', transform: 'translate(-50%, -50%)' }}></div>
           
           {/* Coming Soon text on top */}
           <div className="relative z-10 text-center animate-fadeInUp">
-            <Sparkles className="w-20 h-20 text-blue-400 mx-auto mb-6 animate-pulseGlow drop-shadow-[0_0_20px_rgba(59,130,246,0.6)]" />
+            <Sparkles className="w-20 h-20 text-blue-400 mx-auto mb-6 animate-pulseGlow" />
             <h2 className="text-5xl sm:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-pink-400 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(236,72,153,0.5)]">
               Coming Soon
             </h2>
