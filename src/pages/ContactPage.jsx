@@ -163,15 +163,35 @@ const ContactPage = () => {
 
         {/* Coming Soon Overlay with Organic Fog - Varying density */}
         <div className="absolute inset-0 flex items-center justify-center z-50 pointer-events-none overflow-hidden">
-          {/* Multiple fog layers with different densities and positions */}
-          <div className="absolute inset-0 bg-slate-900/30" style={{ backdropFilter: 'blur(12px)' }}></div>
+          {/* Base fog layer with gradient fade */}
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/20 via-slate-900/35 to-slate-900/25" 
+               style={{ backdropFilter: 'blur(10px)' }}></div>
           
-          {/* Heavier fog patches - organic shapes */}
-          <div className="absolute top-0 left-0 w-96 h-96 bg-slate-900/40 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
-          <div className="absolute top-1/4 right-0 w-80 h-80 bg-slate-900/50 rounded-full blur-3xl transform translate-x-1/3"></div>
-          <div className="absolute bottom-0 left-1/4 w-72 h-72 bg-slate-900/45 rounded-full blur-3xl transform translate-y-1/3"></div>
-          <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-slate-900/35 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-slate-900/40 rounded-full blur-3xl"></div>
+          {/* Organic fog patches with radial gradients - no hard edges */}
+          <div className="absolute top-0 left-0 w-[500px] h-[500px] opacity-60"
+               style={{ 
+                 background: 'radial-gradient(circle, rgba(15, 23, 42, 0.7) 0%, rgba(15, 23, 42, 0) 70%)',
+                 filter: 'blur(60px)',
+                 transform: 'translate(-40%, -40%)'
+               }}></div>
+          <div className="absolute top-1/4 right-0 w-[400px] h-[400px] opacity-50"
+               style={{ 
+                 background: 'radial-gradient(circle, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0) 70%)',
+                 filter: 'blur(50px)',
+                 transform: 'translate(30%, 0)'
+               }}></div>
+          <div className="absolute bottom-0 left-1/4 w-[450px] h-[450px] opacity-55"
+               style={{ 
+                 background: 'radial-gradient(circle, rgba(15, 23, 42, 0.65) 0%, rgba(15, 23, 42, 0) 70%)',
+                 filter: 'blur(55px)',
+                 transform: 'translate(0, 30%)'
+               }}></div>
+          <div className="absolute top-1/2 left-1/2 w-[350px] h-[350px] opacity-45"
+               style={{ 
+                 background: 'radial-gradient(circle, rgba(15, 23, 42, 0.5) 0%, rgba(15, 23, 42, 0) 70%)',
+                 filter: 'blur(70px)',
+                 transform: 'translate(-50%, -50%)'
+               }}></div>
           
           {/* Coming Soon Message */}
           <div className="relative z-10 text-center animate-fadeInUp pointer-events-none">
