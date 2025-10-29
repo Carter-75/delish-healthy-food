@@ -196,7 +196,7 @@ const ContactPage = () => {
         {blurSpots.map(spot => (
           <div
             key={spot.id}
-            className="absolute animate-float"
+            className="absolute animate-none md:animate-float"
             style={{
               left: `${spot.x}%`,
               top: `${spot.y}%`,
