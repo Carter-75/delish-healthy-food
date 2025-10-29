@@ -107,8 +107,8 @@ const ContactPage = () => {
         
         {/* Coming Soon Message with circular blur background */}
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          {/* Single large circular blur behind entire Coming Soon section */}
-          <div className="absolute top-1/2 left-1/2 w-[700px] h-[700px]" style={{ background: 'radial-gradient(circle, rgba(236, 72, 153, 0.5) 0%, rgba(147, 51, 234, 0.4) 25%, rgba(217, 70, 239, 0.3) 50%, transparent 100%)', filter: 'blur(120px)', transform: 'translate(-50%, -50%)' }}></div>
+          {/* Circular blur sized just for the Coming Soon message */}
+          <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px]" style={{ background: 'radial-gradient(circle, rgba(236, 72, 153, 0.6) 0%, rgba(147, 51, 234, 0.5) 30%, rgba(217, 70, 239, 0.4) 60%, transparent 100%)', filter: 'blur(80px)', transform: 'translate(-50%, -50%)' }}></div>
           
           {/* Coming Soon text on top */}
           <div className="relative z-10 text-center animate-fadeInUp">
