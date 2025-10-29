@@ -20,7 +20,7 @@ const fetchJSONWithCache = async (path) => {
 
   if (!jsonCache.has(path)) {
     const promise = (async () => {
-      const response = await fetch(path);
+      const response = await fetch(path, { cache: 'no-store' });
       if (!response.ok) {
         throw new Error(`Request failed with status ${response.status}`);
       }
@@ -325,7 +325,7 @@ export const loadRecipesByCategory = async (categoryId) => {
 };
 
 export const loadSingleRecipe = async (categoryId, recipeId) => {
-  const numericId = parseInt(recipeId);
+  const numericId = Number(recipeId);
   
   // Try loading individual files first for better performance
   let recipe = null;
@@ -351,7 +351,7 @@ export const loadSingleRecipe = async (categoryId, recipeId) => {
   // If individual file loading failed, fall back to loading all recipes
   if (!recipe) {
     const { base: categoryBase, recipes } = await loadRecipesByCategory(categoryId);
-    recipe = recipes.find(r => r.id === numericId);
+    recipe = recipes.find(r => Number(r.id) === numericId);
     base = categoryBase;
   }
   
