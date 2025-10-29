@@ -100,14 +100,15 @@ const CategoryCard = ({ category, delay = 0 }) => {
     >
       <div
         onClick={handleClick}
-        className={`relative glass-effect rounded-2xl overflow-hidden border ${categoryTheme.border}
+        className={`relative glass-effect rounded-3xl overflow-hidden border ${categoryTheme.border}
           ${categoryTheme.shadow} transition-all-smooth group
-          ${category.comingSoon ? 'opacity-60 cursor-not-allowed' : 'hover-lift cursor-pointer'}`}
+          ${category.comingSoon ? 'opacity-60 cursor-not-allowed' : 'hover-lift cursor-pointer'}
+          hover:border-opacity-40`}
       >
-        {/* Gradient overlay */}
+        {/* Gradient overlay - more subtle */}
         {!category.comingSoon && (
           <div className={`absolute inset-0 bg-gradient-to-br ${categoryTheme.gradient} 
-            opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+            opacity-0 group-hover:opacity-60 transition-opacity duration-500`} />
         )}
 
         {/* Coming Soon Badge */}
@@ -122,14 +123,15 @@ const CategoryCard = ({ category, delay = 0 }) => {
 
         {/* Content */}
         <div className="relative p-8">
-          {/* Icon */}
-          <div className={`inline-flex p-4 rounded-2xl ${categoryTheme.highlight} 
-            border ${categoryTheme.border} mb-6 group-hover:scale-110 transition-transform duration-300`}>
-            <Icon className={`w-8 h-8 ${categoryTheme.text}`} />
+          {/* Icon - larger and more modern */}
+          <div className={`inline-flex p-5 rounded-3xl ${categoryTheme.highlight} 
+            border ${categoryTheme.border} mb-6 group-hover:scale-110 transition-transform duration-300
+            shadow-lg ${categoryTheme.shadow}`}>
+            <Icon className={`w-10 h-10 ${categoryTheme.text}`} />
           </div>
 
-          {/* Title */}
-          <h3 className="text-2xl font-bold text-white mb-2 group-hover:translate-x-1 transition-transform">
+          {/* Title - better spacing */}
+          <h3 className="text-2xl font-bold text-white mb-3 group-hover:translate-x-1 transition-transform leading-tight">
             {category.title}
           </h3>
 
@@ -155,10 +157,10 @@ const CategoryCard = ({ category, delay = 0 }) => {
             )}
           </div>
 
-          {/* Animated border */}
+          {/* Animated border - thicker and more visible */}
           {!category.comingSoon && (
-            <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${categoryTheme.gradient} 
-              transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left`} />
+            <div className={`absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r ${categoryTheme.gradient} 
+              transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full`} />
           )}
         </div>
       </div>

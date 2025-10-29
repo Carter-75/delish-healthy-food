@@ -16,13 +16,13 @@ const HeroSection = () => {
 
       <div className="relative max-w-6xl mx-auto">
         <div className="text-center space-y-8">
-          {/* Icon Row */}
-          <div className="flex items-center justify-center gap-4 animate-fadeInDown">
-            <div className={`p-3 rounded-2xl ${theme.highlight || 'bg-amber-900/30'} 
-              border ${theme.border || 'border-amber-500/20'} hover-glow animate-float`}>
-              <Utensils className={`w-10 h-10 sm:w-12 sm:h-12 ${theme.text || 'text-amber-400'}`} />
+          {/* Icon Row - more modern styling */}
+          <div className="flex items-center justify-center gap-5 animate-fadeInDown">
+            <div className={`p-4 rounded-3xl ${theme.highlight || 'bg-amber-900/30'} 
+              border ${theme.border || 'border-amber-500/20'} hover-glow animate-float shadow-xl`}>
+              <Utensils className={`w-12 h-12 sm:w-14 sm:h-14 ${theme.text || 'text-amber-400'}`} />
             </div>
-            <Sparkles className={`w-8 h-8 sm:w-10 sm:h-10 ${theme.text || 'text-amber-400'} animate-pulseGlow`} />
+            <Sparkles className={`w-10 h-10 sm:w-12 sm:h-12 ${theme.text || 'text-amber-400'} animate-pulseGlow`} />
           </div>
 
           {/* Main Title */}
@@ -41,23 +41,23 @@ const HeroSection = () => {
             Discover protein-packed recipes crafted for your fitness goals!
           </p>
 
-          {/* Stats */}
+          {/* Stats - more modern cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12 animate-fadeInUp" 
             style={{ animationDelay: '0.4s' }}>
-            <div className={`glass-effect rounded-xl p-6 border ${theme.border || 'border-amber-500/20'} hover-lift`}>
-              <TrendingUp className={`w-8 h-8 ${theme.text || 'text-amber-400'} mx-auto mb-3`} />
-              <p className="text-3xl font-bold text-white mb-1">50+</p>
-              <p className="text-gray-400 text-sm">Recipes</p>
+            <div className={`glass-effect rounded-2xl p-8 border ${theme.border || 'border-amber-500/20'} hover-lift shadow-xl transition-all duration-300 group`}>
+              <TrendingUp className={`w-10 h-10 ${theme.text || 'text-amber-400'} mx-auto mb-4 group-hover:scale-110 transition-transform`} />
+              <p className="text-4xl font-bold text-white mb-2">50+</p>
+              <p className="text-gray-400 text-sm font-medium">Recipes</p>
             </div>
-            <div className={`glass-effect rounded-xl p-6 border ${theme.border || 'border-amber-500/20'} hover-lift`}>
-              <Award className={`w-8 h-8 ${theme.text || 'text-amber-400'} mx-auto mb-3`} />
-              <p className="text-3xl font-bold text-white mb-1">40g+</p>
-              <p className="text-gray-400 text-sm">Protein Per Serving</p>
+            <div className={`glass-effect rounded-2xl p-8 border ${theme.border || 'border-amber-500/20'} hover-lift shadow-xl transition-all duration-300 group`}>
+              <Award className={`w-10 h-10 ${theme.text || 'text-amber-400'} mx-auto mb-4 group-hover:scale-110 transition-transform`} />
+              <p className="text-4xl font-bold text-white mb-2">40g+</p>
+              <p className="text-gray-400 text-sm font-medium">Protein Per Serving</p>
             </div>
-            <div className={`glass-effect rounded-xl p-6 border ${theme.border || 'border-amber-500/20'} hover-lift`}>
-              <Sparkles className={`w-8 h-8 ${theme.text || 'text-amber-400'} mx-auto mb-3`} />
-              <p className="text-3xl font-bold text-white mb-1">100%</p>
-              <p className="text-gray-400 text-sm">Delicious</p>
+            <div className={`glass-effect rounded-2xl p-8 border ${theme.border || 'border-amber-500/20'} hover-lift shadow-xl transition-all duration-300 group`}>
+              <Sparkles className={`w-10 h-10 ${theme.text || 'text-amber-400'} mx-auto mb-4 group-hover:scale-110 transition-transform`} />
+              <p className="text-4xl font-bold text-white mb-2">100%</p>
+              <p className="text-gray-400 text-sm font-medium">Delicious</p>
             </div>
           </div>
         </div>

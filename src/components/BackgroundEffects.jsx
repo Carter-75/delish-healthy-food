@@ -32,12 +32,14 @@ const BackgroundEffects = () => {
         }}
       />
       
-      {/* Animated circles */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className={`absolute top-1/4 left-1/4 w-64 sm:w-96 h-64 sm:h-96 ${theme.accent || 'bg-blue-500'} rounded-full 
-          opacity-10 blur-3xl animate-float`} />
-        <div className={`absolute bottom-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 ${theme.accent || 'bg-purple-500'} rounded-full 
-          opacity-10 blur-3xl animate-float`} style={{ animationDelay: '1s' }} />
+      {/* Subtle animated orbs - much more subtle */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none opacity-30">
+        <div className={`absolute top-1/4 -left-24 w-96 h-96 ${theme.accent || 'bg-blue-500'} rounded-full 
+          opacity-5 blur-[100px] animate-float`} />
+        <div className={`absolute bottom-1/3 -right-32 w-[500px] h-[500px] ${theme.accent || 'bg-purple-500'} rounded-full 
+          opacity-5 blur-[120px] animate-float`} style={{ animationDelay: '2s' }} />
+        <div className={`absolute top-2/3 left-1/2 w-72 h-72 bg-pink-500 rounded-full 
+          opacity-5 blur-[100px] animate-float`} style={{ animationDelay: '1s' }} />
       </div>
     </>
   );

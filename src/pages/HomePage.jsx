@@ -39,7 +39,7 @@ const HomePage = () => {
   }
 
   return (
-    <div className="space-y-16">
+    <div className="space-y-20">
       {/* Hero Section - Amber/Orange Theme */}
       <HeroSection />
       
@@ -55,7 +55,7 @@ const HomePage = () => {
           </h2>
 
           {categories.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {categories.map((category, index) => (
                 <CategoryCard 
                   key={category.id} 
@@ -74,8 +74,8 @@ const HomePage = () => {
         </div>
 
         {/* Additional Info Section - Purple/Violet Theme */}
-        <div className="max-w-4xl mx-auto mt-20 text-center animate-fadeInUp">
-          <div className="glass-effect rounded-2xl p-8 border border-violet-500/20 bg-gradient-to-br from-violet-900/20 via-purple-900/20 to-fuchsia-900/20">
+        <div className="max-w-4xl mx-auto mt-24 text-center animate-fadeInUp">
+          <div className="glass-effect rounded-3xl p-10 border border-violet-500/20 bg-gradient-to-br from-violet-900/20 via-purple-900/20 to-fuchsia-900/20 shadow-2xl">
             <Sparkles className="w-12 h-12 text-violet-400 mx-auto mb-4 animate-pulseGlow" />
             <h3 className="text-2xl font-bold bg-gradient-to-r from-violet-400 via-purple-400 to-fuchsia-400 
               bg-clip-text text-transparent mb-4">
