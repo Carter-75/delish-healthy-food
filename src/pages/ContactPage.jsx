@@ -27,8 +27,34 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div className="max-w-3xl mx-auto">
+    <div className="relative min-h-screen">
+      {/* Radial blur background effect - multiple layers for smooth gradient */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        {/* Center blur spot - strongest */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] 
+          bg-gradient-radial from-blue-500/30 via-purple-500/20 to-transparent rounded-full blur-[120px] animate-pulseGlow" />
+        
+        {/* Secondary blur spots - medium intensity */}
+        <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] 
+          bg-gradient-radial from-violet-500/20 via-indigo-500/10 to-transparent rounded-full blur-[100px] animate-float" />
+        <div className="absolute bottom-1/3 right-1/4 w-[600px] h-[600px] 
+          bg-gradient-radial from-pink-500/20 via-purple-500/10 to-transparent rounded-full blur-[100px] animate-float" 
+          style={{ animationDelay: '1.5s' }} />
+        
+        {/* Edge blur spots - subtle */}
+        <div className="absolute top-1/4 right-1/3 w-[400px] h-[400px] 
+          bg-gradient-radial from-cyan-500/15 to-transparent rounded-full blur-[80px] animate-float" 
+          style={{ animationDelay: '0.5s' }} />
+        <div className="absolute bottom-1/4 left-1/3 w-[400px] h-[400px] 
+          bg-gradient-radial from-fuchsia-500/15 to-transparent rounded-full blur-[80px] animate-float" 
+          style={{ animationDelay: '2s' }} />
+        
+        {/* Ambient blur - very subtle, covers more area */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-pink-500/5 blur-[60px]" />
+      </div>
+
+      <div className="container mx-auto px-4 py-12 relative z-10">
+        <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 animate-fadeInUp">
           <Sparkles className={`w-12 h-12 ${theme.text || 'text-blue-400'} mx-auto mb-6 animate-pulseGlow`} />
