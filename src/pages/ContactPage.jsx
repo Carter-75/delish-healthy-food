@@ -39,19 +39,20 @@ const ContactPage = () => {
       // Calculate distance from center (0 to ~70)
       const distanceFromCenter = Math.sqrt(Math.pow(x - centerX, 2) + Math.pow(y - centerY, 2));
       
-      // Probability decreases with distance (skip some spots far from center)
-      const probabilityThreshold = Math.max(0, 1 - (distanceFromCenter / 80));
+      // Probability decreases with distance - much faster dropoff
+      const probabilityThreshold = Math.max(0, 1 - (distanceFromCenter / 40));
       if (Math.random() > probabilityThreshold) continue;
       
-      // Size decreases with distance (100px to 800px, smaller when farther)
-      const maxSize = 800 - (distanceFromCenter * 8);
-      const size = Math.max(100, maxSize + (Math.random() * 200 - 100));
+      // Size decreases with distance (80px to 700px, smaller when farther)
+      const maxSize = 700 - (distanceFromCenter * 12);
+      const size = Math.max(80, maxSize + (Math.random() * 150 - 75));
       
-      // Opacity decreases with distance (0.05 to 0.35)
-      const opacity = Math.max(0.05, 0.35 - (distanceFromCenter / 100));
+      // Opacity decreases with distance - fades to 0 much faster
+      const opacity = Math.max(0, 0.4 - (distanceFromCenter / 35));
+      if (opacity <= 0.02) continue; // Skip nearly invisible spots
       
-      // Blur amount decreases with distance (40px to 140px)
-      const blurAmount = Math.max(40, 140 - (distanceFromCenter * 1.2));
+      // Blur amount decreases with distance - fades faster
+      const blurAmount = Math.max(30, 150 - (distanceFromCenter * 2.5));
       
       // Random color - more pink/purple as requested
       const colors = [
@@ -80,8 +81,8 @@ const ContactPage = () => {
 
   return (
     <div className="relative min-h-screen">
-      {/* Full viewport blur overlay - covers entire page, not just content */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-40">
+      {/* Full viewport blur overlay - covers entire page, BEHIND Coming Soon message */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-30">
         {/* Base backdrop blur */}
         <div className="absolute inset-0 bg-slate-900/20" style={{ backdropFilter: 'blur(8px)' }}></div>
         
@@ -227,9 +228,12 @@ const ContactPage = () => {
             </p>
           </div>
 
-          {/* Coming Soon Message - overlaid on top */}
-          <div className="absolute inset-0 flex items-center justify-center z-50 pointer-events-none">
-            <div className="relative text-center animate-fadeInUp">
+        </div>
+      </div>
+
+      {/* Coming Soon Message - OUTSIDE content container, on top of everything */}
+      <div className="fixed inset-0 flex items-center justify-center z-50 pointer-events-none">
+        <div className="relative text-center animate-fadeInUp">
               <Sparkles className="w-20 h-20 text-pink-400 mx-auto mb-6 animate-pulseGlow" />
               <h2 className="text-5xl sm:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-pink-400 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent">
                 Coming Soon
@@ -240,8 +244,6 @@ const ContactPage = () => {
               <p className="text-gray-400">
                 Check back soon to get in touch!
               </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
