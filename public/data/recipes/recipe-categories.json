@@ -22,12 +22,12 @@
   {
     "id": "desserts",
     "title": "Simple Delicious Desserts",
-    "description": "24 Sweet Treats",
+    "description": "28 Sweet Treats",
     "cookingTime": "15-60 mins",
     "icon": "IceCream",
     "hasBase": false,
     "hasVariations": false,
-    "totalRecipes": 24
+    "totalRecipes": 28
   },
   {
     "id": "protein-snacks",

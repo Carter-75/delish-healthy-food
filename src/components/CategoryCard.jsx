@@ -76,6 +76,10 @@ const CategoryCard = ({ category, delay = 0 }) => {
   const navigate = useNavigate();
 
   const Icon = iconMap[category.icon] || UtensilsCrossed;
+  const recipeCountLabel =
+    typeof category.totalRecipes === 'number'
+      ? `${category.totalRecipes} Recipes`
+      : 'View Recipes';
   
   // Get category-specific theme or fall back to default
   const categoryTheme = categoryThemes[category.id] || {
@@ -151,7 +155,7 @@ const CategoryCard = ({ category, delay = 0 }) => {
             {!category.comingSoon && (
               <div className={`flex items-center gap-2 ${categoryTheme.text} 
                 font-semibold group-hover:gap-3 transition-all`}>
-                <span>{category.totalRecipes} Recipes</span>
+                <span>{recipeCountLabel}</span>
                 <ChevronRight className="w-5 h-5" />
               </div>
             )}
