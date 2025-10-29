@@ -81,8 +81,8 @@ const ContactPage = () => {
 
   return (
     <div className="relative min-h-screen">
-      {/* Full viewport blur overlay - covers entire page, BEHIND Coming Soon message */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-30">
+      {/* Full viewport blur overlay with Coming Soon message - ONE unified overlay */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-40">
         {/* Base backdrop blur */}
         <div className="absolute inset-0 bg-slate-900/20" style={{ backdropFilter: 'blur(8px)' }}></div>
         
@@ -104,6 +104,22 @@ const ContactPage = () => {
             }}
           />
         ))}
+        
+        {/* Coming Soon Message - part of the blur overlay */}
+        <div className="absolute inset-0 flex items-center justify-center z-10">
+          <div className="relative text-center animate-fadeInUp">
+            <Sparkles className="w-20 h-20 text-pink-400 mx-auto mb-6 animate-pulseGlow" />
+            <h2 className="text-5xl sm:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-pink-400 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent">
+              Coming Soon
+            </h2>
+            <p className="text-xl text-gray-300 mb-2">
+              We're setting up our contact system
+            </p>
+            <p className="text-gray-400">
+              Check back soon to get in touch!
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Content */}
@@ -227,23 +243,6 @@ const ContactPage = () => {
               We typically respond within 24-48 hours during business days.
             </p>
           </div>
-
-        </div>
-      </div>
-
-      {/* Coming Soon Message - OUTSIDE content container, on top of everything */}
-      <div className="fixed inset-0 flex items-center justify-center z-50 pointer-events-none">
-        <div className="relative text-center animate-fadeInUp">
-              <Sparkles className="w-20 h-20 text-pink-400 mx-auto mb-6 animate-pulseGlow" />
-              <h2 className="text-5xl sm:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-pink-400 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent">
-                Coming Soon
-              </h2>
-              <p className="text-xl text-gray-300 mb-2">
-                We're setting up our contact system
-              </p>
-              <p className="text-gray-400">
-                Check back soon to get in touch!
-              </p>
         </div>
       </div>
     </div>
