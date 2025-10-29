@@ -136,6 +136,23 @@ const ContactPage = () => {
     setIsLoaded(true);
   }, []);
 
+  // Stabilize fixed overlay height on mobile browsers
+  useEffect(() => {
+    const updateViewportHeight = () => {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--contact-vh', `${vh}px`);
+    };
+
+    updateViewportHeight();
+    window.addEventListener('resize', updateViewportHeight);
+    window.addEventListener('orientationchange', updateViewportHeight);
+
+    return () => {
+      window.removeEventListener('resize', updateViewportHeight);
+      window.removeEventListener('orientationchange', updateViewportHeight);
+    };
+  }, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
@@ -159,7 +176,13 @@ const ContactPage = () => {
     <div className="relative min-h-screen">
       {/* Full viewport blur overlay with Coming Soon message - ONE unified overlay */}
       {isLoaded && (
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-40">
+      <div
+        className="fixed top-0 left-0 right-0 overflow-hidden pointer-events-none z-40"
+        style={{
+          height: 'calc(var(--contact-vh, 1vh) * 100)',
+          maxHeight: 'calc(var(--contact-vh, 1vh) * 100)'
+        }}
+      >
         {/* Base backdrop blur */}
         <div
           className="absolute inset-0 bg-slate-900/20"
