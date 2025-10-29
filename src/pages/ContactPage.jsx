@@ -139,17 +139,28 @@ const ContactPage = () => {
   // Stabilize fixed overlay height on mobile browsers
   useEffect(() => {
     const updateViewportHeight = () => {
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--contact-vh', `${vh}px`);
+      const viewport = window.visualViewport;
+      const height = viewport ? viewport.height : window.innerHeight;
+      document.documentElement.style.setProperty('--contact-vh', `${height * 0.01}px`);
     };
 
     updateViewportHeight();
+
     window.addEventListener('resize', updateViewportHeight);
     window.addEventListener('orientationchange', updateViewportHeight);
+
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', updateViewportHeight);
+      window.visualViewport.addEventListener('scroll', updateViewportHeight);
+    }
 
     return () => {
       window.removeEventListener('resize', updateViewportHeight);
       window.removeEventListener('orientationchange', updateViewportHeight);
+      if (window.visualViewport) {
+        window.visualViewport.removeEventListener('resize', updateViewportHeight);
+        window.visualViewport.removeEventListener('scroll', updateViewportHeight);
+      }
     };
   }, []);
 
@@ -177,7 +188,7 @@ const ContactPage = () => {
       {/* Full viewport blur overlay with Coming Soon message - ONE unified overlay */}
       {isLoaded && (
       <div
-        className="fixed top-0 left-0 right-0 overflow-hidden pointer-events-none z-40"
+        className="fixed inset-0 overflow-hidden pointer-events-none z-40"
         style={{
           height: 'calc(var(--contact-vh, 1vh) * 100)',
           maxHeight: 'calc(var(--contact-vh, 1vh) * 100)'
