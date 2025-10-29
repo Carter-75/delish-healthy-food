@@ -117,7 +117,7 @@ const ContactPage = () => {
           
           {/* Coming Soon text on top */}
           <div className="relative z-10 text-center animate-fadeInUp">
-            <Sparkles className="w-20 h-20 text-pink-400 mx-auto mb-6 animate-pulseGlow drop-shadow-[0_0_20px_rgba(236,72,153,0.6)]" />
+            <Sparkles className="w-20 h-20 text-blue-400 mx-auto mb-6 animate-pulseGlow drop-shadow-[0_0_20px_rgba(59,130,246,0.6)]" />
             <h2 className="text-5xl sm:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-pink-400 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(236,72,153,0.5)]">
               Coming Soon
             </h2>
