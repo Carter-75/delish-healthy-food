@@ -206,7 +206,7 @@ const ContactPage = () => {
       </div>
 
       {/* Full viewport blur overlay - renders AFTER content but z-index keeps it behind */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0" style={{ visibility: 'hidden', animation: 'showOverlay 0.1s 0.1s forwards' }}>
         {/* Base backdrop blur */}
         <div className="absolute inset-0 bg-slate-900/20" style={{ backdropFilter: 'blur(8px)' }}></div>
         

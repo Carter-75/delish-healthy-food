@@ -229,3 +229,13 @@
 .animate-spin {
   animation: spin 1s linear infinite;
 }
+
+/* Show overlay after content loads */
+@keyframes showOverlay {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
