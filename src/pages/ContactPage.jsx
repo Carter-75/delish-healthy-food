@@ -202,11 +202,11 @@ const ContactPage = () => {
       {/* Full viewport blur overlay with Coming Soon message - ONE unified overlay */}
       {isLoaded && (
       <div
-        className="fixed left-0 right-0 overflow-hidden pointer-events-none z-40"
+        className="fixed inset-0 overflow-hidden pointer-events-none z-40"
         style={{
-          top: 'var(--contact-vt, 0px)',
           height: 'var(--contact-vh, 100vh)',
-          maxHeight: 'var(--contact-vh, 100vh)'
+          maxHeight: 'var(--contact-vh, 100vh)',
+          transform: 'translateY(calc(var(--contact-vt, 0px) * -1))'
         }}
       >
         {/* Base backdrop blur */}
