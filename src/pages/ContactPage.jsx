@@ -161,10 +161,10 @@ const ContactPage = () => {
           </p>
         </div>
 
-        {/* Coming Soon Overlay with Heavy Fog */}
+        {/* Coming Soon Overlay with Heavy Fog - Content visible but unreadable */}
         <div className="absolute inset-0 flex items-center justify-center z-50 pointer-events-none">
-          {/* Heavy fog backdrop */}
-          <div className="absolute inset-0 bg-slate-900/95 backdrop-blur-3xl"></div>
+          {/* Heavy fog - blurs content so you can see shapes but can't read */}
+          <div className="absolute inset-0 bg-slate-900/60" style={{ backdropFilter: 'blur(20px)' }}></div>
           
           {/* Coming Soon Message */}
           <div className="relative z-10 text-center animate-fadeInUp pointer-events-none">
