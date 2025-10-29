@@ -88,7 +88,8 @@ const ContactPage = () => {
   return (
     <div className="relative min-h-screen">
       {/* Full viewport blur overlay with Coming Soon message - ONE unified overlay */}
-      <div className={`fixed inset-0 overflow-hidden pointer-events-none z-40 transition-opacity duration-300 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+      {isLoaded && (
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-40">
         {/* Base backdrop blur */}
         <div className="absolute inset-0 bg-slate-900/20" style={{ backdropFilter: 'blur(8px)' }}></div>
         
@@ -131,6 +132,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
+      )}
 
       {/* Content */}
       <div className="container mx-auto px-4 py-12 relative z-10">
