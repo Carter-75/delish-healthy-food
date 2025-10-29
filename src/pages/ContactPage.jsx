@@ -8,12 +8,12 @@ const ContactPage = () => {
   const [submitted, setSubmitted] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  // Prevent flash - delay overlay slightly to ensure content renders first
+  // Show overlay only after content has rendered
   useEffect(() => {
-    const timer = setTimeout(() => {
+    // Use requestAnimationFrame to wait for paint
+    requestAnimationFrame(() => {
       setIsLoaded(true);
-    }, 50); // 50ms delay ensures content renders first
-    return () => clearTimeout(timer);
+    });
   }, []);
 
   const handleSubmit = (e) => {
