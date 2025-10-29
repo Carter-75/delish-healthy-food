@@ -6,10 +6,18 @@ const ContactPage = () => {
   const { theme } = useTheme();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const [showOverlay, setShowOverlay] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    // Force a reflow before showing to ensure content is painted first
+    const handleShow = () => {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          setShowOverlay(true);
+        });
+      });
+    };
+    handleShow();
   }, []);
 
   const handleSubmit = (e) => {
@@ -87,7 +95,8 @@ const ContactPage = () => {
   return (
     <div className="relative min-h-screen">
       {/* Full viewport blur overlay with Coming Soon message - ONE unified overlay */}
-      <div className={`fixed inset-0 overflow-hidden pointer-events-none z-40 ${mounted ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+      {showOverlay && (
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-40">
         {/* Base backdrop blur */}
         <div className="absolute inset-0 bg-slate-900/20" style={{ backdropFilter: 'blur(8px)' }}></div>
         
@@ -130,6 +139,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
+      )}
 
       {/* Content */}
       <div className="container mx-auto px-4 py-12 relative z-10">
