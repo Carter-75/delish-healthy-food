@@ -1,0 +1,37 @@
+{
+  "id": 5,
+  "name": "Green Goddess Smoothie Bowl",
+  "category": "smoothie-bowls",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "1 Frozen banana",
+    "1 cup Fresh spinach",
+    "1/2 Avocado",
+    "1 scoop Vanilla whey protein",
+    "1/2 cup Almond milk (unsweetened)",
+    "2 tbsp Sliced almonds and chia seeds (for topping)"
+  ],
+  "instructions": [
+    "Add frozen banana, spinach, avocado, vanilla whey, and almond milk to blender",
+    "Blend on high until thick and creamy",
+    "Should be thicker than a regular smoothie",
+    "Pour into a bowl",
+    "Top with sliced almonds and chia seeds",
+    "Optional: Add fresh berries, granola, or hemp hearts",
+    "Serve immediately with a spoon"
+  ],
+  "nutrition": {
+    "totalCalories": 380,
+    "perServingCalories": 380,
+    "totalProtein": 30,
+    "perServingProtein": 30,
+    "totalCarbs": 38,
+    "perServingCarbs": 38,
+    "totalFat": 14,
+    "perServingFat": 14,
+    "perServingFiber": 10,
+    "totalFiber": 10
+  },
+  "cookingTime": "10 minutes"
+}

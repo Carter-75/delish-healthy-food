@@ -1,0 +1,36 @@
+{
+  "id": 2,
+  "name": "Berry Blast Smoothie Bowl",
+  "category": "smoothie-bowls",
+  "type": "individual",
+  "servings": 1,
+  "ingredients": [
+    "1 cup Frozen mixed berries (strawberries, blueberries, raspberries)",
+    "1 Frozen banana",
+    "1 scoop Vanilla whey protein",
+    "1/2 cup Almond milk (unsweetened)",
+    "2 tbsp Fresh berries and granola (for topping)"
+  ],
+  "instructions": [
+    "Add frozen berries, banana, vanilla whey, and almond milk to blender",
+    "Blend on high until thick and creamy",
+    "Should be thicker than a regular smoothie",
+    "Pour into a bowl",
+    "Top with fresh berries and granola",
+    "Optional: Add chia seeds, hemp hearts, or coconut flakes",
+    "Serve immediately with a spoon"
+  ],
+  "nutrition": {
+    "totalCalories": 320,
+    "perServingCalories": 320,
+    "totalProtein": 28,
+    "perServingProtein": 28,
+    "totalCarbs": 48,
+    "perServingCarbs": 48,
+    "totalFat": 5,
+    "perServingFat": 5,
+    "perServingFiber": 8,
+    "totalFiber": 8
+  },
+  "cookingTime": "10 minutes"
+}

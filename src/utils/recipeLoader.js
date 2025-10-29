@@ -151,7 +151,8 @@ export const loadDessert = async (dessertId) => {
       19: 'dessert-19-cinnamon-apple-pie-rolls.json',
       20: 'dessert-20-pumpkin-spice-cinnamon-rolls.json',
       21: 'dessert-21-chocolate-chip-cinnamon-rolls.json',
-      22: 'dessert-22-fudgiest-oreo-brownies.json'
+      22: 'dessert-22-fudgiest-oreo-brownies.json',
+      23: 'dessert-23-zucchini-mousse.json'
     };
     
     const fileName = fileMap[dessertId];
@@ -168,7 +169,7 @@ export const loadDessert = async (dessertId) => {
 // Load all desserts
 export const loadDesserts = async () => {
   try {
-    const dessertIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
+    const dessertIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
     const desserts = await Promise.all(
       dessertIds.map(id => loadDessert(id))
     );
@@ -300,7 +301,18 @@ export const loadSmoothieBowl = async (bowlId) => {
   try {
     const fileMap = {
       0: 'bowl-0-mint-chocolate.json',
-      1: 'bowl-1-mango-cream.json'
+      1: 'bowl-1-mango-cream.json',
+      2: 'bowl-2-berry-blast.json',
+      3: 'bowl-3-peanut-butter-banana.json',
+      4: 'bowl-4-tropical-paradise.json',
+      5: 'bowl-5-green-goddess.json',
+      6: 'bowl-6-strawberry-cheesecake.json',
+      7: 'bowl-7-classic-acai.json',
+      8: 'bowl-8-chocolate-acai.json',
+      9: 'bowl-9-chocolate-pb-acai.json',
+      10: 'bowl-10-tropical-acai.json',
+      11: 'bowl-11-green-acai.json',
+      12: 'bowl-12-pb-banana-acai.json'
     };
     
     const fileName = fileMap[bowlId];
@@ -317,7 +329,7 @@ export const loadSmoothieBowl = async (bowlId) => {
 // Load all smoothie bowls
 export const loadSmoothieBowls = async () => {
   try {
-    const bowlIds = [0, 1];
+    const bowlIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
     const bowls = await Promise.all(
       bowlIds.map(id => loadSmoothieBowl(id))
     );
