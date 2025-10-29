@@ -50,4 +50,8 @@
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }
+  
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
 }
