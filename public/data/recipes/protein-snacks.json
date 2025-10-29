@@ -673,5 +673,87 @@
       "Store in an airtight container for up to 3 days"
     ],
     "cookingTime": "2-3 hours total (including drying time)"
+  },
+  {
+    "id": 19,
+    "name": "Oreo Dirtcakes",
+    "category": "protein-snacks",
+    "description": "High-Protein Pudding Dessert",
+    "servings": 2,
+    "ingredients": [
+      "1½ cups FAGE 0% Greek yogurt",
+      "1 scoop vanilla protein powder",
+      "1 tbsp sugar-free vanilla pudding mix",
+      "2 Laughing Cow light cheese wedges",
+      "4 Catalina Crunch cookies (without the cream)",
+      "1 tbsp sweetener of choice",
+      "A sprinkle of salt",
+      "A few gummy worms (optional)"
+    ],
+    "nutrition": {
+      "totalCalories": 556,
+      "perServingCalories": 278,
+      "totalProtein": 72,
+      "perServingProtein": 36,
+      "totalCarbs": 44,
+      "perServingCarbs": 22,
+      "totalFiber": 9,
+      "perServingFiber": 4.5,
+      "totalFat": 16,
+      "perServingFat": 8
+    },
+    "instructions": [
+      "In a mixing bowl, combine Greek yogurt, protein powder, pudding mix, Laughing Cow cheese, sweetener, and salt",
+      "Mix until thick and pudding-like",
+      "Crush the Catalina Crunch cookies (without the cream)",
+      "Fold ¾ of the crushed cookies into the mixture, leaving a little to add on top",
+      "Top with the remaining crushed cookies and gummy worms",
+      "Refrigerate until ready to serve"
+    ],
+    "cookingTime": "10 minutes"
+  },
+  {
+    "id": 20,
+    "name": "High-Protein Cottage Cheese Cake Bars",
+    "category": "protein-snacks",
+    "description": "Healthy Protein Cake Bars",
+    "servings": 2,
+    "ingredients": [
+      "½ cup cottage cheese (blended smooth)",
+      "2 tbsp almond or cashew butter",
+      "2–3 tbsp vanilla whey protein powder",
+      "½ cup oats (whole or blended into oat flour)",
+      "2–3 tbsp dark chocolate chips",
+      "1–2 tbsp sugar-free maple syrup or honey (optional)",
+      "1 tsp baking powder",
+      "Pinch of salt",
+      "2–3 tbsp milk or water (adjust for batter consistency)",
+      "1 tsp vanilla extract",
+      "2 tbsp crushed nuts for crunch (optional)"
+    ],
+    "nutrition": {
+      "totalCalories": 520,
+      "perServingCalories": 260,
+      "totalProtein": 44,
+      "perServingProtein": 22,
+      "totalCarbs": 38,
+      "perServingCarbs": 19,
+      "totalFiber": 5,
+      "perServingFiber": 2.5,
+      "totalFat": 25,
+      "perServingFat": 12.5
+    },
+    "instructions": [
+      "Preheat oven to 350°F and line a small loaf pan or two ramekins with parchment paper",
+      "Blend cottage cheese until completely smooth",
+      "Whisk together blended cottage cheese, nut butter, maple syrup (if using), and vanilla extract",
+      "Add whey protein, oats (or oat flour), baking powder, and salt; mix until just combined",
+      "Gradually add milk or water until the batter is thick but spreadable",
+      "Fold in dark chocolate chips",
+      "Spoon batter into ramekins and smooth the top",
+      "Bake for 18–22 minutes, or until edges are golden and a toothpick comes out clean or slightly moist",
+      "Cool completely before removing; they firm up as they cool"
+    ],
+    "cookingTime": "30-35 minutes"
   }
 ]
