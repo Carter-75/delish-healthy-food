@@ -1,0 +1,43 @@
+{
+  "id": 25,
+  "name": "Pumpkin Protein Cookie Dough",
+  "category": "desserts",
+  "description": "No-Bake Edible Cookie Dough with Pumpkin Spice",
+  "servings": 12,
+  "ingredients": [
+    "2 cups almond flour",
+    "1/2 cup unflavored or vanilla protein powder",
+    "1 tsp cinnamon or pumpkin pie spice",
+    "1/2 cup pumpkin puree",
+    "1 tsp vanilla extract",
+    "1/4 cup PB2 mixed with water to form paste",
+    "1/4 cup sugar-free maple syrup",
+    "Pinch of salt",
+    "1/4 cup chocolate chips"
+  ],
+  "nutrition": {
+    "totalCalories": 1680,
+    "perServingCalories": 140,
+    "totalProtein": 72,
+    "perServingProtein": 6,
+    "totalCarbs": 96,
+    "perServingCarbs": 8,
+    "totalFiber": 48,
+    "perServingFiber": 4,
+    "totalFat": 108,
+    "perServingFat": 9,
+    "totalSugar": 24,
+    "perServingSugar": 2
+  },
+  "instructions": [
+    "In a large bowl, combine almond flour, protein powder, cinnamon or pumpkin pie spice, and salt",
+    "Mix PB2 with water to form a paste consistency",
+    "Add pumpkin puree, vanilla extract, PB2 paste, and maple syrup to dry ingredients",
+    "Mix thoroughly until well combined and cookie dough consistency forms",
+    "Fold in chocolate chips",
+    "Refrigerate for 30 minutes to firm up",
+    "Scoop and enjoy or roll into balls for portioned servings",
+    "Store in refrigerator for up to 1 week"
+  ],
+  "cookingTime": "10 minutes + 30 minutes chilling"
+}

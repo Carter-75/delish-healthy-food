@@ -1,0 +1,35 @@
+{
+  "id": 24,
+  "name": "Three-Ingredient Mug Cake",
+  "category": "desserts",
+  "description": "Quick and Easy Single-Serve Protein Cake",
+  "servings": 1,
+  "ingredients": [
+    "1 scoop protein powder",
+    "1/2 tsp baking powder",
+    "Splash of water",
+    "Optional: Toppings of choice (like peanut butter or dark chocolate)"
+  ],
+  "nutrition": {
+    "totalCalories": 120,
+    "perServingCalories": 120,
+    "totalProtein": 20,
+    "perServingProtein": 20,
+    "totalCarbs": 5,
+    "perServingCarbs": 5,
+    "totalFiber": 1,
+    "perServingFiber": 1,
+    "totalFat": 2,
+    "perServingFat": 2,
+    "totalSugar": 1,
+    "perServingSugar": 1
+  },
+  "instructions": [
+    "Mix protein powder and baking powder in a microwave-safe mug",
+    "Add a splash of water and stir until smooth batter forms",
+    "Microwave for 60-90 seconds until cake is set",
+    "Top with optional toppings like peanut butter or dark chocolate",
+    "Enjoy immediately"
+  ],
+  "cookingTime": "2-3 minutes"
+}

@@ -1,0 +1,45 @@
+{
+  "id": 26,
+  "name": "Six-Ingredient Brownies",
+  "category": "desserts",
+  "description": "Healthy Fudgy Brownies with Banana Base",
+  "servings": 9,
+  "ingredients": [
+    "2 ripe bananas",
+    "1 tsp baking powder",
+    "1/2 cup almond butter",
+    "1 egg",
+    "1/4 cup maple syrup (sugar free)",
+    "4 heavy tbsp cocoa powder",
+    "Pinch of salt",
+    "Handful of chocolate chips (dark chocolate with 0 added sugar)"
+  ],
+  "nutrition": {
+    "totalCalories": 1440,
+    "perServingCalories": 160,
+    "totalProtein": 36,
+    "perServingProtein": 4,
+    "totalCarbs": 144,
+    "perServingCarbs": 16,
+    "totalFiber": 27,
+    "perServingFiber": 3,
+    "totalFat": 90,
+    "perServingFat": 10,
+    "totalSugar": 54,
+    "perServingSugar": 6
+  },
+  "instructions": [
+    "Preheat oven to 350°F (175°C)",
+    "Mash the ripe bananas in a large bowl until smooth",
+    "Add almond butter, egg, and maple syrup to the mashed bananas and mix well",
+    "Add cocoa powder, baking powder, and a pinch of salt",
+    "Mix until fully combined and smooth",
+    "Fold in chocolate chips, reserving a few for topping",
+    "Pour batter into an 8x8 inch pan lined with parchment paper",
+    "Sprinkle remaining chocolate chips on top",
+    "Bake for 20-25 minutes until set",
+    "Cool completely before cutting into 9 brownies",
+    "Store in an airtight container for up to 5 days"
+  ],
+  "cookingTime": "30-35 minutes"
+}
