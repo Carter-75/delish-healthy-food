@@ -1,0 +1,49 @@
+{
+  "id": 32,
+  "name": "Brown Sugar Cinnamon Butter Cookies",
+  "category": "desserts",
+  "description": "Rich Butter Cookies with Cardamom Sugar",
+  "servings": 24,
+  "ingredients": [
+    "1 cup unsalted butter, softened",
+    "1½ cups dark brown sugar, packed",
+    "1 large egg + 1 yolk, room temperature",
+    "1 tbsp whole milk",
+    "1 tbsp vanilla bean paste",
+    "2½ cups all-purpose flour, spooned and leveled",
+    "1 tsp baking soda",
+    "½ tsp baking powder",
+    "½ tsp fine salt",
+    "Pinch of ground cinnamon",
+    "¼ cup granulated sugar (for rolling)",
+    "¼ tsp ground cardamom (for rolling)",
+    "Maldon flaky sea salt (for garnish)"
+  ],
+  "nutrition": {
+    "totalCalories": 4200,
+    "perServingCalories": 175,
+    "totalProtein": 48,
+    "perServingProtein": 2,
+    "totalCarbs": 528,
+    "perServingCarbs": 22,
+    "totalSugar": 288,
+    "perServingSugar": 12,
+    "totalFiber": 12,
+    "perServingFiber": 0.5,
+    "totalFat": 216,
+    "perServingFat": 9
+  },
+  "instructions": [
+    "Preheat oven to 350°F and line baking sheets with parchment paper",
+    "Cream butter and brown sugar until fluffy",
+    "Add egg, yolk, milk, and vanilla; mix until smooth",
+    "Whisk flour, baking soda, baking powder, salt, and cinnamon in a separate bowl",
+    "Combine wet and dry mixtures until dough forms",
+    "Mix granulated sugar and cardamom in a small bowl",
+    "Roll 1½-tbsp portions of dough into balls and coat in sugar mixture",
+    "Place on baking sheet, leaving 2 inches between cookies",
+    "Bake 10–12 minutes, until edges are golden and centers soft",
+    "Sprinkle with Maldon sea salt and cool before serving"
+  ],
+  "cookingTime": "25-30 minutes"
+}

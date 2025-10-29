@@ -1,0 +1,44 @@
+{
+  "id": 34,
+  "name": "Brown Butter Pumpkin Spice Espresso Chocolate Chunk Blondies",
+  "category": "desserts",
+  "description": "Fall-Spiced Blondies with Coffee & Chocolate",
+  "servings": 9,
+  "ingredients": [
+    "½ cup melted unsalted butter",
+    "¼ cup granulated sugar",
+    "⅓ cup packed brown sugar",
+    "2 eggs",
+    "½ cup pumpkin puree",
+    "1 tsp vanilla extract",
+    "2 tbsp instant espresso",
+    "1¼ cups all-purpose flour",
+    "1 tsp baking powder",
+    "¼ tsp salt",
+    "¾ cup chocolate chunks or chips"
+  ],
+  "nutrition": {
+    "totalCalories": 2694,
+    "perServingCalories": 299,
+    "totalProtein": 46,
+    "perServingProtein": 5,
+    "totalCarbs": 308,
+    "perServingCarbs": 34,
+    "totalFiber": 18,
+    "perServingFiber": 2,
+    "totalFat": 150,
+    "perServingFat": 17
+  },
+  "instructions": [
+    "Preheat oven to 375°F",
+    "In a medium bowl, combine melted butter, granulated sugar, and brown sugar",
+    "Add pumpkin puree, eggs, and vanilla extract; mix until smooth",
+    "Stir together flour, baking powder, salt, and instant espresso in a separate bowl",
+    "Combine dry and wet ingredients",
+    "Fold in chocolate chunks",
+    "Spread batter in a lined 8×8-inch pan",
+    "Bake 35–37 minutes, until set and golden",
+    "Cool completely, then cut into squares"
+  ],
+  "cookingTime": "45-50 minutes"
+}

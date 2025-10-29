@@ -1,0 +1,38 @@
+{
+  "id": 36,
+  "name": "Oreo Dirtcakes",
+  "category": "desserts",
+  "description": "High-Protein Pudding Dessert",
+  "servings": 2,
+  "ingredients": [
+    "1½ cups FAGE 0% Greek yogurt",
+    "1 scoop vanilla protein powder",
+    "1 tbsp sugar-free vanilla pudding mix",
+    "2 Laughing Cow light cheese wedges",
+    "4 Catalina Crunch cookies (without the cream)",
+    "1 tbsp sweetener of choice",
+    "A sprinkle of salt",
+    "A few gummy worms (optional)"
+  ],
+  "nutrition": {
+    "totalCalories": 556,
+    "perServingCalories": 278,
+    "totalProtein": 72,
+    "perServingProtein": 36,
+    "totalCarbs": 44,
+    "perServingCarbs": 22,
+    "totalFiber": 9,
+    "perServingFiber": 4.5,
+    "totalFat": 16,
+    "perServingFat": 8
+  },
+  "instructions": [
+    "In a mixing bowl, combine Greek yogurt, protein powder, pudding mix, Laughing Cow cheese, sweetener, and salt",
+    "Mix until thick and pudding-like",
+    "Crush the Catalina Crunch cookies (without the cream)",
+    "Fold ¾ of the crushed cookies into the mixture, leaving a little to add on top",
+    "Top with the remaining crushed cookies and gummy worms",
+    "Refrigerate until ready to serve"
+  ],
+  "cookingTime": "10 minutes"
+}

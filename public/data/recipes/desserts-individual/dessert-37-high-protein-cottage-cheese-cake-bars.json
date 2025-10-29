@@ -1,0 +1,44 @@
+{
+  "id": 37,
+  "name": "High-Protein Cottage Cheese Cake Bars",
+  "category": "desserts",
+  "description": "Healthy Protein Cake Bars",
+  "servings": 2,
+  "ingredients": [
+    "½ cup cottage cheese (blended smooth)",
+    "2 tbsp almond or cashew butter",
+    "2–3 tbsp vanilla whey protein powder",
+    "½ cup oats (whole or blended into oat flour)",
+    "2–3 tbsp dark chocolate chips",
+    "1–2 tbsp sugar-free maple syrup or honey (optional)",
+    "1 tsp baking powder",
+    "Pinch of salt",
+    "2–3 tbsp milk or water (adjust for batter consistency)",
+    "1 tsp vanilla extract",
+    "2 tbsp crushed nuts for crunch (optional)"
+  ],
+  "nutrition": {
+    "totalCalories": 520,
+    "perServingCalories": 260,
+    "totalProtein": 44,
+    "perServingProtein": 22,
+    "totalCarbs": 38,
+    "perServingCarbs": 19,
+    "totalFiber": 5,
+    "perServingFiber": 2.5,
+    "totalFat": 25,
+    "perServingFat": 12.5
+  },
+  "instructions": [
+    "Preheat oven to 350°F and line a small loaf pan or two ramekins with parchment paper",
+    "Blend cottage cheese until completely smooth",
+    "Whisk together blended cottage cheese, nut butter, maple syrup (if using), and vanilla extract",
+    "Add whey protein, oats (or oat flour), baking powder, and salt; mix until just combined",
+    "Gradually add milk or water until the batter is thick but spreadable",
+    "Fold in dark chocolate chips",
+    "Spoon batter into ramekins and smooth the top",
+    "Bake for 18–22 minutes, or until edges are golden and a toothpick comes out clean or slightly moist",
+    "Cool completely before removing; they firm up as they cool"
+  ],
+  "cookingTime": "30-35 minutes"
+}

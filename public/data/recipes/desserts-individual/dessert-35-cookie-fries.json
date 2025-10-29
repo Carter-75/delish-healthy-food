@@ -1,0 +1,48 @@
+{
+  "id": 35,
+  "name": "Cookie Fries",
+  "category": "desserts",
+  "description": "Chocolate Chip Cookie Dough Shaped Like Fries",
+  "servings": 12,
+  "ingredients": [
+    "1 stick butter (about ½ cup)",
+    "¼ cup brown sugar",
+    "¼ cup regular sugar",
+    "1 egg",
+    "½ tsp baking powder",
+    "1+ cup all-purpose flour",
+    "1 cup chocolate chips",
+    "Flour for dusting",
+    "½ cup hazelnut spread (for dipping)"
+  ],
+  "nutrition": {
+    "totalCalories": 3300,
+    "perServingCalories": 275,
+    "totalProtein": 39,
+    "perServingProtein": 3,
+    "totalCarbs": 387,
+    "perServingCarbs": 32,
+    "totalFiber": 18,
+    "perServingFiber": 2,
+    "totalFat": 192,
+    "perServingFat": 16
+  },
+  "instructions": [
+    "Melt 1 stick of butter in a pan until it browns, then set aside to cool slightly",
+    "Mix the brown butter with brown sugar and regular sugar",
+    "Add egg and mix well",
+    "Add baking powder and a little over 1 cup of flour",
+    "Using a wooden spoon, gently fold the ingredients together - do not overmix",
+    "Add chocolate chips and fold them in",
+    "Lightly flour a cookie sheet",
+    "Place the dough on the cookie sheet and shape into a rectangle",
+    "Cut the dough into strips to create 'fries' shapes",
+    "Place in freezer for 5-10 minutes",
+    "Remove from freezer, separate the cookie strips, and place them back on the sheet",
+    "Return to freezer for 30 minutes",
+    "Preheat oven to 375°F",
+    "Bake for about 13 minutes until golden",
+    "Serve with hazelnut spread for dipping"
+  ],
+  "cookingTime": "1 hour (includes freezing time)"
+}
