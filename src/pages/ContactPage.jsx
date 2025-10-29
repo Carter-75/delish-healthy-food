@@ -161,10 +161,17 @@ const ContactPage = () => {
           </p>
         </div>
 
-        {/* Coming Soon Overlay with Heavy Fog - Content visible but unreadable */}
-        <div className="absolute inset-0 flex items-center justify-center z-50 pointer-events-none">
-          {/* Heavy fog - blurs content so you can see shapes but can't read */}
-          <div className="absolute inset-0 bg-slate-900/60" style={{ backdropFilter: 'blur(20px)' }}></div>
+        {/* Coming Soon Overlay with Organic Fog - Varying density */}
+        <div className="absolute inset-0 flex items-center justify-center z-50 pointer-events-none overflow-hidden">
+          {/* Multiple fog layers with different densities and positions */}
+          <div className="absolute inset-0 bg-slate-900/30" style={{ backdropFilter: 'blur(12px)' }}></div>
+          
+          {/* Heavier fog patches - organic shapes */}
+          <div className="absolute top-0 left-0 w-96 h-96 bg-slate-900/40 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute top-1/4 right-0 w-80 h-80 bg-slate-900/50 rounded-full blur-3xl transform translate-x-1/3"></div>
+          <div className="absolute bottom-0 left-1/4 w-72 h-72 bg-slate-900/45 rounded-full blur-3xl transform translate-y-1/3"></div>
+          <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-slate-900/35 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-slate-900/40 rounded-full blur-3xl"></div>
           
           {/* Coming Soon Message */}
           <div className="relative z-10 text-center animate-fadeInUp pointer-events-none">
