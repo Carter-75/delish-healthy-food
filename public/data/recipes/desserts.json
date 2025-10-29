@@ -1085,5 +1085,144 @@
       "Enjoy immediately or refrigerate for firmer texture"
     ],
     "cookingTime": "5 minutes"
+  },
+  {
+    "id": 28,
+    "name": "Pumpkin Cinnamon Roll Cake",
+    "category": "desserts",
+    "description": "Moist Pumpkin Cake with Cinnamon Swirl",
+    "servings": 9,
+    "ingredients": [
+      "2 cups all-purpose flour",
+      "2 tsp baking powder",
+      "1 tsp cinnamon",
+      "1/2 tsp pumpkin pie spice",
+      "1/2 tsp salt",
+      "1 cup pumpkin puree",
+      "3/4 cup sugar (or sugar substitute)",
+      "2 eggs",
+      "1/2 cup milk",
+      "1/4 cup melted butter",
+      "1 tsp vanilla extract",
+      "1/2 cup brown sugar (cinnamon filling)",
+      "2 tbsp cinnamon (filling)",
+      "4 oz cream cheese (frosting)",
+      "1/4 cup powdered sugar (frosting)",
+      "2 tbsp milk (frosting)"
+    ],
+    "nutrition": {
+      "totalCalories": 4185,
+      "perServingCalories": 465,
+      "totalProtein": 45,
+      "perServingProtein": 5,
+      "totalCarbs": 531,
+      "perServingCarbs": 59,
+      "totalFiber": 18,
+      "perServingFiber": 2,
+      "totalFat": 198,
+      "perServingFat": 22,
+      "totalSugar": 342,
+      "perServingSugar": 38
+    },
+    "instructions": [
+      "Preheat oven to 350°F and grease a 9x9 inch baking pan",
+      "Mix flour, baking powder, cinnamon, pumpkin pie spice, and salt in a bowl",
+      "In another bowl, whisk together pumpkin puree, sugar, eggs, milk, melted butter, and vanilla",
+      "Combine wet and dry ingredients until just mixed",
+      "Mix brown sugar and cinnamon for the filling",
+      "Pour half the batter into pan, sprinkle with half the cinnamon filling",
+      "Add remaining batter and swirl remaining filling on top with a knife",
+      "Bake for 35-40 minutes until toothpick comes out clean",
+      "Let cool completely",
+      "Mix cream cheese, powdered sugar, and milk for frosting",
+      "Spread frosting over cooled cake",
+      "Slice into 9 pieces and serve"
+    ],
+    "cookingTime": "50-55 minutes"
+  },
+  {
+    "id": 29,
+    "name": "Boiled Egg Chocolate Pudding",
+    "category": "desserts",
+    "description": "High-Protein Creamy Chocolate Pudding",
+    "servings": 2,
+    "ingredients": [
+      "3 hard-boiled eggs",
+      "3 tbsp unsweetened cocoa powder",
+      "3 tbsp sweetener (monk fruit or erythritol)",
+      "1 tsp vanilla extract",
+      "2-3 tbsp milk (to adjust consistency)",
+      "Pinch of salt"
+    ],
+    "nutrition": {
+      "totalCalories": 594,
+      "perServingCalories": 297,
+      "totalProtein": 34,
+      "perServingProtein": 17,
+      "totalCarbs": 60,
+      "perServingCarbs": 30,
+      "totalFiber": 6,
+      "perServingFiber": 3,
+      "totalFat": 26,
+      "perServingFat": 13,
+      "totalSugar": 50,
+      "perServingSugar": 25
+    },
+    "instructions": [
+      "Hard-boil 3 eggs and let them cool completely",
+      "Peel the eggs and place in a blender or food processor",
+      "Add cocoa powder, sweetener, vanilla extract, and a pinch of salt",
+      "Blend on high until completely smooth and creamy (2-3 minutes)",
+      "Add milk 1 tablespoon at a time to reach desired pudding consistency",
+      "Taste and adjust sweetness if needed",
+      "Transfer to serving bowls",
+      "Refrigerate for at least 1 hour to chill and thicken",
+      "Top with whipped cream or chocolate shavings if desired",
+      "Serve cold and enjoy"
+    ],
+    "cookingTime": "15 minutes + 1 hour chilling"
+  },
+  {
+    "id": 30,
+    "name": "Easy No-Bake Peanut Butter Cookie Dough Dip",
+    "category": "desserts",
+    "description": "Indulgent Cookie Dough Dip Perfect for Sharing",
+    "servings": 10,
+    "ingredients": [
+      "1 cup creamy peanut butter",
+      "8 oz cream cheese, softened",
+      "1/2 cup brown sugar (or brown sugar substitute)",
+      "1/4 cup powdered sugar",
+      "1 tsp vanilla extract",
+      "1/2 cup mini chocolate chips",
+      "Graham crackers or apple slices for dipping"
+    ],
+    "nutrition": {
+      "totalCalories": 2960,
+      "perServingCalories": 296,
+      "totalProtein": 60,
+      "perServingProtein": 6,
+      "totalCarbs": 210,
+      "perServingCarbs": 21,
+      "totalFiber": 10,
+      "perServingFiber": 1,
+      "totalFat": 210,
+      "perServingFat": 21,
+      "totalSugar": 160,
+      "perServingSugar": 16
+    },
+    "instructions": [
+      "In a large mixing bowl, beat softened cream cheese until smooth and fluffy",
+      "Add peanut butter, brown sugar, and powdered sugar",
+      "Beat until well combined and creamy (2-3 minutes)",
+      "Stir in vanilla extract",
+      "Fold in mini chocolate chips, reserving a few for topping",
+      "Transfer to a serving bowl",
+      "Sprinkle reserved chocolate chips on top",
+      "Refrigerate for at least 30 minutes to firm up",
+      "Serve with graham crackers, apple slices, pretzels, or cookies for dipping",
+      "Store covered in refrigerator for up to 5 days"
+    ],
+    "cookingTime": "10 minutes + 30 minutes chilling"
   }
 ]

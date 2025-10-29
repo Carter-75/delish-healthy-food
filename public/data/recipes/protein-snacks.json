@@ -633,5 +633,45 @@
       "perServingFiber": 4,
       "totalFiber": 24
     }
+  },
+  {
+    "id": 18,
+    "name": "Egg White Clouds",
+    "category": "protein-snacks",
+    "description": "Light, Airy, Pure Protein Snack",
+    "servings": 3,
+    "ingredients": [
+      "6 large egg whites",
+      "1/4 tsp cream of tartar",
+      "Pinch of salt",
+      "Optional: 1-2 drops vanilla extract or sweetener for flavor"
+    ],
+    "nutrition": {
+      "totalCalories": 144,
+      "perServingCalories": 48,
+      "totalProtein": 30,
+      "perServingProtein": 10,
+      "totalCarbs": 3,
+      "perServingCarbs": 1,
+      "totalFiber": 0,
+      "perServingFiber": 0,
+      "totalFat": 0,
+      "perServingFat": 0,
+      "totalSugar": 0,
+      "perServingSugar": 0
+    },
+    "instructions": [
+      "Preheat oven to 225°F (110°C) and line a baking sheet with parchment paper",
+      "Separate egg whites into a clean, grease-free bowl",
+      "Add cream of tartar and a pinch of salt",
+      "Beat egg whites on medium speed until soft peaks form",
+      "Increase to high speed and beat until stiff, glossy peaks form (5-7 minutes)",
+      "Add optional vanilla or sweetener during last minute of beating if desired",
+      "Spoon or pipe meringue mixture onto prepared baking sheet in cloud-like mounds",
+      "Bake for 60-90 minutes until clouds are dry and crisp on the outside",
+      "Turn off oven and let clouds cool inside for 1 hour",
+      "Store in an airtight container for up to 3 days"
+    ],
+    "cookingTime": "2-3 hours total (including drying time)"
   }
 ]

@@ -1,0 +1,50 @@
+{
+  "id": 12,
+  "name": "Peanut Butter and Jelly Sloppy Joes",
+  "category": "quick-lunches",
+  "description": "Sweet & Savory Twist on Classic Sloppy Joes",
+  "servings": 4,
+  "ingredients": [
+    "1 lb ground beef (85% lean) or ground turkey",
+    "1/2 cup peanut butter",
+    "1/2 cup grape jelly or strawberry jam (or sugar-free version)",
+    "2 tbsp soy sauce",
+    "1 tbsp apple cider vinegar",
+    "1 tsp garlic powder",
+    "1/2 tsp onion powder",
+    "1/4 tsp red pepper flakes (optional)",
+    "Salt and pepper to taste",
+    "4 hamburger buns or low-carb buns",
+    "Optional toppings: pickles, coleslaw, sliced onions"
+  ],
+  "nutrition": {
+    "totalCalories": 2092,
+    "perServingCalories": 523,
+    "totalProtein": 112,
+    "perServingProtein": 28,
+    "totalCarbs": 176,
+    "perServingCarbs": 44,
+    "totalFiber": 8,
+    "perServingFiber": 2,
+    "totalFat": 100,
+    "perServingFat": 25,
+    "totalSugar": 80,
+    "perServingSugar": 20
+  },
+  "instructions": [
+    "Brown ground beef in a large skillet over medium-high heat, breaking it up as it cooks",
+    "Drain excess fat if necessary",
+    "Reduce heat to medium-low",
+    "Add peanut butter, jelly, soy sauce, and apple cider vinegar to the skillet",
+    "Stir until peanut butter and jelly are melted and well combined with the meat",
+    "Add garlic powder, onion powder, red pepper flakes, salt, and pepper",
+    "Simmer for 5-7 minutes, stirring occasionally, until sauce thickens",
+    "Taste and adjust seasoning as needed",
+    "Toast hamburger buns if desired",
+    "Spoon meat mixture generously onto bottom buns",
+    "Add optional toppings if desired",
+    "Top with bun and serve immediately"
+  ],
+  "cookingTime": "20-25 minutes"
+}
+

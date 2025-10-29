@@ -1,0 +1,44 @@
+{
+  "id": 30,
+  "name": "Easy No-Bake Peanut Butter Cookie Dough Dip",
+  "category": "desserts",
+  "description": "Indulgent Cookie Dough Dip Perfect for Sharing",
+  "servings": 10,
+  "ingredients": [
+    "1 cup creamy peanut butter",
+    "8 oz cream cheese, softened",
+    "1/2 cup brown sugar (or brown sugar substitute)",
+    "1/4 cup powdered sugar",
+    "1 tsp vanilla extract",
+    "1/2 cup mini chocolate chips",
+    "Graham crackers or apple slices for dipping"
+  ],
+  "nutrition": {
+    "totalCalories": 2960,
+    "perServingCalories": 296,
+    "totalProtein": 60,
+    "perServingProtein": 6,
+    "totalCarbs": 210,
+    "perServingCarbs": 21,
+    "totalFiber": 10,
+    "perServingFiber": 1,
+    "totalFat": 210,
+    "perServingFat": 21,
+    "totalSugar": 160,
+    "perServingSugar": 16
+  },
+  "instructions": [
+    "In a large mixing bowl, beat softened cream cheese until smooth and fluffy",
+    "Add peanut butter, brown sugar, and powdered sugar",
+    "Beat until well combined and creamy (2-3 minutes)",
+    "Stir in vanilla extract",
+    "Fold in mini chocolate chips, reserving a few for topping",
+    "Transfer to a serving bowl",
+    "Sprinkle reserved chocolate chips on top",
+    "Refrigerate for at least 30 minutes to firm up",
+    "Serve with graham crackers, apple slices, pretzels, or cookies for dipping",
+    "Store covered in refrigerator for up to 5 days"
+  ],
+  "cookingTime": "10 minutes + 30 minutes chilling"
+}
+

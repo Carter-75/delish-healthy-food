@@ -1,0 +1,43 @@
+{
+  "id": 29,
+  "name": "Boiled Egg Chocolate Pudding",
+  "category": "desserts",
+  "description": "High-Protein Creamy Chocolate Pudding",
+  "servings": 2,
+  "ingredients": [
+    "3 hard-boiled eggs",
+    "3 tbsp unsweetened cocoa powder",
+    "3 tbsp sweetener (monk fruit or erythritol)",
+    "1 tsp vanilla extract",
+    "2-3 tbsp milk (to adjust consistency)",
+    "Pinch of salt"
+  ],
+  "nutrition": {
+    "totalCalories": 594,
+    "perServingCalories": 297,
+    "totalProtein": 34,
+    "perServingProtein": 17,
+    "totalCarbs": 60,
+    "perServingCarbs": 30,
+    "totalFiber": 6,
+    "perServingFiber": 3,
+    "totalFat": 26,
+    "perServingFat": 13,
+    "totalSugar": 50,
+    "perServingSugar": 25
+  },
+  "instructions": [
+    "Hard-boil 3 eggs and let them cool completely",
+    "Peel the eggs and place in a blender or food processor",
+    "Add cocoa powder, sweetener, vanilla extract, and a pinch of salt",
+    "Blend on high until completely smooth and creamy (2-3 minutes)",
+    "Add milk 1 tablespoon at a time to reach desired pudding consistency",
+    "Taste and adjust sweetness if needed",
+    "Transfer to serving bowls",
+    "Refrigerate for at least 1 hour to chill and thicken",
+    "Top with whipped cream or chocolate shavings if desired",
+    "Serve cold and enjoy"
+  ],
+  "cookingTime": "15 minutes + 1 hour chilling"
+}
+

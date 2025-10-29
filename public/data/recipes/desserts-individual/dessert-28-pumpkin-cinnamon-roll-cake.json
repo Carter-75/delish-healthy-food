@@ -1,0 +1,55 @@
+{
+  "id": 28,
+  "name": "Pumpkin Cinnamon Roll Cake",
+  "category": "desserts",
+  "description": "Moist Pumpkin Cake with Cinnamon Swirl",
+  "servings": 9,
+  "ingredients": [
+    "2 cups all-purpose flour",
+    "2 tsp baking powder",
+    "1 tsp cinnamon",
+    "1/2 tsp pumpkin pie spice",
+    "1/2 tsp salt",
+    "1 cup pumpkin puree",
+    "3/4 cup sugar (or sugar substitute)",
+    "2 eggs",
+    "1/2 cup milk",
+    "1/4 cup melted butter",
+    "1 tsp vanilla extract",
+    "1/2 cup brown sugar (cinnamon filling)",
+    "2 tbsp cinnamon (filling)",
+    "4 oz cream cheese (frosting)",
+    "1/4 cup powdered sugar (frosting)",
+    "2 tbsp milk (frosting)"
+  ],
+  "nutrition": {
+    "totalCalories": 4185,
+    "perServingCalories": 465,
+    "totalProtein": 45,
+    "perServingProtein": 5,
+    "totalCarbs": 531,
+    "perServingCarbs": 59,
+    "totalFiber": 18,
+    "perServingFiber": 2,
+    "totalFat": 198,
+    "perServingFat": 22,
+    "totalSugar": 342,
+    "perServingSugar": 38
+  },
+  "instructions": [
+    "Preheat oven to 350°F and grease a 9x9 inch baking pan",
+    "Mix flour, baking powder, cinnamon, pumpkin pie spice, and salt in a bowl",
+    "In another bowl, whisk together pumpkin puree, sugar, eggs, milk, melted butter, and vanilla",
+    "Combine wet and dry ingredients until just mixed",
+    "Mix brown sugar and cinnamon for the filling",
+    "Pour half the batter into pan, sprinkle with half the cinnamon filling",
+    "Add remaining batter and swirl remaining filling on top with a knife",
+    "Bake for 35-40 minutes until toothpick comes out clean",
+    "Let cool completely",
+    "Mix cream cheese, powdered sugar, and milk for frosting",
+    "Spread frosting over cooled cake",
+    "Slice into 9 pieces and serve"
+  ],
+  "cookingTime": "50-55 minutes"
+}
+
