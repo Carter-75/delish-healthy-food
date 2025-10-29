@@ -27,34 +27,8 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="relative min-h-screen">
-      {/* Radial blur background effect - multiple layers for smooth gradient */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        {/* Center blur spot - strongest */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] 
-          bg-gradient-radial from-blue-500/30 via-purple-500/20 to-transparent rounded-full blur-[120px] animate-pulseGlow" />
-        
-        {/* Secondary blur spots - medium intensity */}
-        <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] 
-          bg-gradient-radial from-violet-500/20 via-indigo-500/10 to-transparent rounded-full blur-[100px] animate-float" />
-        <div className="absolute bottom-1/3 right-1/4 w-[600px] h-[600px] 
-          bg-gradient-radial from-pink-500/20 via-purple-500/10 to-transparent rounded-full blur-[100px] animate-float" 
-          style={{ animationDelay: '1.5s' }} />
-        
-        {/* Edge blur spots - subtle */}
-        <div className="absolute top-1/4 right-1/3 w-[400px] h-[400px] 
-          bg-gradient-radial from-cyan-500/15 to-transparent rounded-full blur-[80px] animate-float" 
-          style={{ animationDelay: '0.5s' }} />
-        <div className="absolute bottom-1/4 left-1/3 w-[400px] h-[400px] 
-          bg-gradient-radial from-fuchsia-500/15 to-transparent rounded-full blur-[80px] animate-float" 
-          style={{ animationDelay: '2s' }} />
-        
-        {/* Ambient blur - very subtle, covers more area */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-pink-500/5 blur-[60px]" />
-      </div>
-
-      <div className="container mx-auto px-4 py-12 relative z-10">
-        <div className="max-w-3xl mx-auto relative">
+    <div className="container mx-auto px-4 py-12">
+      <div className="max-w-3xl mx-auto relative">
           {/* Header */}
           <div className="text-center mb-12 animate-fadeInUp">
             <Sparkles className={`w-12 h-12 ${theme.text || 'text-blue-400'} mx-auto mb-6 animate-pulseGlow`} />
@@ -187,36 +161,54 @@ const ContactPage = () => {
             </p>
           </div>
 
-          {/* Coming Soon Overlay with Organic Fog - Varying density */}
+          {/* Coming Soon Overlay with Radial Blur Effect - Covers entire content area */}
           <div className="absolute inset-0 flex items-center justify-center z-50 pointer-events-none overflow-hidden">
-            {/* Base fog layer with gradient fade */}
-            <div className="absolute inset-0 bg-gradient-to-br from-slate-900/20 via-slate-900/35 to-slate-900/25" 
-                 style={{ backdropFilter: 'blur(10px)' }}></div>
+            {/* Base backdrop blur */}
+            <div className="absolute inset-0 bg-slate-900/30" 
+                 style={{ backdropFilter: 'blur(8px)' }}></div>
             
-            {/* Organic fog patches with radial gradients - no hard edges */}
-            <div className="absolute top-0 left-0 w-[500px] h-[500px] opacity-60"
+            {/* Radial blur spots with varying intensities - fades outward */}
+            {/* Center spot - strongest blur */}
+            <div className="absolute top-1/2 left-1/2 w-[900px] h-[900px]"
                  style={{ 
-                   background: 'radial-gradient(circle, rgba(15, 23, 42, 0.7) 0%, rgba(15, 23, 42, 0) 70%)',
-                   filter: 'blur(60px)',
-                   transform: 'translate(-40%, -40%)'
-                 }}></div>
-            <div className="absolute top-1/4 right-0 w-[400px] h-[400px] opacity-50"
-                 style={{ 
-                   background: 'radial-gradient(circle, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0) 70%)',
-                   filter: 'blur(50px)',
-                   transform: 'translate(30%, 0)'
-                 }}></div>
-            <div className="absolute bottom-0 left-1/4 w-[450px] h-[450px] opacity-55"
-                 style={{ 
-                   background: 'radial-gradient(circle, rgba(15, 23, 42, 0.65) 0%, rgba(15, 23, 42, 0) 70%)',
-                   filter: 'blur(55px)',
-                   transform: 'translate(0, 30%)'
-                 }}></div>
-            <div className="absolute top-1/2 left-1/2 w-[350px] h-[350px] opacity-45"
-                 style={{ 
-                   background: 'radial-gradient(circle, rgba(15, 23, 42, 0.5) 0%, rgba(15, 23, 42, 0) 70%)',
-                   filter: 'blur(70px)',
+                   background: 'radial-gradient(circle, rgba(59, 130, 246, 0.4) 0%, rgba(147, 51, 234, 0.25) 30%, rgba(236, 72, 153, 0.15) 50%, transparent 70%)',
+                   filter: 'blur(120px)',
                    transform: 'translate(-50%, -50%)'
+                 }}></div>
+            
+            {/* Secondary blur spots - medium intensity */}
+            <div className="absolute top-1/3 left-1/4 w-[700px] h-[700px]"
+                 style={{ 
+                   background: 'radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, rgba(99, 102, 241, 0.15) 40%, transparent 70%)',
+                   filter: 'blur(100px)',
+                   transform: 'translate(-30%, -20%)'
+                 }}></div>
+            <div className="absolute bottom-1/3 right-1/4 w-[700px] h-[700px]"
+                 style={{ 
+                   background: 'radial-gradient(circle, rgba(236, 72, 153, 0.3) 0%, rgba(147, 51, 234, 0.15) 40%, transparent 70%)',
+                   filter: 'blur(100px)',
+                   transform: 'translate(30%, 20%)'
+                 }}></div>
+            
+            {/* Edge blur spots - subtle, extends beyond visible area */}
+            <div className="absolute top-0 right-0 w-[500px] h-[500px]"
+                 style={{ 
+                   background: 'radial-gradient(circle, rgba(34, 211, 238, 0.2) 0%, rgba(59, 130, 246, 0.1) 50%, transparent 70%)',
+                   filter: 'blur(90px)',
+                   transform: 'translate(25%, -25%)'
+                 }}></div>
+            <div className="absolute bottom-0 left-0 w-[500px] h-[500px]"
+                 style={{ 
+                   background: 'radial-gradient(circle, rgba(217, 70, 239, 0.2) 0%, rgba(192, 132, 252, 0.1) 50%, transparent 70%)',
+                   filter: 'blur(90px)',
+                   transform: 'translate(-25%, 25%)'
+                 }}></div>
+            
+            {/* Ambient blur overlay - very subtle, covers entire area */}
+            <div className="absolute inset-0" 
+                 style={{ 
+                   background: 'radial-gradient(ellipse at center, rgba(59, 130, 246, 0.08) 0%, rgba(147, 51, 234, 0.06) 50%, transparent 100%)',
+                   filter: 'blur(60px)'
                  }}></div>
             
             {/* Coming Soon Message */}
