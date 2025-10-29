@@ -152,7 +152,9 @@
       "totalCarbs": 16,
       "perServingCarbs": 4,
       "totalFat": 24,
-      "perServingFat": 6
+      "perServingFat": 6,
+      "perServingFiber": 2,
+      "totalFiber": 8
     },
     "instructions": [
       "Mix all ingredients in a non-stick pan",
@@ -187,7 +189,9 @@
       "totalFat": 168,
       "perServingFat": 7,
       "totalSugar": 24,
-      "perServingSugar": 1
+      "perServingSugar": 1,
+      "perServingFiber": 1,
+      "totalFiber": 24
     },
     "instructions": [
       "Mix wet ingredients and sweetener together",
@@ -228,7 +232,9 @@
       "totalFat": 372,
       "perServingFat": 31,
       "totalSugar": 12,
-      "perServingSugar": 1
+      "perServingSugar": 1,
+      "perServingFiber": 7,
+      "totalFiber": 84
     },
     "instructions": [
       "Press ⅔ of cookie dough into pie pan",
@@ -260,7 +266,9 @@
       "perServingCarbs": 12,
       "netCarbsPerServing": 4,
       "totalFat": 27,
-      "perServingFat": 3
+      "perServingFat": 3,
+      "perServingFiber": 2,
+      "totalFiber": 18
     },
     "instructions": [
       "Blend all ingredients until smooth",
@@ -295,7 +303,9 @@
       "totalCarbs": 360,
       "perServingCarbs": 15,
       "totalFat": 144,
-      "perServingFat": 6
+      "perServingFat": 6,
+      "perServingFiber": 2,
+      "totalFiber": 48
     },
     "instructions": [
       "Preheat oven to 350°F",
@@ -340,7 +350,9 @@
       "totalCarbs": 672,
       "perServingCarbs": 48,
       "totalFat": 280,
-      "perServingFat": 20
+      "perServingFat": 20,
+      "perServingFiber": 8,
+      "totalFiber": 112
     },
     "instructions": [
       "Make toffee: cook butter and brown sugar to 300°F, spread, cool, and break into pieces",
@@ -376,7 +388,9 @@
       "totalCarbs": 480,
       "perServingCarbs": 30,
       "totalFat": 64,
-      "perServingFat": 4
+      "perServingFat": 4,
+      "perServingFiber": 3,
+      "totalFiber": 48
     },
     "instructions": [
       "Preheat oven to 350°F and line baking sheet with parchment",
@@ -410,7 +424,9 @@
       "totalCarbs": 480,
       "perServingCarbs": 80,
       "totalFat": 48,
-      "perServingFat": 8
+      "perServingFat": 8,
+      "perServingFiber": 7,
+      "totalFiber": 42
     },
     "instructions": [
       "Preheat oven to 350°F and line 2 baking sheets",
@@ -422,5 +438,652 @@
       "Cool on sheet for 5 minutes, then transfer to rack"
     ],
     "cookingTime": "20-25 minutes"
+  },
+  {
+    "id": 11,
+    "name": "Double Chocolate Protein Brownies",
+    "category": "desserts",
+    "type": "individual",
+    "servings": 12,
+    "ingredients": [
+      "1/2 cup Cocoa powder",
+      "2 scoops Chocolate whey protein",
+      "3 Eggs",
+      "1 cup Almond flour",
+      "1 tsp Baking powder",
+      "1/2 cup Sugar-free chocolate chips"
+    ],
+    "instructions": [
+      "Preheat oven to 350°F",
+      "Mix all dry ingredients in a bowl",
+      "Beat eggs and fold into dry mixture",
+      "Fold in chocolate chips",
+      "Pour into greased 8x8 pan",
+      "Bake for 20-24 minutes until set",
+      "Cool completely before slicing into 12 squares"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "perServingCalories": 130,
+      "totalCalories": 1560,
+      "perServingProtein": 12,
+      "totalProtein": 144,
+      "perServingCarbs": 8,
+      "totalCarbs": 96,
+      "perServingFat": 7,
+      "totalFat": 84,
+      "perServingFiber": 2,
+      "totalFiber": 24
+    }
+  },
+  {
+    "id": 12,
+    "name": "Cookie Dough Protein Bars",
+    "category": "desserts",
+    "type": "individual",
+    "servings": 8,
+    "ingredients": [
+      "1 cup Almond flour",
+      "2 scoops Vanilla protein powder",
+      "1/4 cup Peanut butter",
+      "1/2 cup Sugar-free chocolate chips"
+    ],
+    "instructions": [
+      "Mix almond flour, protein powder, and peanut butter into dough",
+      "Fold in sugar-free chocolate chips",
+      "Press firmly into an 8x8 pan lined with parchment",
+      "Chill in refrigerator until firm (2-3 hours)",
+      "Slice into 8 bars",
+      "Store in refrigerator"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "perServingCalories": 210,
+      "totalCalories": 1680,
+      "perServingProtein": 14,
+      "totalProtein": 112,
+      "perServingCarbs": 12,
+      "totalCarbs": 96,
+      "perServingFat": 13,
+      "totalFat": 104,
+      "perServingFiber": 3,
+      "totalFiber": 24
+    }
+  },
+  {
+    "id": 13,
+    "name": "Chocolate Chip Cookie Dough Protein Cups",
+    "category": "desserts",
+    "type": "individual",
+    "servings": 6,
+    "ingredients": [
+      "1 cup Vanilla protein yogurt",
+      "1/2 cup Almond flour",
+      "1/3 cup Sugar-free chocolate chips"
+    ],
+    "instructions": [
+      "Mix vanilla protein yogurt with almond flour until dough forms",
+      "Fold in sugar-free chocolate chips",
+      "Press mixture into silicone cupcake molds",
+      "Chill in refrigerator for 1 hour until firm",
+      "Pop out of molds and serve",
+      "Store in refrigerator"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "perServingCalories": 165,
+      "totalCalories": 990,
+      "perServingProtein": 13,
+      "totalProtein": 78,
+      "perServingCarbs": 10,
+      "totalCarbs": 60,
+      "perServingFat": 9,
+      "totalFat": 54,
+      "perServingFiber": 2,
+      "totalFiber": 12
+    }
+  },
+  {
+    "id": 14,
+    "name": "Cherry Brownie Protein Bars",
+    "category": "desserts",
+    "type": "individual",
+    "servings": 9,
+    "ingredients": [
+      "1/2 cup Cocoa powder",
+      "2 scoops Chocolate whey protein",
+      "1 cup Almond flour",
+      "1/2 cup Cherries (chopped)",
+      "3 Eggs",
+      "1 tsp Baking powder"
+    ],
+    "instructions": [
+      "Preheat oven to 350°F",
+      "Mix all dry ingredients in a bowl",
+      "Beat eggs and fold into dry mixture",
+      "Fold in chopped cherries",
+      "Pour into greased 8x8 pan",
+      "Bake for 18-22 minutes until set",
+      "Cool completely before slicing into 9 bars"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "perServingCalories": 195,
+      "totalCalories": 1755,
+      "perServingProtein": 14,
+      "totalProtein": 126,
+      "perServingCarbs": 13,
+      "totalCarbs": 117,
+      "perServingFat": 10,
+      "totalFat": 90,
+      "perServingFiber": 3,
+      "totalFiber": 27
+    }
+  },
+  {
+    "id": 15,
+    "name": "Birthday Cake Protein Truffles",
+    "category": "desserts",
+    "type": "individual",
+    "servings": 10,
+    "ingredients": [
+      "2 scoops Vanilla protein powder",
+      "1/2 cup Greek yogurt (non-fat)",
+      "3 tbsp Sugar-free sprinkles"
+    ],
+    "instructions": [
+      "Combine vanilla protein powder with Greek yogurt",
+      "Mix until dough forms (add more yogurt if too dry)",
+      "Roll mixture into 10 small balls",
+      "Roll each ball in sugar-free sprinkles",
+      "Chill in refrigerator for 30 minutes",
+      "Store in refrigerator up to 5 days"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "perServingCalories": 105,
+      "totalCalories": 1050,
+      "perServingProtein": 8,
+      "totalProtein": 80,
+      "perServingCarbs": 12,
+      "totalCarbs": 120,
+      "perServingFat": 2,
+      "totalFat": 20,
+      "perServingFiber": 2,
+      "totalFiber": 20
+    }
+  },
+  {
+    "id": 16,
+    "name": "Chocolate Peanut Butter Protein Brownie Bites",
+    "category": "desserts",
+    "type": "individual",
+    "servings": 12,
+    "ingredients": [
+      "2 scoops Chocolate whey protein",
+      "1/3 cup Cocoa powder",
+      "1/4 cup Peanut butter powder",
+      "2 Eggs",
+      "1 tsp Baking powder"
+    ],
+    "instructions": [
+      "Preheat oven to 350°F",
+      "Mix all dry ingredients",
+      "Beat eggs and combine with dry mixture",
+      "Spoon into mini muffin tin",
+      "Bake for 12 minutes until set",
+      "Cool before removing from tin"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "perServingCalories": 145,
+      "totalCalories": 1740,
+      "perServingProtein": 12,
+      "totalProtein": 144,
+      "perServingCarbs": 10,
+      "totalCarbs": 120,
+      "perServingFat": 7,
+      "totalFat": 84,
+      "perServingFiber": 2,
+      "totalFiber": 24
+    }
+  },
+  {
+    "id": 17,
+    "name": "Protein Cinnamon Rolls",
+    "category": "desserts",
+    "type": "individual",
+    "servings": 8,
+    "ingredients": [
+      "1 cup Self-rising flour",
+      "1 cup Greek yogurt (non-fat)",
+      "2 tsp Cinnamon",
+      "3 tbsp Erythritol sweetener",
+      "1/4 cup Light cream cheese (for frosting)",
+      "1 tbsp Almond milk (for frosting)"
+    ],
+    "instructions": [
+      "Mix flour and Greek yogurt to form dough",
+      "Roll dough into rectangle on floured surface",
+      "Mix cinnamon and erythritol, spread over dough",
+      "Roll up tightly and slice into 8 rolls",
+      "Place in greased baking dish",
+      "Bake at 375°F for 18-20 minutes",
+      "Mix cream cheese with almond milk for frosting",
+      "Top warm rolls with frosting"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "perServingCalories": 210,
+      "totalCalories": 1680,
+      "perServingProtein": 14,
+      "totalProtein": 112,
+      "perServingCarbs": 28,
+      "totalCarbs": 224,
+      "perServingFat": 4,
+      "totalFat": 32,
+      "perServingFiber": 3,
+      "totalFiber": 24
+    }
+  },
+  {
+    "id": 18,
+    "name": "Oreo Protein Cinnamon Rolls",
+    "category": "desserts",
+    "type": "individual",
+    "servings": 8,
+    "ingredients": [
+      "1 cup Self-rising flour",
+      "1 cup Greek yogurt (non-fat)",
+      "6 Oreos or sugar-free sandwich cookies (crushed)",
+      "1 tsp Cinnamon",
+      "2 scoops Vanilla protein powder (for frosting)",
+      "2 tbsp Almond milk (for frosting)"
+    ],
+    "instructions": [
+      "Mix flour and Greek yogurt to form dough",
+      "Roll dough into rectangle",
+      "Press crushed Oreos and cinnamon into dough",
+      "Roll up and slice into 8 rolls",
+      "Place in greased baking dish",
+      "Bake at 375°F for 20 minutes",
+      "Mix vanilla protein powder with almond milk for frosting",
+      "Top warm rolls with vanilla protein frosting"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "perServingCalories": 255,
+      "totalCalories": 2040,
+      "perServingProtein": 16,
+      "totalProtein": 128,
+      "perServingCarbs": 32,
+      "totalCarbs": 256,
+      "perServingFat": 6,
+      "totalFat": 48,
+      "perServingFiber": 4,
+      "totalFiber": 32
+    }
+  },
+  {
+    "id": 19,
+    "name": "Cinnamon Apple Pie Rolls",
+    "category": "desserts",
+    "type": "individual",
+    "servings": 8,
+    "ingredients": [
+      "1 package Yeast dough (store-bought or homemade)",
+      "1 cup Diced apples",
+      "2 tsp Cinnamon",
+      "3 tbsp Erythritol sweetener",
+      "2 tbsp Sugar-free caramel sauce (for drizzle)"
+    ],
+    "instructions": [
+      "Roll out yeast dough into rectangle",
+      "Sauté diced apples with cinnamon and sweetener until soft",
+      "Spread apple mixture over dough",
+      "Roll up tightly and slice into 8 rolls",
+      "Place in greased baking dish",
+      "Bake at 375°F for 22-25 minutes until golden",
+      "Drizzle with sugar-free caramel while warm",
+      "Serve immediately"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "perServingCalories": 240,
+      "totalCalories": 1920,
+      "perServingProtein": 6,
+      "totalProtein": 48,
+      "perServingCarbs": 42,
+      "totalCarbs": 336,
+      "perServingFat": 5,
+      "totalFat": 40,
+      "perServingFiber": 5,
+      "totalFiber": 40
+    }
+  },
+  {
+    "id": 20,
+    "name": "Pumpkin Spice Cinnamon Rolls",
+    "category": "desserts",
+    "type": "individual",
+    "servings": 8,
+    "ingredients": [
+      "1 cup Self-rising flour",
+      "1 cup Greek yogurt (non-fat)",
+      "1/2 cup Pumpkin puree",
+      "2 tsp Pumpkin spice",
+      "1/4 cup Light cream cheese (for frosting)",
+      "1 tbsp Almond milk (for frosting)"
+    ],
+    "instructions": [
+      "Mix flour and Greek yogurt to form dough",
+      "Roll dough into rectangle",
+      "Mix pumpkin puree with pumpkin spice and spread over dough",
+      "Roll up and slice into 8 rolls",
+      "Place in greased baking dish",
+      "Bake at 375°F for 20-22 minutes",
+      "Mix cream cheese with almond milk for frosting",
+      "Frost while warm and serve"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "perServingCalories": 225,
+      "totalCalories": 1800,
+      "perServingProtein": 10,
+      "totalProtein": 80,
+      "perServingCarbs": 32,
+      "totalCarbs": 256,
+      "perServingFat": 5,
+      "totalFat": 40,
+      "perServingFiber": 4,
+      "totalFiber": 32
+    }
+  },
+  {
+    "id": 21,
+    "name": "Chocolate Chip Cinnamon Rolls",
+    "category": "desserts",
+    "type": "individual",
+    "servings": 8,
+    "ingredients": [
+      "1 package Yeast dough (store-bought or homemade)",
+      "2 tsp Cinnamon",
+      "1/2 cup Sugar-free chocolate chips",
+      "3 tbsp Brown sugar alternative",
+      "1/4 cup Light cream cheese (for icing)",
+      "1 tbsp Almond milk (for icing)"
+    ],
+    "instructions": [
+      "Roll out yeast dough into rectangle",
+      "Sprinkle dough with cinnamon, brown sugar alternative, and chocolate chips",
+      "Roll up tightly and slice into 8 rolls",
+      "Place in greased baking dish",
+      "Bake at 375°F for 20-25 minutes until golden",
+      "Mix cream cheese with almond milk for icing",
+      "Top warm rolls with icing",
+      "Serve immediately"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "perServingCalories": 260,
+      "totalCalories": 2080,
+      "perServingProtein": 7,
+      "totalProtein": 56,
+      "perServingCarbs": 38,
+      "totalCarbs": 304,
+      "perServingFat": 9,
+      "totalFat": 72,
+      "perServingFiber": 5,
+      "totalFiber": 40
+    }
+  },
+  {
+    "id": 22,
+    "name": "The Fudgiest Oreo Brownies",
+    "category": "desserts",
+    "description": "Rich & Decadent Chocolate Treat",
+    "servings": 12,
+    "ingredients": [
+      "270g Caster sugar",
+      "3 Eggs",
+      "200g Unsalted butter (melted)",
+      "200g Milk chocolate (melted)",
+      "100g Plain flour",
+      "50g Cocoa powder",
+      "1 pack Oreos (crushed)"
+    ],
+    "nutrition": {
+      "totalCalories": 6384,
+      "perServingCalories": 532,
+      "totalProtein": 71,
+      "perServingProtein": 6,
+      "totalCarbs": 810,
+      "perServingCarbs": 68,
+      "totalFiber": 36,
+      "perServingFiber": 3,
+      "totalFat": 329,
+      "perServingFat": 27,
+      "totalSugar": 585,
+      "perServingSugar": 49
+    },
+    "instructions": [
+      "In a bowl, whisk together sugar and eggs until smooth",
+      "Add melted butter and melted chocolate, whisk until fully combined",
+      "Sift in flour and cocoa powder, fold gently with a spatula",
+      "Pour mixture into a lined baking dish",
+      "Top evenly with crushed Oreos",
+      "Bake at 180°C (350°F) for 25 minutes, until edges are set but center remains fudgy",
+      "Cool completely before slicing for clean, chewy squares",
+      "Enjoy warm or chilled!"
+    ],
+    "cookingTime": "30-35 minutes"
+  },
+  {
+    "id": 23,
+    "name": "Zucchini Mousse (Customizable)",
+    "category": "desserts",
+    "description": "Healthy, Creamy, Hidden Veggie Base - Add Whatever You Want!",
+    "servings": 4,
+    "ingredients": [
+      "2 cups raw zucchini, peeled and chopped",
+      "Your choice of flavor (see variations below)",
+      "2-3 tbsp maple syrup or honey (adjust to taste)",
+      "1 tsp vanilla extract (optional)",
+      "Pinch of salt"
+    ],
+    "nutrition": {
+      "totalCalories": 160,
+      "perServingCalories": 40,
+      "totalProtein": 6,
+      "perServingProtein": 1.5,
+      "totalCarbs": 40,
+      "perServingCarbs": 10,
+      "totalFiber": 8,
+      "perServingFiber": 2,
+      "totalFat": 2,
+      "perServingFat": 0.5,
+      "totalSugar": 24,
+      "perServingSugar": 6
+    },
+    "instructions": [
+      "Peel and chop zucchini into chunks",
+      "Choose your flavor variation and add to blender with zucchini",
+      "Add maple syrup/honey, vanilla (if using), and salt",
+      "Blend on high until completely smooth and creamy (2-3 minutes)",
+      "Taste and adjust sweetness if needed",
+      "Pour mixture into small cups or bowls",
+      "Refrigerate overnight (or at least 4 hours) to thicken",
+      "Top with optional toppings and serve chilled!",
+      "",
+      "FLAVOR VARIATIONS:",
+      "• Chocolate: Add 3 tbsp cocoa powder + chocolate chips on top",
+      "• Strawberry: Add 1 cup strawberries + fresh strawberry slices on top",
+      "• Peanut Butter: Add 3-4 tbsp peanut butter + crushed peanuts on top",
+      "• Vanilla: Just use vanilla extract (simple and clean!)",
+      "• Banana: Add 1 ripe banana + banana slices on top",
+      "• Mix & Match: Get creative with whatever flavors you like!"
+    ],
+    "cookingTime": "5 minutes prep + overnight refrigeration"
+  },
+  {
+    "id": 24,
+    "name": "Three-Ingredient Mug Cake",
+    "category": "desserts",
+    "description": "Quick and Easy Single-Serve Protein Cake",
+    "servings": 1,
+    "ingredients": [
+      "1 scoop protein powder",
+      "1/2 tsp baking powder",
+      "Splash of water",
+      "Optional: Toppings of choice (like peanut butter or dark chocolate)"
+    ],
+    "nutrition": {
+      "totalCalories": 120,
+      "perServingCalories": 120,
+      "totalProtein": 20,
+      "perServingProtein": 20,
+      "totalCarbs": 5,
+      "perServingCarbs": 5,
+      "totalFiber": 1,
+      "perServingFiber": 1,
+      "totalFat": 2,
+      "perServingFat": 2,
+      "totalSugar": 1,
+      "perServingSugar": 1
+    },
+    "instructions": [
+      "Mix protein powder and baking powder in a microwave-safe mug",
+      "Add a splash of water and stir until smooth batter forms",
+      "Microwave for 60-90 seconds until cake is set",
+      "Top with optional toppings like peanut butter or dark chocolate",
+      "Enjoy immediately"
+    ],
+    "cookingTime": "2-3 minutes"
+  },
+  {
+    "id": 25,
+    "name": "Pumpkin Protein Cookie Dough",
+    "category": "desserts",
+    "description": "No-Bake Edible Cookie Dough with Pumpkin Spice",
+    "servings": 12,
+    "ingredients": [
+      "2 cups almond flour",
+      "1/2 cup unflavored or vanilla protein powder",
+      "1 tsp cinnamon or pumpkin pie spice",
+      "1/2 cup pumpkin puree",
+      "1 tsp vanilla extract",
+      "1/4 cup PB2 mixed with water to form paste",
+      "1/4 cup sugar-free maple syrup",
+      "Pinch of salt",
+      "1/4 cup chocolate chips"
+    ],
+    "nutrition": {
+      "totalCalories": 1680,
+      "perServingCalories": 140,
+      "totalProtein": 72,
+      "perServingProtein": 6,
+      "totalCarbs": 96,
+      "perServingCarbs": 8,
+      "totalFiber": 48,
+      "perServingFiber": 4,
+      "totalFat": 108,
+      "perServingFat": 9,
+      "totalSugar": 24,
+      "perServingSugar": 2
+    },
+    "instructions": [
+      "In a large bowl, combine almond flour, protein powder, cinnamon or pumpkin pie spice, and salt",
+      "Mix PB2 with water to form a paste consistency",
+      "Add pumpkin puree, vanilla extract, PB2 paste, and maple syrup to dry ingredients",
+      "Mix thoroughly until well combined and cookie dough consistency forms",
+      "Fold in chocolate chips",
+      "Refrigerate for 30 minutes to firm up",
+      "Scoop and enjoy or roll into balls for portioned servings",
+      "Store in refrigerator for up to 1 week"
+    ],
+    "cookingTime": "10 minutes + 30 minutes chilling"
+  },
+  {
+    "id": 26,
+    "name": "Six-Ingredient Brownies",
+    "category": "desserts",
+    "description": "Healthy Fudgy Brownies with Banana Base",
+    "servings": 9,
+    "ingredients": [
+      "2 ripe bananas",
+      "1 tsp baking powder",
+      "1/2 cup almond butter",
+      "1 egg",
+      "1/4 cup maple syrup (sugar free)",
+      "4 heavy tbsp cocoa powder",
+      "Pinch of salt",
+      "Handful of chocolate chips (dark chocolate with 0 added sugar)"
+    ],
+    "nutrition": {
+      "totalCalories": 1440,
+      "perServingCalories": 160,
+      "totalProtein": 36,
+      "perServingProtein": 4,
+      "totalCarbs": 144,
+      "perServingCarbs": 16,
+      "totalFiber": 27,
+      "perServingFiber": 3,
+      "totalFat": 90,
+      "perServingFat": 10,
+      "totalSugar": 54,
+      "perServingSugar": 6
+    },
+    "instructions": [
+      "Preheat oven to 350°F (175°C)",
+      "Mash the ripe bananas in a large bowl until smooth",
+      "Add almond butter, egg, and maple syrup to the mashed bananas and mix well",
+      "Add cocoa powder, baking powder, and a pinch of salt",
+      "Mix until fully combined and smooth",
+      "Fold in chocolate chips, reserving a few for topping",
+      "Pour batter into an 8x8 inch pan lined with parchment paper",
+      "Sprinkle remaining chocolate chips on top",
+      "Bake for 20-25 minutes until set",
+      "Cool completely before cutting into 9 brownies",
+      "Store in an airtight container for up to 5 days"
+    ],
+    "cookingTime": "30-35 minutes"
+  },
+  {
+    "id": 27,
+    "name": "Monster Cookie Dough",
+    "category": "desserts",
+    "description": "Low-Calorie, High-Protein Edible Cookie Dough",
+    "servings": 1,
+    "ingredients": [
+      "2 tbsp oat flour",
+      "2 tbsp PB2",
+      "1 scoop vanilla protein powder",
+      "1 tbsp sweetener",
+      "Pinch of salt",
+      "1/4 cup water (slowly add, may need less or more)",
+      "Optional: mini chocolate chips and/or M&Ms"
+    ],
+    "nutrition": {
+      "totalCalories": 260,
+      "perServingCalories": 260,
+      "totalProtein": 31,
+      "perServingProtein": 31,
+      "totalCarbs": 28,
+      "perServingCarbs": 28,
+      "totalFiber": 4,
+      "perServingFiber": 4,
+      "totalFat": 4,
+      "perServingFat": 4,
+      "totalSugar": 2,
+      "perServingSugar": 2
+    },
+    "instructions": [
+      "In a bowl, combine oat flour, PB2, vanilla protein powder, sweetener, and a pinch of salt",
+      "Slowly add 1/4 cup water, mixing as you go (you may need less or more water)",
+      "Mix until cookie dough consistency is reached",
+      "Add optional mini chocolate chips and/or M&Ms if desired",
+      "Enjoy immediately or refrigerate for firmer texture"
+    ],
+    "cookingTime": "5 minutes"
   }
 ]

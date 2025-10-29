@@ -1,122 +1,76 @@
 // Utility to load recipe data dynamically
 
-const CHICKEN_OMELETTE_VARIATION_FILE_MAP = {
-  0: 'variation-0-original-creamy.json',
-  1: 'variation-1-marinara.json',
-  2: 'variation-2-light-alfredo.json',
-  3: 'variation-3-fresh-herb.json',
-  4: 'variation-4-bbq.json',
-  5: 'variation-5-sharp-cheddar.json',
-  6: 'variation-6-spicy-mexican.json',
-  7: 'variation-7-sun-dried-tomato.json',
-  8: 'variation-8-honey-mustard.json',
-  9: 'variation-9-spicy-chipotle.json',
-  10: 'variation-10-garlic-parmesan.json',
-  11: 'variation-11-creamy-basil.json',
-  12: 'variation-12-spicy-cajun.json'
+const CATEGORY_DATA_PATH = '/data/recipes/recipe-categories.json';
+let categoriesCache = null;
+const jsonCache = new Map();
+
+const COLLECTION_PATHS = {
+  'chicken-omelettes-variations': '/data/recipes/chicken-omelettes-variations.json',
+  'protein-bowls': '/data/recipes/protein-bowls.json',
+  'desserts': '/data/recipes/desserts.json',
+  'protein-snacks': '/data/recipes/protein-snacks.json',
+  'quick-lunches': '/data/recipes/quick-lunches.json',
+  'smoothie-bowls': '/data/recipes/smoothie-bowls.json'
 };
 
-const PROTEIN_BOWL_FILE_MAP = {
-  0: 'bowl-0-asian-fusion.json',
-  1: 'bowl-1-mediterranean.json',
-  2: 'bowl-2-tex-mex.json',
-  3: 'bowl-3-honey-garlic.json',
-  4: 'bowl-4-avocado-fiesta.json',
-  5: 'bowl-5-mediterranean-chicken.json',
-  6: 'bowl-6-creamy-salsa-chicken.json',
-  7: 'bowl-7-crispy-chickpea.json',
-  8: 'bowl-8-teriyaki-pineapple.json'
+const fetchJSONWithCache = async (path) => {
+  if (!path) {
+    return null;
+  }
+
+  if (!jsonCache.has(path)) {
+    const promise = (async () => {
+      const response = await fetch(path);
+      if (!response.ok) {
+        throw new Error(`Request failed with status ${response.status}`);
+      }
+      return await response.json();
+    })().catch((error) => {
+      console.error(`Failed to load data from ${path}:`, error);
+      jsonCache.delete(path);
+      throw error;
+    });
+
+    jsonCache.set(path, promise);
+  }
+
+  return jsonCache.get(path);
 };
 
-const DESSERT_FILE_MAP = {
-  0: 'dessert-0-butternut-brownies.json',
-  1: 'dessert-1-oreo-cinnamon-rolls.json',
-  2: 'dessert-2-oreo-cinnamon-rolls-cream.json',
-  3: 'dessert-3-nutella-pan-brownies.json',
-  4: 'dessert-4-reeses-peanut-butter-cookies.json',
-  5: 'dessert-5-cookie-dough-cheesecake-pie.json',
-  6: 'dessert-6-cottage-cheese-brownies.json',
-  7: 'dessert-7-pumpkin-spice-bites.json',
-  8: 'dessert-8-toffee-chocolate-chip-cookies.json',
-  9: 'dessert-9-fudgy-brownie-cookies.json',
-  10: 'dessert-10-crackly-brownie-cookies.json',
-  11: 'dessert-11-double-chocolate-brownies.json',
-  12: 'dessert-12-cookie-dough-bars.json',
-  13: 'dessert-13-chocolate-chip-cookie-dough-cups.json',
-  14: 'dessert-14-cherry-brownie-bars.json',
-  15: 'dessert-15-birthday-cake-truffles.json',
-  16: 'dessert-16-chocolate-pb-brownie-bites.json',
-  17: 'dessert-17-protein-cinnamon-rolls.json',
-  18: 'dessert-18-oreo-protein-cinnamon-rolls.json',
-  19: 'dessert-19-cinnamon-apple-pie-rolls.json',
-  20: 'dessert-20-pumpkin-spice-cinnamon-rolls.json',
-  21: 'dessert-21-chocolate-chip-cinnamon-rolls.json',
-  22: 'dessert-22-fudgiest-oreo-brownies.json',
-  23: 'dessert-23-zucchini-mousse.json',
-  24: 'dessert-24-three-ingredient-mug-cake.json',
-  25: 'dessert-25-pumpkin-protein-cookie-dough.json',
-  26: 'dessert-26-six-ingredient-brownies.json',
-  27: 'dessert-27-monster-cookie-dough.json'
+const fetchCategories = async () => {
+  if (categoriesCache) {
+    return categoriesCache;
+  }
+
+  try {
+    const data = await fetchJSONWithCache(CATEGORY_DATA_PATH);
+    categoriesCache = Array.isArray(data) ? data : [];
+  } catch (error) {
+    categoriesCache = [];
+  }
+
+  return categoriesCache;
 };
 
-const PROTEIN_SNACK_FILE_MAP = {
-  0: 'snack-0-protein-banana-pancake.json',
-  1: 'snack-1-brookie-protein-cookie-dough-cup.json',
-  2: 'snack-2-high-protein-cinnamon-bites.json',
-  3: 'snack-3-churro-bites.json',
-  4: 'snack-4-lemon-cheesecake-bars.json',
-  5: 'snack-5-pizza-bagel-bites.json',
-  6: 'snack-6-almond-joy-cups.json',
-  7: 'snack-7-pretzel-nuggets.json',
-  8: 'snack-8-pb-banana-bars.json',
-  9: 'snack-9-brownie-batter-dip.json',
-  10: 'snack-10-strawberry-cheesecake-cups.json',
-  11: 'snack-11-cottage-cheese-nacho-dip.json',
-  12: 'snack-12-salted-pb-fudge.json',
-  13: 'snack-13-apple-pie-oats-bars.json',
-  14: 'snack-14-chocolate-covered-strawberries.json',
-  15: 'snack-15-protein-ranch-pretzel-bites.json',
-  16: 'snack-16-cinnamon-swirl-rice-cakes.json',
-  17: 'snack-17-mini-pepperoni-pizza.json'
+const findCategoryById = async (categoryId) => {
+  const categories = await fetchCategories();
+  return categories.find((category) => category.id === categoryId) || null;
 };
 
-const QUICK_LUNCH_FILE_MAP = {
-  0: 'lunch-0-chicken-alfredo-garlic-bread.json',
-  1: 'lunch-1-pesto-quesadilla.json',
-  2: 'lunch-2-bbq-ranch-pita.json',
-  3: 'lunch-3-mac-cheese-bowl.json',
-  4: 'lunch-4-protein-pizza-rollups.json',
-  5: 'lunch-5-buffalo-chicken-rice-cakes.json',
-  6: 'lunch-6-chicken-taco-flatbread.json',
-  7: 'lunch-7-garlic-herb-chicken-melt.json',
-  8: 'lunch-8-chicken-alfredo-pizza-toast.json',
-  9: 'lunch-9-bbq-chicken-nacho-plate.json',
-  10: 'lunch-10-chicken-pesto-stuffed-tortilla.json',
-  11: 'lunch-11-chicken-caesar-melt.json'
-};
+const loadCollection = async (pathKeyOrPath) => {
+  const path = COLLECTION_PATHS[pathKeyOrPath] || pathKeyOrPath;
+  if (!path) {
+    return [];
+  }
 
-const SMOOTHIE_BOWL_FILE_MAP = {
-  0: 'bowl-0-mint-chocolate.json',
-  1: 'bowl-1-mango-cream.json',
-  2: 'bowl-2-berry-blast.json',
-  3: 'bowl-3-peanut-butter-banana.json',
-  4: 'bowl-4-tropical-paradise.json',
-  5: 'bowl-5-green-goddess.json',
-  6: 'bowl-6-strawberry-cheesecake.json',
-  7: 'bowl-7-classic-acai.json',
-  8: 'bowl-8-chocolate-acai.json',
-  9: 'bowl-9-chocolate-pb-acai.json',
-  10: 'bowl-10-tropical-acai.json',
-  11: 'bowl-11-green-acai.json',
-  12: 'bowl-12-pb-banana-acai.json'
+  try {
+    const data = await fetchJSONWithCache(path);
+    return Array.isArray(data) ? data : [];
+  } catch (error) {
+    // fetchJSONWithCache already logs the error
+    return [];
+  }
 };
-
-const CHICKEN_OMELETTE_VARIATION_IDS = Object.keys(CHICKEN_OMELETTE_VARIATION_FILE_MAP).map(Number);
-const PROTEIN_BOWL_IDS = Object.keys(PROTEIN_BOWL_FILE_MAP).map(Number);
-const DESSERT_IDS = Object.keys(DESSERT_FILE_MAP).map(Number);
-const PROTEIN_SNACK_IDS = Object.keys(PROTEIN_SNACK_FILE_MAP).map(Number);
-const QUICK_LUNCH_IDS = Object.keys(QUICK_LUNCH_FILE_MAP).map(Number);
-const SMOOTHIE_BOWL_IDS = Object.keys(SMOOTHIE_BOWL_FILE_MAP).map(Number);
 
 const replaceCountInDescription = (description, total) => {
   if (!description || typeof total !== 'number' || Number.isNaN(total)) {
@@ -128,50 +82,48 @@ const replaceCountInDescription = (description, total) => {
     : description;
 };
 
-const getRecipeCountByCategory = (categoryId) => {
-  switch (categoryId) {
-    case 'chicken-omelettes':
-      return CHICKEN_OMELETTE_VARIATION_IDS.length;
-    case 'protein-bowls':
-      return PROTEIN_BOWL_IDS.length;
-    case 'desserts':
-      return DESSERT_IDS.length;
-    case 'protein-snacks':
-      return PROTEIN_SNACK_IDS.length;
-    case 'quick-lunches':
-      return QUICK_LUNCH_IDS.length;
-    case 'smoothie-bowls':
-      return SMOOTHIE_BOWL_IDS.length;
-    default:
-      return null;
-  }
-};
+const getRecipeCountByCategory = () => null;
 
 export const loadRecipeCategories = async () => {
   try {
-    const response = await fetch('/data/recipes/recipe-categories.json');
-    const categories = await response.json();
+    const categories = await fetchCategories();
 
-    if (!Array.isArray(categories)) {
+    if (!Array.isArray(categories) || categories.length === 0) {
       return [];
     }
 
-    return categories.map((category) => {
-      if (category.comingSoon) {
+    const enrichedCategories = await Promise.all(
+      categories.map(async (category) => {
+        if (category.comingSoon) {
+          return category;
+        }
+
+        let computedTotal = getRecipeCountByCategory(category.id);
+
+        if ((typeof computedTotal !== 'number' || computedTotal < 0) && category?.data?.itemsPath) {
+          try {
+            const items = await fetchJSONWithCache(category.data.itemsPath);
+            if (Array.isArray(items)) {
+              computedTotal = items.length;
+            }
+          } catch (error) {
+            // Error already logged inside fetchJSONWithCache
+          }
+        }
+
+        if (typeof computedTotal === 'number' && computedTotal >= 0) {
+          return {
+            ...category,
+            totalRecipes: computedTotal,
+            description: replaceCountInDescription(category.description, computedTotal)
+          };
+        }
+
         return category;
-      }
+      })
+    );
 
-      const computedTotal = getRecipeCountByCategory(category.id);
-      if (typeof computedTotal === 'number' && computedTotal >= 0) {
-        return {
-          ...category,
-          totalRecipes: computedTotal,
-          description: replaceCountInDescription(category.description, computedTotal)
-        };
-      }
-
-      return category;
-    });
+    return enrichedCategories;
   } catch (error) {
     console.error('Failed to load recipe categories:', error);
     return [];
@@ -191,11 +143,9 @@ export const loadChickenOmelettesBase = async () => {
 // Load individual chicken omelette variation
 export const loadChickenOmeletteVariation = async (variationId) => {
   try {
-    const fileName = CHICKEN_OMELETTE_VARIATION_FILE_MAP[variationId];
-    if (!fileName) throw new Error('Invalid variation ID');
-    
-    const response = await fetch(`/data/recipes/chicken-omelettes/${fileName}`);
-    return await response.json();
+    const variations = await loadChickenOmelettesVariations();
+    const numericId = Number(variationId);
+    return variations.find(v => Number(v.id) === numericId) || null;
   } catch (error) {
     console.error('Failed to load chicken omelette variation:', error);
     return null;
@@ -205,21 +155,7 @@ export const loadChickenOmeletteVariation = async (variationId) => {
 // Load all chicken omelette variations (from individual files)
 export const loadChickenOmelettesVariations = async () => {
   try {
-    // Try loading from individual files first
-    const variations = await Promise.all(
-      CHICKEN_OMELETTE_VARIATION_IDS.map(id => loadChickenOmeletteVariation(id))
-    );
-    
-    // Filter out any null values
-    const validVariations = variations.filter(v => v !== null);
-    
-    if (validVariations.length > 0) {
-      return validVariations;
-    }
-    
-    // Fallback to combined file
-    const response = await fetch('/data/recipes/chicken-omelettes-variations.json');
-    return await response.json();
+    return await loadCollection('chicken-omelettes-variations');
   } catch (error) {
     console.error('Failed to load chicken omelettes variations:', error);
     return [];
@@ -229,11 +165,9 @@ export const loadChickenOmelettesVariations = async () => {
 // Load individual protein bowl
 export const loadProteinBowl = async (bowlId) => {
   try {
-    const fileName = PROTEIN_BOWL_FILE_MAP[bowlId];
-    if (!fileName) throw new Error('Invalid bowl ID');
-    
-    const response = await fetch(`/data/recipes/protein-bowls-individual/${fileName}`);
-    return await response.json();
+    const bowls = await loadProteinBowls();
+    const numericId = Number(bowlId);
+    return bowls.find(b => Number(b.id) === numericId) || null;
   } catch (error) {
     console.error('Failed to load protein bowl:', error);
     return null;
@@ -243,21 +177,7 @@ export const loadProteinBowl = async (bowlId) => {
 // Load all protein bowls (from individual files)
 export const loadProteinBowls = async () => {
   try {
-    // Try loading from individual files first
-    const bowls = await Promise.all(
-      PROTEIN_BOWL_IDS.map(id => loadProteinBowl(id))
-    );
-    
-    // Filter out any null values
-    const validBowls = bowls.filter(b => b !== null);
-    
-    if (validBowls.length > 0) {
-      return validBowls;
-    }
-    
-    // Fallback to combined file
-    const response = await fetch('/data/recipes/protein-bowls.json');
-    return await response.json();
+    return await loadCollection('protein-bowls');
   } catch (error) {
     console.error('Failed to load protein bowls:', error);
     return [];
@@ -267,11 +187,9 @@ export const loadProteinBowls = async () => {
 // Load individual dessert
 export const loadDessert = async (dessertId) => {
   try {
-    const fileName = DESSERT_FILE_MAP[dessertId];
-    if (!fileName) throw new Error('Invalid dessert ID');
-    
-    const response = await fetch(`/data/recipes/desserts-individual/${fileName}`);
-    return await response.json();
+    const desserts = await loadDesserts();
+    const numericId = Number(dessertId);
+    return desserts.find(d => Number(d.id) === numericId) || null;
   } catch (error) {
     console.error('Failed to load dessert:', error);
     return null;
@@ -281,18 +199,7 @@ export const loadDessert = async (dessertId) => {
 // Load all desserts
 export const loadDesserts = async () => {
   try {
-    const desserts = await Promise.all(
-      DESSERT_IDS.map(id => loadDessert(id))
-    );
-    
-    const validDesserts = desserts.filter(d => d !== null);
-    
-    if (validDesserts.length > 0) {
-      return validDesserts;
-    }
-    
-    const response = await fetch('/data/recipes/desserts.json');
-    return await response.json();
+    return await loadCollection('desserts');
   } catch (error) {
     console.error('Failed to load desserts:', error);
     return [];
@@ -302,11 +209,9 @@ export const loadDesserts = async () => {
 // Load individual protein snack
 export const loadProteinSnack = async (snackId) => {
   try {
-    const fileName = PROTEIN_SNACK_FILE_MAP[snackId];
-    if (!fileName) throw new Error('Invalid snack ID');
-    
-    const response = await fetch(`/data/recipes/protein-snacks-individual/${fileName}`);
-    return await response.json();
+    const snacks = await loadProteinSnacks();
+    const numericId = Number(snackId);
+    return snacks.find(s => Number(s.id) === numericId) || null;
   } catch (error) {
     console.error('Failed to load protein snack:', error);
     return null;
@@ -316,18 +221,7 @@ export const loadProteinSnack = async (snackId) => {
 // Load all protein snacks
 export const loadProteinSnacks = async () => {
   try {
-    const snacks = await Promise.all(
-      PROTEIN_SNACK_IDS.map(id => loadProteinSnack(id))
-    );
-    
-    const validSnacks = snacks.filter(s => s !== null);
-    
-    if (validSnacks.length > 0) {
-      return validSnacks;
-    }
-    
-    const response = await fetch('/data/recipes/protein-snacks.json');
-    return await response.json();
+    return await loadCollection('protein-snacks');
   } catch (error) {
     console.error('Failed to load protein snacks:', error);
     return [];
@@ -337,11 +231,9 @@ export const loadProteinSnacks = async () => {
 // Load individual quick lunch
 export const loadQuickLunch = async (lunchId) => {
   try {
-    const fileName = QUICK_LUNCH_FILE_MAP[lunchId];
-    if (!fileName) throw new Error('Invalid lunch ID');
-    
-    const response = await fetch(`/data/recipes/quick-lunches-individual/${fileName}`);
-    return await response.json();
+    const lunches = await loadQuickLunches();
+    const numericId = Number(lunchId);
+    return lunches.find(l => Number(l.id) === numericId) || null;
   } catch (error) {
     console.error('Failed to load quick lunch:', error);
     return null;
@@ -351,18 +243,7 @@ export const loadQuickLunch = async (lunchId) => {
 // Load all quick lunches
 export const loadQuickLunches = async () => {
   try {
-    const lunches = await Promise.all(
-      QUICK_LUNCH_IDS.map(id => loadQuickLunch(id))
-    );
-    
-    const validLunches = lunches.filter(l => l !== null);
-    
-    if (validLunches.length > 0) {
-      return validLunches;
-    }
-    
-    const response = await fetch('/data/recipes/quick-lunches.json');
-    return await response.json();
+    return await loadCollection('quick-lunches');
   } catch (error) {
     console.error('Failed to load quick lunches:', error);
     return [];
@@ -372,11 +253,9 @@ export const loadQuickLunches = async () => {
 // Load individual smoothie bowl
 export const loadSmoothieBowl = async (bowlId) => {
   try {
-    const fileName = SMOOTHIE_BOWL_FILE_MAP[bowlId];
-    if (!fileName) throw new Error('Invalid smoothie bowl ID');
-    
-    const response = await fetch(`/data/recipes/smoothie-bowls-individual/${fileName}`);
-    return await response.json();
+    const bowls = await loadSmoothieBowls();
+    const numericId = Number(bowlId);
+    return bowls.find(b => Number(b.id) === numericId) || null;
   } catch (error) {
     console.error('Failed to load smoothie bowl:', error);
     return null;
@@ -386,17 +265,7 @@ export const loadSmoothieBowl = async (bowlId) => {
 // Load all smoothie bowls
 export const loadSmoothieBowls = async () => {
   try {
-    const bowls = await Promise.all(
-      SMOOTHIE_BOWL_IDS.map(id => loadSmoothieBowl(id))
-    );
-    
-    const validBowls = bowls.filter(b => b !== null);
-    
-    if (validBowls.length > 0) {
-      return validBowls;
-    }
-    
-    return [];
+    return await loadCollection('smoothie-bowls');
   } catch (error) {
     console.error('Failed to load smoothie bowls:', error);
     return [];
@@ -432,8 +301,26 @@ export const loadRecipesByCategory = async (categoryId) => {
       const smoothieBowls = await loadSmoothieBowls();
       return { base: null, recipes: smoothieBowls };
     
-    default:
+    default: {
+      const category = await findCategoryById(categoryId);
+      if (category?.data?.itemsPath) {
+        try {
+          const [baseData, items] = await Promise.all([
+            category.data.basePath ? fetchJSONWithCache(category.data.basePath) : Promise.resolve(null),
+            fetchJSONWithCache(category.data.itemsPath)
+          ]);
+
+          return {
+            base: baseData,
+            recipes: Array.isArray(items) ? items : []
+          };
+        } catch (error) {
+          // Errors already logged by fetchJSONWithCache
+        }
+      }
+
       return { base: null, recipes: [] };
+    }
   }
 };
 

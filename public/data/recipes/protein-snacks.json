@@ -20,7 +20,9 @@
       "perServingCarbs": 26,
       "netCarbsPerServing": 5,
       "totalFat": 5,
-      "perServingFat": 5
+      "perServingFat": 5,
+      "perServingFiber": 4,
+      "totalFiber": 4
     },
     "instructions": [
       "Blend all ingredients until smooth",
@@ -53,7 +55,9 @@
       "totalCarbs": 48,
       "perServingCarbs": 24,
       "totalFat": 16,
-      "perServingFat": 8
+      "perServingFat": 8,
+      "perServingFiber": 3,
+      "totalFiber": 6
     },
     "instructions": [
       "Mix all dry ingredients except cocoa powder, add milk and vanilla to form dough",
@@ -85,7 +89,9 @@
       "totalCarbs": 140,
       "perServingCarbs": 14,
       "totalFat": 10,
-      "perServingFat": 1
+      "perServingFat": 1,
+      "perServingFiber": 1,
+      "totalFiber": 10
     },
     "instructions": [
       "Preheat oven to 375°F",
@@ -96,5 +102,536 @@
       "Bake for 13-15 minutes until golden"
     ],
     "cookingTime": "20 minutes"
+  },
+  {
+    "id": 3,
+    "name": "Protein Cinnamon Churro Bites",
+    "category": "protein-snacks",
+    "type": "individual",
+    "servings": 10,
+    "ingredients": [
+      "1 cup Self-rising flour",
+      "1 cup Greek yogurt (non-fat)",
+      "2 tsp Cinnamon",
+      "3 tbsp Erythritol sweetener",
+      "1 tsp Vanilla extract"
+    ],
+    "instructions": [
+      "Mix flour and Greek yogurt to form dough",
+      "Add vanilla extract and knead until smooth",
+      "Roll dough into small balls",
+      "Air fry at 375°F for 6-8 minutes until golden",
+      "Mix cinnamon and sweetener in a bowl",
+      "Coat warm bites in cinnamon mixture and serve"
+    ],
+    "cookingTime": "10 minutes",
+    "nutrition": {
+      "perServingCalories": 105,
+      "totalCalories": 1050,
+      "perServingProtein": 7,
+      "totalProtein": 70,
+      "perServingCarbs": 16,
+      "totalCarbs": 160,
+      "perServingFat": 1,
+      "totalFat": 10,
+      "perServingFiber": 2,
+      "totalFiber": 20
+    }
+  },
+  {
+    "id": 4,
+    "name": "Lemon Cheesecake Protein Bars",
+    "category": "protein-snacks",
+    "type": "individual",
+    "servings": 8,
+    "ingredients": [
+      "8 oz Light cream cheese (softened)",
+      "1/2 cup Greek yogurt (non-fat)",
+      "3 tbsp Fresh lemon juice",
+      "2 scoops Vanilla protein powder",
+      "1 cup Almond flour (for crust)",
+      "2 tbsp Melted butter (for crust)"
+    ],
+    "instructions": [
+      "Preheat oven to 325°F",
+      "Mix almond flour and melted butter, press into 8x8 pan",
+      "Bake crust for 8 minutes",
+      "Blend cream cheese, Greek yogurt, lemon juice, and protein powder",
+      "Pour filling over baked crust",
+      "Bake for 20 minutes until set",
+      "Chill for 2 hours before slicing into 8 bars"
+    ],
+    "cookingTime": "10 minutes",
+    "nutrition": {
+      "perServingCalories": 180,
+      "totalCalories": 1440,
+      "perServingProtein": 13,
+      "totalProtein": 104,
+      "perServingCarbs": 8,
+      "totalCarbs": 64,
+      "perServingFat": 11,
+      "totalFat": 88,
+      "perServingFiber": 3,
+      "totalFiber": 24
+    }
+  },
+  {
+    "id": 5,
+    "name": "Pizza Protein Bagel Bites",
+    "category": "protein-snacks",
+    "type": "individual",
+    "servings": 4,
+    "ingredients": [
+      "2 Greek yogurt mini bagels (homemade: 1 cup flour + 1 cup Greek yogurt)",
+      "1/2 cup Sugar-free marinara sauce",
+      "1 cup Shredded mozzarella",
+      "12 Pepperoni minis"
+    ],
+    "instructions": [
+      "If making bagels: Mix flour and yogurt, shape into 4 mini bagels, bake at 375°F for 20 min",
+      "Slice mini bagels in half",
+      "Spread marinara sauce on each half",
+      "Top with mozzarella cheese",
+      "Add pepperoni minis",
+      "Broil for 2-3 minutes until cheese is melted and bubbly"
+    ],
+    "cookingTime": "10 minutes",
+    "nutrition": {
+      "perServingCalories": 190,
+      "totalCalories": 760,
+      "perServingProtein": 16,
+      "totalProtein": 64,
+      "perServingCarbs": 18,
+      "totalCarbs": 72,
+      "perServingFat": 6,
+      "totalFat": 24,
+      "perServingFiber": 3,
+      "totalFiber": 12
+    }
+  },
+  {
+    "id": 6,
+    "name": "Almond Joy Protein Cups",
+    "category": "protein-snacks",
+    "type": "individual",
+    "servings": 8,
+    "ingredients": [
+      "1 cup Coconut yogurt",
+      "2 scoops Chocolate whey protein",
+      "1/4 cup Almond slivers",
+      "1/2 cup Sugar-free chocolate coating (melted)"
+    ],
+    "instructions": [
+      "Mix coconut yogurt with chocolate whey protein until smooth",
+      "Place silicone cupcake molds on a tray",
+      "Spoon yogurt mixture into molds, filling halfway",
+      "Sprinkle almond slivers on top",
+      "Drizzle with melted sugar-free chocolate",
+      "Freeze for 1 hour until firm",
+      "Pop out of molds and store in freezer"
+    ],
+    "cookingTime": "10 minutes",
+    "nutrition": {
+      "perServingCalories": 175,
+      "totalCalories": 1400,
+      "perServingProtein": 12,
+      "totalProtein": 96,
+      "perServingCarbs": 10,
+      "totalCarbs": 80,
+      "perServingFat": 10,
+      "totalFat": 80,
+      "perServingFiber": 3,
+      "totalFiber": 24
+    }
+  },
+  {
+    "id": 7,
+    "name": "High-Protein Pretzel Nuggets",
+    "category": "protein-snacks",
+    "type": "individual",
+    "servings": 6,
+    "ingredients": [
+      "1 cup Self-rising flour",
+      "1 cup Greek yogurt (non-fat)",
+      "1 Egg (beaten, for wash)",
+      "Coarse salt (for topping)"
+    ],
+    "instructions": [
+      "Mix flour and Greek yogurt to form dough",
+      "Knead until smooth and elastic",
+      "Shape dough into small nugget pieces",
+      "Brush each nugget with beaten egg wash",
+      "Sprinkle generously with coarse salt",
+      "Air fry at 375°F for 8 minutes until golden brown",
+      "Serve warm"
+    ],
+    "cookingTime": "10 minutes",
+    "nutrition": {
+      "perServingCalories": 115,
+      "totalCalories": 690,
+      "perServingProtein": 8,
+      "totalProtein": 48,
+      "perServingCarbs": 18,
+      "totalCarbs": 108,
+      "perServingFat": 2,
+      "totalFat": 12,
+      "perServingFiber": 2,
+      "totalFiber": 12
+    }
+  },
+  {
+    "id": 8,
+    "name": "Peanut Butter Banana Protein Bars",
+    "category": "protein-snacks",
+    "type": "individual",
+    "servings": 8,
+    "ingredients": [
+      "2 Ripe bananas (mashed)",
+      "1/4 cup Peanut butter powder",
+      "2 scoops Vanilla protein powder",
+      "1 cup Rolled oats"
+    ],
+    "instructions": [
+      "Mash bananas in a large bowl",
+      "Mix in peanut butter powder and protein powder",
+      "Fold in rolled oats until well combined",
+      "Press mixture firmly into an 8x8 pan lined with parchment",
+      "Refrigerate for 2 hours until firm",
+      "Slice into 8 bars",
+      "Store in refrigerator"
+    ],
+    "cookingTime": "10 minutes",
+    "nutrition": {
+      "perServingCalories": 225,
+      "totalCalories": 1800,
+      "perServingProtein": 15,
+      "totalProtein": 120,
+      "perServingCarbs": 32,
+      "totalCarbs": 256,
+      "perServingFat": 5,
+      "totalFat": 40,
+      "perServingFiber": 3,
+      "totalFiber": 24
+    }
+  },
+  {
+    "id": 9,
+    "name": "Brownie Batter Protein Dip",
+    "category": "protein-snacks",
+    "type": "individual",
+    "servings": 4,
+    "ingredients": [
+      "1 cup Greek yogurt (non-fat)",
+      "2 scoops Chocolate whey protein",
+      "2 tbsp Cocoa powder",
+      "3 tbsp Almond milk (unsweetened)"
+    ],
+    "instructions": [
+      "Add all ingredients to a bowl",
+      "Mix until creamy and smooth",
+      "Adjust consistency with more almond milk if needed",
+      "Chill in refrigerator until ready to serve",
+      "Serve with fresh fruit, pretzels, or graham crackers",
+      "Store in refrigerator up to 3 days"
+    ],
+    "cookingTime": "10 minutes",
+    "nutrition": {
+      "perServingCalories": 130,
+      "totalCalories": 520,
+      "perServingProtein": 18,
+      "totalProtein": 72,
+      "perServingCarbs": 10,
+      "totalCarbs": 40,
+      "perServingFat": 2,
+      "totalFat": 8,
+      "perServingFiber": 1,
+      "totalFiber": 4
+    }
+  },
+  {
+    "id": 10,
+    "name": "Strawberry Cheesecake Protein Cups",
+    "category": "protein-snacks",
+    "type": "individual",
+    "servings": 6,
+    "ingredients": [
+      "1 cup Greek yogurt (non-fat)",
+      "4 oz Light cream cheese (softened)",
+      "1/2 cup Crushed strawberries",
+      "2 scoops Vanilla protein powder"
+    ],
+    "instructions": [
+      "Whip Greek yogurt and light cream cheese together until smooth",
+      "Add vanilla protein powder and mix well",
+      "Fold in crushed strawberries",
+      "Divide mixture into 6 small cups or silicone molds",
+      "Chill in refrigerator for 2 hours to set",
+      "Store in refrigerator up to 4 days"
+    ],
+    "cookingTime": "10 minutes",
+    "nutrition": {
+      "perServingCalories": 185,
+      "totalCalories": 1110,
+      "perServingProtein": 15,
+      "totalProtein": 90,
+      "perServingCarbs": 14,
+      "totalCarbs": 84,
+      "perServingFat": 8,
+      "totalFat": 48,
+      "perServingFiber": 3,
+      "totalFiber": 18
+    }
+  },
+  {
+    "id": 11,
+    "name": "Cottage Cheese Nacho Dip",
+    "category": "protein-snacks",
+    "type": "individual",
+    "servings": 4,
+    "ingredients": [
+      "1 cup Cottage cheese (low-fat)",
+      "2 tsp Taco seasoning",
+      "1/4 cup Salsa"
+    ],
+    "instructions": [
+      "Add cottage cheese and taco seasoning to blender",
+      "Blend until smooth and creamy",
+      "Transfer to serving bowl",
+      "Swirl salsa into the cottage cheese mixture",
+      "Serve with bell pepper strips, cucumber slices, or baked tortilla chips",
+      "Store in refrigerator up to 3 days"
+    ],
+    "cookingTime": "10 minutes",
+    "nutrition": {
+      "perServingCalories": 110,
+      "totalCalories": 440,
+      "perServingProtein": 14,
+      "totalProtein": 56,
+      "perServingCarbs": 8,
+      "totalCarbs": 32,
+      "perServingFat": 3,
+      "totalFat": 12,
+      "perServingFiber": 1,
+      "totalFiber": 4
+    }
+  },
+  {
+    "id": 12,
+    "name": "Salted Peanut Butter Protein Fudge",
+    "category": "protein-snacks",
+    "type": "individual",
+    "servings": 12,
+    "ingredients": [
+      "1/2 cup Peanut butter (natural)",
+      "2 scoops Vanilla protein powder",
+      "2 tbsp Coconut oil (melted)",
+      "Pinch sea salt"
+    ],
+    "instructions": [
+      "Melt peanut butter and coconut oil together",
+      "Mix in vanilla protein powder until smooth",
+      "Add pinch of sea salt and stir",
+      "Pour into small tray lined with parchment",
+      "Freeze for 1 hour until solid",
+      "Cut into 12 pieces",
+      "Store in freezer"
+    ],
+    "cookingTime": "10 minutes",
+    "nutrition": {
+      "perServingCalories": 150,
+      "totalCalories": 1800,
+      "perServingProtein": 10,
+      "totalProtein": 120,
+      "perServingCarbs": 8,
+      "totalCarbs": 96,
+      "perServingFat": 10,
+      "totalFat": 120,
+      "perServingFiber": 2,
+      "totalFiber": 24
+    }
+  },
+  {
+    "id": 13,
+    "name": "Apple Pie Protein Oats Bars",
+    "category": "protein-snacks",
+    "type": "individual",
+    "servings": 8,
+    "ingredients": [
+      "2 cups Rolled oats",
+      "2 scoops Cinnamon protein powder",
+      "1 cup Diced apples",
+      "1 tsp Cinnamon",
+      "1/2 cup Almond milk"
+    ],
+    "instructions": [
+      "Cook oats with almond milk until thick",
+      "Add diced apples and cinnamon, cook 3-4 minutes",
+      "Mix in cinnamon protein powder",
+      "Press mixture firmly into 8x8 pan",
+      "Chill in refrigerator for 2 hours",
+      "Slice into 8 bars",
+      "Store in refrigerator"
+    ],
+    "cookingTime": "10 minutes",
+    "nutrition": {
+      "perServingCalories": 210,
+      "totalCalories": 1680,
+      "perServingProtein": 13,
+      "totalProtein": 104,
+      "perServingCarbs": 30,
+      "totalCarbs": 240,
+      "perServingFat": 5,
+      "totalFat": 40,
+      "perServingFiber": 3,
+      "totalFiber": 24
+    }
+  },
+  {
+    "id": 14,
+    "name": "Chocolate Covered Protein Strawberries",
+    "category": "protein-snacks",
+    "type": "individual",
+    "servings": 4,
+    "ingredients": [
+      "12 Fresh strawberries",
+      "2 scoops Chocolate protein powder",
+      "2 tbsp Cocoa powder",
+      "1/4 cup Almond milk"
+    ],
+    "instructions": [
+      "Mix chocolate protein powder, cocoa powder, and almond milk",
+      "Stir until smooth chocolate coating forms (add more milk if too thick)",
+      "Dip each strawberry into chocolate protein coating",
+      "Place dipped strawberries on parchment-lined tray",
+      "Refrigerate for 30 minutes until coating sets",
+      "Serve chilled (3 strawberries per serving)",
+      "Best consumed within 24 hours"
+    ],
+    "cookingTime": "10 minutes",
+    "nutrition": {
+      "perServingCalories": 90,
+      "totalCalories": 360,
+      "perServingProtein": 6,
+      "totalProtein": 24,
+      "perServingCarbs": 12,
+      "totalCarbs": 48,
+      "perServingFat": 2,
+      "totalFat": 8,
+      "perServingFiber": 1,
+      "totalFiber": 4
+    }
+  },
+  {
+    "id": 15,
+    "name": "Protein Ranch Pretzel Bites",
+    "category": "protein-snacks",
+    "type": "individual",
+    "servings": 8,
+    "ingredients": [
+      "1 cup Self-rising flour",
+      "1 cup Greek yogurt (non-fat)",
+      "2 tbsp Ranch seasoning",
+      "1 Egg (beaten, for wash)"
+    ],
+    "instructions": [
+      "Mix flour and Greek yogurt to form dough",
+      "Knead dough until smooth",
+      "Roll dough and cut into small pretzel bite pieces",
+      "Brush each piece with beaten egg wash",
+      "Sprinkle ranch seasoning over bites",
+      "Air fry at 375°F for 8-10 minutes until golden",
+      "Serve warm"
+    ],
+    "cookingTime": "10 minutes",
+    "nutrition": {
+      "perServingCalories": 115,
+      "totalCalories": 920,
+      "perServingProtein": 9,
+      "totalProtein": 72,
+      "perServingCarbs": 17,
+      "totalCarbs": 136,
+      "perServingFat": 2,
+      "totalFat": 16,
+      "perServingFiber": 2,
+      "totalFiber": 16
+    }
+  },
+  {
+    "id": 16,
+    "name": "High-Protein Cinnamon Swirl Rice Cakes",
+    "category": "protein-snacks",
+    "type": "individual",
+    "servings": 4,
+    "ingredients": [
+      "4 Rice cakes",
+      "1/2 cup Greek yogurt (non-fat)",
+      "1 scoop Vanilla protein powder",
+      "2 tsp Cinnamon",
+      "Extra cinnamon for dusting"
+    ],
+    "instructions": [
+      "Mix Greek yogurt with vanilla protein powder",
+      "Add 1 tsp cinnamon to yogurt mixture",
+      "Spread protein cinnamon yogurt frosting on each rice cake",
+      "Dust with extra cinnamon on top",
+      "Serve immediately or refrigerate",
+      "Best consumed within 2 hours"
+    ],
+    "cookingTime": "10 minutes",
+    "nutrition": {
+      "perServingCalories": 165,
+      "totalCalories": 660,
+      "perServingProtein": 14,
+      "totalProtein": 56,
+      "perServingCarbs": 22,
+      "totalCarbs": 88,
+      "perServingFat": 2,
+      "totalFat": 8,
+      "perServingFiber": 2,
+      "totalFiber": 8
+    }
+  },
+  {
+    "id": 17,
+    "name": "High Protein Mini Pepperoni Pizza",
+    "category": "protein-snacks",
+    "type": "individual",
+    "servings": 6,
+    "ingredients": [
+      "2 cups Cottage cheese",
+      "4 Large eggs",
+      "1 cup Oat flour or almond flour (add more for thicker dough)",
+      "1 tsp Baking powder",
+      "1/2 tsp Salt",
+      "1/2 cup Shredded mozzarella",
+      "1/2 cup Shredded cheddar",
+      "1/4 cup Mini pepperoni (or chopped regular pepperoni)",
+      "1/4 cup Tomato or pizza sauce",
+      "Optional: oregano or chili flakes"
+    ],
+    "instructions": [
+      "Preheat oven to 400°F (200°C) and line a baking sheet with parchment paper",
+      "Blend cottage cheese and eggs until smooth using a stick blender",
+      "Stir in oat flour, baking powder, and salt until combined",
+      "The texture should be thick but scoopable—add a bit more oat flour if it's too runny",
+      "Spoon batter into 6 small rounds on the baking sheet and flatten slightly to form mini pizza bases",
+      "Top each with a spoon of pizza sauce, mozzarella, cheddar, and pepperoni",
+      "Add oregano or chili flakes if desired",
+      "Bake 15-20 minutes until lightly golden and set",
+      "Cool for a few minutes before serving to firm up"
+    ],
+    "cookingTime": "10 minutes",
+    "nutrition": {
+      "perServingCalories": 310,
+      "totalCalories": 1860,
+      "perServingProtein": 32,
+      "totalProtein": 192,
+      "perServingCarbs": 18,
+      "totalCarbs": 108,
+      "perServingFat": 14,
+      "totalFat": 84,
+      "perServingFiber": 4,
+      "totalFiber": 24
+    }
   }
 ]

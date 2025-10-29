@@ -49,7 +49,7 @@ const RecipeCard = ({ recipe, categoryId, delay = 0 }) => {
           <div className="grid grid-cols-2 gap-3 mb-4">
             {/* Calories */}
             <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'}`}>
-              <Flame className={`w-4 h-4 ${theme.text || 'text-orange-400'}`} />
+              <Flame className={`w-4 h-4 ${theme.text || 'text-blue-400'}`} />
               <div>
                 <p className="text-xs text-gray-400">Calories</p>
                 <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>

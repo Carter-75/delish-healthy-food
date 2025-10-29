@@ -1,80 +1,80 @@
 {
   "default": {
-    "text": "text-amber-400",
-    "accent": "bg-amber-500",
-    "border": "border-amber-500/20",
-    "highlight": "bg-amber-900/20",
-    "gradient": "from-amber-600/20 via-orange-600/20 to-red-600/20",
-    "buttonHover": "hover:bg-amber-900/40",
-    "shadow": "shadow-amber-500/20",
-    "mainGradient": "from-amber-900 to-orange-900",
-    "pulseGradient": "from-amber-500/20 via-orange-500/20 to-red-500/20"
+    "text": "text-blue-400",
+    "accent": "bg-blue-500",
+    "border": "border-blue-500/20",
+    "highlight": "bg-blue-900/20",
+    "gradient": "from-blue-600/10 via-indigo-600/10 to-violet-600/10",
+    "buttonHover": "hover:bg-blue-900/40",
+    "shadow": "shadow-blue-500/20",
+    "mainGradient": "from-blue-900 to-indigo-900",
+    "pulseGradient": "from-blue-500/10 via-indigo-500/10 to-violet-500/10"
   },
   "chicken-omelettes": {
     "text": "text-orange-400",
     "accent": "bg-orange-500",
     "border": "border-orange-500/20",
     "highlight": "bg-orange-900/20",
-    "gradient": "from-orange-600/20 via-amber-600/20 to-red-600/20",
+    "gradient": "from-orange-600/10 via-amber-600/10 to-red-600/10",
     "buttonHover": "hover:bg-orange-900/40",
     "shadow": "shadow-orange-500/20",
-    "mainGradient": "from-orange-900 to-amber-900",
-    "pulseGradient": "from-orange-500/20 via-amber-500/20 to-red-500/20"
+    "mainGradient": "from-slate-950 to-slate-950",
+    "pulseGradient": "from-orange-500/10 via-amber-500/10 to-red-500/10"
   },
   "protein-bowls": {
     "text": "text-emerald-400",
     "accent": "bg-emerald-500",
     "border": "border-emerald-500/20",
     "highlight": "bg-emerald-900/20",
-    "gradient": "from-emerald-600/20 via-green-600/20 to-teal-600/20",
+    "gradient": "from-emerald-600/10 via-green-600/10 to-teal-600/10",
     "buttonHover": "hover:bg-emerald-900/40",
     "shadow": "shadow-emerald-500/20",
-    "mainGradient": "from-emerald-900 to-green-900",
-    "pulseGradient": "from-emerald-500/20 via-green-500/20 to-teal-500/20"
+    "mainGradient": "from-slate-950 to-slate-950",
+    "pulseGradient": "from-emerald-500/10 via-green-500/10 to-teal-500/10"
   },
   "quick-lunches": {
     "text": "text-blue-400",
     "accent": "bg-blue-500",
     "border": "border-blue-500/20",
     "highlight": "bg-blue-900/20",
-    "gradient": "from-blue-600/20 via-indigo-600/20 to-violet-600/20",
+    "gradient": "from-blue-600/10 via-indigo-600/10 to-violet-600/10",
     "buttonHover": "hover:bg-blue-900/40",
     "shadow": "shadow-blue-500/20",
-    "mainGradient": "from-blue-900 to-indigo-900",
-    "pulseGradient": "from-blue-500/20 via-indigo-500/20 to-violet-500/20"
+    "mainGradient": "from-slate-950 to-slate-950",
+    "pulseGradient": "from-blue-500/10 via-indigo-500/10 to-violet-500/10"
   },
   "smoothie-bowls": {
     "text": "text-violet-400",
     "accent": "bg-violet-500",
     "border": "border-violet-500/20",
     "highlight": "bg-violet-900/20",
-    "gradient": "from-violet-600/20 via-purple-600/20 to-fuchsia-600/20",
+    "gradient": "from-violet-600/10 via-purple-600/10 to-fuchsia-600/10",
     "buttonHover": "hover:bg-violet-900/40",
     "shadow": "shadow-violet-500/20",
-    "mainGradient": "from-violet-900 to-purple-900",
-    "pulseGradient": "from-violet-500/20 via-purple-500/20 to-fuchsia-500/20"
+    "mainGradient": "from-slate-950 to-slate-950",
+    "pulseGradient": "from-violet-500/10 via-purple-500/10 to-fuchsia-500/10"
   },
   "desserts": {
     "text": "text-pink-400",
     "accent": "bg-pink-500",
     "border": "border-pink-500/20",
     "highlight": "bg-pink-900/20",
-    "gradient": "from-pink-600/20 via-rose-600/20 to-fuchsia-600/20",
+    "gradient": "from-pink-600/10 via-rose-600/10 to-fuchsia-600/10",
     "buttonHover": "hover:bg-pink-900/40",
     "shadow": "shadow-pink-500/20",
-    "mainGradient": "from-pink-900 to-rose-900",
-    "pulseGradient": "from-pink-500/20 via-rose-500/20 to-fuchsia-500/20"
+    "mainGradient": "from-slate-950 to-slate-950",
+    "pulseGradient": "from-pink-500/10 via-rose-500/10 to-fuchsia-500/10"
   },
   "protein-snacks": {
     "text": "text-cyan-400",
     "accent": "bg-cyan-500",
     "border": "border-cyan-500/20",
     "highlight": "bg-cyan-900/20",
-    "gradient": "from-cyan-600/20 via-sky-600/20 to-blue-600/20",
+    "gradient": "from-cyan-600/10 via-sky-600/10 to-blue-600/10",
     "buttonHover": "hover:bg-cyan-900/40",
     "shadow": "shadow-cyan-500/20",
-    "mainGradient": "from-cyan-900 to-sky-900",
-    "pulseGradient": "from-cyan-500/20 via-sky-500/20 to-blue-500/20"
+    "mainGradient": "from-slate-950 to-slate-950",
+    "pulseGradient": "from-cyan-500/10 via-sky-500/10 to-blue-500/10"
   },
   "chinese-dishes": {
     "text": "text-red-400",

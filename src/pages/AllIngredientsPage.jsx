@@ -1,14 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from '../hooks/useTheme';
-import { 
-  loadChickenOmelettesVariations,
-  loadProteinBowls,
-  loadDesserts,
-  loadProteinSnacks,
-  loadQuickLunches,
-  loadSmoothieBowls,
-  loadChickenOmelettesBase
-} from '../utils/recipeLoader';
+import { loadRecipeCategories, loadRecipesByCategory } from '../utils/recipeLoader';
 import { ShoppingCart, Sparkles, ChefHat } from 'lucide-react';
 
 const AllIngredientsPage = () => {
@@ -22,46 +14,49 @@ const AllIngredientsPage = () => {
     
     const loadAllIngredients = async () => {
       try {
-        // Load all recipes from all categories
-        const [
-          omelettesBase,
-          omelettes,
-          bowls,
-          desserts,
-          snacks,
-          lunches,
-          smoothies
-        ] = await Promise.all([
-          loadChickenOmelettesBase(),
-          loadChickenOmelettesVariations(),
-          loadProteinBowls(),
-          loadDesserts(),
-          loadProteinSnacks(),
-          loadQuickLunches(),
-          loadSmoothieBowls()
-        ]);
+        const categories = await loadRecipeCategories();
+        const activeCategories = categories.filter(category => !category.comingSoon);
 
-        // Collect all recipes
-        const allRecipes = [
-          ...(omelettes || []),
-          ...(bowls || []),
-          ...(desserts || []),
-          ...(snacks || []),
-          ...(lunches || []),
-          ...(smoothies || [])
-        ];
+        const categoryData = await Promise.all(
+          activeCategories.map(async (category) => {
+            try {
+              const data = await loadRecipesByCategory(category.id);
+              const recipes = Array.isArray(data.recipes) ? data.recipes : [];
+              return {
+                categoryId: category.id,
+                base: data.base,
+                recipes
+              };
+            } catch (error) {
+              console.error(`Failed to load recipes for category ${category.id}:`, error);
+              return {
+                categoryId: category.id,
+                base: null,
+                recipes: []
+              };
+            }
+          })
+        );
 
-        // Add base omelette ingredients if exists
-        if (omelettesBase && omelettesBase.baseIngredients) {
-          allRecipes.push({ ingredients: omelettesBase.baseIngredients });
-        }
+        const totalRecipeCount = categoryData.reduce(
+          (total, entry) => total + (entry.recipes?.length || 0),
+          0
+        );
 
-        setTotalRecipes(allRecipes.length);
+        const aggregatedRecipes = categoryData.flatMap((entry) => {
+          const collection = Array.isArray(entry.recipes) ? [...entry.recipes] : [];
+          if (entry.base && Array.isArray(entry.base.ingredients)) {
+            collection.push({ ingredients: entry.base.ingredients });
+          }
+          return collection;
+        });
+
+        setTotalRecipes(totalRecipeCount);
 
         // Extract all ingredients and normalize them
         const ingredientsSet = new Set();
         
-        allRecipes.forEach(recipe => {
+        aggregatedRecipes.forEach(recipe => {
           if (recipe.ingredients && Array.isArray(recipe.ingredients)) {
             recipe.ingredients.forEach(ingredient => {
               // Remove quantities and normalize

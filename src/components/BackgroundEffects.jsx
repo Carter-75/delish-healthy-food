@@ -6,7 +6,7 @@ const BackgroundEffects = () => {
   
   return (
     <>
-      {/* Main gradient background */}
+      {/* Main gradient background (theme-controlled) */}
       <div 
         className={`fixed inset-0 bg-gradient-to-br ${theme.mainGradient || 'from-slate-900 to-slate-950'} 
         transition-all duration-1000 ease-in-out`}
@@ -14,14 +14,14 @@ const BackgroundEffects = () => {
       
       {/* Animated pulse overlay */}
       <div 
-        className={`fixed inset-0 bg-gradient-to-br ${theme.pulseGradient || 'from-blue-500/20 via-purple-500/20 to-pink-500/20'} 
-        opacity-40 animate-pulseGlow transition-all duration-1000`}
+        className={`fixed inset-0 bg-gradient-to-br ${theme.pulseGradient || 'from-blue-500/10 via-purple-500/10 to-pink-500/10'} 
+        opacity-12 animate-pulseGlow transition-all duration-1000`}
       />
       
       {/* Moving gradient */}
       <div 
-        className={`fixed inset-0 bg-gradient-to-r ${theme.gradient || 'from-blue-600/20 via-purple-600/20 to-pink-600/20'} 
-        opacity-50 animate-gradientShift transition-all duration-1000`}
+        className={`fixed inset-0 bg-gradient-to-r ${theme.gradient || 'from-blue-600/10 via-purple-600/10 to-pink-600/10'} 
+        opacity-10 animate-gradientShift transition-all duration-1000`}
       />
       
       {/* Texture overlay */}

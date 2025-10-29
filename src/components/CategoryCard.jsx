@@ -1,94 +1,27 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../hooks/useTheme';
-import { 
-  Clock, 
-  ChevronRight, 
-  Star,
-  UtensilsCrossed,
-  ChefHat,
-  Apple,
-  IceCream
-} from 'lucide-react';
+import { Clock, ChevronRight, Star, UtensilsCrossed } from 'lucide-react';
+import * as LucideIcons from 'lucide-react';
 
-const iconMap = {
-  'ChefHat': ChefHat,
-  'UtensilsCrossed': UtensilsCrossed,
-  'Apple': Apple,
-  'IceCream': IceCream,
-  'Clock': Clock
-};
-
-// Category-specific color themes
-const categoryThemes = {
-  'chicken-omelettes': {
-    text: 'text-orange-400',
-    accent: 'bg-orange-500',
-    border: 'border-orange-500/20',
-    highlight: 'bg-orange-900/20',
-    gradient: 'from-orange-600/20 via-amber-600/20 to-red-600/20',
-    shadow: 'shadow-orange-500/20'
-  },
-  'protein-bowls': {
-    text: 'text-emerald-400',
-    accent: 'bg-emerald-500',
-    border: 'border-emerald-500/20',
-    highlight: 'bg-emerald-900/20',
-    gradient: 'from-emerald-600/20 via-green-600/20 to-teal-600/20',
-    shadow: 'shadow-emerald-500/20'
-  },
-  'quick-lunches': {
-    text: 'text-blue-400',
-    accent: 'bg-blue-500',
-    border: 'border-blue-500/20',
-    highlight: 'bg-blue-900/20',
-    gradient: 'from-blue-600/20 via-indigo-600/20 to-violet-600/20',
-    shadow: 'shadow-blue-500/20'
-  },
-  'smoothie-bowls': {
-    text: 'text-violet-400',
-    accent: 'bg-violet-500',
-    border: 'border-violet-500/20',
-    highlight: 'bg-violet-900/20',
-    gradient: 'from-violet-600/20 via-purple-600/20 to-fuchsia-600/20',
-    shadow: 'shadow-violet-500/20'
-  },
-  'desserts': {
-    text: 'text-pink-400',
-    accent: 'bg-pink-500',
-    border: 'border-pink-500/20',
-    highlight: 'bg-pink-900/20',
-    gradient: 'from-pink-600/20 via-rose-600/20 to-fuchsia-600/20',
-    shadow: 'shadow-pink-500/20'
-  },
-  'protein-snacks': {
-    text: 'text-cyan-400',
-    accent: 'bg-cyan-500',
-    border: 'border-cyan-500/20',
-    highlight: 'bg-cyan-900/20',
-    gradient: 'from-cyan-600/20 via-sky-600/20 to-blue-600/20',
-    shadow: 'shadow-cyan-500/20'
-  }
-};
 
 const CategoryCard = ({ category, delay = 0 }) => {
-  const { setTheme } = useTheme();
+  const { setTheme, themes } = useTheme();
   const navigate = useNavigate();
 
-  const Icon = iconMap[category.icon] || UtensilsCrossed;
+  const Icon = (category.icon && LucideIcons[category.icon]) || UtensilsCrossed;
+  const themeConfig = themes[category.id] || themes.default || {};
+  const themeClasses = {
+    text: themeConfig.text || 'text-blue-400',
+    border: themeConfig.border || 'border-white/10',
+    highlight: themeConfig.highlight || 'bg-blue-900/20',
+    gradient: themeConfig.gradient || 'from-blue-600/20 via-purple-600/20 to-pink-600/20',
+    shadow: themeConfig.shadow || 'shadow-lg'
+  };
   const recipeCountLabel =
     typeof category.totalRecipes === 'number'
       ? `${category.totalRecipes} Recipes`
       : 'View Recipes';
-  
-  // Get category-specific theme or fall back to default
-  const categoryTheme = categoryThemes[category.id] || {
-    text: 'text-blue-400',
-    border: 'border-white/10',
-    highlight: 'bg-blue-900/20',
-    gradient: 'from-blue-600/20 via-purple-600/20 to-pink-600/20',
-    shadow: 'shadow-lg'
-  };
 
   const handleClick = () => {
     if (!category.comingSoon) {
@@ -104,22 +37,22 @@ const CategoryCard = ({ category, delay = 0 }) => {
     >
       <div
         onClick={handleClick}
-        className={`relative glass-effect rounded-3xl overflow-hidden border ${categoryTheme.border}
-          ${categoryTheme.shadow} transition-all-smooth group
+        className={`relative glass-effect rounded-3xl overflow-hidden border ${themeClasses.border}
+          ${themeClasses.shadow} transition-all-smooth group
           ${category.comingSoon ? 'opacity-60 cursor-not-allowed' : 'hover-lift cursor-pointer'}
           hover:border-opacity-40`}
       >
         {/* Gradient overlay - more subtle */}
         {!category.comingSoon && (
-          <div className={`absolute inset-0 bg-gradient-to-br ${categoryTheme.gradient} 
+          <div className={`absolute inset-0 bg-gradient-to-br ${themeClasses.gradient} 
             opacity-0 group-hover:opacity-60 transition-opacity duration-500`} />
         )}
 
         {/* Coming Soon Badge */}
         {category.comingSoon && (
           <div className="absolute top-4 right-4 z-10">
-            <div className={`px-3 py-1 rounded-full ${categoryTheme.highlight} 
-              border ${categoryTheme.border} text-xs font-semibold ${categoryTheme.text}`}>
+            <div className={`px-3 py-1 rounded-full ${themeClasses.highlight} 
+              border ${themeClasses.border} text-xs font-semibold ${themeClasses.text}`}>
               Coming Soon
             </div>
           </div>
@@ -128,10 +61,10 @@ const CategoryCard = ({ category, delay = 0 }) => {
         {/* Content */}
         <div className="relative p-8">
           {/* Icon - larger and more modern */}
-          <div className={`inline-flex p-5 rounded-3xl ${categoryTheme.highlight} 
-            border ${categoryTheme.border} mb-6 group-hover:scale-110 transition-transform duration-300
-            shadow-lg ${categoryTheme.shadow}`}>
-            <Icon className={`w-10 h-10 ${categoryTheme.text}`} />
+          <div className={`inline-flex p-5 rounded-3xl ${themeClasses.highlight} 
+            border ${themeClasses.border} mb-6 group-hover:scale-110 transition-transform duration-300
+            shadow-lg ${themeClasses.shadow}`}>
+            <Icon className={`w-10 h-10 ${themeClasses.text}`} />
           </div>
 
           {/* Title - better spacing */}
@@ -140,7 +73,7 @@ const CategoryCard = ({ category, delay = 0 }) => {
           </h3>
 
           {/* Description */}
-          <p className={`${categoryTheme.text} mb-4 flex items-center gap-2`}>
+          <p className={`${themeClasses.text} mb-4 flex items-center gap-2`}>
             <Star className="w-4 h-4" />
             {category.description}
           </p>
@@ -153,7 +86,7 @@ const CategoryCard = ({ category, delay = 0 }) => {
             </div>
             
             {!category.comingSoon && (
-              <div className={`flex items-center gap-2 ${categoryTheme.text} 
+              <div className={`flex items-center gap-2 ${themeClasses.text} 
                 font-semibold group-hover:gap-3 transition-all`}>
                 <span>{recipeCountLabel}</span>
                 <ChevronRight className="w-5 h-5" />
@@ -163,7 +96,7 @@ const CategoryCard = ({ category, delay = 0 }) => {
 
           {/* Animated border - thicker and more visible */}
           {!category.comingSoon && (
-            <div className={`absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r ${categoryTheme.gradient} 
+            <div className={`absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r ${themeClasses.gradient} 
               transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full`} />
           )}
         </div>

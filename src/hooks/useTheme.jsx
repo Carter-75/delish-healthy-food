@@ -22,26 +22,14 @@ export const ThemeProvider = ({ children }) => {
 
     const loadThemes = async () => {
       try {
-        const response = await fetch('/data/themes/color-themes.json', { cache: 'force-cache' });
+        const response = await fetch('/data/themes/color-themes.json', { cache: 'no-store' });
         if (!response.ok) {
           throw new Error(`Request failed with status ${response.status}`);
         }
         const data = await response.json();
         if (isMounted && data && typeof data === 'object') {
-          setThemes(prev => {
-            let hasChanges = false;
-            const merged = { ...prev };
-
-            Object.entries(data).forEach(([key, value]) => {
-              const prevValue = prev[key];
-              if (!prevValue || JSON.stringify(prevValue) !== JSON.stringify(value)) {
-                merged[key] = value;
-                hasChanges = true;
-              }
-            });
-
-            return hasChanges ? merged : prev;
-          });
+          // Replace entirely to avoid stale merges and color flashes
+          setThemes(data);
         }
       } catch (err) {
         console.error('Failed to load themes:', err);

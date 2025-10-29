@@ -29,7 +29,9 @@
       "totalCarbs": 180,
       "perServingCarbs": 30,
       "totalFat": 240,
-      "perServingFat": 40
+      "perServingFat": 40,
+      "perServingFiber": 10,
+      "totalFiber": 60
     },
     "instructions": [
       "Cook seasoned chicken in butter until internal temperature reaches 165°F",
@@ -40,5 +42,389 @@
       "Bake at 350°F for 20-25 minutes until cheese is melted and golden"
     ],
     "cookingTime": "35-40 minutes"
+  },
+  {
+    "id": 1,
+    "name": "Chicken Pesto Quesadilla",
+    "category": "quick-lunches",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "6 oz Chicken breast (cooked and sliced)",
+      "1 Low-carb tortilla",
+      "2 tbsp Pesto sauce",
+      "1/2 cup Shredded mozzarella"
+    ],
+    "instructions": [
+      "Spread pesto sauce evenly on one side of tortilla",
+      "Add sliced chicken breast on half of the tortilla",
+      "Sprinkle mozzarella cheese over chicken",
+      "Fold tortilla in half",
+      "Toast in a pan over medium heat until golden on both sides",
+      "Cheese should be melted and tortilla crispy",
+      "Cut into wedges and serve"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "totalCalories": 520,
+      "perServingCalories": 520,
+      "totalProtein": 47,
+      "perServingProtein": 47,
+      "totalCarbs": 28,
+      "perServingCarbs": 28,
+      "totalFat": 24,
+      "perServingFat": 24,
+      "perServingFiber": 7,
+      "totalFiber": 7
+    }
+  },
+  {
+    "id": 2,
+    "name": "BBQ Ranch Chicken Pita",
+    "category": "quick-lunches",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "6 oz Chicken breast (cooked and diced)",
+      "1 Whole wheat pita",
+      "2 tbsp Sugar-free BBQ sauce",
+      "2 tbsp Greek yogurt ranch",
+      "Handful Lettuce"
+    ],
+    "instructions": [
+      "Mix diced chicken with BBQ sauce and Greek yogurt ranch",
+      "Warm pita bread slightly",
+      "Open pita pocket",
+      "Line inside with fresh lettuce",
+      "Stuff with BBQ ranch chicken mixture",
+      "Serve immediately"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "totalCalories": 495,
+      "perServingCalories": 495,
+      "totalProtein": 44,
+      "perServingProtein": 44,
+      "totalCarbs": 42,
+      "perServingCarbs": 42,
+      "totalFat": 12,
+      "perServingFat": 12,
+      "perServingFiber": 7,
+      "totalFiber": 7
+    }
+  },
+  {
+    "id": 3,
+    "name": "Chicken Mac & Cheese Protein Bowl",
+    "category": "quick-lunches",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "6 oz Chicken breast (cooked and diced)",
+      "1.5 cups High-protein pasta (cooked)",
+      "1/2 cup Light cheese sauce",
+      "1 cup Steamed broccoli"
+    ],
+    "instructions": [
+      "Cook high-protein pasta according to package directions",
+      "Steam broccoli until tender-crisp",
+      "Heat light cheese sauce in a pot",
+      "Combine cooked pasta with cheese sauce",
+      "Add diced chicken and broccoli",
+      "Stir well and serve hot"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "totalCalories": 560,
+      "perServingCalories": 560,
+      "totalProtein": 48,
+      "perServingProtein": 48,
+      "totalCarbs": 52,
+      "perServingCarbs": 52,
+      "totalFat": 14,
+      "perServingFat": 14,
+      "perServingFiber": 8,
+      "totalFiber": 8
+    }
+  },
+  {
+    "id": 4,
+    "name": "Protein Pizza Roll-Ups",
+    "category": "quick-lunches",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "1 Low-carb wrap or tortilla",
+      "3 tbsp Marinara sauce",
+      "1/2 cup Shredded mozzarella",
+      "3 oz Chicken breast (diced)"
+    ],
+    "instructions": [
+      "Lay low-carb wrap flat",
+      "Spread marinara sauce evenly",
+      "Sprinkle shredded mozzarella",
+      "Add diced chicken pieces",
+      "Roll up tightly",
+      "Air fry at 375°F for 5-7 minutes until crispy",
+      "Slice and serve hot"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "totalCalories": 355,
+      "perServingCalories": 355,
+      "totalProtein": 34,
+      "perServingProtein": 34,
+      "totalCarbs": 26,
+      "perServingCarbs": 26,
+      "totalFat": 14,
+      "perServingFat": 14,
+      "perServingFiber": 5,
+      "totalFiber": 5
+    }
+  },
+  {
+    "id": 5,
+    "name": "Buffalo Chicken Rice Cakes",
+    "category": "quick-lunches",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "2 Rice cakes",
+      "4 oz Chicken breast (shredded)",
+      "2 tbsp Buffalo sauce",
+      "2 tbsp Greek yogurt ranch drizzle"
+    ],
+    "instructions": [
+      "Mix shredded chicken with buffalo sauce",
+      "Spread buffalo chicken mixture on rice cakes",
+      "Drizzle with Greek yogurt ranch",
+      "Serve immediately",
+      "Can be eaten cold or warm"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "totalCalories": 195,
+      "perServingCalories": 195,
+      "totalProtein": 20,
+      "perServingProtein": 20,
+      "totalCarbs": 18,
+      "perServingCarbs": 18,
+      "totalFat": 5,
+      "perServingFat": 5,
+      "perServingFiber": 2,
+      "totalFiber": 2
+    }
+  },
+  {
+    "id": 6,
+    "name": "Chicken Taco Flatbread",
+    "category": "quick-lunches",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "1 High-protein flatbread",
+      "6 oz Chicken breast (diced)",
+      "1 tbsp Taco seasoning",
+      "1/2 cup Shredded cheese (Mexican blend)",
+      "3 tbsp Salsa"
+    ],
+    "instructions": [
+      "Season chicken with taco seasoning and cook",
+      "Spread salsa evenly on flatbread",
+      "Add seasoned chicken pieces",
+      "Sprinkle shredded cheese on top",
+      "Bake at 400°F for 8-10 minutes until cheese melts",
+      "Slice and serve hot"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "totalCalories": 520,
+      "perServingCalories": 520,
+      "totalProtein": 46,
+      "perServingProtein": 46,
+      "totalCarbs": 38,
+      "perServingCarbs": 38,
+      "totalFat": 18,
+      "perServingFat": 18,
+      "perServingFiber": 7,
+      "totalFiber": 7
+    }
+  },
+  {
+    "id": 7,
+    "name": "Garlic Herb Chicken Melt Sandwich",
+    "category": "quick-lunches",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "2 slices Low-carb bread",
+      "6 oz Chicken breast (sliced)",
+      "3 tbsp Greek yogurt",
+      "1 tsp Garlic powder",
+      "1 tsp Mixed herbs (basil, oregano, parsley)",
+      "2 slices Provolone cheese"
+    ],
+    "instructions": [
+      "Mix Greek yogurt with garlic powder and herbs for spread",
+      "Spread yogurt herb sauce on both slices of bread",
+      "Layer sliced chicken on one slice",
+      "Add provolone cheese slices",
+      "Top with second slice of bread",
+      "Toast in skillet over medium heat until golden and cheese melts",
+      "Serve hot"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "totalCalories": 495,
+      "perServingCalories": 495,
+      "totalProtein": 44,
+      "perServingProtein": 44,
+      "totalCarbs": 32,
+      "perServingCarbs": 32,
+      "totalFat": 20,
+      "perServingFat": 20,
+      "perServingFiber": 7,
+      "totalFiber": 7
+    }
+  },
+  {
+    "id": 8,
+    "name": "Chicken Alfredo Pizza Toast",
+    "category": "quick-lunches",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "2 slices Low-carb toast",
+      "4 oz Chicken breast (diced)",
+      "1/4 cup Cauliflower alfredo sauce",
+      "1/2 cup Shredded mozzarella"
+    ],
+    "instructions": [
+      "Toast bread slices until lightly crispy",
+      "Spread cauliflower alfredo sauce on each slice",
+      "Add diced chicken pieces",
+      "Top with shredded mozzarella",
+      "Broil for 2-3 minutes until cheese is bubbly",
+      "Serve hot"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "totalCalories": 510,
+      "perServingCalories": 510,
+      "totalProtein": 45,
+      "perServingProtein": 45,
+      "totalCarbs": 34,
+      "perServingCarbs": 34,
+      "totalFat": 22,
+      "perServingFat": 22,
+      "perServingFiber": 7,
+      "totalFiber": 7
+    }
+  },
+  {
+    "id": 9,
+    "name": "BBQ Chicken Nacho Plate",
+    "category": "quick-lunches",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "6 oz Chicken breast (shredded)",
+      "2 tbsp Greek yogurt ranch",
+      "2 tbsp Sugar-free BBQ sauce",
+      "2 oz Baked tortilla chips",
+      "Optional: shredded cheese for melting"
+    ],
+    "instructions": [
+      "Mix shredded chicken with Greek yogurt ranch and BBQ sauce",
+      "Arrange baked tortilla chips on plate",
+      "Top chips with BBQ ranch chicken mixture",
+      "Optional: Sprinkle cheese and microwave 30 seconds to melt",
+      "Serve immediately"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "totalCalories": 520,
+      "perServingCalories": 520,
+      "totalProtein": 44,
+      "perServingProtein": 44,
+      "totalCarbs": 48,
+      "perServingCarbs": 48,
+      "totalFat": 16,
+      "perServingFat": 16,
+      "perServingFiber": 7,
+      "totalFiber": 7
+    }
+  },
+  {
+    "id": 10,
+    "name": "Chicken Pesto Stuffed Tortilla",
+    "category": "quick-lunches",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "1 Large tortilla",
+      "6 oz Chicken breast (sliced)",
+      "2 tbsp Pesto sauce",
+      "1/2 cup Shredded mozzarella",
+      "Handful fresh spinach"
+    ],
+    "instructions": [
+      "Lay tortilla flat",
+      "Spread pesto sauce in center",
+      "Layer sliced chicken, mozzarella, and spinach",
+      "Fold tortilla sides in and roll tightly",
+      "Pan-toast over medium heat until golden on all sides",
+      "Cheese should be melted inside",
+      "Slice and serve hot"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "totalCalories": 535,
+      "perServingCalories": 535,
+      "totalProtein": 48,
+      "perServingProtein": 48,
+      "totalCarbs": 32,
+      "perServingCarbs": 32,
+      "totalFat": 24,
+      "perServingFat": 24,
+      "perServingFiber": 7,
+      "totalFiber": 7
+    }
+  },
+  {
+    "id": 11,
+    "name": "Chicken Caesar Melt",
+    "category": "quick-lunches",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "2 slices Low-carb bread",
+      "6 oz Chicken breast (diced)",
+      "3 tbsp Greek yogurt Caesar dressing",
+      "2 tbsp Parmesan cheese (grated)",
+      "Handful romaine lettuce"
+    ],
+    "instructions": [
+      "Mix diced chicken with Greek yogurt Caesar dressing",
+      "Place chicken Caesar mixture on one slice of bread",
+      "Sprinkle with parmesan cheese",
+      "Top with second slice of bread",
+      "Toast in skillet until bread is golden and cheese melts",
+      "Open sandwich and add fresh romaine lettuce",
+      "Serve immediately"
+    ],
+    "cookingTime": "30 minutes",
+    "nutrition": {
+      "totalCalories": 500,
+      "perServingCalories": 500,
+      "totalProtein": 46,
+      "perServingProtein": 46,
+      "totalCarbs": 32,
+      "perServingCarbs": 32,
+      "totalFat": 20,
+      "perServingFat": 20,
+      "perServingFiber": 6,
+      "totalFiber": 6
+    }
   }
 ]

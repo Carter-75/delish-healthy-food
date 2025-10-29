@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": "Asian Fusion Bowl",
-    "category": "protein-bowl",
+    "category": "protein-bowls",
     "servings": 4,
     "ingredients": [
       "24 oz Chicken Breast (cubed)",
@@ -18,7 +18,13 @@
       "totalCalories": 1920,
       "perServingCalories": 480,
       "totalProtein": 160,
-      "perServingProtein": 40
+      "perServingProtein": 40,
+      "perServingCarbs": 55,
+      "totalCarbs": 220,
+      "perServingFat": 11,
+      "totalFat": 44,
+      "perServingFiber": 7,
+      "totalFiber": 28
     },
     "instructions": [
       "Cook chicken breast in sesame oil until golden",
@@ -32,7 +38,7 @@
   {
     "id": 1,
     "name": "Mediterranean Bowl",
-    "category": "protein-bowl",
+    "category": "protein-bowls",
     "servings": 4,
     "ingredients": [
       "24 oz Chicken Breast (cubed)",
@@ -49,7 +55,13 @@
       "totalCalories": 2100,
       "perServingCalories": 525,
       "totalProtein": 165,
-      "perServingProtein": 41
+      "perServingProtein": 41,
+      "perServingCarbs": 63,
+      "totalCarbs": 252,
+      "perServingFat": 12,
+      "totalFat": 48,
+      "perServingFiber": 8,
+      "totalFiber": 32
     },
     "instructions": [
       "Season and grill chicken breast until cooked through",
@@ -64,7 +76,7 @@
   {
     "id": 2,
     "name": "Tex-Mex Bowl",
-    "category": "protein-bowl",
+    "category": "protein-bowls",
     "servings": 4,
     "ingredients": [
       "24 oz Chicken Breast (cubed)",
@@ -81,7 +93,13 @@
       "totalCalories": 2050,
       "perServingCalories": 512,
       "totalProtein": 170,
-      "perServingProtein": 43
+      "perServingProtein": 43,
+      "perServingCarbs": 60,
+      "totalCarbs": 240,
+      "perServingFat": 11,
+      "totalFat": 44,
+      "perServingFiber": 7,
+      "totalFiber": 28
     },
     "instructions": [
       "Season chicken with taco seasoning and cook until done",
@@ -92,5 +110,225 @@
       "Serve with lime wedges"
     ],
     "cookingTime": "25 minutes"
+  },
+  {
+    "id": 3,
+    "name": "Honey Garlic Power Bowl",
+    "category": "protein-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "6 oz Chicken breast (sliced)",
+      "1 cup Jasmine rice (cooked)",
+      "1 cup Roasted broccoli",
+      "2 tbsp Sugar-free honey garlic sauce",
+      "1 tsp Sesame seeds"
+    ],
+    "instructions": [
+      "Cook jasmine rice according to package directions",
+      "Roast or steam broccoli until tender",
+      "Cook chicken breast with honey garlic sauce until caramelized",
+      "Assemble bowl with rice as base",
+      "Top with chicken and broccoli",
+      "Sprinkle with sesame seeds and serve"
+    ],
+    "cookingTime": "25-35 minutes",
+    "nutrition": {
+      "totalCalories": 510,
+      "perServingCalories": 510,
+      "totalProtein": 42,
+      "perServingProtein": 42,
+      "totalCarbs": 58,
+      "perServingCarbs": 58,
+      "totalFat": 9,
+      "perServingFat": 9,
+      "perServingFiber": 7,
+      "totalFiber": 7
+    }
+  },
+  {
+    "id": 4,
+    "name": "Avocado Fiesta Bowl",
+    "category": "protein-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "6 oz Chicken breast (sliced)",
+      "1 cup Brown rice (cooked)",
+      "1/2 cup Pico de gallo",
+      "1/2 Avocado (sliced)",
+      "1/2 cup Black beans (heated)",
+      "1 Lime wedge",
+      "Fresh cilantro"
+    ],
+    "instructions": [
+      "Cook brown rice according to package directions",
+      "Heat black beans in a small pot",
+      "Season and cook chicken breast until done",
+      "Build bowl with rice as base",
+      "Top with sliced chicken, pico de gallo, and avocado",
+      "Add black beans, squeeze lime, and garnish with cilantro"
+    ],
+    "cookingTime": "25-35 minutes",
+    "nutrition": {
+      "totalCalories": 525,
+      "perServingCalories": 525,
+      "totalProtein": 45,
+      "perServingProtein": 45,
+      "totalCarbs": 52,
+      "perServingCarbs": 52,
+      "totalFat": 14,
+      "perServingFat": 14,
+      "perServingFiber": 7,
+      "totalFiber": 7
+    }
+  },
+  {
+    "id": 5,
+    "name": "Mediterranean Chicken Power Bowl",
+    "category": "protein-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "6 oz Chicken breast (sliced)",
+      "1 cup Couscous (cooked)",
+      "1/2 cup Cherry tomatoes (halved)",
+      "1/2 cup Cucumber (diced)",
+      "2 tbsp Red onion (diced)",
+      "2 tbsp Olives (sliced)",
+      "2 tbsp Feta cheese (crumbled)",
+      "1 tbsp Olive oil",
+      "1 Lemon wedge"
+    ],
+    "instructions": [
+      "Cook couscous according to package directions",
+      "Season and cook chicken breast, then slice",
+      "Arrange couscous as base in bowl",
+      "Add sliced chicken, cherry tomatoes, cucumber, red onion, and olives",
+      "Top with crumbled feta cheese",
+      "Mix lightly with lemon juice and olive oil",
+      "Serve immediately"
+    ],
+    "cookingTime": "25-35 minutes",
+    "nutrition": {
+      "totalCalories": 510,
+      "perServingCalories": 510,
+      "totalProtein": 42,
+      "perServingProtein": 42,
+      "totalCarbs": 48,
+      "perServingCarbs": 48,
+      "totalFat": 16,
+      "perServingFat": 16,
+      "perServingFiber": 7,
+      "totalFiber": 7
+    }
+  },
+  {
+    "id": 6,
+    "name": "Creamy Salsa Chicken Bowl",
+    "category": "protein-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "6 oz Chicken breast (diced)",
+      "2 cups Cauliflower rice",
+      "1/4 cup Salsa",
+      "3 tbsp Greek yogurt (non-fat)",
+      "1 cup Shredded lettuce"
+    ],
+    "instructions": [
+      "Heat cauliflower rice in a pan until tender",
+      "Cook diced chicken until done",
+      "Mix chicken with salsa and Greek yogurt",
+      "Build bowl with cauliflower rice as base",
+      "Add shredded lettuce",
+      "Top with creamy salsa chicken mixture",
+      "Serve immediately"
+    ],
+    "cookingTime": "25-35 minutes",
+    "nutrition": {
+      "totalCalories": 470,
+      "perServingCalories": 470,
+      "totalProtein": 44,
+      "perServingProtein": 44,
+      "totalCarbs": 38,
+      "perServingCarbs": 38,
+      "totalFat": 12,
+      "perServingFat": 12,
+      "perServingFiber": 6,
+      "totalFiber": 6
+    }
+  },
+  {
+    "id": 7,
+    "name": "Crispy Chickpea Chicken Bowl",
+    "category": "protein-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "6 oz Chicken breast (sliced)",
+      "1/2 cup Chickpeas (roasted)",
+      "1 cup Brown rice (cooked)",
+      "1 cup Fresh spinach",
+      "2 tbsp Tahini drizzle"
+    ],
+    "instructions": [
+      "Roast chickpeas at 400°F for 20-25 minutes until crispy",
+      "Cook brown rice according to package directions",
+      "Season and cook chicken breast",
+      "Layer bowl with fresh spinach as base",
+      "Add brown rice and sliced chicken",
+      "Top with crispy chickpeas",
+      "Drizzle with tahini and serve"
+    ],
+    "cookingTime": "25-35 minutes",
+    "nutrition": {
+      "totalCalories": 530,
+      "perServingCalories": 530,
+      "totalProtein": 43,
+      "perServingProtein": 43,
+      "totalCarbs": 54,
+      "perServingCarbs": 54,
+      "totalFat": 14,
+      "perServingFat": 14,
+      "perServingFiber": 8,
+      "totalFiber": 8
+    }
+  },
+  {
+    "id": 8,
+    "name": "Teriyaki Pineapple Bowl",
+    "category": "protein-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "6 oz Chicken breast (diced)",
+      "1/2 cup Pineapple chunks (fresh or canned)",
+      "1 cup Steamed rice (white or brown)",
+      "3 tbsp Sugar-free teriyaki sauce",
+      "2 tbsp Green onions (sliced)"
+    ],
+    "instructions": [
+      "Cook rice and keep warm",
+      "Cook chicken in sugar-free teriyaki sauce until glazed",
+      "Plate rice as base in bowl",
+      "Add teriyaki chicken over rice",
+      "Top with pineapple chunks",
+      "Garnish with sliced green onions",
+      "Serve hot"
+    ],
+    "cookingTime": "25-35 minutes",
+    "nutrition": {
+      "totalCalories": 515,
+      "perServingCalories": 515,
+      "totalProtein": 44,
+      "perServingProtein": 44,
+      "totalCarbs": 62,
+      "perServingCarbs": 62,
+      "totalFat": 8,
+      "perServingFat": 8,
+      "perServingFiber": 7,
+      "totalFiber": 7
+    }
   }
 ]

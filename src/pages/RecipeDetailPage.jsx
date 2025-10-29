@@ -176,7 +176,7 @@ const RecipeDetailPage = () => {
           <div className={`glass-effect rounded-2xl p-6 border ${theme.border || 'border-white/10'} 
             animate-fadeInUp h-fit`} style={{ animationDelay: '0.3s' }}>
             <div className="flex items-center gap-3 mb-6">
-              <Flame className={`w-6 h-6 ${theme.text || 'text-orange-400'}`} />
+              <Flame className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} />
               <h2 className="text-2xl font-bold text-white">Instructions</h2>
             </div>
             <ol className="space-y-4">

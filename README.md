@@ -17,19 +17,6 @@ This is a beautiful React-based recipe website showcasing delicious protein-rich
 - 📋 Easy-to-follow instructions with cooking times
 - 📱 Mobile-friendly navigation with smooth animations
 
-## Recipes
-
-### Available Now
-- **Chicken Egg Omelettes** - 13 delicious variations
-- **Protein Power Bowls** - 9 global flavors
-- **Simple Delicious Desserts** - 24 sweet treats
-- **Protein-Rich Snacks** - 18 quick bites
-- **Quick Protein Lunches** - 12 easy meals
-- **Smoothie Bowls** - 13 refreshing bowls (5 smoothie bowls + 6 acai bowls + 2 original)
-
-### Coming Soon
-More delicious recipes being added regularly!
-
 ## Quick Start
 
 ```bash
@@ -57,6 +44,15 @@ This site is ready to deploy to Vercel:
 - Tailwind CSS
 - React Router
 - Lucide Icons
+
+---
+
+
+How to add content
+- **New recipe:** append the recipe object to the relevant aggregated file (e.g. `public/data/recipes/desserts.json`, `smoothie-bowls.json`, etc.). No JS updates needed—the loader and counts pick it up automatically.
+- **New category:** add one entry to `public/data/recipes/recipe-categories.json` defining its `data` paths and icon, drop the recipes JSON it references, and add a matching theme key to `public/data/themes/color-themes.json` for colors. The UI, counts, and ingredient list will all wire themselves up.
+
+Next step: run `npm run dev` and click through each category—including the shopping list—to confirm everything renders with the refreshed counts and data.
 
 ---
 

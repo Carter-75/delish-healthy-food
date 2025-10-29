@@ -2,6 +2,7 @@
   {
     "id": 0,
     "name": "Original Creamy Sauce",
+    "category": "chicken-omelettes",
     "ingredients": [
       "5.3 oz Plain Nonfat Greek Yogurt",
       "2 oz Reduced-Fat Cream Cheese",
@@ -10,10 +11,16 @@
       "2 scoops Unflavored Whey Protein"
     ],
     "nutrition": {
-      "totalCalories": 2115,
-      "perServingCalories": 529,
-      "totalProtein": 180,
-      "perServingProtein": 45
+      "totalCalories": 3960,
+      "totalProtein": 345,
+      "totalCarbs": 240,
+      "totalFat": 48,
+      "totalFiber": 28,
+      "perServingCalories": 990,
+      "perServingProtein": 86,
+      "perServingCarbs": 60,
+      "perServingFat": 12,
+      "perServingFiber": 7
     },
     "instructions": [
       "Blend base ingredients with chicken bone broth until smooth",
@@ -22,11 +29,14 @@
       "Cook for 10-15 minutes, stirring occasionally",
       "When nearly set, flip with plate to cook other side",
       "Add mozzarella on top and cover until melted"
-    ]
+    ],
+    "cookingTime": "30-40 minutes",
+    "servings": 4
   },
   {
     "id": 1,
     "name": "Marinara Style",
+    "category": "chicken-omelettes",
     "ingredients": [
       "1 cup Sugar-Free Marinara Sauce",
       "2 tbsp Italian Seasoning",
@@ -35,10 +45,16 @@
       "2 scoops Unflavored Whey Protein"
     ],
     "nutrition": {
-      "totalCalories": 2050,
-      "perServingCalories": 512,
-      "totalProtein": 175,
-      "perServingProtein": 44
+      "totalCalories": 3895,
+      "totalProtein": 340,
+      "totalCarbs": 236,
+      "totalFat": 44,
+      "totalFiber": 28,
+      "perServingCalories": 973,
+      "perServingProtein": 85,
+      "perServingCarbs": 59,
+      "perServingFat": 11,
+      "perServingFiber": 7
     },
     "instructions": [
       "Blend base ingredients with chicken bone broth until smooth",
@@ -47,11 +63,14 @@
       "Cook for 10-15 minutes, stirring occasionally",
       "When nearly set, flip with plate to cook other side",
       "Add mozzarella on top and cover until melted"
-    ]
+    ],
+    "cookingTime": "30-40 minutes",
+    "servings": 4
   },
   {
     "id": 2,
     "name": "Light Alfredo",
+    "category": "chicken-omelettes",
     "ingredients": [
       "1 cup Cauliflower Alfredo Sauce",
       "1/4 cup Unsweetened Almond Milk",
@@ -60,10 +79,16 @@
       "2 scoops Unflavored Whey Protein"
     ],
     "nutrition": {
-      "totalCalories": 2080,
-      "perServingCalories": 520,
-      "totalProtein": 178,
-      "perServingProtein": 45
+      "totalCalories": 3925,
+      "totalProtein": 343,
+      "totalCarbs": 240,
+      "totalFat": 44,
+      "totalFiber": 28,
+      "perServingCalories": 981,
+      "perServingProtein": 85,
+      "perServingCarbs": 60,
+      "perServingFat": 11,
+      "perServingFiber": 7
     },
     "instructions": [
       "Blend base ingredients with almond milk until smooth",
@@ -72,11 +97,14 @@
       "Cook for 10-15 minutes, stirring occasionally",
       "When nearly set, flip with plate to cook other side",
       "Add mozzarella on top and cover until melted"
-    ]
+    ],
+    "cookingTime": "30-40 minutes",
+    "servings": 4
   },
   {
     "id": 3,
     "name": "Fresh Herb",
+    "category": "chicken-omelettes",
     "ingredients": [
       "1 cup Fresh Basil",
       "1/2 cup Fresh Parsley",
@@ -86,10 +114,16 @@
       "Lemon Juice to taste"
     ],
     "nutrition": {
-      "totalCalories": 2200,
-      "perServingCalories": 550,
-      "totalProtein": 182,
-      "perServingProtein": 46
+      "totalCalories": 4045,
+      "totalProtein": 347,
+      "totalCarbs": 260,
+      "totalFat": 48,
+      "totalFiber": 32,
+      "perServingCalories": 1011,
+      "perServingProtein": 86,
+      "perServingCarbs": 65,
+      "perServingFat": 12,
+      "perServingFiber": 8
     },
     "instructions": [
       "Blend base ingredients with olive oil until smooth",
@@ -98,11 +132,14 @@
       "Cook for 10-15 minutes, stirring occasionally",
       "When nearly set, flip with plate to cook other side",
       "Add mozzarella on top and cover until melted"
-    ]
+    ],
+    "cookingTime": "30-40 minutes",
+    "servings": 4
   },
   {
     "id": 4,
     "name": "BBQ Style",
+    "category": "chicken-omelettes",
     "ingredients": [
       "1/2 cup Sugar-Free BBQ Sauce",
       "1/4 cup Apple Cider Vinegar",
@@ -111,10 +148,16 @@
       "2 scoops Unflavored Whey Protein"
     ],
     "nutrition": {
-      "totalCalories": 2150,
-      "perServingCalories": 537,
-      "totalProtein": 176,
-      "perServingProtein": 44
+      "totalCalories": 3995,
+      "totalProtein": 341,
+      "totalCarbs": 252,
+      "totalFat": 48,
+      "totalFiber": 32,
+      "perServingCalories": 998,
+      "perServingProtein": 85,
+      "perServingCarbs": 63,
+      "perServingFat": 12,
+      "perServingFiber": 8
     },
     "instructions": [
       "Blend base ingredients with apple cider vinegar until smooth",
@@ -123,11 +166,14 @@
       "Cook for 10-15 minutes, stirring occasionally",
       "When nearly set, flip with plate to cook other side",
       "Add mozzarella on top and cover until melted"
-    ]
+    ],
+    "cookingTime": "30-40 minutes",
+    "servings": 4
   },
   {
     "id": 5,
     "name": "Sharp Cheddar",
+    "category": "chicken-omelettes",
     "ingredients": [
       "4 oz Reduced-Fat Sharp Cheddar",
       "1/4 cup Greek Yogurt",
@@ -136,10 +182,16 @@
       "2 scoops Unflavored Whey Protein"
     ],
     "nutrition": {
-      "totalCalories": 2180,
-      "perServingCalories": 545,
-      "totalProtein": 185,
-      "perServingProtein": 46
+      "totalCalories": 4025,
+      "totalProtein": 350,
+      "totalCarbs": 252,
+      "totalFat": 48,
+      "totalFiber": 32,
+      "perServingCalories": 1006,
+      "perServingProtein": 87,
+      "perServingCarbs": 63,
+      "perServingFat": 12,
+      "perServingFiber": 8
     },
     "instructions": [
       "Blend base ingredients with chicken bone broth until smooth",
@@ -148,11 +200,14 @@
       "Cook for 10-15 minutes, stirring occasionally",
       "When nearly set, flip with plate to cook other side",
       "Add mozzarella on top and cover until melted"
-    ]
+    ],
+    "cookingTime": "30-40 minutes",
+    "servings": 4
   },
   {
     "id": 6,
     "name": "Spicy Mexican",
+    "category": "chicken-omelettes",
     "ingredients": [
       "1 cup Salsa Verde",
       "2 tbsp Taco Seasoning",
@@ -161,10 +216,16 @@
       "2 scoops Unflavored Whey Protein"
     ],
     "nutrition": {
-      "totalCalories": 2100,
-      "perServingCalories": 525,
-      "totalProtein": 177,
-      "perServingProtein": 44
+      "totalCalories": 3945,
+      "totalProtein": 342,
+      "totalCarbs": 240,
+      "totalFat": 48,
+      "totalFiber": 28,
+      "perServingCalories": 986,
+      "perServingProtein": 85,
+      "perServingCarbs": 60,
+      "perServingFat": 12,
+      "perServingFiber": 7
     },
     "instructions": [
       "Blend base ingredients with chicken bone broth until smooth",
@@ -173,6 +234,198 @@
       "Cook for 10-15 minutes, stirring occasionally",
       "When nearly set, flip with plate to cook other side",
       "Add mozzarella on top and cover until melted"
-    ]
+    ],
+    "cookingTime": "30-40 minutes",
+    "servings": 4
+  },
+  {
+    "id": 7,
+    "name": "Creamy Sun-Dried Tomato",
+    "category": "chicken-omelettes",
+    "ingredients": [
+      "Sun-dried tomatoes (chopped)",
+      "Light cream cheese",
+      "Fresh basil",
+      "Garlic powder"
+    ],
+    "nutrition": {
+      "totalCalories": 4053,
+      "totalProtein": 353,
+      "totalCarbs": 256,
+      "totalFat": 48,
+      "totalFiber": 32,
+      "perServingCalories": 1013,
+      "perServingProtein": 88,
+      "perServingCarbs": 64,
+      "perServingFat": 12,
+      "perServingFiber": 8
+    },
+    "instructions": [
+      "Season and cook chicken chunks with garlic powder until golden",
+      "Make omelette with eggs and fresh spinach",
+      "Mix light cream cheese with chopped sun-dried tomatoes and basil",
+      "Layer cooked chicken on omelette, add creamy tomato sauce",
+      "Top with mixed greens, lentils, pumpkin seeds, and chia seeds",
+      "Fold and serve hot"
+    ],
+    "cookingTime": "30-40 minutes",
+    "servings": 4
+  },
+  {
+    "id": 8,
+    "name": "Honey Mustard",
+    "category": "chicken-omelettes",
+    "ingredients": [
+      "Sugar-free honey mustard sauce",
+      "Dijon mustard",
+      "Cheddar cheese"
+    ],
+    "nutrition": {
+      "totalCalories": 4005,
+      "totalProtein": 349,
+      "totalCarbs": 248,
+      "totalFat": 48,
+      "totalFiber": 28,
+      "perServingCalories": 1001,
+      "perServingProtein": 87,
+      "perServingCarbs": 62,
+      "perServingFat": 12,
+      "perServingFiber": 7
+    },
+    "instructions": [
+      "Cook chicken chunks, mixing in honey mustard and dijon while cooking",
+      "Prepare omelette with eggs, cheddar cheese, and spinach",
+      "Add honey mustard chicken mixture to omelette",
+      "Top with mixed greens, lentils, pumpkin seeds, and chia seeds",
+      "Fold and serve hot"
+    ],
+    "cookingTime": "30-40 minutes",
+    "servings": 4
+  },
+  {
+    "id": 9,
+    "name": "Spicy Chipotle",
+    "category": "chicken-omelettes",
+    "ingredients": [
+      "Chipotle sauce (sugar-free)",
+      "Smoked paprika",
+      "Cheddar cheese"
+    ],
+    "nutrition": {
+      "totalCalories": 4025,
+      "totalProtein": 349,
+      "totalCarbs": 252,
+      "totalFat": 48,
+      "totalFiber": 32,
+      "perServingCalories": 1006,
+      "perServingProtein": 87,
+      "perServingCarbs": 63,
+      "perServingFat": 12,
+      "perServingFiber": 8
+    },
+    "instructions": [
+      "Cook chicken chunks with chipotle sauce and smoked paprika",
+      "Make omelette with cheddar cheese and fresh spinach",
+      "Add spicy chipotle chicken to omelette",
+      "Top with mixed greens, lentils, pumpkin seeds, and chia seeds",
+      "Fold and serve hot"
+    ],
+    "cookingTime": "30-40 minutes",
+    "servings": 4
+  },
+  {
+    "id": 10,
+    "name": "Garlic Parmesan",
+    "category": "chicken-omelettes",
+    "ingredients": [
+      "Parmesan cheese (grated)",
+      "Garlic powder",
+      "Light alfredo sauce (drizzle)"
+    ],
+    "nutrition": {
+      "totalCalories": 4065,
+      "totalProtein": 357,
+      "totalCarbs": 256,
+      "totalFat": 48,
+      "totalFiber": 32,
+      "perServingCalories": 1016,
+      "perServingProtein": 89,
+      "perServingCarbs": 64,
+      "perServingFat": 12,
+      "perServingFiber": 8
+    },
+    "instructions": [
+      "Season and cook chicken chunks with garlic powder",
+      "Make omelette with parmesan cheese and spinach",
+      "Add garlic chicken to omelette",
+      "Drizzle with light alfredo sauce",
+      "Top with mixed greens, lentils, pumpkin seeds, and chia seeds",
+      "Fold and serve hot"
+    ],
+    "cookingTime": "30-40 minutes",
+    "servings": 4
+  },
+  {
+    "id": 11,
+    "name": "Creamy Basil",
+    "category": "chicken-omelettes",
+    "ingredients": [
+      "Light cream cheese",
+      "Fresh basil",
+      "Mozzarella cheese"
+    ],
+    "nutrition": {
+      "totalCalories": 4045,
+      "totalProtein": 353,
+      "totalCarbs": 256,
+      "totalFat": 48,
+      "totalFiber": 32,
+      "perServingCalories": 1011,
+      "perServingProtein": 88,
+      "perServingCarbs": 64,
+      "perServingFat": 12,
+      "perServingFiber": 8
+    },
+    "instructions": [
+      "Cook chicken chunks until golden",
+      "Make omelette with mozzarella and fresh spinach",
+      "Mix light cream cheese with chopped fresh basil",
+      "Spread basil cream cheese over chicken in omelette",
+      "Top with mixed greens, lentils, pumpkin seeds, and chia seeds",
+      "Fold and serve hot"
+    ],
+    "cookingTime": "30-40 minutes",
+    "servings": 4
+  },
+  {
+    "id": 12,
+    "name": "Spicy Cajun",
+    "category": "chicken-omelettes",
+    "ingredients": [
+      "Cajun seasoning",
+      "Diced bell peppers",
+      "Pepper jack cheese"
+    ],
+    "nutrition": {
+      "totalCalories": 4085,
+      "totalProtein": 357,
+      "totalCarbs": 260,
+      "totalFat": 48,
+      "totalFiber": 32,
+      "perServingCalories": 1021,
+      "perServingProtein": 89,
+      "perServingCarbs": 65,
+      "perServingFat": 12,
+      "perServingFiber": 8
+    },
+    "instructions": [
+      "Cook chicken chunks with Cajun seasoning and diced bell peppers",
+      "Make omelette with pepper jack cheese and spinach",
+      "Add spicy Cajun chicken and peppers to omelette",
+      "Top with mixed greens, lentils, pumpkin seeds, and chia seeds",
+      "Fold and serve hot"
+    ],
+    "cookingTime": "30-40 minutes",
+    "servings": 4
   }
 ]

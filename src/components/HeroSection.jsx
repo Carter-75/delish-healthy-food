@@ -7,10 +7,10 @@ const HeroSection = () => {
 
   return (
     <div className="relative py-16 sm:py-24 px-4 overflow-hidden w-full max-w-full">
-      {/* Animated accent lines */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className={`absolute top-0 left-1/4 w-px h-full ${theme.accent || 'bg-amber-500'} opacity-20 animate-shimmer`} />
-        <div className={`absolute top-0 right-1/4 w-px h-full ${theme.accent || 'bg-orange-500'} opacity-20 animate-shimmer`} 
+      {/* Animated accent lines - hidden on mobile/tablet, shown on large screens */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none hidden xl:block">
+        <div className={`absolute top-0 left-1/4 w-px h-full ${theme.accent || 'bg-blue-500'} opacity-20 animate-shimmer`} />
+        <div className={`absolute top-0 right-1/4 w-px h-full ${theme.accent || 'bg-blue-500'} opacity-20 animate-shimmer`} 
           style={{ animationDelay: '1s' }} />
       </div>
 
@@ -18,17 +18,17 @@ const HeroSection = () => {
         <div className="text-center space-y-8">
           {/* Icon Row - more modern styling */}
           <div className="flex items-center justify-center gap-5 animate-fadeInDown">
-            <div className={`p-4 rounded-3xl ${theme.highlight || 'bg-amber-900/30'} 
-              border ${theme.border || 'border-amber-500/20'} hover-glow animate-float shadow-xl`}>
-              <Utensils className={`w-12 h-12 sm:w-14 sm:h-14 ${theme.text || 'text-amber-400'}`} />
+            <div className={`p-4 rounded-3xl ${theme.highlight || 'bg-blue-900/30'} 
+              border ${theme.border || 'border-blue-500/20'} hover-glow animate-float shadow-xl`}>
+              <Utensils className={`w-12 h-12 sm:w-14 sm:h-14 ${theme.text || 'text-blue-400'}`} />
             </div>
-            <Sparkles className={`w-10 h-10 sm:w-12 sm:h-12 ${theme.text || 'text-amber-400'} animate-pulseGlow`} />
+            <Sparkles className={`w-10 h-10 sm:w-12 sm:h-12 ${theme.text || 'text-blue-400'} animate-pulseGlow`} />
           </div>
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white animate-fadeInUp text-shadow">
             <span className="block mb-2">High-Protein</span>
-            <span className={`block bg-gradient-to-r ${theme.gradient || 'from-amber-400 via-orange-400 to-red-400'} 
+            <span className={`block bg-gradient-to-r ${theme.gradient || 'from-blue-400 via-indigo-400 to-violet-400'} 
               bg-clip-text text-transparent animate-gradientShift`}>
               Recipe Collection
             </span>

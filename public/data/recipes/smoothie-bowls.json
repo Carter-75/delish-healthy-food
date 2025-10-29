@@ -1,0 +1,482 @@
+[
+  {
+    "id": 0,
+    "name": "Mint Chocolate Crunch Smoothie Bowl",
+    "category": "smoothie-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "1 Frozen banana",
+      "2 scoops Chocolate whey protein",
+      "1/4 tsp Mint extract",
+      "1 cup Fresh spinach",
+      "1/2 cup Almond milk (unsweetened)",
+      "2 tbsp Cacao nibs (for topping)"
+    ],
+    "instructions": [
+      "Add frozen banana, chocolate whey, mint extract, spinach, and almond milk to blender",
+      "Blend on high until thick and creamy (should be thicker than a regular smoothie)",
+      "Pour into a bowl",
+      "Top with cacao nibs",
+      "Optional: Add more toppings like sliced banana, coconut flakes, or granola",
+      "Serve immediately with a spoon"
+    ],
+    "nutrition": {
+      "totalCalories": 350,
+      "perServingCalories": 350,
+      "totalProtein": 32,
+      "perServingProtein": 32,
+      "totalCarbs": 42,
+      "perServingCarbs": 42,
+      "totalFat": 8,
+      "perServingFat": 8,
+      "perServingFiber": 5,
+      "totalFiber": 5
+    },
+    "cookingTime": "10 minutes"
+  },
+  {
+    "id": 1,
+    "name": "Mango Cream Smoothie Bowl",
+    "category": "smoothie-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "1 cup Frozen mango chunks",
+      "1/2 cup Greek yogurt (non-fat)",
+      "1 scoop Vanilla whey protein",
+      "1/4 cup Almond milk (unsweetened)",
+      "2 tbsp Light granola (for topping)"
+    ],
+    "instructions": [
+      "Add frozen mango, Greek yogurt, vanilla whey, and almond milk to blender",
+      "Blend on high until thick and creamy",
+      "Should be thicker than a regular smoothie",
+      "Pour into a bowl",
+      "Top with light granola",
+      "Optional: Add fresh mango slices, coconut flakes, or chia seeds",
+      "Serve immediately with a spoon"
+    ],
+    "nutrition": {
+      "totalCalories": 345,
+      "perServingCalories": 345,
+      "totalProtein": 31,
+      "perServingProtein": 31,
+      "totalCarbs": 45,
+      "perServingCarbs": 45,
+      "totalFat": 6,
+      "perServingFat": 6,
+      "perServingFiber": 5,
+      "totalFiber": 5
+    },
+    "cookingTime": "10 minutes"
+  },
+  {
+    "id": 2,
+    "name": "Berry Blast Smoothie Bowl",
+    "category": "smoothie-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "1 cup Frozen mixed berries (strawberries, blueberries, raspberries)",
+      "1 Frozen banana",
+      "1 scoop Vanilla whey protein",
+      "1/2 cup Almond milk (unsweetened)",
+      "2 tbsp Fresh berries and granola (for topping)"
+    ],
+    "instructions": [
+      "Add frozen berries, banana, vanilla whey, and almond milk to blender",
+      "Blend on high until thick and creamy",
+      "Should be thicker than a regular smoothie",
+      "Pour into a bowl",
+      "Top with fresh berries and granola",
+      "Optional: Add chia seeds, hemp hearts, or coconut flakes",
+      "Serve immediately with a spoon"
+    ],
+    "nutrition": {
+      "totalCalories": 320,
+      "perServingCalories": 320,
+      "totalProtein": 28,
+      "perServingProtein": 28,
+      "totalCarbs": 48,
+      "perServingCarbs": 48,
+      "totalFat": 5,
+      "perServingFat": 5,
+      "perServingFiber": 8,
+      "totalFiber": 8
+    },
+    "cookingTime": "10 minutes"
+  },
+  {
+    "id": 3,
+    "name": "Peanut Butter Banana Smoothie Bowl",
+    "category": "smoothie-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "2 Frozen bananas",
+      "2 tbsp Peanut butter",
+      "1 scoop Vanilla whey protein",
+      "1/2 cup Almond milk (unsweetened)",
+      "2 tbsp Sliced banana and crushed peanuts (for topping)"
+    ],
+    "instructions": [
+      "Add frozen bananas, peanut butter, vanilla whey, and almond milk to blender",
+      "Blend on high until thick and creamy",
+      "Should be thicker than a regular smoothie",
+      "Pour into a bowl",
+      "Top with sliced banana and crushed peanuts",
+      "Optional: Add chocolate chips, granola, or honey drizzle",
+      "Serve immediately with a spoon"
+    ],
+    "nutrition": {
+      "totalCalories": 420,
+      "perServingCalories": 420,
+      "totalProtein": 32,
+      "perServingProtein": 32,
+      "totalCarbs": 52,
+      "perServingCarbs": 52,
+      "totalFat": 12,
+      "perServingFat": 12,
+      "perServingFiber": 6,
+      "totalFiber": 6
+    },
+    "cookingTime": "10 minutes"
+  },
+  {
+    "id": 4,
+    "name": "Tropical Paradise Smoothie Bowl",
+    "category": "smoothie-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "1 cup Frozen pineapple chunks",
+      "1/2 cup Frozen mango",
+      "1/2 Frozen banana",
+      "1 scoop Vanilla whey protein",
+      "1/2 cup Coconut milk (unsweetened)",
+      "2 tbsp Shredded coconut and kiwi slices (for topping)"
+    ],
+    "instructions": [
+      "Add frozen pineapple, mango, banana, vanilla whey, and coconut milk to blender",
+      "Blend on high until thick and creamy",
+      "Should be thicker than a regular smoothie",
+      "Pour into a bowl",
+      "Top with shredded coconut and kiwi slices",
+      "Optional: Add fresh pineapple, passion fruit, or granola",
+      "Serve immediately with a spoon"
+    ],
+    "nutrition": {
+      "totalCalories": 340,
+      "perServingCalories": 340,
+      "totalProtein": 29,
+      "perServingProtein": 29,
+      "totalCarbs": 50,
+      "perServingCarbs": 50,
+      "totalFat": 7,
+      "perServingFat": 7,
+      "perServingFiber": 6,
+      "totalFiber": 6
+    },
+    "cookingTime": "10 minutes"
+  },
+  {
+    "id": 5,
+    "name": "Green Goddess Smoothie Bowl",
+    "category": "smoothie-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "1 Frozen banana",
+      "1 cup Fresh spinach",
+      "1/2 Avocado",
+      "1 scoop Vanilla whey protein",
+      "1/2 cup Almond milk (unsweetened)",
+      "2 tbsp Sliced almonds and chia seeds (for topping)"
+    ],
+    "instructions": [
+      "Add frozen banana, spinach, avocado, vanilla whey, and almond milk to blender",
+      "Blend on high until thick and creamy",
+      "Should be thicker than a regular smoothie",
+      "Pour into a bowl",
+      "Top with sliced almonds and chia seeds",
+      "Optional: Add fresh berries, granola, or hemp hearts",
+      "Serve immediately with a spoon"
+    ],
+    "nutrition": {
+      "totalCalories": 380,
+      "perServingCalories": 380,
+      "totalProtein": 30,
+      "perServingProtein": 30,
+      "totalCarbs": 38,
+      "perServingCarbs": 38,
+      "totalFat": 14,
+      "perServingFat": 14,
+      "perServingFiber": 10,
+      "totalFiber": 10
+    },
+    "cookingTime": "10 minutes"
+  },
+  {
+    "id": 6,
+    "name": "Strawberry Cheesecake Smoothie Bowl",
+    "category": "smoothie-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "1 cup Frozen strawberries",
+      "1/2 cup Greek yogurt (non-fat)",
+      "2 tbsp Cream cheese (light)",
+      "1 scoop Vanilla whey protein",
+      "1/4 cup Almond milk (unsweetened)",
+      "2 tbsp Graham cracker crumbs and fresh strawberries (for topping)"
+    ],
+    "instructions": [
+      "Add frozen strawberries, Greek yogurt, cream cheese, vanilla whey, and almond milk to blender",
+      "Blend on high until thick and creamy",
+      "Should be thicker than a regular smoothie",
+      "Pour into a bowl",
+      "Top with graham cracker crumbs and fresh strawberry slices",
+      "Optional: Add whipped cream or honey drizzle",
+      "Serve immediately with a spoon"
+    ],
+    "nutrition": {
+      "totalCalories": 360,
+      "perServingCalories": 360,
+      "totalProtein": 35,
+      "perServingProtein": 35,
+      "totalCarbs": 40,
+      "perServingCarbs": 40,
+      "totalFat": 8,
+      "perServingFat": 8,
+      "perServingFiber": 4,
+      "totalFiber": 4
+    },
+    "cookingTime": "10 minutes"
+  },
+  {
+    "id": 7,
+    "name": "Classic Acai Bowl",
+    "category": "smoothie-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "1 packet Frozen acai puree (100g)",
+      "1 Frozen banana",
+      "1/2 cup Frozen mixed berries",
+      "1 scoop Vanilla whey protein",
+      "1/4 cup Almond milk (unsweetened)",
+      "2 tbsp Granola, fresh berries, and banana slices (for topping)"
+    ],
+    "instructions": [
+      "Add frozen acai puree, banana, mixed berries, vanilla whey, and almond milk to blender",
+      "Blend on high until thick and creamy",
+      "Should be thicker than a regular smoothie",
+      "Pour into a bowl",
+      "Top with granola, fresh berries, and banana slices",
+      "Optional: Add honey drizzle, coconut flakes, or chia seeds",
+      "Serve immediately with a spoon"
+    ],
+    "nutrition": {
+      "totalCalories": 350,
+      "perServingCalories": 350,
+      "totalProtein": 30,
+      "perServingProtein": 30,
+      "totalCarbs": 50,
+      "perServingCarbs": 50,
+      "totalFat": 6,
+      "perServingFat": 6,
+      "perServingFiber": 9,
+      "totalFiber": 9
+    },
+    "cookingTime": "10 minutes"
+  },
+  {
+    "id": 8,
+    "name": "Chocolate Acai Bowl",
+    "category": "smoothie-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "1 packet Frozen acai puree (100g)",
+      "1 Frozen banana",
+      "2 tbsp Cocoa powder",
+      "1 scoop Chocolate whey protein",
+      "1/2 cup Almond milk (unsweetened)",
+      "2 tbsp Chocolate chips, cacao nibs, and banana slices (for topping)"
+    ],
+    "instructions": [
+      "Add frozen acai puree, banana, cocoa powder, chocolate whey, and almond milk to blender",
+      "Blend on high until thick and creamy",
+      "Should be thicker than a regular smoothie",
+      "Pour into a bowl",
+      "Top with chocolate chips, cacao nibs, and banana slices",
+      "Optional: Add coconut flakes, granola, or strawberry slices",
+      "Serve immediately with a spoon"
+    ],
+    "nutrition": {
+      "totalCalories": 380,
+      "perServingCalories": 380,
+      "totalProtein": 32,
+      "perServingProtein": 32,
+      "totalCarbs": 52,
+      "perServingCarbs": 52,
+      "totalFat": 9,
+      "perServingFat": 9,
+      "perServingFiber": 10,
+      "totalFiber": 10
+    },
+    "cookingTime": "10 minutes"
+  },
+  {
+    "id": 9,
+    "name": "Chocolate Peanut Butter Acai Bowl",
+    "category": "smoothie-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "1 packet Frozen acai puree (100g)",
+      "1 Frozen banana",
+      "2 tbsp Peanut butter",
+      "2 tbsp Cocoa powder",
+      "1 scoop Chocolate whey protein",
+      "1/2 cup Almond milk (unsweetened)",
+      "2 tbsp Chocolate chips, crushed peanuts, and banana slices (for topping)"
+    ],
+    "instructions": [
+      "Add frozen acai puree, banana, peanut butter, cocoa powder, chocolate whey, and almond milk to blender",
+      "Blend on high until thick and creamy",
+      "Should be thicker than a regular smoothie",
+      "Pour into a bowl",
+      "Top with chocolate chips, crushed peanuts, and banana slices",
+      "Optional: Add granola, coconut flakes, or PB drizzle",
+      "Serve immediately with a spoon"
+    ],
+    "nutrition": {
+      "totalCalories": 480,
+      "perServingCalories": 480,
+      "totalProtein": 36,
+      "perServingProtein": 36,
+      "totalCarbs": 54,
+      "perServingCarbs": 54,
+      "totalFat": 16,
+      "perServingFat": 16,
+      "perServingFiber": 11,
+      "totalFiber": 11
+    },
+    "cookingTime": "10 minutes"
+  },
+  {
+    "id": 10,
+    "name": "Tropical Acai Bowl",
+    "category": "smoothie-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "1 packet Frozen acai puree (100g)",
+      "1/2 cup Frozen mango",
+      "1/2 cup Frozen pineapple",
+      "1/2 Frozen banana",
+      "1 scoop Vanilla whey protein",
+      "1/4 cup Coconut milk (unsweetened)",
+      "2 tbsp Fresh mango, pineapple, coconut flakes, and granola (for topping)"
+    ],
+    "instructions": [
+      "Add frozen acai puree, mango, pineapple, banana, vanilla whey, and coconut milk to blender",
+      "Blend on high until thick and creamy",
+      "Should be thicker than a regular smoothie",
+      "Pour into a bowl",
+      "Top with fresh mango, pineapple, coconut flakes, and granola",
+      "Optional: Add kiwi slices, passion fruit, or chia seeds",
+      "Serve immediately with a spoon"
+    ],
+    "nutrition": {
+      "totalCalories": 370,
+      "perServingCalories": 370,
+      "totalProtein": 30,
+      "perServingProtein": 30,
+      "totalCarbs": 55,
+      "perServingCarbs": 55,
+      "totalFat": 8,
+      "perServingFat": 8,
+      "perServingFiber": 9,
+      "totalFiber": 9
+    },
+    "cookingTime": "10 minutes"
+  },
+  {
+    "id": 11,
+    "name": "Green Acai Bowl",
+    "category": "smoothie-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "1 packet Frozen acai puree (100g)",
+      "1 Frozen banana",
+      "1 cup Fresh spinach",
+      "1/2 cup Frozen pineapple",
+      "1 scoop Vanilla whey protein",
+      "1/2 cup Almond milk (unsweetened)",
+      "2 tbsp Granola, kiwi slices, and chia seeds (for topping)"
+    ],
+    "instructions": [
+      "Add frozen acai puree, banana, spinach, pineapple, vanilla whey, and almond milk to blender",
+      "Blend on high until thick and creamy",
+      "Should be thicker than a regular smoothie",
+      "Pour into a bowl",
+      "Top with granola, kiwi slices, and chia seeds",
+      "Optional: Add fresh berries, hemp hearts, or coconut flakes",
+      "Serve immediately with a spoon"
+    ],
+    "nutrition": {
+      "totalCalories": 360,
+      "perServingCalories": 360,
+      "totalProtein": 31,
+      "perServingProtein": 31,
+      "totalCarbs": 52,
+      "perServingCarbs": 52,
+      "totalFat": 7,
+      "perServingFat": 7,
+      "perServingFiber": 11,
+      "totalFiber": 11
+    },
+    "cookingTime": "10 minutes"
+  },
+  {
+    "id": 12,
+    "name": "Peanut Butter Banana Acai Bowl",
+    "category": "smoothie-bowls",
+    "type": "individual",
+    "servings": 1,
+    "ingredients": [
+      "1 packet Frozen acai puree (100g)",
+      "2 Frozen bananas",
+      "2 tbsp Peanut butter",
+      "1 scoop Vanilla whey protein",
+      "1/2 cup Almond milk (unsweetened)",
+      "2 tbsp Sliced banana, crushed peanuts, and granola (for topping)"
+    ],
+    "instructions": [
+      "Add frozen acai puree, bananas, peanut butter, vanilla whey, and almond milk to blender",
+      "Blend on high until thick and creamy",
+      "Should be thicker than a regular smoothie",
+      "Pour into a bowl",
+      "Top with sliced banana, crushed peanuts, and granola",
+      "Optional: Add honey drizzle, chia seeds, or coconut flakes",
+      "Serve immediately with a spoon"
+    ],
+    "nutrition": {
+      "totalCalories": 450,
+      "perServingCalories": 450,
+      "totalProtein": 34,
+      "perServingProtein": 34,
+      "totalCarbs": 58,
+      "perServingCarbs": 58,
+      "totalFat": 14,
+      "perServingFat": 14,
+      "perServingFiber": 11,
+      "totalFiber": 11
+    },
+    "cookingTime": "10 minutes"
+  }
+]
