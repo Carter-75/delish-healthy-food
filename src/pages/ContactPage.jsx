@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useTheme } from '../hooks/useTheme';
 import { Mail, MessageSquare, Sparkles, Send, Check } from 'lucide-react';
 
@@ -6,6 +6,11 @@ const ContactPage = () => {
   const { theme } = useTheme();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -205,8 +210,9 @@ const ContactPage = () => {
         </div>
       </div>
 
-      {/* Full viewport blur overlay - renders AFTER content but z-index keeps it behind */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0" style={{ visibility: 'hidden', animation: 'showOverlay 0.1s 0.1s forwards' }}>
+      {/* Full viewport blur overlay - only render after client-side mount */}
+      {isMounted && (
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
         {/* Base backdrop blur */}
         <div className="absolute inset-0 bg-slate-900/20" style={{ backdropFilter: 'blur(8px)' }}></div>
         
@@ -249,6 +255,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
+      )}
     </div>
   );
 };
