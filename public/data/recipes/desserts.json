@@ -1449,5 +1449,40 @@
       "Serve with hazelnut spread for dipping"
     ],
     "cookingTime": "1 hour (includes freezing time)"
+  },
+  {
+    "id": 36,
+    "name": "Peanut Butter Rice Crispy Treats",
+    "category": "desserts",
+    "description": "Classic Rice Crispy Treats with Chocolate Topping",
+    "servings": 6,
+    "ingredients": [
+      "3 cups rice cereal",
+      "¼ cup peanut butter",
+      "2 cups mini marshmallows",
+      "⅔ cup chocolate chips (melted)",
+      "2 tbsp coconut oil"
+    ],
+    "nutrition": {
+      "totalCalories": 1200,
+      "perServingCalories": 200,
+      "totalProtein": 18,
+      "perServingProtein": 3,
+      "totalCarbs": 160,
+      "perServingCarbs": 27,
+      "totalFiber": 5,
+      "perServingFiber": 1,
+      "totalFat": 58,
+      "perServingFat": 9.5
+    },
+    "instructions": [
+      "Melt coconut oil, peanut butter, and marshmallows in a medium pot over low heat",
+      "Stir until fully melted and smooth",
+      "Add rice cereal and mix until evenly coated",
+      "Press mixture into a loaf pan lined with parchment paper",
+      "Spread melted chocolate chips evenly over the top",
+      "Refrigerate until set, about 1 hour"
+    ],
+    "cookingTime": "1 hour 15 minutes (includes chilling)"
   }
 ]
