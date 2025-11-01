@@ -1484,5 +1484,40 @@
       "Refrigerate until set, about 1 hour"
     ],
     "cookingTime": "1 hour 15 minutes (includes chilling)"
+  },
+  {
+    "id": 37,
+    "name": "3-Ingredient Greek Yogurt Brownies",
+    "category": "desserts",
+    "description": "Low-Calorie, High-Protein Brownies",
+    "servings": 6,
+    "ingredients": [
+      "¾ cup Greek yogurt (plain, nonfat or 2%)",
+      "1 large egg",
+      "½ cup red cacao powder (unsweetened)",
+      "2 tbsp unsweetened chocolate chips (for topping)"
+    ],
+    "nutrition": {
+      "totalCalories": 354,
+      "perServingCalories": 59,
+      "totalProtein": 32,
+      "perServingProtein": 5.3,
+      "totalCarbs": 14,
+      "perServingCarbs": 2.3,
+      "totalFiber": 5,
+      "perServingFiber": 0.8,
+      "totalFat": 18,
+      "perServingFat": 3
+    },
+    "instructions": [
+      "Preheat oven to 350°F and line a small baking dish (about 8x4 inches) with parchment paper",
+      "In a bowl, whisk together Greek yogurt and egg until smooth",
+      "Add cacao powder and mix until thick and smooth",
+      "Pour batter into the prepared dish and spread evenly",
+      "Sprinkle chocolate chips evenly over the top",
+      "Bake for 18–22 minutes, or until a toothpick comes out mostly clean",
+      "Cool completely before slicing into 6 brownies"
+    ],
+    "cookingTime": "30-35 minutes"
   }
 ]
