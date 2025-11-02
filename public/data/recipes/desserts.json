@@ -1519,5 +1519,86 @@
       "Cool completely before slicing into 6 brownies"
     ],
     "cookingTime": "30-35 minutes"
+  },
+  {
+    "id": 38,
+    "name": "Mini Egg Protein Cookies",
+    "category": "desserts",
+    "description": "Low-Calorie Protein Cookies",
+    "servings": 16,
+    "ingredients": [
+      "80g all-purpose flour",
+      "50g vanilla protein powder (PEScience or similar)",
+      "100g brown monk fruit sweetener (Lakanto)",
+      "2g baking soda",
+      "Pinch of salt",
+      "40g light butter or margarine",
+      "40ml unsweetened almond milk",
+      "5ml vanilla extract",
+      "45g mini eggs, chopped"
+    ],
+    "nutrition": {
+      "totalCalories": 848,
+      "perServingCalories": 53,
+      "totalProtein": 48,
+      "perServingProtein": 3,
+      "totalCarbs": 96,
+      "perServingCarbs": 6,
+      "totalFiber": 10,
+      "perServingFiber": 0.6,
+      "totalFat": 32,
+      "perServingFat": 2
+    },
+    "instructions": [
+      "Mix all dry ingredients in a bowl",
+      "Add wet ingredients and mix until combined",
+      "Fold in chopped mini eggs last",
+      "Chill the dough in the fridge for 30 minutes to prevent spreading",
+      "Preheat oven to 325°F",
+      "Line a baking sheet with parchment paper and divide dough into 16 cookies",
+      "Bake for 7 minutes, then cool for 20+ minutes to set"
+    ],
+    "cookingTime": "1 hour (includes chilling time)"
+  },
+  {
+    "id": 39,
+    "name": "Chocolate Chip Skillet Cookie",
+    "category": "desserts",
+    "description": "High-Protein Skillet Cookie",
+    "servings": 2,
+    "ingredients": [
+      "50g all-purpose flour",
+      "8g coconut flour",
+      "25g powdered peanut butter",
+      "35g zero-calorie sweetener",
+      "3g baking soda",
+      "1 egg",
+      "1 egg white",
+      "100g nonfat Greek yogurt",
+      "3ml vanilla extract",
+      "10g chocolate chips",
+      "Optional: sprinkle of sea salt"
+    ],
+    "nutrition": {
+      "totalCalories": 494,
+      "perServingCalories": 247,
+      "totalProtein": 37,
+      "perServingProtein": 18.5,
+      "totalCarbs": 56.5,
+      "perServingCarbs": 28,
+      "totalFiber": 5,
+      "perServingFiber": 2.5,
+      "totalFat": 12.5,
+      "perServingFat": 6.3
+    },
+    "instructions": [
+      "Preheat oven to 350°F",
+      "Mix all ingredients except chocolate chips in a bowl until smooth",
+      "Spray a 6-inch cast iron skillet with cooking spray and pour in the batter",
+      "Spread evenly with a spoon and top with chocolate chips (and sea salt if using)",
+      "Bake 17–18 minutes for gooey texture or 20 minutes for cakey",
+      "Cool slightly before serving"
+    ],
+    "cookingTime": "25-30 minutes"
   }
 ]
