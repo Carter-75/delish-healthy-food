@@ -755,5 +755,43 @@
       "Cool completely before removing; they firm up as they cool"
     ],
     "cookingTime": "30-35 minutes"
+  },
+  {
+    "id": 21,
+    "name": "High Protein Cinnamon Bread Sticks",
+    "category": "protein-snacks",
+    "description": "Low-Calorie Protein Cinnamon Bread",
+    "servings": 6,
+    "ingredients": [
+      "½ cup oats",
+      "½ scoop vanilla ice cream protein powder (EHP Labs or similar)",
+      "1 egg white",
+      "⅔ cup water",
+      "1 tsp stevia",
+      "1 tsp baking soda",
+      "1 tbsp cinnamon"
+    ],
+    "nutrition": {
+      "totalCalories": 190,
+      "perServingCalories": 32,
+      "totalProtein": 12,
+      "perServingProtein": 2,
+      "totalCarbs": 31,
+      "perServingCarbs": 5,
+      "totalFiber": 3,
+      "perServingFiber": 0.5,
+      "totalFat": 3,
+      "perServingFat": 0.5
+    },
+    "instructions": [
+      "Preheat oven to 390°F",
+      "Blend all ingredients except cinnamon until smooth",
+      "Pour half the batter into a lightly lined loaf pan",
+      "Sprinkle half the cinnamon on top and swirl it in with a knife",
+      "Add the remaining batter on top, then sprinkle the rest of the cinnamon and swirl again",
+      "Bake for 12 minutes, then let rest before serving",
+      "Slice into 6 pieces if desired"
+    ],
+    "cookingTime": "20 minutes"
   }
 ]
