@@ -3,7 +3,7 @@
   "name": "High Protein Oreo Fluff",
   "category": "protein-snacks",
   "description": "Creamy High-Protein Dessert Snack",
-  "servings": 2,
+  "servings": 1,
   "ingredients": [
     "1 cup vanilla Greek yogurt (nonfat or low-fat)",
     "1 scoop vanilla protein powder",
@@ -13,15 +13,15 @@
   ],
   "nutrition": {
     "totalCalories": 294,
-    "perServingCalories": 147,
+    "perServingCalories": 294,
     "totalProtein": 34,
-    "perServingProtein": 17,
+    "perServingProtein": 34,
     "totalCarbs": 26,
-    "perServingCarbs": 13,
+    "perServingCarbs": 26,
     "totalFiber": 1,
-    "perServingFiber": 0.5,
+    "perServingFiber": 1,
     "totalFat": 6,
-    "perServingFat": 3
+    "perServingFat": 6
   },
   "instructions": [
     "In a bowl, mix Greek yogurt, protein powder, and sugar-free Jello mix until smooth and thick",
