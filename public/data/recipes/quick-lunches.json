@@ -475,5 +475,43 @@
       "Top with bun and serve immediately"
     ],
     "cookingTime": "20-25 minutes"
+  },
+  {
+    "id": 13,
+    "name": "High Protein Mac and Cheese",
+    "category": "quick-lunches",
+    "description": "Creamy High-Protein Pasta",
+    "servings": 2,
+    "ingredients": [
+      "1 cup cottage cheese",
+      "¼ cup milk (any kind)",
+      "½ tsp garlic powder",
+      "½ tsp onion powder",
+      "¼ tsp paprika",
+      "Salt and pepper to taste",
+      "2 oz Goodles high-protein noodles (or any protein pasta)",
+      "¼ cup shredded cheese of choice (cheddar, mozzarella, or blend)"
+    ],
+    "nutrition": {
+      "totalCalories": 420,
+      "perServingCalories": 210,
+      "totalProtein": 44,
+      "perServingProtein": 22,
+      "totalCarbs": 28,
+      "perServingCarbs": 14,
+      "totalFiber": 4,
+      "perServingFiber": 2,
+      "totalFat": 14,
+      "perServingFat": 7
+    },
+    "instructions": [
+      "Cook pasta separately according to package directions; drain and set aside",
+      "In a blender, combine cottage cheese, milk, and seasonings; blend until smooth and creamy",
+      "Pour blended sauce into a saucepan over low heat",
+      "Add shredded cheese and whisk until melted and smooth",
+      "Fold in the cooked pasta and stir until fully coated and creamy",
+      "Serve warm"
+    ],
+    "cookingTime": "15-20 minutes"
   }
 ]
