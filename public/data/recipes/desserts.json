@@ -1647,5 +1647,49 @@
       "Let the bread cool in the pan for 30 minutes, then lift out and cool completely before slicing"
     ],
     "cookingTime": "1 hour 30 minutes"
+  },
+  {
+    "id": 41,
+    "name": "Flourless Fudge Pumpkin Brownies",
+    "category": "desserts",
+    "description": "Rich Flourless Brownies with Pumpkin",
+    "servings": 9,
+    "ingredients": [
+      "1 cup canned pumpkin purée",
+      "1/2 cup peanut butter or almond butter",
+      "1/4 cup maple syrup",
+      "1/4 cup brown coconut sugar",
+      "2 eggs",
+      "1/2 teaspoon baking soda",
+      "Dash of pumpkin spice",
+      "3/4 cup cocoa powder",
+      "Pinch of salt",
+      "Dash of vanilla extract",
+      "1/2 cup chocolate chips",
+      "Flaky salt for sprinkling (optional)"
+    ],
+    "nutrition": {
+      "totalCalories": 1916,
+      "perServingCalories": 213,
+      "totalProtein": 54,
+      "perServingProtein": 6,
+      "totalCarbs": 217,
+      "perServingCarbs": 24,
+      "totalFiber": 27,
+      "perServingFiber": 3,
+      "totalFat": 104,
+      "perServingFat": 12
+    },
+    "instructions": [
+      "Preheat oven to 350°F and grease or line a baking dish with parchment paper",
+      "Add the pumpkin purée, peanut or almond butter, maple syrup, coconut sugar, eggs, baking soda, pumpkin spice, cocoa powder, salt, and vanilla extract to a large mixing bowl",
+      "Mix until smooth and well combined",
+      "Fold in the chocolate chips",
+      "Pour the batter into the prepared baking dish and spread evenly",
+      "Bake for 30 minutes, or until a toothpick inserted in the center comes out mostly clean",
+      "Let cool before slicing",
+      "Sprinkle with flaky salt if desired"
+    ],
+    "cookingTime": "40-45 minutes"
   }
 ]
