@@ -1691,5 +1691,58 @@
       "Sprinkle with flaky salt if desired"
     ],
     "cookingTime": "40-45 minutes"
+  },
+  {
+    "id": 42,
+    "name": "High Protein Chocolate Cookie Dough Banana Bread",
+    "category": "desserts",
+    "description": "Protein-Packed Banana Bread with Cookie Dough Layer",
+    "servings": 8,
+    "ingredients": [
+      "1 cup mashed ripe bananas (about 2 medium)",
+      "2 large eggs",
+      "1/3 cup Greek yogurt (non-fat or low-fat)",
+      "1/4 cup unsweetened almond milk",
+      "1/4 cup maple syrup or sugar-free syrup",
+      "1 teaspoon vanilla extract",
+      "1 cup oat flour (or finely ground oats)",
+      "1/2 cup chocolate protein powder (whey or plant-based)",
+      "1/4 cup unsweetened cocoa powder",
+      "1 teaspoon baking powder",
+      "1/2 teaspoon baking soda",
+      "1/4 teaspoon salt",
+      "1/4 cup mini dark chocolate chips (optional)",
+      "1/2 cup vanilla protein powder (cookie dough layer)",
+      "2 tablespoons almond flour (cookie dough layer)",
+      "2 tablespoons powdered peanut butter/PB2 (cookie dough layer)",
+      "2 tablespoons unsweetened almond milk (cookie dough layer)",
+      "1 tablespoon sugar-free maple syrup (cookie dough layer)",
+      "1 tablespoon mini chocolate chips (cookie dough layer)"
+    ],
+    "nutrition": {
+      "totalCalories": 1420,
+      "perServingCalories": 178,
+      "totalProtein": 136,
+      "perServingProtein": 17,
+      "totalCarbs": 114,
+      "perServingCarbs": 14,
+      "totalFiber": 18,
+      "perServingFiber": 2,
+      "totalFat": 36,
+      "perServingFat": 5
+    },
+    "instructions": [
+      "Preheat oven to 350°F and line a 9×5-inch loaf pan with parchment paper; lightly spray with oil",
+      "In a large bowl, whisk together the bananas, eggs, Greek yogurt, almond milk, syrup, and vanilla until smooth",
+      "In another bowl, mix the oat flour, chocolate protein powder, cocoa powder, baking powder, baking soda, and salt",
+      "Add the dry mixture to the wet ingredients and stir until just combined; fold in chocolate chips if using",
+      "In a small bowl, mix vanilla protein powder, almond flour, powdered peanut butter, almond milk, maple syrup, and mini chocolate chips until a soft dough forms (add more almond milk if needed)",
+      "Pour half the banana batter into the loaf pan",
+      "Crumble or spread the cookie dough layer on top",
+      "Pour remaining batter over it and smooth the top",
+      "Bake for 40–45 minutes, or until a toothpick inserted in the center comes out mostly clean",
+      "Let cool 15 minutes in the pan, then remove and cool fully before slicing"
+    ],
+    "cookingTime": "1 hour"
   }
 ]
