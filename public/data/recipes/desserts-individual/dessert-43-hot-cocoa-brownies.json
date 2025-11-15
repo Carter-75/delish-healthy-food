@@ -1,0 +1,46 @@
+{
+  "id": 43,
+  "name": "Hot Cocoa Brownies",
+  "category": "desserts",
+  "description": "Rich Brownies with Toasted Marshmallow Topping",
+  "servings": 9,
+  "ingredients": [
+    "3 eggs",
+    "3/4 cup cocoa powder",
+    "3/4 teaspoon salt",
+    "1/4 teaspoon espresso powder",
+    "3/4 teaspoon baking powder",
+    "1 tablespoon milk powder (optional)",
+    "2 teaspoons vanilla extract",
+    "1 packet hot cocoa mix",
+    "3/4 cup unsalted butter (melted)",
+    "1 1/4 cups sugar",
+    "1 cup + 1 tablespoon all-purpose flour",
+    "1/2 cup chocolate chips",
+    "2 cups mini marshmallows"
+  ],
+  "nutrition": {
+    "totalCalories": 4730,
+    "perServingCalories": 526,
+    "totalProtein": 53,
+    "perServingProtein": 6,
+    "totalCarbs": 648,
+    "perServingCarbs": 72,
+    "totalFiber": 34,
+    "perServingFiber": 4,
+    "totalFat": 226,
+    "perServingFat": 25
+  },
+  "instructions": [
+    "Preheat oven to 350°F and grease a 9×9-inch pan",
+    "In a bowl, whisk together the eggs, cocoa powder, salt, espresso powder, baking powder, hot cocoa mix, milk powder, and vanilla",
+    "In a separate bowl, cream the butter and sugar together until smooth; microwave briefly in intervals until the sugar dissolves and mixture becomes glossy",
+    "Combine the egg mixture with the butter mixture and stir gently until just combined (do not overmix)",
+    "Add the flour and mix until barely combined",
+    "Fold in the chocolate chips",
+    "Pour batter into the prepared pan and bake for 25 minutes",
+    "Remove from the oven, sprinkle marshmallows evenly over the top, and return to bake for an additional 10–15 minutes, or until marshmallows are lightly toasted and brownies are done",
+    "Cool before slicing"
+  ],
+  "cookingTime": "50-55 minutes"
+}
