@@ -513,5 +513,50 @@
       "Serve warm"
     ],
     "cookingTime": "15-20 minutes"
+  },
+  {
+    "id": 14,
+    "name": "Buffalo Chicken Bacon Quesadillas",
+    "category": "quick-lunches",
+    "description": "High-Protein Buffalo Chicken Quesadillas",
+    "servings": 10,
+    "ingredients": [
+      "40 oz raw boneless skinless chicken breast",
+      "1 cup buffalo sauce, divided",
+      "1 Tbsp garlic salt",
+      "1 Tbsp black pepper",
+      "1 Tbsp onion powder",
+      "5 Tbsp ranch seasoning, divided",
+      "½ cup bacon bits or cooked crumbled bacon",
+      "¼ cup chopped fresh chives",
+      "6 cups fat-free shredded mozzarella",
+      "10 low-calorie high-fiber tortillas (50-60 cal each)",
+      "2 cups fat-free cottage cheese (for buffalo sauce)",
+      "6 oz reduced-fat cream cheese (for buffalo sauce)",
+      "½ cup buffalo sauce (for buffalo sauce)",
+      "½ cup fat-free milk (for buffalo sauce)",
+      "½ tsp black pepper (for buffalo sauce)"
+    ],
+    "nutrition": {
+      "totalCalories": 4200,
+      "perServingCalories": 420,
+      "totalProtein": 686,
+      "perServingProtein": 69,
+      "totalCarbs": 200,
+      "perServingCarbs": 20,
+      "totalFat": 103,
+      "perServingFat": 10
+    },
+    "instructions": [
+      "Add raw chicken, ½ cup buffalo sauce, garlic salt, black pepper, onion powder, and 2 Tbsp ranch seasoning to a slow cooker",
+      "Cook on HIGH 2-3 hours or LOW 5-6 hours until shreddable",
+      "Shred chicken in the pot with two forks",
+      "Blend cottage cheese, cream cheese, ½ cup buffalo sauce, milk, and black pepper until smooth for the buffalo sauce",
+      "Pour sauce into slow cooker; add most of the bacon bits and chives (save a little for topping); mix everything",
+      "On one half of a tortilla: add ~⅓ cup mozzarella → heaping ¾ cup buffalo chicken mix → another ~⅓ cup mozzarella + extra bacon/chives → fold over",
+      "Cook in nonstick pan over medium heat 3-4 min per side until golden and melty (or air-fry 375°F for 7-9 min, flip once)",
+      "Wrap in foil for meal prep and freeze"
+    ],
+    "cookingTime": "3-6 hours (slow cooker time)"
   }
 ]
