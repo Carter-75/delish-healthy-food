@@ -1,0 +1,36 @@
+{
+  "id": 25,
+  "name": "Healthy Protein Waffles",
+  "category": "protein-snacks",
+  "description": "High-Protein Waffles with Greek Yogurt",
+  "servings": 3,
+  "ingredients": [
+    "1 ½ cups old-fashioned rolled oats",
+    "1 cup liquid egg whites",
+    "1 cup nonfat plain Greek yogurt",
+    "1 tsp baking powder",
+    "1 ½ tsp vanilla extract",
+    "1 tsp ground cinnamon"
+  ],
+  "nutrition": {
+    "totalCalories": 570,
+    "perServingCalories": 190,
+    "totalProtein": 54,
+    "perServingProtein": 18,
+    "totalCarbs": 78,
+    "perServingCarbs": 26,
+    "totalFiber": 12,
+    "perServingFiber": 4,
+    "totalFat": 9,
+    "perServingFat": 3
+  },
+  "instructions": [
+    "Add everything to a blender",
+    "Blend until completely smooth",
+    "Preheat waffle maker and spray with nonstick spray",
+    "Pour batter to make 3 full Belgian-style waffles",
+    "Cook until golden and crisp",
+    "Top however you want and enjoy"
+  ],
+  "cookingTime": "15-20 minutes"
+}
