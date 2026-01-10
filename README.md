@@ -32,13 +32,12 @@ npm run build
 
 ## Environment Configuration
 
-Copy `.env.example` to `.env` and provide your AdSense values when you are ready to enable the banner slot:
+Copy `.env.example` to `.env` and provide your AdSense values when you are ready to enable auto ads:
 
 - `VITE_ADSENSE_CLIENT_ID` - your AdSense client identifier (for example `ca-pub-xxxxxxxxxxxxxxxx`)
-- `VITE_ADSENSE_SLOT_ID` - the AdSense slot identifier for the banner you want to render
 - `VITE_ADSENSE_TEST_MODE` - optional; leave as `on` for safe local testing or remove for production
 
-If the variables are missing or the script fails to load, the ad space stays hidden and a descriptive error appears in the browser console to help with setup.
+If the variables are missing or the script fails to load, auto ads remain disabled and a descriptive error appears in the browser console to help with setup.
 
 ## Deployment
 
