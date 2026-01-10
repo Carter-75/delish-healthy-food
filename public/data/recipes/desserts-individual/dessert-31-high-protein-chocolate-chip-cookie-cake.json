@@ -1,0 +1,49 @@
+{
+  "id": 31,
+  "name": "78-Calorie High-Protein Chocolate Chip Cookie Cake",
+  "category": "desserts",
+  "description": "High-Protein Cookie Cake",
+  "servings": 10,
+  "ingredients": [
+    "½ cup plain or vanilla non-fat Greek yogurt",
+    "1 medium egg",
+    "¼ cup liquid egg whites",
+    "1 tbsp light butter, softened",
+    "1 tsp vanilla extract (optional)",
+    "¼ cup brown-sugar substitute (e.g. Swerve)",
+    "¼ cup all-purpose flour",
+    "1 scoop vanilla casein or whey/casein-blend protein powder",
+    "½ cup oat flour",
+    "¾ cup granular sugar substitute (e.g. Swerve)",
+    "⅔ tsp baking soda",
+    "½ tsp salt",
+    "1½ tbsp chocolate chips",
+    "Extra chocolate chips (optional)",
+    "Vanilla frosting for decoration (optional)"
+  ],
+  "nutrition": {
+    "totalCalories": 775,
+    "perServingCalories": 78,
+    "totalProtein": 60,
+    "perServingProtein": 6,
+    "totalCarbs": 110,
+    "perServingCarbs": 11,
+    "netCarbsPerServing": 9,
+    "totalFiber": 20,
+    "perServingFiber": 2,
+    "totalFat": 20,
+    "perServingFat": 2
+  },
+  "instructions": [
+    "Preheat oven to 350°F",
+    "Mix all wet ingredients in one bowl until smooth",
+    "Mix all dry ingredients in another bowl",
+    "Combine wet and dry mixtures; stir until even, then fold in chocolate chips",
+    "Chill dough in fridge for 15 minutes",
+    "Line or grease a round cake pan",
+    "Add dough and flatten evenly with damp hands or spatula",
+    "Bake 18–22 minutes at 350°F until slightly underdone in the center",
+    "Cool 15 minutes, optionally frost, then slice into 10 pieces"
+  ],
+  "cookingTime": "40-45 minutes"
+}

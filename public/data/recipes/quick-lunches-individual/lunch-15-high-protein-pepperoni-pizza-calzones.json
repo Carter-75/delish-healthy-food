@@ -1,0 +1,44 @@
+{
+  "id": 15,
+  "name": "High Protein Pepperoni Pizza Calzones",
+  "category": "quick-lunches",
+  "description": "Greek Yogurt Dough Pizza Calzones",
+  "servings": 6,
+  "ingredients": [
+    "3 1/4 cups all-purpose flour",
+    "2 cups nonfat Greek yogurt",
+    "1 teaspoon salt",
+    "1 1/2 cups low-fat shredded mozzarella cheese",
+    "6 1/3 oz turkey pepperoni (or beef pepperoni)",
+    "1/2 cup pizza sauce",
+    "Cooking spray",
+    "Dried parsley (to taste)"
+  ],
+  "nutrition": {
+    "totalCalories": 2190,
+    "perServingCalories": 365,
+    "totalProtein": 186,
+    "perServingProtein": 31,
+    "totalCarbs": 78,
+    "perServingCarbs": 13,
+    "totalFiber": 6,
+    "perServingFiber": 1,
+    "totalFat": 54,
+    "perServingFat": 9
+  },
+  "instructions": [
+    "Preheat oven to 400°F or preheat air fryer to 375°F",
+    "In a large bowl, combine the flour, Greek yogurt, and salt; mix until clumps form",
+    "Knead the mixture by hand until a smooth dough ball forms",
+    "Transfer dough to a lightly floured surface and roll out evenly",
+    "Slice the dough into 6 equal portions",
+    "Flatten each portion into a circular disc",
+    "Spoon pizza sauce onto the center of each disc",
+    "Top with shredded cheese and pepperoni",
+    "Fold the dough over to form calzones and seal the edges",
+    "Lightly spray the tops with cooking spray and sprinkle with parsley",
+    "Bake for 12–15 minutes until golden brown, or air fry for 8–10 minutes until crisp",
+    "Let cool slightly before serving"
+  ],
+  "cookingTime": "30-35 minutes"
+}

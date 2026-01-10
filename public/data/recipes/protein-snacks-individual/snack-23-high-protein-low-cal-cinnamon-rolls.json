@@ -1,0 +1,42 @@
+{
+  "id": 23,
+  "name": "High Protein Low Cal Cinnamon Rolls",
+  "category": "protein-snacks",
+  "description": "Super Low-Calorie High-Protein Cinnamon Rolls",
+  "servings": 3,
+  "ingredients": [
+    "200g liquid egg whites (about 7 fl oz)",
+    "Splash of vanilla extract",
+    "2 scoops vanilla protein powder (Legion or similar)",
+    "2 teaspoons monkfruit sweetener (or to taste)",
+    "Cinnamon (as much as desired for filling)",
+    "1–2 teaspoons brown-style monkfruit sweetener (for filling)",
+    "5g vanilla protein powder (for frosting)",
+    "Monkfruit sweetener to taste (for frosting)",
+    "Water (add slowly until drizzling consistency for frosting)"
+  ],
+  "nutrition": {
+    "totalCalories": 446,
+    "perServingCalories": 149,
+    "totalProtein": 72,
+    "perServingProtein": 24,
+    "totalCarbs": 6,
+    "perServingCarbs": 2,
+    "totalFiber": 0,
+    "perServingFiber": 0,
+    "totalFat": 2,
+    "perServingFat": 1
+  },
+  "instructions": [
+    "Preheat oven to 350°F and line a small sheet tray or baking dish with parchment",
+    "Pour the egg whites into the tray so they form a thin, even layer",
+    "Bake the egg white sheet for 30 minutes, or until set and flexible (not crispy)",
+    "Remove from the tray and let cool slightly",
+    "Sprinkle the egg white sheet evenly with cinnamon and brown-style monkfruit",
+    "Starting at one edge, roll the sheet tightly to form a log",
+    "Slice into rolls of desired thickness",
+    "In a small bowl, whisk the 5g protein powder, monkfruit, and just enough water to make a smooth frosting",
+    "Drizzle the frosting over the rolls and serve warm"
+  ],
+  "cookingTime": "40-45 minutes"
+}

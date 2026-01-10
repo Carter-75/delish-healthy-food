@@ -1,0 +1,42 @@
+{
+  "id": 24,
+  "name": "Protein Cookie Dough Bark",
+  "category": "protein-snacks",
+  "description": "No-Bake Protein Cookie Dough with Chocolate Ganache",
+  "servings": 9,
+  "ingredients": [
+    "1/2 cup almond flour",
+    "1/2 cup vanilla protein powder",
+    "1/4 cup cashew butter",
+    "1/4 cup pure maple syrup",
+    "1/2 tablespoon melted coconut oil",
+    "1 teaspoon vanilla extract",
+    "1/4 cup mini chocolate chips (semi-sweet)",
+    "1/4 cup dark chocolate chips (for ganache)",
+    "1/4 cup creamy peanut butter (for ganache)",
+    "1 teaspoon coconut oil (for ganache)"
+  ],
+  "nutrition": {
+    "totalCalories": 2066,
+    "perServingCalories": 229,
+    "totalProtein": 90,
+    "perServingProtein": 10,
+    "totalCarbs": 145,
+    "perServingCarbs": 16,
+    "totalFiber": 11,
+    "perServingFiber": 1,
+    "totalFat": 132,
+    "perServingFat": 15
+  },
+  "instructions": [
+    "Combine the almond flour, protein powder, cashew butter, maple syrup, melted coconut oil, and vanilla extract; mix until smooth",
+    "Fold in the mini chocolate chips",
+    "Press the dough flat onto a baking sheet lined with parchment paper",
+    "Melt the dark chocolate chips, peanut butter, and coconut oil together until smooth",
+    "Pour and spread the chocolate mixture over the cookie dough layer",
+    "Refrigerate for 2 hours, or freeze for at least 45 minutes to set",
+    "Slice into pieces and enjoy",
+    "Keep stored in the refrigerator"
+  ],
+  "cookingTime": "2 hours 15 minutes (includes chilling time)"
+}

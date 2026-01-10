@@ -1,0 +1,41 @@
+{
+  "id": 39,
+  "name": "Chocolate Chip Skillet Cookie",
+  "category": "desserts",
+  "description": "High-Protein Skillet Cookie",
+  "servings": 2,
+  "ingredients": [
+    "50g all-purpose flour",
+    "8g coconut flour",
+    "25g powdered peanut butter",
+    "35g zero-calorie sweetener",
+    "3g baking soda",
+    "1 egg",
+    "1 egg white",
+    "100g nonfat Greek yogurt",
+    "3ml vanilla extract",
+    "10g chocolate chips",
+    "Optional: sprinkle of sea salt"
+  ],
+  "nutrition": {
+    "totalCalories": 494,
+    "perServingCalories": 247,
+    "totalProtein": 37,
+    "perServingProtein": 18.5,
+    "totalCarbs": 56.5,
+    "perServingCarbs": 28,
+    "totalFiber": 5,
+    "perServingFiber": 2.5,
+    "totalFat": 12.5,
+    "perServingFat": 6.3
+  },
+  "instructions": [
+    "Preheat oven to 350°F",
+    "Mix all ingredients except chocolate chips in a bowl until smooth",
+    "Spray a 6-inch cast iron skillet with cooking spray and pour in the batter",
+    "Spread evenly with a spoon and top with chocolate chips (and sea salt if using)",
+    "Bake 17–18 minutes for gooey texture or 20 minutes for cakey",
+    "Cool slightly before serving"
+  ],
+  "cookingTime": "25-30 minutes"
+}

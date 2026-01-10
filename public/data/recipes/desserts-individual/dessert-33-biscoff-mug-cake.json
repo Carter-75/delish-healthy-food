@@ -1,0 +1,35 @@
+{
+  "id": 33,
+  "name": "Biscoff Mug Cake",
+  "category": "desserts",
+  "description": "Quick Microwave Cookie Butter Cake",
+  "servings": 1,
+  "ingredients": [
+    "4 tbsp Biscoff cookie butter",
+    "¼ cup whole milk",
+    "¼ cup all-purpose flour",
+    "¼ tsp baking powder",
+    "Warm cookie butter for drizzle (optional)",
+    "Crushed Biscoff cookies for topping (optional)"
+  ],
+  "nutrition": {
+    "totalCalories": 440,
+    "perServingCalories": 440,
+    "totalProtein": 7,
+    "perServingProtein": 7,
+    "totalCarbs": 45,
+    "perServingCarbs": 45,
+    "totalFiber": 1,
+    "perServingFiber": 1,
+    "totalFat": 26,
+    "perServingFat": 26
+  },
+  "instructions": [
+    "In a microwave-safe mug, whisk cookie butter and milk until smooth",
+    "Add flour and baking powder and stir until fully combined",
+    "Microwave for 1 minute 15 seconds",
+    "Optionally drizzle with warm cookie butter or crushed Biscoff cookies",
+    "Serve immediately"
+  ],
+  "cookingTime": "3-5 minutes"
+}

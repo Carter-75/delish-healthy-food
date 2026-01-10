@@ -1,0 +1,40 @@
+{
+  "id": 38,
+  "name": "Mini Egg Protein Cookies",
+  "category": "desserts",
+  "description": "Low-Calorie Protein Cookies",
+  "servings": 16,
+  "ingredients": [
+    "80g all-purpose flour",
+    "50g vanilla protein powder (PEScience or similar)",
+    "100g brown monk fruit sweetener (Lakanto)",
+    "2g baking soda",
+    "Pinch of salt",
+    "40g light butter or margarine",
+    "40ml unsweetened almond milk",
+    "5ml vanilla extract",
+    "45g mini eggs, chopped"
+  ],
+  "nutrition": {
+    "totalCalories": 848,
+    "perServingCalories": 53,
+    "totalProtein": 48,
+    "perServingProtein": 3,
+    "totalCarbs": 96,
+    "perServingCarbs": 6,
+    "totalFiber": 10,
+    "perServingFiber": 0.6,
+    "totalFat": 32,
+    "perServingFat": 2
+  },
+  "instructions": [
+    "Mix all dry ingredients in a bowl",
+    "Add wet ingredients and mix until combined",
+    "Fold in chopped mini eggs last",
+    "Chill the dough in the fridge for 30 minutes to prevent spreading",
+    "Preheat oven to 325°F",
+    "Line a baking sheet with parchment paper and divide dough into 16 cookies",
+    "Bake for 7 minutes, then cool for 20+ minutes to set"
+  ],
+  "cookingTime": "1 hour (includes chilling time)"
+}

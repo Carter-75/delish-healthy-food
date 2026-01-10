@@ -673,5 +673,278 @@
       "Store in an airtight container for up to 3 days"
     ],
     "cookingTime": "2-3 hours total (including drying time)"
+  },
+  {
+    "id": 19,
+    "name": "Oreo Dirtcakes",
+    "category": "protein-snacks",
+    "description": "High-Protein Pudding Dessert",
+    "servings": 2,
+    "ingredients": [
+      "1½ cups FAGE 0% Greek yogurt",
+      "1 scoop vanilla protein powder",
+      "1 tbsp sugar-free vanilla pudding mix",
+      "2 Laughing Cow light cheese wedges",
+      "4 Catalina Crunch cookies (without the cream)",
+      "1 tbsp sweetener of choice",
+      "A sprinkle of salt",
+      "A few gummy worms (optional)"
+    ],
+    "nutrition": {
+      "totalCalories": 556,
+      "perServingCalories": 278,
+      "totalProtein": 72,
+      "perServingProtein": 36,
+      "totalCarbs": 44,
+      "perServingCarbs": 22,
+      "totalFiber": 9,
+      "perServingFiber": 4.5,
+      "totalFat": 16,
+      "perServingFat": 8
+    },
+    "instructions": [
+      "In a mixing bowl, combine Greek yogurt, protein powder, pudding mix, Laughing Cow cheese, sweetener, and salt",
+      "Mix until thick and pudding-like",
+      "Crush the Catalina Crunch cookies (without the cream)",
+      "Fold ¾ of the crushed cookies into the mixture, leaving a little to add on top",
+      "Top with the remaining crushed cookies and gummy worms",
+      "Refrigerate until ready to serve"
+    ],
+    "cookingTime": "10 minutes"
+  },
+  {
+    "id": 20,
+    "name": "High-Protein Cottage Cheese Cake Bars",
+    "category": "protein-snacks",
+    "description": "Healthy Protein Cake Bars",
+    "servings": 2,
+    "ingredients": [
+      "½ cup cottage cheese (blended smooth)",
+      "2 tbsp almond or cashew butter",
+      "2–3 tbsp vanilla whey protein powder",
+      "½ cup oats (whole or blended into oat flour)",
+      "2–3 tbsp dark chocolate chips",
+      "1–2 tbsp sugar-free maple syrup or honey (optional)",
+      "1 tsp baking powder",
+      "Pinch of salt",
+      "2–3 tbsp milk or water (adjust for batter consistency)",
+      "1 tsp vanilla extract",
+      "2 tbsp crushed nuts for crunch (optional)"
+    ],
+    "nutrition": {
+      "totalCalories": 520,
+      "perServingCalories": 260,
+      "totalProtein": 44,
+      "perServingProtein": 22,
+      "totalCarbs": 38,
+      "perServingCarbs": 19,
+      "totalFiber": 5,
+      "perServingFiber": 2.5,
+      "totalFat": 25,
+      "perServingFat": 12.5
+    },
+    "instructions": [
+      "Preheat oven to 350°F and line a small loaf pan or two ramekins with parchment paper",
+      "Blend cottage cheese until completely smooth",
+      "Whisk together blended cottage cheese, nut butter, maple syrup (if using), and vanilla extract",
+      "Add whey protein, oats (or oat flour), baking powder, and salt; mix until just combined",
+      "Gradually add milk or water until the batter is thick but spreadable",
+      "Fold in dark chocolate chips",
+      "Spoon batter into ramekins and smooth the top",
+      "Bake for 18–22 minutes, or until edges are golden and a toothpick comes out clean or slightly moist",
+      "Cool completely before removing; they firm up as they cool"
+    ],
+    "cookingTime": "30-35 minutes"
+  },
+  {
+    "id": 21,
+    "name": "High Protein Cinnamon Bread Sticks",
+    "category": "protein-snacks",
+    "description": "Low-Calorie Protein Cinnamon Bread",
+    "servings": 6,
+    "ingredients": [
+      "½ cup oats",
+      "½ scoop vanilla ice cream protein powder (EHP Labs or similar)",
+      "1 egg white",
+      "⅔ cup water",
+      "1 tsp stevia",
+      "1 tsp baking soda",
+      "1 tbsp cinnamon"
+    ],
+    "nutrition": {
+      "totalCalories": 190,
+      "perServingCalories": 32,
+      "totalProtein": 12,
+      "perServingProtein": 2,
+      "totalCarbs": 31,
+      "perServingCarbs": 5,
+      "totalFiber": 3,
+      "perServingFiber": 0.5,
+      "totalFat": 3,
+      "perServingFat": 0.5
+    },
+    "instructions": [
+      "Preheat oven to 390°F",
+      "Blend all ingredients except cinnamon until smooth",
+      "Pour half the batter into a lightly lined loaf pan",
+      "Sprinkle half the cinnamon on top and swirl it in with a knife",
+      "Add the remaining batter on top, then sprinkle the rest of the cinnamon and swirl again",
+      "Bake for 12 minutes, then let rest before serving",
+      "Slice into 6 pieces if desired"
+    ],
+    "cookingTime": "20 minutes"
+  },
+  {
+    "id": 22,
+    "name": "High Protein Oreo Fluff",
+    "category": "protein-snacks",
+    "description": "Creamy High-Protein Dessert Snack",
+    "servings": 1,
+    "ingredients": [
+      "1 cup vanilla Greek yogurt (nonfat or low-fat)",
+      "1 scoop vanilla protein powder",
+      "2 tbsp sugar-free Jello pudding mix",
+      "2 tbsp sugar-free Cool Whip",
+      "2 Oreo Thins (crushed)"
+    ],
+    "nutrition": {
+      "totalCalories": 294,
+      "perServingCalories": 294,
+      "totalProtein": 34,
+      "perServingProtein": 34,
+      "totalCarbs": 26,
+      "perServingCarbs": 26,
+      "totalFiber": 1,
+      "perServingFiber": 1,
+      "totalFat": 6,
+      "perServingFat": 6
+    },
+    "instructions": [
+      "In a bowl, mix Greek yogurt, protein powder, and sugar-free Jello mix until smooth and thick",
+      "Fold in the sugar-free Cool Whip until fully combined",
+      "Crush Oreo Thins and mix in, saving a little for garnish if desired",
+      "Chill for 15–20 minutes before serving for best texture"
+    ],
+    "cookingTime": "20-25 minutes (includes chilling)"
+  },
+  {
+    "id": 23,
+    "name": "High Protein Low Cal Cinnamon Rolls",
+    "category": "protein-snacks",
+    "description": "Super Low-Calorie High-Protein Cinnamon Rolls",
+    "servings": 3,
+    "ingredients": [
+      "200g liquid egg whites (about 7 fl oz)",
+      "Splash of vanilla extract",
+      "2 scoops vanilla protein powder (Legion or similar)",
+      "2 teaspoons monkfruit sweetener (or to taste)",
+      "Cinnamon (as much as desired for filling)",
+      "1–2 teaspoons brown-style monkfruit sweetener (for filling)",
+      "5g vanilla protein powder (for frosting)",
+      "Monkfruit sweetener to taste (for frosting)",
+      "Water (add slowly until drizzling consistency for frosting)"
+    ],
+    "nutrition": {
+      "totalCalories": 446,
+      "perServingCalories": 149,
+      "totalProtein": 72,
+      "perServingProtein": 24,
+      "totalCarbs": 6,
+      "perServingCarbs": 2,
+      "totalFiber": 0,
+      "perServingFiber": 0,
+      "totalFat": 2,
+      "perServingFat": 1
+    },
+    "instructions": [
+      "Preheat oven to 350°F and line a small sheet tray or baking dish with parchment",
+      "Pour the egg whites into the tray so they form a thin, even layer",
+      "Bake the egg white sheet for 30 minutes, or until set and flexible (not crispy)",
+      "Remove from the tray and let cool slightly",
+      "Sprinkle the egg white sheet evenly with cinnamon and brown-style monkfruit",
+      "Starting at one edge, roll the sheet tightly to form a log",
+      "Slice into rolls of desired thickness",
+      "In a small bowl, whisk the 5g protein powder, monkfruit, and just enough water to make a smooth frosting",
+      "Drizzle the frosting over the rolls and serve warm"
+    ],
+    "cookingTime": "40-45 minutes"
+  },
+  {
+    "id": 24,
+    "name": "Protein Cookie Dough Bark",
+    "category": "protein-snacks",
+    "description": "No-Bake Protein Cookie Dough with Chocolate Ganache",
+    "servings": 9,
+    "ingredients": [
+      "1/2 cup almond flour",
+      "1/2 cup vanilla protein powder",
+      "1/4 cup cashew butter",
+      "1/4 cup pure maple syrup",
+      "1/2 tablespoon melted coconut oil",
+      "1 teaspoon vanilla extract",
+      "1/4 cup mini chocolate chips (semi-sweet)",
+      "1/4 cup dark chocolate chips (for ganache)",
+      "1/4 cup creamy peanut butter (for ganache)",
+      "1 teaspoon coconut oil (for ganache)"
+    ],
+    "nutrition": {
+      "totalCalories": 2066,
+      "perServingCalories": 229,
+      "totalProtein": 90,
+      "perServingProtein": 10,
+      "totalCarbs": 145,
+      "perServingCarbs": 16,
+      "totalFiber": 11,
+      "perServingFiber": 1,
+      "totalFat": 132,
+      "perServingFat": 15
+    },
+    "instructions": [
+      "Combine the almond flour, protein powder, cashew butter, maple syrup, melted coconut oil, and vanilla extract; mix until smooth",
+      "Fold in the mini chocolate chips",
+      "Press the dough flat onto a baking sheet lined with parchment paper",
+      "Melt the dark chocolate chips, peanut butter, and coconut oil together until smooth",
+      "Pour and spread the chocolate mixture over the cookie dough layer",
+      "Refrigerate for 2 hours, or freeze for at least 45 minutes to set",
+      "Slice into pieces and enjoy",
+      "Keep stored in the refrigerator"
+    ],
+    "cookingTime": "2 hours 15 minutes (includes chilling time)"
+  },
+  {
+    "id": 25,
+    "name": "Healthy Protein Waffles",
+    "category": "protein-snacks",
+    "description": "High-Protein Waffles with Greek Yogurt",
+    "servings": 3,
+    "ingredients": [
+      "1 ½ cups old-fashioned rolled oats",
+      "1 cup liquid egg whites",
+      "1 cup nonfat plain Greek yogurt",
+      "1 tsp baking powder",
+      "1 ½ tsp vanilla extract",
+      "1 tsp ground cinnamon"
+    ],
+    "nutrition": {
+      "totalCalories": 570,
+      "perServingCalories": 190,
+      "totalProtein": 54,
+      "perServingProtein": 18,
+      "totalCarbs": 78,
+      "perServingCarbs": 26,
+      "totalFiber": 12,
+      "perServingFiber": 4,
+      "totalFat": 9,
+      "perServingFat": 3
+    },
+    "instructions": [
+      "Add everything to a blender",
+      "Blend until completely smooth",
+      "Preheat waffle maker and spray with nonstick spray",
+      "Pour batter to make 3 full Belgian-style waffles",
+      "Cook until golden and crisp",
+      "Top however you want and enjoy"
+    ],
+    "cookingTime": "15-20 minutes"
   }
 ]

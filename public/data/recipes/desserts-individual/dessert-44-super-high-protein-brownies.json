@@ -1,0 +1,43 @@
+{
+  "id": 44,
+  "name": "Super High Protein Brownies (Radioactive Brownies)",
+  "category": "desserts",
+  "description": "Ultra Low-Calorie High-Protein Fudgy Brownies",
+  "servings": 9,
+  "ingredients": [
+    "¾ cup all-purpose flour",
+    "¼ cup natural cocoa powder",
+    "¾ cup chocolate whey protein powder",
+    "2–3 tbsp zero-calorie sweetener (allulose, erythritol, or monk fruit)",
+    "Pinch of Himalayan pink salt",
+    "½ cup + 1 tbsp liquid egg whites",
+    "2 large eggs",
+    "½ cup low-fat or fat-free cottage cheese",
+    "1½ tbsp unsweetened applesauce",
+    "1 tbsp sugar-free maple syrup",
+    "1 tsp vanilla extract",
+    "Optional: sugar-free chocolate chips for topping"
+  ],
+  "nutrition": {
+    "totalCalories": 895,
+    "perServingCalories": 99,
+    "totalProtein": 102,
+    "perServingProtein": 11,
+    "totalCarbs": 78,
+    "perServingCarbs": 9,
+    "totalFiber": 10,
+    "perServingFiber": 1,
+    "totalFat": 24,
+    "perServingFat": 3
+  },
+  "instructions": [
+    "Preheat oven to 350°F and line an 8×8-inch pan with parchment paper",
+    "Whisk all dry ingredients in a bowl until smooth",
+    "Blend all wet ingredients together for exactly 10 seconds",
+    "Pour wet into dry and fold until thick batter forms – don't overmix",
+    "Spread into the pan",
+    "Bake 12–15 minutes (12 = super fudgy, 15 = firmer edges)",
+    "Cool completely in the fridge, then cut into 9 large brownies"
+  ],
+  "cookingTime": "20-25 minutes (plus cooling)"
+}
