@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useTheme } from '../hooks/useTheme';
 import { Utensils, Sparkles, TrendingUp, Award } from 'lucide-react';
 
-const HeroSection = () => {
+const formatRecipeCount = (count) => {
+  if (typeof count !== 'number' || Number.isNaN(count) || count <= 0) {
+    return '0';
+  }
+
+  if (count < 25) {
+    return `${count}`;
+  }
+
+  const interval = Math.max(25, Math.floor((count - 1) / 25) * 25);
+  return `${interval}+`;
+};
+
+const HeroSection = ({ totalRecipes }) => {
   const { theme } = useTheme();
+  const displayRecipeCount = useMemo(() => formatRecipeCount(totalRecipes), [totalRecipes]);
 
   return (
     <div className="relative py-16 sm:py-24 px-4 overflow-hidden w-full max-w-full">
@@ -46,7 +60,7 @@ const HeroSection = () => {
             style={{ animationDelay: '0.4s' }}>
             <div className={`glass-effect rounded-2xl p-8 border ${theme.border || 'border-amber-500/20'} hover-lift shadow-xl transition-all duration-300 group`}>
               <TrendingUp className={`w-10 h-10 ${theme.text || 'text-amber-400'} mx-auto mb-4 group-hover:scale-110 transition-transform`} />
-              <p className="text-4xl font-bold text-white mb-2">50+</p>
+              <p className="text-4xl font-bold text-white mb-2">{displayRecipeCount}</p>
               <p className="text-gray-400 text-sm font-medium">Recipes</p>
             </div>
             <div className={`glass-effect rounded-2xl p-8 border ${theme.border || 'border-amber-500/20'} hover-lift shadow-xl transition-all duration-300 group`}>

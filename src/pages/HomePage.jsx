@@ -8,6 +8,7 @@ import { Sparkles } from 'lucide-react';
 const HomePage = () => {
   const { setTheme } = useTheme();
   const [categories, setCategories] = useState([]);
+  const [totalRecipes, setTotalRecipes] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -17,13 +18,23 @@ const HomePage = () => {
     // Load categories
     loadRecipeCategories()
       .then(data => {
-        console.log('Loaded categories:', data);
-        setCategories(data || []);
+        const resolvedCategories = Array.isArray(data) ? data : [];
+        console.log('Loaded categories:', resolvedCategories);
+        setCategories(resolvedCategories);
+
+        const computedTotal = resolvedCategories.reduce((sum, category) => {
+          return typeof category?.totalRecipes === 'number' && !Number.isNaN(category.totalRecipes)
+            ? sum + category.totalRecipes
+            : sum;
+        }, 0);
+        setTotalRecipes(computedTotal > 0 ? computedTotal : null);
+
         setLoading(false);
       })
       .catch(err => {
         console.error('Failed to load categories:', err);
         setCategories([]);
+        setTotalRecipes(null);
         setLoading(false);
       });
   }, [setTheme]);
@@ -41,7 +52,7 @@ const HomePage = () => {
   return (
     <div className="space-y-20">
       {/* Hero Section - Amber/Orange Theme */}
-      <HeroSection />
+      <HeroSection totalRecipes={totalRecipes} />
       
       <div className="container mx-auto px-4">
         {/* Categories Section - Green/Emerald Theme */}
