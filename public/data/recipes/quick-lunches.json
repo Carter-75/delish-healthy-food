@@ -602,5 +602,54 @@
       "Let cool slightly before serving"
     ],
     "cookingTime": "30-35 minutes"
+  },
+  {
+    "id": 16,
+    "name": "High Protein Cheesy Garlic Parm Pizza Buns",
+    "category": "quick-lunches",
+    "description": "Cottage Cheese Pizza Buns with Garlic",
+    "servings": 8,
+    "ingredients": [
+      "450 g low-fat cottage cheese",
+      "3 large eggs",
+      "250 g self-rising flour (or 250 g all-purpose flour + 1.5 tsp baking powder)",
+      "1 tsp salt",
+      "1 tsp onion powder",
+      "1 tsp garlic powder",
+      "1 tsp Italian herb seasoning",
+      "6 garlic cloves, finely diced (mixed into dough)",
+      "35 g grated parmesan cheese",
+      "100 g light mozzarella cheese (mixed into dough)",
+      "30 g pizza sauce per bun (topping)",
+      "5 g diced garlic per bun (topping)",
+      "40 g light mozzarella cheese per bun (topping)",
+      "Fresh basil (optional)",
+      "Extra parmesan (optional)",
+      "Extra diced garlic (optional)"
+    ],
+    "nutrition": {
+      "totalCalories": 2808,
+      "perServingCalories": 351,
+      "totalProtein": 286,
+      "perServingProtein": 35.8,
+      "totalCarbs": 152,
+      "perServingCarbs": 19,
+      "totalFiber": 12,
+      "perServingFiber": 1.5,
+      "totalFat": 98,
+      "perServingFat": 12.3
+    },
+    "instructions": [
+      "Preheat oven to 400°F and line a baking tray with parchment paper or lightly spray with oil",
+      "Blend the cottage cheese and eggs until completely smooth",
+      "Pour into a large bowl and add flour, salt, onion powder, garlic powder, and Italian herb seasoning; mix until thick",
+      "Add the 6 diced garlic cloves, parmesan, and 100 g mozzarella; mix again until fully combined",
+      "With wet hands, divide the dough into 8 equal portions and shape into buns; place on tray",
+      "Bake for 20–30 minutes until lightly golden",
+      "Remove from oven and top each bun with pizza sauce, 5 g diced garlic, and 40 g mozzarella",
+      "Return to oven and bake for 10 minutes until cheese is melted and golden",
+      "Finish with basil, parmesan, and extra garlic if desired"
+    ],
+    "cookingTime": "40-50 minutes"
   }
 ]
