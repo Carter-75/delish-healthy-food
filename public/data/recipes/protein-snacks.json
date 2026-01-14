@@ -946,5 +946,58 @@
       "Top however you want and enjoy"
     ],
     "cookingTime": "15-20 minutes"
+  },
+  {
+    "id": 26,
+    "name": "Crispy Mac & Cheese Balls",
+    "category": "protein-snacks",
+    "description": "Fried Mac & Cheese Balls with Melted Cheese Center",
+    "servings": 30,
+    "ingredients": [
+      "450 g macaroni",
+      "7 tbsp butter (100 g)",
+      "6 tbsp all-purpose flour (≈55 g)",
+      "4 cups whole milk (1 liter)",
+      "200 g heavy cream",
+      "2 cups shredded cheddar cheese (≈200 g)",
+      "2 cups shredded mozzarella cheese (200 g)",
+      "2 cups shredded gouda cheese (200 g)",
+      "1½–2 tsp salt",
+      "1 tsp black pepper",
+      "1 tsp smoked paprika",
+      "1½ tsp garlic powder",
+      "Cheese cubes for stuffing",
+      "Flour (for coating)",
+      "Eggs, beaten (for coating)",
+      "Breadcrumbs (for coating)",
+      "Vegetable oil (for frying)"
+    ],
+    "nutrition": {
+      "totalCalories": 8900,
+      "perServingCalories": 295,
+      "totalProtein": 390,
+      "perServingProtein": 13,
+      "totalCarbs": 720,
+      "perServingCarbs": 24,
+      "totalFat": 560,
+      "perServingFat": 19
+    },
+    "instructions": [
+      "Bring a large pot of salted water to a boil; add macaroni and cook until tender but still holding shape; drain and set aside",
+      "In a large pot over medium heat, melt the butter",
+      "Add flour and cook for 1 minute, stirring constantly",
+      "Stir in salt, black pepper, smoked paprika, and garlic powder",
+      "Slowly whisk in milk and heavy cream",
+      "Continue whisking until the sauce thickens slightly",
+      "Remove from heat and add cheddar, mozzarella, and gouda in three additions, stirring until fully melted and smooth",
+      "Add cooked macaroni to the cheese sauce and mix well",
+      "Spread mixture into a dish and refrigerate for 3–4 hours until very firm",
+      "Scoop 1–2 tablespoons of chilled mac and cheese, press a cube of cheese into the center, and roll into a tight ball",
+      "Roll each ball in flour, dip in beaten eggs, then coat with breadcrumbs",
+      "Heat oil to 350°F / 175°C",
+      "Fry balls in batches for 2–3 minutes until golden brown",
+      "Drain on paper towels and serve hot"
+    ],
+    "cookingTime": "4 hours (includes chilling time)"
   }
 ]
