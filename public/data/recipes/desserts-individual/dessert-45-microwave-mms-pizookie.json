@@ -1,0 +1,43 @@
+{
+  "id": 45,
+  "name": "Microwave M&M's Pizookie (Single Serve)",
+  "category": "desserts",
+  "description": "Quick Microwave Cookie in a Mug",
+  "servings": 1,
+  "ingredients": [
+    "2 tbsp butter (28 g)",
+    "1 tbsp granulated sugar (12 g)",
+    "2 tbsp brown sugar (28 g)",
+    "1 tbsp milk (18 ml)",
+    "Splash of vanilla extract",
+    "1/4 cup + 2 tbsp all-purpose flour (52 g)",
+    "1/4 tsp baking soda",
+    "1/8 tsp salt",
+    "1 tbsp chocolate chips",
+    "1 tbsp mini M&M's",
+    "Extra chocolate chips or M&M's for topping (optional)"
+  ],
+  "nutrition": {
+    "totalCalories": 540,
+    "perServingCalories": 540,
+    "totalProtein": 6,
+    "perServingProtein": 6,
+    "totalCarbs": 68,
+    "perServingCarbs": 68,
+    "totalFiber": 2,
+    "perServingFiber": 2,
+    "totalFat": 28,
+    "perServingFat": 28
+  },
+  "instructions": [
+    "Add butter to a microwave-safe mug or small bowl and microwave until fully melted",
+    "Stir in brown sugar and granulated sugar until smooth",
+    "Add milk and vanilla extract; mix well",
+    "Add flour, baking soda, and salt; stir until a thick cookie dough forms",
+    "Fold in chocolate chips and mini M&M's",
+    "Optionally sprinkle a few extra chocolate chips or M&M's on top",
+    "Microwave for 40–50 seconds until just set but still soft in the center",
+    "Let cool slightly and eat warm"
+  ],
+  "cookingTime": "5 minutes"
+}
