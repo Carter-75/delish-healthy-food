@@ -1876,5 +1876,62 @@
       "Let cool slightly and eat warm"
     ],
     "cookingTime": "5 minutes"
+  },
+  {
+    "id": 46,
+    "name": "Brookie Fries (Cookie + Brownie Fries)",
+    "category": "desserts",
+    "description": "Cookie and Brownie Dough Shaped Like Fries",
+    "servings": 8,
+    "ingredients": [
+      "115 g unsalted butter (brownie layer)",
+      "170 g semi-sweet chocolate (brownie layer)",
+      "2 large eggs (brownie layer)",
+      "150 g granulated sugar (brownie layer)",
+      "1 tsp vanilla extract (brownie layer)",
+      "75 g all-purpose flour (brownie layer)",
+      "30 g cocoa powder (brownie layer)",
+      "1/4 tsp salt (brownie layer)",
+      "80 g chocolate chips (brownie layer)",
+      "115 g unsalted butter (cookie layer)",
+      "120 g brown sugar (cookie layer)",
+      "50 g granulated sugar (cookie layer)",
+      "1 large egg (cookie layer)",
+      "1 tsp vanilla extract (cookie layer)",
+      "180 g all-purpose flour (cookie layer)",
+      "1/2 tsp salt (cookie layer)",
+      "100 g chocolate chips (cookie layer)"
+    ],
+    "nutrition": {
+      "totalCalories": 6980,
+      "perServingCalories": 873,
+      "totalProtein": 92,
+      "perServingProtein": 11.5,
+      "totalCarbs": 890,
+      "perServingCarbs": 111,
+      "totalFat": 355,
+      "perServingFat": 44
+    },
+    "instructions": [
+      "Make brownie dough: Melt butter and chocolate together until smooth",
+      "In a bowl whisk eggs, sugar, and vanilla until glossy",
+      "Stir in melted chocolate mixture",
+      "Add flour, cocoa powder, salt, and chocolate chips; mix until combined",
+      "Make cookie dough: In another bowl whisk egg, sugars, and vanilla",
+      "Add butter and mix well",
+      "Add flour and salt and mix into dough; fold in chocolate chips",
+      "Assembly: Line a flat surface with parchment paper",
+      "Spread brownie dough into a rectangle",
+      "Place cookie dough on top",
+      "Cover with another parchment sheet and roll flat to about 1/2 inch thickness",
+      "Cut into fry-shaped sticks",
+      "Chill shaped dough for 20–30 minutes",
+      "Preheat oven to 350°F (175°C)",
+      "Transfer fries to parchment-lined tray",
+      "Bake 12–15 minutes until edges are lightly golden and centers remain soft",
+      "Reshape while warm if needed",
+      "Cool before serving"
+    ],
+    "cookingTime": "45-50 minutes (includes chilling)"
   }
 ]
