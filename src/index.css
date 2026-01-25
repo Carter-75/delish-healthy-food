@@ -18,6 +18,12 @@
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 @layer utilities {
   .text-shadow {
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);

@@ -4,6 +4,7 @@ import { useTheme } from '../hooks/useTheme';
 import { loadRecipesByCategory, loadRecipeCategories } from '../utils/recipeLoader';
 import RecipeCard from '../components/RecipeCard';
 import { ChevronLeft, List, Sparkles } from 'lucide-react';
+import Seo from '../components/Seo';
 
 const RecipeCategoryPage = () => {
   const { categoryId } = useParams();
@@ -46,6 +47,11 @@ const RecipeCategoryPage = () => {
 
   return (
     <div className="container mx-auto px-4 py-12">
+      <Seo
+        title={`${categoryInfo?.title || 'Recipes'} - Delish Healthy Food`}
+        description={categoryInfo?.description || 'Browse high-protein recipes by category.'}
+        canonicalPath={`/category/${categoryId}`}
+      />
       <div className="max-w-6xl mx-auto">
         {/* Back Button & Header */}
         <div className="mb-12 animate-fadeInDown">

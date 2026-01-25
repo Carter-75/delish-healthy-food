@@ -43,6 +43,11 @@ If the variables are missing or the script fails to load, auto ads remain disabl
 
 This site includes a dedicated privacy policy page at `/privacy` covering data collection, cookies, and AdSense disclosures.
 
+## AdSense Policy Notes
+
+- Keep `public/ads.txt` updated with your AdSense publisher ID.
+- Auto ads are disabled on localhost unless `VITE_ADSENSE_TEST_MODE` is set.
+
 ## Deployment
 
 This site is ready to deploy to Vercel:

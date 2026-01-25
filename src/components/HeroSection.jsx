@@ -34,9 +34,9 @@ const HeroSection = ({ totalRecipes }) => {
           <div className="flex items-center justify-center gap-5 animate-fadeInDown">
             <div className={`p-4 rounded-3xl ${theme.highlight || 'bg-blue-900/30'} 
               border ${theme.border || 'border-blue-500/20'} hover-glow animate-float shadow-xl`}>
-              <Utensils className={`w-12 h-12 sm:w-14 sm:h-14 ${theme.text || 'text-blue-400'}`} />
+              <Utensils className={`w-12 h-12 sm:w-14 sm:h-14 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
             </div>
-            <Sparkles className={`w-10 h-10 sm:w-12 sm:h-12 ${theme.text || 'text-blue-400'} animate-pulseGlow`} />
+            <Sparkles className={`w-10 h-10 sm:w-12 sm:h-12 ${theme.text || 'text-blue-400'} animate-pulseGlow`} aria-hidden="true" />
           </div>
 
           {/* Main Title */}
@@ -59,17 +59,17 @@ const HeroSection = ({ totalRecipes }) => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12 animate-fadeInUp" 
             style={{ animationDelay: '0.4s' }}>
             <div className={`glass-effect rounded-2xl p-8 border ${theme.border || 'border-amber-500/20'} hover-lift shadow-xl transition-all duration-300 group`}>
-              <TrendingUp className={`w-10 h-10 ${theme.text || 'text-amber-400'} mx-auto mb-4 group-hover:scale-110 transition-transform`} />
+              <TrendingUp className={`w-10 h-10 ${theme.text || 'text-amber-400'} mx-auto mb-4 group-hover:scale-110 transition-transform`} aria-hidden="true" />
               <p className="text-4xl font-bold text-white mb-2">{displayRecipeCount}</p>
               <p className="text-gray-400 text-sm font-medium">Recipes</p>
             </div>
             <div className={`glass-effect rounded-2xl p-8 border ${theme.border || 'border-amber-500/20'} hover-lift shadow-xl transition-all duration-300 group`}>
-              <Award className={`w-10 h-10 ${theme.text || 'text-amber-400'} mx-auto mb-4 group-hover:scale-110 transition-transform`} />
+              <Award className={`w-10 h-10 ${theme.text || 'text-amber-400'} mx-auto mb-4 group-hover:scale-110 transition-transform`} aria-hidden="true" />
               <p className="text-4xl font-bold text-white mb-2">40g+</p>
               <p className="text-gray-400 text-sm font-medium">Protein Per Serving</p>
             </div>
             <div className={`glass-effect rounded-2xl p-8 border ${theme.border || 'border-amber-500/20'} hover-lift shadow-xl transition-all duration-300 group`}>
-              <Sparkles className={`w-10 h-10 ${theme.text || 'text-amber-400'} mx-auto mb-4 group-hover:scale-110 transition-transform`} />
+              <Sparkles className={`w-10 h-10 ${theme.text || 'text-amber-400'} mx-auto mb-4 group-hover:scale-110 transition-transform`} aria-hidden="true" />
               <p className="text-4xl font-bold text-white mb-2">100%</p>
               <p className="text-gray-400 text-sm font-medium">Delicious</p>
             </div>

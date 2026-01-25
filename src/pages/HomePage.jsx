@@ -4,6 +4,7 @@ import { loadRecipeCategories } from '../utils/recipeLoader';
 import HeroSection from '../components/HeroSection';
 import CategoryCard from '../components/CategoryCard';
 import { Sparkles } from 'lucide-react';
+import Seo from '../components/Seo';
 
 const HomePage = () => {
   const { setTheme } = useTheme();
@@ -20,7 +21,6 @@ const HomePage = () => {
       .then(data => {
         const resolvedCategories = Array.isArray(data) ? data : [];
         const visibleCategories = resolvedCategories.filter((category) => !category?.comingSoon);
-        console.log('Loaded categories:', visibleCategories);
         setCategories(visibleCategories);
 
         const computedTotal = visibleCategories.reduce((sum, category) => {
@@ -52,6 +52,11 @@ const HomePage = () => {
 
   return (
     <div className="space-y-20">
+      <Seo
+        title="Delish Healthy Food - High-Protein Recipe Collection"
+        description="Discover high-protein recipes for your fitness goals. Delicious, nutritious meals crafted for athletes and fitness enthusiasts."
+        canonicalPath="/"
+      />
       {/* Hero Section - Amber/Orange Theme */}
       <HeroSection totalRecipes={totalRecipes} />
       

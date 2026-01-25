@@ -9,8 +9,14 @@ const AdSenseAutoLoader = () => {
       return;
     }
 
-    if (!client) {
-      console.error('AdSense auto ads skipped. Set VITE_ADSENSE_CLIENT_ID to enable automatic ads.');
+    if (!client || !client.startsWith('ca-pub-')) {
+      console.warn('AdSense auto ads skipped. Set a valid VITE_ADSENSE_CLIENT_ID (ca-pub-xxxxxxxxxxxxxxxx).');
+      return;
+    }
+
+    const isLocalhost = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+    if (isLocalhost && !testMode) {
+      console.warn('AdSense auto ads skipped on localhost. Enable VITE_ADSENSE_TEST_MODE for local testing.');
       return;
     }
 

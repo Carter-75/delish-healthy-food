@@ -27,22 +27,23 @@ const Navigation = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="relative z-50 border-b border-white/10 glass-effect">
+    <nav className="relative z-50 border-b border-white/10 glass-effect" aria-label="Primary">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link 
             to="/" 
             className="flex items-center gap-3 group animate-fadeInDown"
+            aria-label="Delish Healthy Food home"
           >
             <div className={`p-2 rounded-xl ${theme.highlight || 'bg-blue-900/20'} 
               border ${theme.border || 'border-blue-500/20'} hover-glow transition-all-smooth`}>
-              <Utensils className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} />
+              <Utensils className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
             </div>
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-white flex items-center gap-2">
                 Delish Healthy Food
-                <Sparkles className={`w-5 h-5 ${theme.text || 'text-blue-400'} animate-pulseGlow`} />
+                <Sparkles className={`w-5 h-5 ${theme.text || 'text-blue-400'} animate-pulseGlow`} aria-hidden="true" />
               </h1>
             </div>
           </Link>
@@ -53,13 +54,14 @@ const Navigation = () => {
               <Link
                 key={path}
                 to={path}
+                aria-current={isActive(path) ? 'page' : undefined}
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all-smooth hover-lift
                   ${isActive(path) 
                     ? `${theme.highlight || 'bg-blue-900/40'} ${theme.text || 'text-blue-400'} border ${theme.border || 'border-blue-500/20'}` 
                     : 'text-gray-300 hover:text-white hover:bg-white/5'
                   }`}
               >
-                <Icon className="w-4 h-4" />
+                <Icon className="w-4 h-4" aria-hidden="true" />
                 <span className="font-medium">{label}</span>
               </Link>
             ))}
@@ -68,33 +70,37 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-navigation"
+            aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             className={`md:hidden p-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'} 
               border ${theme.border || 'border-blue-500/20'} hover-glow transition-all-smooth`}
           >
             {mobileMenuOpen ? (
-              <X className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} />
+              <X className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
             ) : (
-              <Menu className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} />
+              <Menu className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
             )}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden pb-4 animate-fadeInDown">
+          <div id="mobile-navigation" className="md:hidden pb-4 animate-fadeInDown">
             <div className="flex flex-col gap-2">
               {navItems.map(({ path, label, icon: Icon }) => (
                 <Link
                   key={path}
                   to={path}
                   onClick={() => setMobileMenuOpen(false)}
+                  aria-current={isActive(path) ? 'page' : undefined}
                   className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all-smooth
                     ${isActive(path) 
                       ? `${theme.highlight || 'bg-blue-900/40'} ${theme.text || 'text-blue-400'} border ${theme.border || 'border-blue-500/20'}` 
                       : 'text-gray-300 hover:text-white hover:bg-white/5'
                     }`}
                 >
-                  <Icon className="w-5 h-5" />
+                  <Icon className="w-5 h-5" aria-hidden="true" />
                   <span className="font-medium">{label}</span>
                 </Link>
               ))}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTheme } from '../hooks/useTheme';
 import { Mail, MessageSquare, Sparkles, Send, Check } from 'lucide-react';
+import Seo from '../components/Seo';
 
 const ContactPage = () => {
   const { theme } = useTheme();
@@ -26,6 +27,11 @@ const ContactPage = () => {
 
   return (
     <div className="relative min-h-screen">
+      <Seo
+        title="Contact - Delish Healthy Food"
+        description="Contact Delish Healthy Food for recipe feedback, questions, or collaboration."
+        canonicalPath="/contact"
+      />
       <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="max-w-3xl mx-auto relative">
           {/* Header */}

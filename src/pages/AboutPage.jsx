@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTheme } from '../hooks/useTheme';
 import { Heart, Target, TrendingUp, Users, Sparkles } from 'lucide-react';
+import Seo from '../components/Seo';
 
 const AboutPage = () => {
   const { theme } = useTheme();
@@ -30,6 +31,11 @@ const AboutPage = () => {
 
   return (
     <div className="container mx-auto px-4 py-12">
+      <Seo
+        title="About - Delish Healthy Food"
+        description="Learn about Delish Healthy Food and our mission to deliver high-protein recipes that support your fitness goals."
+        canonicalPath="/about"
+      />
       <div className="max-w-4xl mx-auto">
         {/* Hero Section */}
         <div className="text-center mb-16 animate-fadeInUp">

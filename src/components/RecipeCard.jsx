@@ -16,8 +16,18 @@ const RecipeCard = ({ recipe, categoryId, delay = 0 }) => {
   const { theme } = useTheme();
   const navigate = useNavigate();
 
+  const formatMacro = (value, suffix) =>
+    typeof value === 'number' && !Number.isNaN(value) ? `${value}${suffix}` : 'N/A';
+
   const handleClick = () => {
     navigate(`/recipe/${categoryId}/${recipe.id}`);
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      handleClick();
+    }
   };
 
   return (
@@ -25,6 +35,10 @@ const RecipeCard = ({ recipe, categoryId, delay = 0 }) => {
       className="stagger-item hover-lift cursor-pointer group"
       style={{ '--stagger-delay': `${delay}s` }}
       onClick={handleClick}
+      onKeyDown={handleKeyDown}
+      role="button"
+      tabIndex={0}
+      aria-label={`Open ${recipe.name} recipe`}
     >
       <div className={`relative glass-effect rounded-2xl overflow-hidden border ${theme.border || 'border-white/10'}
         ${theme.shadow || 'shadow-lg'} transition-all-smooth h-full`}>
@@ -42,62 +56,62 @@ const RecipeCard = ({ recipe, categoryId, delay = 0 }) => {
               {recipe.name}
             </h3>
             <ChevronRight className={`w-6 h-6 ${theme.text || 'text-blue-400'} 
-              transform group-hover:translate-x-1 transition-transform flex-shrink-0`} />
+              transform group-hover:translate-x-1 transition-transform flex-shrink-0`} aria-hidden="true" />
           </div>
 
           {/* Nutrition Info - Full Macros */}
           <div className="grid grid-cols-2 gap-3 mb-4">
             {/* Calories */}
             <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'}`}>
-              <Flame className={`w-4 h-4 ${theme.text || 'text-blue-400'}`} />
+              <Flame className={`w-4 h-4 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
               <div>
                 <p className="text-xs text-gray-400">Calories</p>
                 <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>
-                  {recipe.nutrition?.perServingCalories || 'N/A'}
+                  {formatMacro(recipe.nutrition?.perServingCalories, '')}
                 </p>
               </div>
             </div>
             
             {/* Protein */}
             <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'}`}>
-              <Beef className={`w-4 h-4 ${theme.text || 'text-red-400'}`} />
+              <Beef className={`w-4 h-4 ${theme.text || 'text-red-400'}`} aria-hidden="true" />
               <div>
                 <p className="text-xs text-gray-400">Protein</p>
                 <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>
-                  {recipe.nutrition?.perServingProtein || 'N/A'}g
+                  {formatMacro(recipe.nutrition?.perServingProtein, 'g')}
                 </p>
               </div>
             </div>
             
             {/* Carbs */}
             <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'}`}>
-              <Wheat className={`w-4 h-4 ${theme.text || 'text-yellow-400'}`} />
+              <Wheat className={`w-4 h-4 ${theme.text || 'text-yellow-400'}`} aria-hidden="true" />
               <div>
                 <p className="text-xs text-gray-400">Carbs</p>
                 <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>
-                  {recipe.nutrition?.perServingCarbs || 'N/A'}g
+                  {formatMacro(recipe.nutrition?.perServingCarbs, 'g')}
                 </p>
               </div>
             </div>
             
             {/* Fat */}
             <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'}`}>
-              <Droplet className={`w-4 h-4 ${theme.text || 'text-blue-400'}`} />
+              <Droplet className={`w-4 h-4 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
               <div>
                 <p className="text-xs text-gray-400">Fat</p>
                 <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>
-                  {recipe.nutrition?.perServingFat || 'N/A'}g
+                  {formatMacro(recipe.nutrition?.perServingFat, 'g')}
                 </p>
               </div>
             </div>
             
             {/* Fiber */}
             <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'} col-span-2`}>
-              <Apple className={`w-4 h-4 ${theme.text || 'text-green-400'}`} />
+              <Apple className={`w-4 h-4 ${theme.text || 'text-green-400'}`} aria-hidden="true" />
               <div>
                 <p className="text-xs text-gray-400">Fiber</p>
                 <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>
-                  {recipe.nutrition?.perServingFiber || 'N/A'}g
+                  {formatMacro(recipe.nutrition?.perServingFiber, 'g')}
                 </p>
               </div>
             </div>
@@ -106,7 +120,7 @@ const RecipeCard = ({ recipe, categoryId, delay = 0 }) => {
           {/* Cooking Time */}
           {recipe.cookingTime && (
             <div className="flex items-center gap-2 text-gray-300 mb-4">
-              <Clock className="w-4 h-4" />
+              <Clock className="w-4 h-4" aria-hidden="true" />
               <span className="text-sm">{recipe.cookingTime}</span>
             </div>
           )}
@@ -115,7 +129,7 @@ const RecipeCard = ({ recipe, categoryId, delay = 0 }) => {
           {recipe.ingredients && (
             <div className={`text-sm text-gray-400 border-t ${theme.border || 'border-white/10'} pt-4`}>
               <p className="flex items-center gap-2 mb-2">
-                <Sparkles className={`w-4 h-4 ${theme.text || 'text-blue-400'}`} />
+                <Sparkles className={`w-4 h-4 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
                 <span className="font-semibold">Key Ingredients:</span>
               </p>
               <p className="line-clamp-2">

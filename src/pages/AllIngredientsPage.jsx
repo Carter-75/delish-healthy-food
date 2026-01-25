@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTheme } from '../hooks/useTheme';
 import { loadRecipeCategories, loadRecipesByCategory } from '../utils/recipeLoader';
 import { ShoppingCart, Sparkles, ChefHat } from 'lucide-react';
+import Seo from '../components/Seo';
 
 const AllIngredientsPage = () => {
   const { setTheme } = useTheme();
@@ -189,6 +190,11 @@ const AllIngredientsPage = () => {
 
   return (
     <div className="container mx-auto px-4 py-12 max-w-6xl">
+      <Seo
+        title="Master Shopping List - Delish Healthy Food"
+        description="A complete ingredient list covering every recipe on Delish Healthy Food."
+        canonicalPath="/all-ingredients"
+      />
       {/* Header */}
       <div className="text-center mb-12 animate-fadeInUp">
         <div className="inline-block p-4 rounded-2xl glass-effect mb-6">

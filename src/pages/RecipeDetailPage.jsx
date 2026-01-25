@@ -12,6 +12,7 @@ import {
   Check,
   Sparkles
 } from 'lucide-react';
+import Seo from '../components/Seo';
 
 const RecipeDetailPage = () => {
   const { categoryId, recipeId } = useParams();
@@ -79,6 +80,11 @@ const RecipeDetailPage = () => {
 
   return (
     <div className="container mx-auto px-4 py-12">
+      <Seo
+        title={`${recipe.name} - Delish Healthy Food`}
+        description={`Ingredients, instructions, and nutrition for ${recipe.name}.`}
+        canonicalPath={`/recipe/${categoryId}/${recipeId}`}
+      />
       <div className="max-w-5xl mx-auto">
         {/* Back Button & Header */}
         <div className="mb-12 animate-fadeInDown">
@@ -88,7 +94,7 @@ const RecipeDetailPage = () => {
               border ${theme.border || 'border-blue-500/20'} ${theme.text || 'text-blue-400'} 
               hover-lift transition-all-smooth mb-6`}
           >
-            <ChevronLeft className="w-5 h-5" />
+            <ChevronLeft className="w-5 h-5" aria-hidden="true" />
             <span>Back to Recipes</span>
           </button>
 
@@ -98,18 +104,19 @@ const RecipeDetailPage = () => {
             </h1>
             <button
               onClick={handleCopyRecipe}
+              aria-label={`Copy ${recipe.name} recipe`}
               className={`flex items-center gap-2 px-4 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/30'} 
                 border ${theme.border || 'border-blue-500/20'} ${theme.text || 'text-blue-400'} 
                 hover-lift transition-all-smooth`}
             >
               {copied ? (
                 <>
-                  <Check className="w-5 h-5" />
+                  <Check className="w-5 h-5" aria-hidden="true" />
                   <span>Copied!</span>
                 </>
               ) : (
                 <>
-                  <Copy className="w-5 h-5" />
+                  <Copy className="w-5 h-5" aria-hidden="true" />
                   <span>Copy Recipe</span>
                 </>
               )}
@@ -130,7 +137,7 @@ const RecipeDetailPage = () => {
               <div className={`glass-effect rounded-2xl p-6 border ${theme.border || 'border-white/10'} 
                 animate-fadeInUp`}>
                 <div className="flex items-center gap-3 mb-6">
-                  <List className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} />
+                  <List className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
                   <h2 className="text-2xl font-bold text-white">Base Ingredients</h2>
                 </div>
                 <ul className="space-y-3">
@@ -153,7 +160,7 @@ const RecipeDetailPage = () => {
             <div className={`glass-effect rounded-2xl p-6 border ${theme.border || 'border-white/10'} 
               animate-fadeInUp`} style={{ animationDelay: base ? '0.2s' : '0s' }}>
               <div className="flex items-center gap-3 mb-6">
-                <ChefHat className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} />
+                <ChefHat className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
                 <h2 className="text-2xl font-bold text-white">Recipe Ingredients</h2>
               </div>
               <ul className="space-y-3">
@@ -176,7 +183,7 @@ const RecipeDetailPage = () => {
           <div className={`glass-effect rounded-2xl p-6 border ${theme.border || 'border-white/10'} 
             animate-fadeInUp h-fit`} style={{ animationDelay: '0.3s' }}>
             <div className="flex items-center gap-3 mb-6">
-              <Flame className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} />
+              <Flame className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
               <h2 className="text-2xl font-bold text-white">Instructions</h2>
             </div>
             <ol className="space-y-4">

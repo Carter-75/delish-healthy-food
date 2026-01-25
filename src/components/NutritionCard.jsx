@@ -5,52 +5,53 @@ import { Flame, Beef, Users, TrendingUp, Wheat, Droplet, Apple } from 'lucide-re
 const NutritionCard = ({ nutrition, servings = 4 }) => {
   const { theme } = useTheme();
 
+  const formatValue = (value, suffix) => {
+    if (typeof value !== 'number' || Number.isNaN(value)) {
+      return { display: 'N/A', suffix: '' };
+    }
+    return { display: value, suffix };
+  };
+
   const nutritionItems = [
     {
       icon: Flame,
       label: 'Calories',
-      value: nutrition?.perServingCalories || 0,
-      suffix: 'cal',
+      ...formatValue(nutrition?.perServingCalories, 'cal'),
       color: 'text-orange-400',
       bgColor: 'bg-orange-500/20'
     },
     {
       icon: Beef,
       label: 'Protein',
-      value: nutrition?.perServingProtein || 0,
-      suffix: 'g',
+      ...formatValue(nutrition?.perServingProtein, 'g'),
       color: 'text-red-400',
       bgColor: 'bg-red-500/20'
     },
     {
       icon: Wheat,
       label: 'Carbs',
-      value: nutrition?.perServingCarbs || 0,
-      suffix: 'g',
+      ...formatValue(nutrition?.perServingCarbs, 'g'),
       color: 'text-amber-400',
       bgColor: 'bg-amber-500/20'
     },
     {
       icon: Droplet,
       label: 'Fat',
-      value: nutrition?.perServingFat || 0,
-      suffix: 'g',
+      ...formatValue(nutrition?.perServingFat, 'g'),
       color: 'text-blue-400',
       bgColor: 'bg-blue-500/20'
     },
     {
       icon: Apple,
       label: 'Fiber',
-      value: nutrition?.perServingFiber || 0,
-      suffix: 'g',
+      ...formatValue(nutrition?.perServingFiber, 'g'),
       color: 'text-green-400',
       bgColor: 'bg-green-500/20'
     },
     {
       icon: TrendingUp,
       label: 'Total Calories',
-      value: nutrition?.totalCalories || 0,
-      suffix: 'cal',
+      ...formatValue(nutrition?.totalCalories, 'cal'),
       color: 'text-purple-400',
       bgColor: 'bg-purple-500/20'
     }
@@ -88,8 +89,10 @@ const NutritionCard = ({ nutrition, servings = 4 }) => {
               <Icon className={`w-6 h-6 ${item.color} mb-2`} />
               <p className="text-sm text-gray-400 mb-1">{item.label}</p>
               <p className="text-2xl font-bold text-white">
-                {item.value}
-                {item.suffix && <span className="text-lg ml-1">{item.suffix}</span>}
+                {item.display}
+                {item.suffix && item.display !== 'N/A' && (
+                  <span className="text-lg ml-1">{item.suffix}</span>
+                )}
               </p>
             </div>
           );

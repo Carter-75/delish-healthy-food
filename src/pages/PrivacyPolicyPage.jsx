@@ -1,12 +1,18 @@
 import React from 'react';
 import { useTheme } from '../hooks/useTheme';
 import { Shield, Sparkles, Info } from 'lucide-react';
+import Seo from '../components/Seo';
 
 const PrivacyPolicyPage = () => {
   const { theme } = useTheme();
 
   return (
     <div className="container mx-auto px-4 py-12">
+      <Seo
+        title="Privacy Policy - Delish Healthy Food"
+        description="Read how Delish Healthy Food collects and uses data, cookies, and advertising information."
+        canonicalPath="/privacy"
+      />
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12 animate-fadeInUp">
           <Shield className={`w-12 h-12 ${theme.text || 'text-blue-400'} mx-auto mb-6 animate-pulseGlow`} />

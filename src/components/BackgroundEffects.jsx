@@ -28,7 +28,7 @@ const BackgroundEffects = () => {
       <div 
         className="fixed inset-0 opacity-[0.03] bg-cover bg-center mix-blend-overlay"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1920)'
+          backgroundImage: "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='120' height='120' filter='url(%23n)' opacity='0.4'/></svg>\")"
         }}
       />
       

@@ -220,3 +220,38 @@
 .animate-spin {
   animation: spin 1s linear infinite;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fadeInUp,
+  .animate-fadeInDown,
+  .animate-fadeInScale,
+  .animate-slideInLeft,
+  .animate-slideInRight,
+  .animate-pulseGlow,
+  .animate-float,
+  .animate-shimmer,
+  .animate-gradientShift,
+  .animate-bounceIn,
+  .animate-rotate,
+  .animate-spin,
+  .stagger-item {
+    animation: none !important;
+  }
+
+  .hover-lift,
+  .hover-glow,
+  .transition-all-smooth,
+  .transition-colors-smooth {
+    transition: none !important;
+  }
+
+  .hover-lift:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .hover-glow:hover {
+    filter: none !important;
+    transform: none !important;
+  }
+}

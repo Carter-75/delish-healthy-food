@@ -28,6 +28,13 @@ const CategoryCard = ({ category, delay = 0 }) => {
     navigate(`/category/${category.id}`);
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      handleClick();
+    }
+  };
+
   return (
     <div
       className="stagger-item"
@@ -35,6 +42,10 @@ const CategoryCard = ({ category, delay = 0 }) => {
     >
       <div
         onClick={handleClick}
+        onKeyDown={handleKeyDown}
+        role="button"
+        tabIndex={0}
+        aria-label={`View ${category.title} recipes`}
         className={`relative glass-effect rounded-3xl overflow-hidden border ${themeClasses.border}
           ${themeClasses.shadow} transition-all-smooth group hover-lift cursor-pointer
           hover:border-opacity-40`}
@@ -49,7 +60,7 @@ const CategoryCard = ({ category, delay = 0 }) => {
           <div className={`inline-flex p-5 rounded-3xl ${themeClasses.highlight} 
             border ${themeClasses.border} mb-6 group-hover:scale-110 transition-transform duration-300
             shadow-lg ${themeClasses.shadow}`}>
-            <Icon className={`w-10 h-10 ${themeClasses.text}`} />
+            <Icon className={`w-10 h-10 ${themeClasses.text}`} aria-hidden="true" />
           </div>
 
           {/* Title - better spacing */}
@@ -59,21 +70,21 @@ const CategoryCard = ({ category, delay = 0 }) => {
 
           {/* Description */}
           <p className={`${themeClasses.text} mb-4 flex items-center gap-2`}>
-            <Star className="w-4 h-4" />
+            <Star className="w-4 h-4" aria-hidden="true" />
             {category.description}
           </p>
 
           {/* Meta Info */}
           <div className="flex items-center justify-between text-sm">
             <div className="flex items-center gap-2 text-gray-300">
-              <Clock className="w-4 h-4" />
+              <Clock className="w-4 h-4" aria-hidden="true" />
               <span>{category.cookingTime}</span>
             </div>
             
             <div className={`flex items-center gap-2 ${themeClasses.text} 
               font-semibold group-hover:gap-3 transition-all`}>
               <span>{recipeCountLabel}</span>
-              <ChevronRight className="w-5 h-5" />
+              <ChevronRight className="w-5 h-5" aria-hidden="true" />
             </div>
           </div>
 

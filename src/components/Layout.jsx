@@ -6,10 +6,16 @@ import AdSenseAutoLoader from './AdSenseAutoLoader';
 const Layout = ({ children }) => {
   return (
     <div className="min-h-screen relative overflow-x-hidden w-full">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-slate-900 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg"
+      >
+        Skip to main content
+      </a>
       <AdSenseAutoLoader />
       <BackgroundEffects />
       <Navigation />
-      <main className="relative z-10 pb-20">
+      <main id="main-content" className="relative z-10 pb-20">
         {children}
       </main>
       <footer className="relative z-10 py-8 px-4 border-t border-white/10">
