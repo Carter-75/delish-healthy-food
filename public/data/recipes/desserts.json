@@ -1833,5 +1833,415 @@
       "Cool completely in the fridge, then cut into 9 large brownies"
     ],
     "cookingTime": "20-25 minutes (plus cooling)"
+  },
+  {
+    "id": 45,
+    "name": "Reese’s Cookie Pods (Peanut Butter Chocolate Cookie Cups)",
+    "category": "desserts",
+    "description": "Peanut butter filled cookie cups with chocolate and Reese’s Pieces",
+    "servings": 16,
+    "ingredients": [
+      "450 g refrigerated cookie dough",
+      "240 g peanut butter",
+      "200 g milk chocolate (melted)",
+      "120 g Reese’s Pieces"
+    ],
+    "nutrition": {
+      "totalCalories": 5820,
+      "perServingCalories": 364,
+      "totalProtein": 122,
+      "perServingProtein": 7.6,
+      "totalCarbs": 640,
+      "perServingCarbs": 40,
+      "totalFat": 330,
+      "perServingFat": 20.6
+    },
+    "instructions": [
+      "Preheat oven to 350°F (180°C)",
+      "Slice cookie dough into 16 equal pieces",
+      "Place each piece into a silicone mini muffin pan",
+      "Press and mold the dough into cup shapes using the back of a spoon or rolling pin handle",
+      "Bake for 12 minutes",
+      "Remove from oven and allow to cool completely",
+      "Fill each cookie cup with peanut butter",
+      "Spoon melted chocolate over the peanut butter layer",
+      "Sprinkle Reese’s Pieces on top",
+      "Refrigerate until chocolate is fully set",
+      "Remove from molds and serve"
+    ],
+    "cookingTime": "25 minutes + chilling"
+  },
+  {
+    "id": 46,
+    "name": "Brown Butter Chocolate Chip Cookies",
+    "category": "desserts",
+    "description": "Nutty brown butter cookies with melty chocolate",
+    "servings": 18,
+    "ingredients": [
+      "1 1/4 cups brown butter (cooled)",
+      "3/4 cup granulated sugar",
+      "1 cup firmly packed brown sugar",
+      "2 large eggs",
+      "1 1/2 tsp vanilla extract",
+      "2 3/4 cups all-purpose flour",
+      "1 tsp salt",
+      "2 tsp baking soda",
+      "8 oz semi-sweet chocolate (chopped or chips)",
+      "Flaky salt (for topping)"
+    ],
+    "nutrition": {
+      "totalCalories": 7240,
+      "perServingCalories": 402,
+      "totalProtein": 88,
+      "perServingProtein": 4.9,
+      "totalCarbs": 970,
+      "perServingCarbs": 54,
+      "totalFat": 350,
+      "perServingFat": 19.4
+    },
+    "instructions": [
+      "Brown butter in a saucepan until golden and nutty. Let cool completely",
+      "Mix brown butter, granulated sugar, and brown sugar in a large bowl until smooth",
+      "Add eggs and vanilla and mix until fully combined",
+      "Add flour, salt, and baking soda and mix just until incorporated",
+      "Fold in chopped chocolate",
+      "Chill dough for 30 minutes",
+      "Preheat oven to 350°F (175°C)",
+      "Scoop dough onto a parchment-lined baking tray",
+      "Bake 10–12 minutes until edges are golden and centers remain soft",
+      "Remove from oven and sprinkle flaky salt on top",
+      "Cool before serving"
+    ],
+    "cookingTime": "45 minutes"
+  },
+  {
+    "id": 47,
+    "name": "No-Bake Oreo Pie Sandwiches",
+    "category": "desserts",
+    "description": "Oreo mascarpone filling with chocolate-coated biscuit sandwiches",
+    "servings": 10,
+    "ingredients": [
+      "308 g Oreo cookies (about 2 packs)",
+      "20 McVitie’s Digestive biscuits",
+      "150 g mascarpone cheese",
+      "200 g milk chocolate (for coating)"
+    ],
+    "nutrition": {
+      "totalCalories": 5420,
+      "perServingCalories": 542,
+      "totalProtein": 78,
+      "perServingProtein": 7.8,
+      "totalCarbs": 610,
+      "perServingCarbs": 61,
+      "totalFat": 300,
+      "perServingFat": 30
+    },
+    "instructions": [
+      "Crush Oreo cookies into fine crumbs",
+      "Mix mascarpone cheese into the crushed Oreos until smooth",
+      "Lay Digestive biscuits on a flat surface",
+      "Spread the Oreo-mascarpone mixture onto half of the biscuits",
+      "Top with remaining biscuits to form sandwich cookies",
+      "Melt chocolate until smooth",
+      "Drizzle melted chocolate over each sandwich",
+      "Refrigerate until chocolate is fully set",
+      "Serve cold"
+    ],
+    "cookingTime": "25 minutes + chilling"
+  },
+  {
+    "id": 48,
+    "name": "Oreo Truffles (3-Ingredient)",
+    "category": "desserts",
+    "description": "Creamy Oreo truffles dipped in chocolate",
+    "servings": 20,
+    "ingredients": [
+      "308 g Oreo cookies (about 2 packs)",
+      "120 g cream cheese (Philadelphia or similar)",
+      "150 g chocolate (milk, dark, or white for coating)"
+    ],
+    "nutrition": {
+      "totalCalories": 3060,
+      "perServingCalories": 153,
+      "totalProtein": 39,
+      "perServingProtein": 2,
+      "totalCarbs": 330,
+      "perServingCarbs": 16.5,
+      "totalFat": 180,
+      "perServingFat": 9
+    },
+    "instructions": [
+      "Crush Oreo cookies into fine crumbs using a blender or by placing them in a bag and crushing with a rolling pin",
+      "Add cream cheese to the crushed Oreos",
+      "Mix until a smooth, sticky dough forms",
+      "Roll mixture into small balls (about 2–3 cm diameter)",
+      "Place balls on a parchment-lined tray",
+      "Refrigerate for 20 minutes to firm up",
+      "Melt chocolate gently using a microwave or double boiler",
+      "Dip chilled Oreo balls into melted chocolate",
+      "Let excess chocolate drip off and place back onto parchment paper",
+      "Refrigerate for at least 30 minutes until chocolate is fully set",
+      "Optional: sprinkle with extra crushed Oreo crumbs",
+      "Serve cold"
+    ],
+    "cookingTime": "30 minutes + chilling"
+  },
+  {
+    "id": 49,
+    "name": "Oreo Poke Cake",
+    "category": "desserts",
+    "description": "Chocolate cake with Oreo pudding filling and whipped topping",
+    "servings": 12,
+    "ingredients": [
+      "1 box chocolate cake mix",
+      "1 cup water",
+      "1/2 cup vegetable oil",
+      "3 large eggs",
+      "2 packages instant Oreo pudding mix (3.9 oz each)",
+      "2 cups cold milk",
+      "1 container whipped topping (8 oz)",
+      "12 Oreo cookies (crushed)",
+      "Optional: chocolate syrup drizzle"
+    ],
+    "nutrition": {
+      "totalCalories": 5980,
+      "perServingCalories": 498,
+      "totalProtein": 92,
+      "perServingProtein": 7.7,
+      "totalCarbs": 835,
+      "perServingCarbs": 69.6,
+      "totalFat": 255,
+      "perServingFat": 21.3
+    },
+    "instructions": [
+      "Preheat oven to 350°F (175°C). Lightly grease a 9x13-inch baking pan",
+      "Whisk cake mix, water, vegetable oil, and eggs until smooth",
+      "Pour batter into the prepared pan",
+      "Bake for about 25 minutes or until a toothpick inserted into the center comes out clean",
+      "Cool slightly, then poke holes evenly across the cake surface with the handle of a wooden spoon",
+      "Whisk pudding mix with cold milk until smooth and thick",
+      "Pour pudding mixture over the cake, spreading to fill the holes",
+      "Refrigerate for 1 hour to set",
+      "Spread whipped topping evenly over the chilled cake",
+      "Sprinkle crushed Oreos on top",
+      "Optional: drizzle chocolate syrup over the surface",
+      "Slice and serve chilled"
+    ],
+    "cookingTime": "40 minutes + chilling"
+  },
+  {
+    "id": 50,
+    "name": "Brownie Batter Dessert Dip",
+    "category": "desserts",
+    "description": "Creamy brownie batter dip with chocolate chips",
+    "servings": 10,
+    "ingredients": [
+      "18 oz box brownie mix (heat-treated)",
+      "8 oz cream cheese (softened)",
+      "2 tbsp milk",
+      "8 oz whipped topping (Cool Whip)",
+      "1/4 cup mini chocolate chips"
+    ],
+    "nutrition": {
+      "totalCalories": 3240,
+      "perServingCalories": 324,
+      "totalProtein": 46,
+      "perServingProtein": 4.6,
+      "totalCarbs": 405,
+      "perServingCarbs": 40.5,
+      "totalFat": 165,
+      "perServingFat": 16.5
+    },
+    "instructions": [
+      "If brownie mix is not pre-treated, microwave dry mix in 30-second intervals, stirring between rounds, until internal temperature reaches 165°F. Let cool completely",
+      "Beat softened cream cheese until smooth",
+      "Add milk and mix until creamy",
+      "Slowly mix in cooled brownie mix until fully combined",
+      "Fold in whipped topping until light and fluffy",
+      "Stir in mini chocolate chips",
+      "Transfer to a serving bowl",
+      "Optional: top with extra mini chocolate chips or sprinkles",
+      "Serve immediately or refrigerate until ready to serve"
+    ],
+    "cookingTime": "20 minutes + chilling"
+  },
+  {
+    "id": 51,
+    "name": "Oreo Cheesecake Bars",
+    "category": "desserts",
+    "description": "Layered Oreo cheesecake bars with chocolate coating",
+    "servings": 10,
+    "ingredients": [
+      "20 Oreo cookies (remove white cream and reserve)",
+      "180 g cream cheese (Philadelphia style)",
+      "100 ml heavy cream",
+      "2 tbsp powdered sugar",
+      "Crushed Oreo cookies (the same 20 Oreo shells, without cream)",
+      "35 g butter (melted)",
+      "300 g chocolate total (170 g for bottom layer, 130 g for top layer)"
+    ],
+    "nutrition": {
+      "totalCalories": 4120,
+      "perServingCalories": 412,
+      "totalProtein": 54,
+      "perServingProtein": 5.4,
+      "totalCarbs": 360,
+      "perServingCarbs": 36,
+      "totalFat": 275,
+      "perServingFat": 27.5
+    },
+    "instructions": [
+      "Remove the white cream from 20 Oreo cookies and place into a bowl",
+      "Add cream cheese, heavy cream, and powdered sugar and mix until smooth",
+      "Refrigerate the filling while preparing other layers",
+      "Crush Oreo cookies (without cream) into fine crumbs",
+      "Mix crushed cookies with melted butter until texture resembles wet sand",
+      "Melt 170 g chocolate",
+      "Pour a thin layer into silicone molds or a small tray",
+      "Refrigerate for 15–30 minutes until firm",
+      "Spread cream filling over the hardened chocolate layer",
+      "Add the Oreo cookie base on top and press lightly to compact",
+      "Refrigerate for another 15–30 minutes",
+      "Melt remaining 130 g chocolate",
+      "Pour over bars to fully cover",
+      "Refrigerate 15–30 minutes until fully set",
+      "Chill bars at least 2 hours before serving",
+      "Remove from molds and slice if needed",
+      "Store refrigerated"
+    ],
+    "cookingTime": "45 minutes + chilling"
+  },
+  {
+    "id": 52,
+    "name": "Brookies (Brownie + Cookie)",
+    "category": "desserts",
+    "description": "Thick brownie-cookie bars with chocolate chunks",
+    "servings": 12,
+    "ingredients": [
+      "225 g unsalted butter (melted)",
+      "250 g brown sugar",
+      "150 g powdered sugar",
+      "3 large eggs (~150 g)",
+      "90 g dark chocolate (melted)",
+      "50 g cocoa powder",
+      "50 g all-purpose flour",
+      "15 g vegetable oil",
+      "15 ml vanilla extract",
+      "Pinch salt (~1 g)",
+      "Chocolate chunks to taste (~100 g)",
+      "115 g butter (melted)",
+      "150 g brown sugar",
+      "1 large egg (~50 g)",
+      "5 ml vanilla extract",
+      "190 g all-purpose flour",
+      "2 g baking soda",
+      "3 g salt",
+      "135 g chocolate chips"
+    ],
+    "nutrition": {
+      "totalCalories": 7980,
+      "perServingCalories": 665,
+      "totalProtein": 104,
+      "perServingProtein": 8.7,
+      "totalCarbs": 925,
+      "perServingCarbs": 77.1,
+      "totalFat": 430,
+      "perServingFat": 35.8
+    },
+    "instructions": [
+      "Mix melted butter, cocoa powder, and melted dark chocolate for the brownie base",
+      "Whisk brown sugar and eggs for about 5 minutes until glossy",
+      "Add powdered sugar and mix gently",
+      "Add vanilla, salt, oil, and flour and mix just until combined",
+      "Fold in chocolate chunks",
+      "Mix melted butter and brown sugar for the cookie dough until creamy",
+      "Add egg and vanilla and mix well",
+      "Add flour, baking soda, and salt and mix until just combined",
+      "Fold in chocolate chips",
+      "Preheat oven to 330–340°F (165–170°C)",
+      "Spread brownie batter evenly in a lined 8x8-inch pan",
+      "Spoon cookie dough on top and lightly swirl or layer",
+      "Bake for 28–30 minutes until edges are set and center is slightly soft",
+      "Cool completely (1–2 hours) before slicing"
+    ],
+    "cookingTime": "45 minutes + cooling"
+  },
+  {
+    "id": 53,
+    "name": "Reese’s Peanut Butter Balls",
+    "category": "desserts",
+    "description": "Chocolate-coated peanut butter biscuit balls",
+    "servings": 20,
+    "ingredients": [
+      "300 g crushed digestive biscuits (McVitie’s or similar)",
+      "250 g peanut butter",
+      "50 g melted butter",
+      "30 g powdered sugar",
+      "250 g milk chocolate (for coating)",
+      "Optional: chopped peanuts"
+    ],
+    "nutrition": {
+      "totalCalories": 5950,
+      "perServingCalories": 298,
+      "totalProtein": 158,
+      "perServingProtein": 7.9,
+      "totalCarbs": 530,
+      "perServingCarbs": 26.5,
+      "totalFat": 380,
+      "perServingFat": 19
+    },
+    "instructions": [
+      "Combine crushed biscuits, peanut butter, melted butter, and powdered sugar in a large bowl",
+      "Mix until a firm, compact dough forms",
+      "Chill in the refrigerator for 10–15 minutes",
+      "Roll into evenly sized balls",
+      "Chill again for 15 minutes to firm up",
+      "Melt chocolate",
+      "Dip chilled balls into melted chocolate until fully coated",
+      "Sprinkle with chopped peanuts if desired",
+      "Refrigerate until chocolate is fully set"
+    ],
+    "cookingTime": "25 minutes + chilling"
+  },
+  {
+    "id": 54,
+    "name": "Protein Peanut Butter Cups (Recipe Jar Style)",
+    "category": "desserts",
+    "description": "High-protein peanut butter cups with chocolate shell",
+    "servings": 8,
+    "ingredients": [
+      "360 g fat-free vanilla Greek yogurt (plain works too)",
+      "32 g real peanut butter (1 tbsp)",
+      "100 g PB Fit peanut butter powder (1 cup)",
+      "3 tbsp sugar-free syrup or monk fruit sweetener",
+      "1/4 tsp salt (plus flaky salt for topping)",
+      "Pinch cinnamon (1/16 tsp)",
+      "Water (as needed for consistency)",
+      "240 g semi-sweet chocolate chips",
+      "1 tsp coconut oil (optional)",
+      "Optional: Reese’s peanut butter cup halves"
+    ],
+    "nutrition": {
+      "totalCalories": 2064,
+      "perServingCalories": 258,
+      "totalProtein": 128,
+      "perServingProtein": 16,
+      "totalCarbs": 216,
+      "perServingCarbs": 27,
+      "totalFat": 96,
+      "perServingFat": 12
+    },
+    "instructions": [
+      "Combine Greek yogurt, peanut butter, PB powder, sweetener, salt, and cinnamon in a bowl",
+      "Mix until smooth, adding water 1 tablespoon at a time if too thick",
+      "Portion mixture evenly into 8 small jars or cups and press down firmly",
+      "Add chocolate chips and coconut oil to a heatproof measuring cup",
+      "Place the cup into a small pot with simmering water and stir until melted and smooth",
+      "Pour melted chocolate evenly over the peanut butter layer",
+      "Optional: press half a Reese’s cup into the top",
+      "Freeze for 20 minutes or refrigerate until firm",
+      "Store in the refrigerator up to 7 days"
+    ],
+    "cookingTime": "20 minutes + chilling"
   }
 ]

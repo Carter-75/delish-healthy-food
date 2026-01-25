@@ -39,6 +39,10 @@ Copy `.env.example` to `.env` and provide your AdSense values when you are ready
 
 If the variables are missing or the script fails to load, auto ads remain disabled and a descriptive error appears in the browser console to help with setup.
 
+## Privacy Policy
+
+This site includes a dedicated privacy policy page at `/privacy` covering data collection, cookies, and AdSense disclosures.
+
 ## Deployment
 
 This site is ready to deploy to Vercel:

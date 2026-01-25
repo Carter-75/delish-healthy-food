@@ -602,5 +602,91 @@
       "Let cool slightly before serving"
     ],
     "cookingTime": "30-35 minutes"
+  },
+  {
+    "id": 16,
+    "name": "Hawaiian Roll Garlic Parmesan Pepperoni Pizza",
+    "category": "quick-lunches",
+    "description": "Garlic butter pepperoni pizza sliders",
+    "servings": 6,
+    "ingredients": [
+      "12 Hawaiian sweet rolls (1 standard package)",
+      "4 tbsp butter (melted)",
+      "2 tsp garlic powder",
+      "2 tbsp grated parmesan cheese",
+      "1 1/2 cups shredded mozzarella cheese",
+      "1/2 cup pizza sauce",
+      "3 oz pepperoni slices",
+      "Cooking spray (for pan)"
+    ],
+    "nutrition": {
+      "totalCalories": 2630,
+      "perServingCalories": 438,
+      "totalProtein": 112,
+      "perServingProtein": 19,
+      "totalCarbs": 215,
+      "perServingCarbs": 36,
+      "totalFat": 154,
+      "perServingFat": 26,
+      "totalFiber": 6,
+      "perServingFiber": 1
+    },
+    "instructions": [
+      "Preheat oven to 375°F. Lightly spray a baking tray or baking dish",
+      "Slice the Hawaiian rolls in half horizontally, keeping them connected as one slab",
+      "Place the bottom half of the rolls onto the baking tray",
+      "Mix melted butter, garlic powder, and grated parmesan in a small bowl",
+      "Brush the garlic butter over the cut side of the rolls",
+      "Bake for 5–7 minutes until lightly toasted",
+      "Sprinkle 1 cup mozzarella evenly over the rolls",
+      "Spread pizza sauce over the cheese",
+      "Top with the remaining 1/2 cup mozzarella",
+      "Brush exposed edges with more garlic butter",
+      "Evenly distribute pepperoni slices on top",
+      "Bake for 10–12 minutes until cheese is melted and bubbly",
+      "Slice and serve hot"
+    ],
+    "cookingTime": "20-25 minutes"
+  },
+  {
+    "id": 17,
+    "name": "High-Protein Stuffed Crust Pizza",
+    "category": "quick-lunches",
+    "description": "Greek yogurt dough pizza with stuffed mozzarella crust",
+    "servings": 1,
+    "ingredients": [
+      "110 g self-raising flour (or plain flour + 1.5 tsp baking powder)",
+      "100 g low-fat or fat-free Greek yogurt",
+      "1 tsp Italian herb seasoning",
+      "1 tsp garlic powder",
+      "1 tsp salt",
+      "7 g nutritional yeast (optional)",
+      "3 light mozzarella cheese sticks (sliced lengthways)",
+      "80 g pizza sauce or marinara",
+      "75 g low-fat grated cheddar",
+      "45 g light mozzarella",
+      "30 g pepperoni (regular or turkey)"
+    ],
+    "nutrition": {
+      "totalCalories": 883,
+      "perServingCalories": 883,
+      "totalProtein": 81,
+      "perServingProtein": 81,
+      "totalCarbs": 76,
+      "perServingCarbs": 76,
+      "totalFat": 29,
+      "perServingFat": 29
+    },
+    "instructions": [
+      "Mix flour and Greek yogurt until a dough forms",
+      "Add seasonings and nutritional yeast and knead lightly until smooth",
+      "Roll dough thin and wide on a lightly floured surface",
+      "Place mozzarella sticks around the edge, fold dough over, and press to seal the stuffed crust",
+      "Spread pizza sauce over the base",
+      "Add grated cheddar, mozzarella, and pepperoni",
+      "Bake at 200°C (392°F) for 15–20 minutes until golden and cooked through",
+      "Cool slightly, slice, and serve"
+    ],
+    "cookingTime": "25-30 minutes"
   }
 ]

@@ -24,10 +24,8 @@ const CategoryCard = ({ category, delay = 0 }) => {
       : 'View Recipes';
 
   const handleClick = () => {
-    if (!category.comingSoon) {
-      setTheme(category.id);
-      navigate(`/category/${category.id}`);
-    }
+    setTheme(category.id);
+    navigate(`/category/${category.id}`);
   };
 
   return (
@@ -38,25 +36,12 @@ const CategoryCard = ({ category, delay = 0 }) => {
       <div
         onClick={handleClick}
         className={`relative glass-effect rounded-3xl overflow-hidden border ${themeClasses.border}
-          ${themeClasses.shadow} transition-all-smooth group
-          ${category.comingSoon ? 'opacity-60 cursor-not-allowed' : 'hover-lift cursor-pointer'}
+          ${themeClasses.shadow} transition-all-smooth group hover-lift cursor-pointer
           hover:border-opacity-40`}
       >
         {/* Gradient overlay - more subtle */}
-        {!category.comingSoon && (
-          <div className={`absolute inset-0 bg-gradient-to-br ${themeClasses.gradient} 
-            opacity-0 group-hover:opacity-60 transition-opacity duration-500`} />
-        )}
-
-        {/* Coming Soon Badge */}
-        {category.comingSoon && (
-          <div className="absolute top-4 right-4 z-10">
-            <div className={`px-3 py-1 rounded-full ${themeClasses.highlight} 
-              border ${themeClasses.border} text-xs font-semibold ${themeClasses.text}`}>
-              Coming Soon
-            </div>
-          </div>
-        )}
+        <div className={`absolute inset-0 bg-gradient-to-br ${themeClasses.gradient} 
+          opacity-0 group-hover:opacity-60 transition-opacity duration-500`} />
 
         {/* Content */}
         <div className="relative p-8">
@@ -85,20 +70,16 @@ const CategoryCard = ({ category, delay = 0 }) => {
               <span>{category.cookingTime}</span>
             </div>
             
-            {!category.comingSoon && (
-              <div className={`flex items-center gap-2 ${themeClasses.text} 
-                font-semibold group-hover:gap-3 transition-all`}>
-                <span>{recipeCountLabel}</span>
-                <ChevronRight className="w-5 h-5" />
-              </div>
-            )}
+            <div className={`flex items-center gap-2 ${themeClasses.text} 
+              font-semibold group-hover:gap-3 transition-all`}>
+              <span>{recipeCountLabel}</span>
+              <ChevronRight className="w-5 h-5" />
+            </div>
           </div>
 
           {/* Animated border - thicker and more visible */}
-          {!category.comingSoon && (
-            <div className={`absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r ${themeClasses.gradient} 
-              transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full`} />
-          )}
+          <div className={`absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r ${themeClasses.gradient} 
+            transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full`} />
         </div>
       </div>
     </div>

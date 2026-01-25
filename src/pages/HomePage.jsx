@@ -19,10 +19,11 @@ const HomePage = () => {
     loadRecipeCategories()
       .then(data => {
         const resolvedCategories = Array.isArray(data) ? data : [];
-        console.log('Loaded categories:', resolvedCategories);
-        setCategories(resolvedCategories);
+        const visibleCategories = resolvedCategories.filter((category) => !category?.comingSoon);
+        console.log('Loaded categories:', visibleCategories);
+        setCategories(visibleCategories);
 
-        const computedTotal = resolvedCategories.reduce((sum, category) => {
+        const computedTotal = visibleCategories.reduce((sum, category) => {
           return typeof category?.totalRecipes === 'number' && !Number.isNaN(category.totalRecipes)
             ? sum + category.totalRecipes
             : sum;
@@ -84,17 +85,15 @@ const HomePage = () => {
           )}
         </div>
 
-        {/* Additional Info Section - Purple/Violet Theme */}
         <div className="max-w-4xl mx-auto mt-24 text-center animate-fadeInUp">
           <div className="glass-effect rounded-3xl p-10 border border-violet-500/20 bg-gradient-to-br from-violet-900/20 via-purple-900/20 to-fuchsia-900/20 shadow-2xl">
             <Sparkles className="w-12 h-12 text-violet-400 mx-auto mb-4 animate-pulseGlow" />
             <h3 className="text-2xl font-bold bg-gradient-to-r from-violet-400 via-purple-400 to-fuchsia-400 
               bg-clip-text text-transparent mb-4">
-              More Delicious Recipes Coming Soon!
+              Explore Fresh, Balanced Ideas
             </h3>
             <p className="text-violet-200 leading-relaxed">
-              We're constantly adding new high-protein recipes to help you reach your fitness goals. 
-              Stay tuned for more smoothie bowls and additional recipe categories!
+              Discover protein-forward meals curated to support your training, recovery, and daily routine.
             </p>
           </div>
         </div>

@@ -9,6 +9,7 @@ import RecipeDetailPage from './pages/RecipeDetailPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import AllIngredientsPage from './pages/AllIngredientsPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import './styles/animations.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/all-ingredients" element={<AllIngredientsPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/privacy" element={<PrivacyPolicyPage />} />
           </Routes>
         </Layout>
       </Router>

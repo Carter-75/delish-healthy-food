@@ -20,8 +20,12 @@ const RecipeCategoryPage = () => {
       loadRecipesByCategory(categoryId),
       loadRecipeCategories()
     ]).then(([data, categories]) => {
-      setRecipeData(data);
       const info = categories.find(c => c.id === categoryId);
+      if (info?.comingSoon) {
+        navigate('/', { replace: true });
+        return;
+      }
+      setRecipeData(data);
       setCategoryInfo(info);
       setLoading(false);
     }).catch(err => {
