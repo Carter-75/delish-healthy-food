@@ -31,12 +31,12 @@
   {
     "id": "desserts",
     "title": "Simple Delicious Desserts",
-    "description": "41 Sweet Treats",
+    "description": "43 Sweet Treats",
     "cookingTime": "15-60 mins",
     "icon": "IceCream",
     "hasBase": false,
     "hasVariations": false,
-    "totalRecipes": 41,
+    "totalRecipes": 43,
     "data": {
       "type": "collection",
       "itemsPath": "/data/recipes/desserts.json"
@@ -59,12 +59,12 @@
   {
     "id": "quick-lunches",
     "title": "Quick Protein Lunches",
-    "description": "18 Easy Meals",
+    "description": "19 Easy Meals",
     "cookingTime": "30-40 mins",
     "icon": "Clock",
     "hasBase": false,
     "hasVariations": false,
-    "totalRecipes": 18,
+    "totalRecipes": 19,
     "data": {
       "type": "collection",
       "itemsPath": "/data/recipes/quick-lunches.json"
