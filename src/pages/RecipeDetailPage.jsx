@@ -9,10 +9,10 @@ import {
   ChefHat, 
   Flame,
   Copy,
-  Check,
-  Sparkles
+  Check
 } from 'lucide-react';
 import Seo from '../components/Seo';
+import LoadingState from '../components/LoadingState';
 
 const RecipeDetailPage = () => {
   const { categoryId, recipeId } = useParams();
@@ -20,7 +20,7 @@ const RecipeDetailPage = () => {
   const { theme, setTheme } = useTheme();
   const [recipeData, setRecipeData] = useState({ base: null, recipe: null });
   const [loading, setLoading] = useState(true);
-  const [copied, setCopied] = useState(false);
+  const [copyState, setCopyState] = useState('idle');
 
   useEffect(() => {
     setTheme(categoryId);
@@ -36,7 +36,7 @@ const RecipeDetailPage = () => {
       });
   }, [categoryId, recipeId, setTheme]);
 
-  const handleCopyRecipe = () => {
+  const handleCopyRecipe = async () => {
     const { base, recipe } = recipeData;
     let text = `${recipe.name}\n\n`;
     
@@ -47,19 +47,38 @@ const RecipeDetailPage = () => {
     text += `RECIPE INGREDIENTS:\n${recipe.ingredients.join('\n')}\n\n`;
     text += `INSTRUCTIONS:\n${recipe.instructions.map((step, i) => `${i + 1}. ${step}`).join('\n')}`;
     
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    const fallbackCopy = () => {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.setAttribute('readonly', '');
+      textarea.style.position = 'absolute';
+      textarea.style.left = '-9999px';
+      document.body.appendChild(textarea);
+      textarea.select();
+      const success = document.execCommand('copy');
+      document.body.removeChild(textarea);
+      return success;
+    };
+
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        setCopyState('success');
+      } else if (fallbackCopy()) {
+        setCopyState('success');
+      } else {
+        setCopyState('error');
+      }
+    } catch (error) {
+      const success = fallbackCopy();
+      setCopyState(success ? 'success' : 'error');
+    }
+
+    setTimeout(() => setCopyState('idle'), 2500);
   };
 
   if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="animate-spin">
-          <Sparkles className="w-12 h-12 text-blue-400" />
-        </div>
-      </div>
-    );
+    return <LoadingState label="Loading recipe" />;
   }
 
   if (!recipeData.recipe) {
@@ -109,10 +128,15 @@ const RecipeDetailPage = () => {
                 border ${theme.border || 'border-blue-500/20'} ${theme.text || 'text-blue-400'} 
                 hover-lift transition-all-smooth`}
             >
-              {copied ? (
+              {copyState === 'success' ? (
                 <>
                   <Check className="w-5 h-5" aria-hidden="true" />
                   <span>Copied!</span>
+                </>
+              ) : copyState === 'error' ? (
+                <>
+                  <Copy className="w-5 h-5" aria-hidden="true" />
+                  <span>Copy failed</span>
                 </>
               ) : (
                 <>

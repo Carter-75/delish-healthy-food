@@ -22,7 +22,9 @@ export const ThemeProvider = ({ children }) => {
 
     const loadThemes = async () => {
       try {
-        const response = await fetch('/data/themes/color-themes.json', { cache: 'no-store' });
+        const base = (import.meta && import.meta.env && import.meta.env.BASE_URL) || '/';
+        const themeUrl = `${base.replace(/\/$/, '')}/data/themes/color-themes.json`;
+        const response = await fetch(themeUrl, { cache: 'no-store' });
         if (!response.ok) {
           throw new Error(`Request failed with status ${response.status}`);
         }

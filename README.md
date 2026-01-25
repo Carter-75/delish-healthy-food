@@ -12,10 +12,11 @@ This is a beautiful React-based recipe website showcasing delicious protein-rich
 - 📱 Fully responsive design (mobile, tablet, desktop)
 - 🌈 Color-coded recipe categories with dynamic themes
 - 📊 Detailed nutrition information for every recipe
-- ⚡ Fast performance with modern React and Vite
+- ⚡ Route-based code splitting and fast performance with React + Vite
 - 🍽️ 89 high-protein recipes across 6 categories
 - 📋 Easy-to-follow instructions with cooking times
-- 📱 Mobile-friendly navigation with smooth animations
+- 🧾 Searchable master shopping list for ingredients
+- 🧭 Accessible navigation with skip links and focus styling
 
 ## Quick Start
 
@@ -62,6 +63,13 @@ This site is ready to deploy to Vercel:
 - Tailwind CSS
 - React Router
 - Lucide Icons
+
+## Architecture
+
+- Client-only React SPA using React Router
+- Data served from JSON under public/data with a resilient loader
+- Theme system loaded at runtime with per-category styling
+- SEO component for per-route metadata and canonical URLs
 
 ---
 

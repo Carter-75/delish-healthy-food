@@ -27,7 +27,9 @@ const Seo = ({
   description,
   canonicalPath,
   image,
-  type = 'website'
+  type = 'website',
+  siteName = 'Delish Healthy Food',
+  noIndex = false
 }) => {
   useEffect(() => {
     if (title) {
@@ -35,9 +37,11 @@ const Seo = ({
     }
 
     applyMeta('description', description);
+    applyMeta('robots', noIndex ? 'noindex, nofollow' : 'index, follow');
     applyProperty('og:title', title || document.title);
     applyProperty('og:description', description);
     applyProperty('og:type', type);
+    applyProperty('og:site_name', siteName);
 
     const canonicalUrl = canonicalPath
       ? `${window.location.origin}${canonicalPath}`
@@ -63,7 +67,7 @@ const Seo = ({
     applyMeta('twitter:card', image ? 'summary_large_image' : 'summary');
     applyMeta('twitter:title', title || document.title);
     applyMeta('twitter:description', description);
-  }, [title, description, canonicalPath, image, type]);
+  }, [title, description, canonicalPath, image, type, siteName, noIndex]);
 
   return null;
 };

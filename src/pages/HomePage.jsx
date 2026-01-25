@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection';
 import CategoryCard from '../components/CategoryCard';
 import { Sparkles } from 'lucide-react';
 import Seo from '../components/Seo';
+import LoadingState from '../components/LoadingState';
 
 const HomePage = () => {
   const { setTheme } = useTheme();
@@ -41,13 +42,7 @@ const HomePage = () => {
   }, [setTheme]);
 
   if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="animate-spin">
-          <Sparkles className="w-12 h-12 text-blue-400" />
-        </div>
-      </div>
-    );
+    return <LoadingState label="Loading recipes" />;
   }
 
   return (

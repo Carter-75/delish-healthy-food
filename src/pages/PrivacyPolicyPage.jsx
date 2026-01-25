@@ -81,7 +81,7 @@ const PrivacyPolicyPage = () => {
           <section>
             <h2 className="text-2xl font-bold text-white mb-3">Contact</h2>
             <p className="text-gray-300 leading-relaxed">
-              If you have questions about this policy, email us at <a className={`${theme.text || 'text-blue-400'} underline`} href="mailto:hello@delishhealthyfood.com">hello@delishhealthyfood.com</a>.
+              If you have questions about this policy, email us at <a className={`${theme.text || 'text-blue-400'} underline`} href="mailto:cartermoyer75@gmail.com">cartermoyer75@gmail.com</a>.
             </p>
           </section>
 

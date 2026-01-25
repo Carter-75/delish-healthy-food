@@ -1,14 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React, { useDeferredValue, useMemo, useState, useEffect } from 'react';
 import { useTheme } from '../hooks/useTheme';
 import { loadRecipeCategories, loadRecipesByCategory } from '../utils/recipeLoader';
 import { ShoppingCart, Sparkles, ChefHat } from 'lucide-react';
 import Seo from '../components/Seo';
+import LoadingState from '../components/LoadingState';
 
 const AllIngredientsPage = () => {
   const { setTheme } = useTheme();
   const [allIngredients, setAllIngredients] = useState([]);
   const [loading, setLoading] = useState(true);
   const [totalRecipes, setTotalRecipes] = useState(0);
+  const [searchQuery, setSearchQuery] = useState('');
+  const deferredQuery = useDeferredValue(searchQuery);
+
+  const filteredIngredients = useMemo(() => {
+    const query = deferredQuery.trim().toLowerCase();
+    if (!query) {
+      return allIngredients;
+    }
+    return allIngredients.filter((ingredient) => ingredient.toLowerCase().includes(query));
+  }, [allIngredients, deferredQuery]);
 
   useEffect(() => {
     setTheme('default');
@@ -179,13 +190,7 @@ const AllIngredientsPage = () => {
   }, [setTheme]);
 
   if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="animate-spin">
-          <Sparkles className="w-12 h-12 text-emerald-400" />
-        </div>
-      </div>
-    );
+    return <LoadingState label="Loading ingredients" />;
   }
 
   return (
@@ -236,20 +241,52 @@ const AllIngredientsPage = () => {
           <ShoppingCart className="w-6 h-6 text-emerald-400" />
           Complete Ingredient List
         </h2>
+
+        <div className="flex flex-col md:flex-row md:items-center gap-4 mb-6">
+          <label className="text-gray-300 text-sm" htmlFor="ingredient-search">
+            Filter ingredients
+          </label>
+          <div className="flex flex-1 items-center gap-3">
+            <input
+              id="ingredient-search"
+              type="search"
+              value={searchQuery}
+              onChange={(event) => setSearchQuery(event.target.value)}
+              placeholder="Search for an ingredient"
+              className="w-full px-4 py-2 rounded-lg bg-slate-900/50 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-emerald-400/50 transition-colors-smooth"
+            />
+            <button
+              type="button"
+              onClick={() => setSearchQuery('')}
+              className="px-4 py-2 rounded-lg border border-white/10 text-gray-200 hover:bg-white/10 transition-colors-smooth"
+            >
+              Clear
+            </button>
+          </div>
+          <p className="text-sm text-gray-400 md:text-right min-w-[140px]">
+            {filteredIngredients.length} shown
+          </p>
+        </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {allIngredients.map((ingredient, index) => (
-            <div 
-              key={index}
-              className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 
-                transition-all duration-300 border border-white/10 group"
-            >
-              <div className="w-2 h-2 rounded-full bg-emerald-400 group-hover:scale-150 transition-transform" />
-              <span className="text-gray-200 capitalize text-sm">
-                {ingredient}
-              </span>
+          {filteredIngredients.length > 0 ? (
+            filteredIngredients.map((ingredient, index) => (
+              <div 
+                key={`${ingredient}-${index}`}
+                className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 
+                  transition-all duration-300 border border-white/10 group"
+              >
+                <div className="w-2 h-2 rounded-full bg-emerald-400 group-hover:scale-150 transition-transform" />
+                <span className="text-gray-200 capitalize text-sm">
+                  {ingredient}
+                </span>
+              </div>
+            ))
+          ) : (
+            <div className="col-span-full text-center text-gray-400 py-8">
+              No ingredients match that search.
             </div>
-          ))}
+          )}
         </div>
       </div>
 

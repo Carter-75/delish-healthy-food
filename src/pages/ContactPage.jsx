@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useTheme } from '../hooks/useTheme';
 import { Mail, MessageSquare, Sparkles, Send, Check } from 'lucide-react';
 import Seo from '../components/Seo';
@@ -7,12 +7,20 @@ const ContactPage = () => {
   const { theme } = useTheme();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
+  const resetTimer = useRef(null);
+
+  useEffect(() => {
+    return () => {
+      if (resetTimer.current) {
+        clearTimeout(resetTimer.current);
+      }
+    };
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
     setSubmitted(true);
-    setTimeout(() => {
+    resetTimer.current = setTimeout(() => {
       setSubmitted(false);
       setFormData({ name: '', email: '', message: '' });
     }, 3000);
@@ -52,10 +60,10 @@ const ContactPage = () => {
               <h3 className="text-xl font-bold text-white mb-2">Email Us</h3>
               <p className="text-gray-400 mb-4">Drop us a line anytime</p>
               <a
-                href="mailto:hello@delishhealthyfood.com"
+                href="mailto:cartermoyer75@gmail.com"
                 className={`${theme.text || 'text-blue-400'} hover:underline`}
               >
-                hello@delishhealthyfood.com
+                cartermoyer75@gmail.com
               </a>
             </div>
 
@@ -64,10 +72,10 @@ const ContactPage = () => {
               <h3 className="text-xl font-bold text-white mb-2">Feedback</h3>
               <p className="text-gray-400 mb-4">Share your thoughts</p>
               <a
-                href="mailto:feedback@delishhealthyfood.com"
+                href="mailto:cartermoyer75@gmail.com"
                 className={`${theme.text || 'text-blue-400'} hover:underline`}
               >
-                feedback@delishhealthyfood.com
+                cartermoyer75@gmail.com
               </a>
             </div>
           </div>
@@ -123,7 +131,11 @@ const ContactPage = () => {
               </div>
 
               {submitted && (
-                <div className={`p-4 rounded-lg ${theme.highlight || 'bg-green-900/30'} border border-green-500/20 flex items-center gap-3 animate-fadeInUp`}>
+                <div
+                  className={`p-4 rounded-lg ${theme.highlight || 'bg-green-900/30'} border border-green-500/20 flex items-center gap-3 animate-fadeInUp`}
+                  role="status"
+                  aria-live="polite"
+                >
                   <Check className="w-5 h-5 text-green-400" />
                   <p className="text-green-400 font-medium">Thank you! Your message has been sent successfully.</p>
                 </div>

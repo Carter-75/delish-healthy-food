@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
       <AdSenseAutoLoader />
       <BackgroundEffects />
       <Navigation />
-      <main id="main-content" className="relative z-10 pb-20">
+      <main id="main-content" role="main" tabIndex={-1} className="relative z-10 pb-20 focus:outline-none">
         {children}
       </main>
       <footer className="relative z-10 py-8 px-4 border-t border-white/10">
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
             <a className="hover:text-white transition-colors" href="/contact">Contact</a>
           </div>
           <p className="text-gray-400 text-sm">
-            © 2025 Delish Healthy Food. Fuel Your Fitness Journey.
+            © {new Date().getFullYear()} Delish Healthy Food. Fuel Your Fitness Journey.
           </p>
         </div>
       </footer>
