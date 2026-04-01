@@ -446,12 +446,12 @@
     "type": "individual",
     "servings": 12,
     "ingredients": [
-      "1/2 cup Cocoa powder",
+      "½ cup Cocoa powder",
       "2 scoops Chocolate whey protein",
       "3 Eggs",
       "1 cup Almond flour",
       "1 tsp Baking powder",
-      "1/2 cup Sugar-free chocolate chips"
+      "½ cup Sugar-free chocolate chips"
     ],
     "instructions": [
       "Preheat oven to 350°F",
@@ -485,8 +485,8 @@
     "ingredients": [
       "1 cup Almond flour",
       "2 scoops Vanilla protein powder",
-      "1/4 cup Peanut butter",
-      "1/2 cup Sugar-free chocolate chips"
+      "¼ cup Peanut butter",
+      "½ cup Sugar-free chocolate chips"
     ],
     "instructions": [
       "Mix almond flour, protein powder, and peanut butter into dough",
@@ -518,8 +518,8 @@
     "servings": 6,
     "ingredients": [
       "1 cup Vanilla protein yogurt",
-      "1/2 cup Almond flour",
-      "1/3 cup Sugar-free chocolate chips"
+      "½ cup Almond flour",
+      "⅓ cup Sugar-free chocolate chips"
     ],
     "instructions": [
       "Mix vanilla protein yogurt with almond flour until dough forms",
@@ -550,10 +550,10 @@
     "type": "individual",
     "servings": 9,
     "ingredients": [
-      "1/2 cup Cocoa powder",
+      "½ cup Cocoa powder",
       "2 scoops Chocolate whey protein",
       "1 cup Almond flour",
-      "1/2 cup Cherries (chopped)",
+      "½ cup Cherries (chopped)",
       "3 Eggs",
       "1 tsp Baking powder"
     ],
@@ -588,7 +588,7 @@
     "servings": 10,
     "ingredients": [
       "2 scoops Vanilla protein powder",
-      "1/2 cup Greek yogurt (non-fat)",
+      "½ cup Greek yogurt (non-fat)",
       "3 tbsp Sugar-free sprinkles"
     ],
     "instructions": [
@@ -621,8 +621,8 @@
     "servings": 12,
     "ingredients": [
       "2 scoops Chocolate whey protein",
-      "1/3 cup Cocoa powder",
-      "1/4 cup Peanut butter powder",
+      "⅓ cup Cocoa powder",
+      "¼ cup Peanut butter powder",
       "2 Eggs",
       "1 tsp Baking powder"
     ],
@@ -659,7 +659,7 @@
       "1 cup Greek yogurt (non-fat)",
       "2 tsp Cinnamon",
       "3 tbsp Erythritol sweetener",
-      "1/4 cup Light cream cheese (for frosting)",
+      "¼ cup Light cream cheese (for frosting)",
       "1 tbsp Almond milk (for frosting)"
     ],
     "instructions": [
@@ -770,9 +770,9 @@
     "ingredients": [
       "1 cup Self-rising flour",
       "1 cup Greek yogurt (non-fat)",
-      "1/2 cup Pumpkin puree",
+      "½ cup Pumpkin puree",
       "2 tsp Pumpkin spice",
-      "1/4 cup Light cream cheese (for frosting)",
+      "¼ cup Light cream cheese (for frosting)",
       "1 tbsp Almond milk (for frosting)"
     ],
     "instructions": [
@@ -808,9 +808,9 @@
     "ingredients": [
       "1 package Yeast dough (store-bought or homemade)",
       "2 tsp Cinnamon",
-      "1/2 cup Sugar-free chocolate chips",
+      "½ cup Sugar-free chocolate chips",
       "3 tbsp Brown sugar alternative",
-      "1/4 cup Light cream cheese (for icing)",
+      "¼ cup Light cream cheese (for icing)",
       "1 tbsp Almond milk (for icing)"
     ],
     "instructions": [
@@ -933,7 +933,7 @@
     "servings": 1,
     "ingredients": [
       "1 scoop protein powder",
-      "1/2 tsp baking powder",
+      "½ tsp baking powder",
       "Splash of water",
       "Optional: Toppings of choice (like peanut butter or dark chocolate)"
     ],
@@ -968,14 +968,14 @@
     "servings": 12,
     "ingredients": [
       "2 cups almond flour",
-      "1/2 cup unflavored or vanilla protein powder",
+      "½ cup unflavored or vanilla protein powder",
       "1 tsp cinnamon or pumpkin pie spice",
-      "1/2 cup pumpkin puree",
+      "½ cup pumpkin puree",
       "1 tsp vanilla extract",
-      "1/4 cup PB2 mixed with water to form paste",
-      "1/4 cup sugar-free maple syrup",
+      "¼ cup PB2 mixed with water to form paste",
+      "¼ cup sugar-free maple syrup",
       "Pinch of salt",
-      "1/4 cup chocolate chips"
+      "¼ cup chocolate chips"
     ],
     "nutrition": {
       "totalCalories": 1680,
@@ -1012,9 +1012,9 @@
     "ingredients": [
       "2 ripe bananas",
       "1 tsp baking powder",
-      "1/2 cup almond butter",
+      "½ cup almond butter",
       "1 egg",
-      "1/4 cup maple syrup (sugar free)",
+      "¼ cup maple syrup (sugar free)",
       "4 heavy tbsp cocoa powder",
       "Pinch of salt",
       "Handful of chocolate chips (dark chocolate with 0 added sugar)"
@@ -1060,7 +1060,7 @@
       "1 scoop vanilla protein powder",
       "1 tbsp sweetener",
       "Pinch of salt",
-      "1/4 cup water (slowly add, may need less or more)",
+      "¼ cup water (slowly add, may need less or more)",
       "Optional: mini chocolate chips and/or M&Ms"
     ],
     "nutrition": {
@@ -1079,7 +1079,7 @@
     },
     "instructions": [
       "In a bowl, combine oat flour, PB2, vanilla protein powder, sweetener, and a pinch of salt",
-      "Slowly add 1/4 cup water, mixing as you go (you may need less or more water)",
+      "Slowly add ¼ cup water, mixing as you go (you may need less or more water)",
       "Mix until cookie dough consistency is reached",
       "Add optional mini chocolate chips and/or M&Ms if desired",
       "Enjoy immediately or refrigerate for firmer texture"
@@ -1096,18 +1096,18 @@
       "2 cups all-purpose flour",
       "2 tsp baking powder",
       "1 tsp cinnamon",
-      "1/2 tsp pumpkin pie spice",
-      "1/2 tsp salt",
+      "½ tsp pumpkin pie spice",
+      "½ tsp salt",
       "1 cup pumpkin puree",
-      "3/4 cup sugar (or sugar substitute)",
+      "¾ cup sugar (or sugar substitute)",
       "2 eggs",
-      "1/2 cup milk",
-      "1/4 cup melted butter",
+      "½ cup milk",
+      "¼ cup melted butter",
       "1 tsp vanilla extract",
-      "1/2 cup brown sugar (cinnamon filling)",
+      "½ cup brown sugar (cinnamon filling)",
       "2 tbsp cinnamon (filling)",
       "4 oz cream cheese (frosting)",
-      "1/4 cup powdered sugar (frosting)",
+      "¼ cup powdered sugar (frosting)",
       "2 tbsp milk (frosting)"
     ],
     "nutrition": {
@@ -1191,10 +1191,10 @@
     "ingredients": [
       "1 cup creamy peanut butter",
       "8 oz cream cheese, softened",
-      "1/2 cup brown sugar (or brown sugar substitute)",
-      "1/4 cup powdered sugar",
+      "½ cup brown sugar (or brown sugar substitute)",
+      "¼ cup powdered sugar",
       "1 tsp vanilla extract",
-      "1/2 cup mini chocolate chips",
+      "½ cup mini chocolate chips",
       "Graham crackers or apple slices for dipping"
     ],
     "nutrition": {
@@ -1610,15 +1610,15 @@
     "ingredients": [
       "1 cup pumpkin purée",
       "3 large eggs",
-      "1/3 cup melted coconut oil (or melted butter or olive oil)",
+      "⅓ cup melted coconut oil (or melted butter or olive oil)",
       "1 teaspoon vanilla extract",
-      "1 1/2 cups all-purpose flour",
-      "1/2 teaspoon baking powder",
+      "1 ½ cups all-purpose flour",
+      "½ teaspoon baking powder",
       "1 teaspoon baking soda",
       "1 cup brown sugar",
-      "1/2 teaspoon pumpkin pie spice",
+      "½ teaspoon pumpkin pie spice",
       "1 teaspoon cinnamon",
-      "1/2 cup chocolate chips or chocolate chunks",
+      "½ cup chocolate chips or chocolate chunks",
       "1 cup raw cookie dough (store-bought edible cookie dough or homemade edible dough)"
     ],
     "nutrition": {
@@ -1639,10 +1639,10 @@
       "In a separate bowl, whisk together the flour, baking powder, baking soda, pumpkin pie spice, and cinnamon",
       "Add the dry ingredients to the wet ingredients and stir gently until just combined",
       "Fold in the brown sugar and chocolate chips",
-      "Pour 1/3 of the batter into the loaf pan and smooth it out",
-      "Crumble or spread 1/2 of the cookie dough over the batter",
-      "Add the next 1/3 of the batter, then the remaining cookie dough",
-      "Finish with the final 1/3 of batter on top",
+      "Pour ⅓ of the batter into the loaf pan and smooth it out",
+      "Crumble or spread ½ of the cookie dough over the batter",
+      "Add the next ⅓ of the batter, then the remaining cookie dough",
+      "Finish with the final ⅓ of batter on top",
       "Bake for 55–65 minutes, or until a toothpick inserted in the center comes out mostly clean (a few moist crumbs are okay)",
       "Let the bread cool in the pan for 30 minutes, then lift out and cool completely before slicing"
     ],
@@ -1656,16 +1656,16 @@
     "servings": 9,
     "ingredients": [
       "1 cup canned pumpkin purée",
-      "1/2 cup peanut butter or almond butter",
-      "1/4 cup maple syrup",
-      "1/4 cup brown coconut sugar",
+      "½ cup peanut butter or almond butter",
+      "¼ cup maple syrup",
+      "¼ cup brown coconut sugar",
       "2 eggs",
-      "1/2 teaspoon baking soda",
+      "½ teaspoon baking soda",
       "Dash of pumpkin spice",
-      "3/4 cup cocoa powder",
+      "¾ cup cocoa powder",
       "Pinch of salt",
       "Dash of vanilla extract",
-      "1/2 cup chocolate chips",
+      "½ cup chocolate chips",
       "Flaky salt for sprinkling (optional)"
     ],
     "nutrition": {
@@ -1701,18 +1701,18 @@
     "ingredients": [
       "1 cup mashed ripe bananas (about 2 medium)",
       "2 large eggs",
-      "1/3 cup Greek yogurt (non-fat or low-fat)",
-      "1/4 cup unsweetened almond milk",
-      "1/4 cup maple syrup or sugar-free syrup",
+      "⅓ cup Greek yogurt (non-fat or low-fat)",
+      "¼ cup unsweetened almond milk",
+      "¼ cup maple syrup or sugar-free syrup",
       "1 teaspoon vanilla extract",
       "1 cup oat flour (or finely ground oats)",
-      "1/2 cup chocolate protein powder (whey or plant-based)",
-      "1/4 cup unsweetened cocoa powder",
+      "½ cup chocolate protein powder (whey or plant-based)",
+      "¼ cup unsweetened cocoa powder",
       "1 teaspoon baking powder",
-      "1/2 teaspoon baking soda",
-      "1/4 teaspoon salt",
-      "1/4 cup mini dark chocolate chips (optional)",
-      "1/2 cup vanilla protein powder (cookie dough layer)",
+      "½ teaspoon baking soda",
+      "¼ teaspoon salt",
+      "¼ cup mini dark chocolate chips (optional)",
+      "½ cup vanilla protein powder (cookie dough layer)",
       "2 tablespoons almond flour (cookie dough layer)",
       "2 tablespoons powdered peanut butter/PB2 (cookie dough layer)",
       "2 tablespoons unsweetened almond milk (cookie dough layer)",
@@ -1753,17 +1753,17 @@
     "servings": 9,
     "ingredients": [
       "3 eggs",
-      "3/4 cup cocoa powder",
-      "3/4 teaspoon salt",
-      "1/4 teaspoon espresso powder",
-      "3/4 teaspoon baking powder",
+      "¾ cup cocoa powder",
+      "¾ teaspoon salt",
+      "¼ teaspoon espresso powder",
+      "¾ teaspoon baking powder",
       "1 tablespoon milk powder (optional)",
       "2 teaspoons vanilla extract",
       "1 packet hot cocoa mix",
-      "3/4 cup unsalted butter (melted)",
-      "1 1/4 cups sugar",
+      "¾ cup unsalted butter (melted)",
+      "1 ¼ cups sugar",
       "1 cup + 1 tablespoon all-purpose flour",
-      "1/2 cup chocolate chips",
+      "½ cup chocolate chips",
       "2 cups mini marshmallows"
     ],
     "nutrition": {
@@ -1878,12 +1878,12 @@
     "description": "Nutty brown butter cookies with melty chocolate",
     "servings": 18,
     "ingredients": [
-      "1 1/4 cups brown butter (cooled)",
-      "3/4 cup granulated sugar",
+      "1 ¼ cups brown butter (cooled)",
+      "¾ cup granulated sugar",
       "1 cup firmly packed brown sugar",
       "2 large eggs",
-      "1 1/2 tsp vanilla extract",
-      "2 3/4 cups all-purpose flour",
+      "1 ½ tsp vanilla extract",
+      "2 ¾ cups all-purpose flour",
       "1 tsp salt",
       "2 tsp baking soda",
       "8 oz semi-sweet chocolate (chopped or chips)",
@@ -1995,7 +1995,7 @@
     "ingredients": [
       "1 box chocolate cake mix",
       "1 cup water",
-      "1/2 cup vegetable oil",
+      "½ cup vegetable oil",
       "3 large eggs",
       "2 packages instant Oreo pudding mix (3.9 oz each)",
       "2 cups cold milk",
@@ -2040,7 +2040,7 @@
       "8 oz cream cheese (softened)",
       "2 tbsp milk",
       "8 oz whipped topping (Cool Whip)",
-      "1/4 cup mini chocolate chips"
+      "¼ cup mini chocolate chips"
     ],
     "nutrition": {
       "totalCalories": 3240,
@@ -2214,7 +2214,7 @@
       "32 g real peanut butter (1 tbsp)",
       "100 g PB Fit peanut butter powder (1 cup)",
       "3 tbsp sugar-free syrup or monk fruit sweetener",
-      "1/4 tsp salt (plus flaky salt for topping)",
+      "¼ tsp salt (plus flaky salt for topping)",
       "Pinch cinnamon (1/16 tsp)",
       "Water (as needed for consistency)",
       "240 g semi-sweet chocolate chips",
@@ -2256,9 +2256,9 @@
       "2 tbsp brown sugar (28 g)",
       "1 tbsp milk (18 ml)",
       "Splash of vanilla extract",
-      "1/4 cup + 2 tbsp all-purpose flour (52 g)",
-      "1/4 tsp baking soda",
-      "1/8 tsp salt",
+      "¼ cup + 2 tbsp all-purpose flour (52 g)",
+      "¼ tsp baking soda",
+      "⅛ tsp salt",
       "1 tbsp chocolate chips",
       "1 tbsp mini M&M's",
       "Extra chocolate chips or M&M's for topping (optional)"
@@ -2301,7 +2301,7 @@
       "1 tsp vanilla extract (brownie layer)",
       "75 g all-purpose flour (brownie layer)",
       "30 g cocoa powder (brownie layer)",
-      "1/4 tsp salt (brownie layer)",
+      "¼ tsp salt (brownie layer)",
       "80 g chocolate chips (brownie layer)",
       "115 g unsalted butter (cookie layer)",
       "120 g brown sugar (cookie layer)",
@@ -2309,7 +2309,7 @@
       "1 large egg (cookie layer)",
       "1 tsp vanilla extract (cookie layer)",
       "180 g all-purpose flour (cookie layer)",
-      "1/2 tsp salt (cookie layer)",
+      "½ tsp salt (cookie layer)",
       "100 g chocolate chips (cookie layer)"
     ],
     "nutrition": {
@@ -2333,7 +2333,7 @@
       "Line a flat surface with parchment paper",
       "Spread brownie dough into a rectangle",
       "Place cookie dough on top",
-      "Cover with another parchment sheet and roll flat to about 1/2 inch thickness",
+      "Cover with another parchment sheet and roll flat to about ½ inch thickness",
       "Cut into fry-shaped sticks",
       "Chill shaped dough for 20–30 minutes",
       "Preheat oven to 350°F (175°C)",
@@ -2343,5 +2343,134 @@
       "Cool before serving"
     ],
     "cookingTime": "45-50 minutes (includes chilling)"
+  },
+  {
+    "id": 57,
+    "name": "6-Ingredient Healthy Cookie Pie",
+    "category": "desserts",
+    "description": "Healthy 6-ingredient cookie pie made with almond butter and maple syrup",
+    "servings": 6,
+    "ingredients": [
+      "1 cup creamy unsweetened almond butter",
+      "½ cup maple syrup",
+      "2 large eggs",
+      "1 cup almond flour",
+      "½ tsp baking soda",
+      "½ cup chocolate chips"
+    ],
+    "nutrition": {
+      "totalCalories": 1920,
+      "perServingCalories": 320,
+      "totalProtein": 54,
+      "perServingProtein": 9,
+      "totalCarbs": 144,
+      "perServingCarbs": 24,
+      "totalFat": 132,
+      "perServingFat": 22,
+      "totalFiber": 18,
+      "perServingFiber": 3,
+      "totalSugar": 96,
+      "perServingSugar": 16
+    },
+    "instructions": [
+      "Preheat oven to 350°F (177°C). Lightly grease a 9-inch pie dish or oven-safe skillet.",
+      "In a large bowl whisk almond butter, maple syrup, and eggs until smooth.",
+      "Stir in almond flour and baking soda until a thick batter forms.",
+      "Fold in chocolate chips evenly.",
+      "Pour batter into prepared dish and spread evenly.",
+      "Bake 12–15 minutes until edges are set and golden while the center remains slightly underdone.",
+      "Cool 10 minutes before slicing.",
+      "Slice into 6 servings and serve warm."
+    ],
+    "cookingTime": "12-15 minutes"
+  },
+  {
+    "id": 58,
+    "name": "Chocolate Fudgy Protein Cookie Fries",
+    "category": "desserts",
+    "description": "Fudgy chocolate protein cookies shaped like fries, perfect for dipping",
+    "servings": 20,
+    "ingredients": [
+      "1 medium egg",
+      "123 g canned pumpkin",
+      "28 g light butter, melted (2 tbsp)",
+      "24 g brown sugar substitute (2 tbsp)",
+      "30 g all purpose flour (¼ cup)",
+      "25 g cocoa powder (5 tbsp)",
+      "24 g casein protein powder (⅔ scoop vanilla or chocolate)",
+      "72 g granular sugar substitute (¼ cup + 2 tbsp)",
+      "3 g baking soda (½ tsp)",
+      "2 g salt (1 tsp)",
+      "Chocolate chunks to taste",
+      "14 g chocolate chunks (topping)",
+      "Additional 14 g chocolate chunks optional"
+    ],
+    "nutrition": {
+      "totalCalories": 480,
+      "perServingCalories": 24,
+      "totalProtein": 30,
+      "perServingProtein": 1.5,
+      "totalCarbs": 60,
+      "perServingCarbs": 3,
+      "totalFat": 20,
+      "perServingFat": 1
+    },
+    "instructions": [
+      "In a bowl add wet ingredients and mix until smooth.",
+      "In another bowl combine all dry ingredients and mix.",
+      "Combine wet and dry mixtures and mix thoroughly.",
+      "If dough is crumbly add small splashes of water until it holds together.",
+      "Add optional mix-ins and refrigerate batter 15 minutes.",
+      "Preheat oven to 350°F (177°C). Prepare 2 cookie sheets with spray or parchment.",
+      "Form about 20 thin fry-shaped strips and place spaced apart.",
+      "Add topping chocolate chunks.",
+      "Bake 10–12 minutes until slightly underdone.",
+      "Cool 10 minutes in freezer or 30 minutes at room temperature until crisp."
+    ],
+    "cookingTime": "10-12 minutes"
+  },
+  {
+    "id": 59,
+    "name": "Peanut Butter Protein Cookies",
+    "category": "desserts",
+    "description": "Protein-packed peanut butter cookies with chocolate chips and coconut sugar",
+    "servings": 12,
+    "ingredients": [
+      "480 g peanut butter (2 cups)",
+      "220 g coconut sugar (1 packed cup)",
+      "120 g protein powder (≈1 cup whey/casein blend)",
+      "2 large eggs (100 g without shells)",
+      "5 g baking soda (1 tsp)",
+      "180 g chocolate chips (1 cup)"
+    ],
+    "nutrition": {
+      "totalCalories": 5948,
+      "perServingCalories": 496,
+      "totalProtein": 242,
+      "perServingProtein": 20,
+      "totalCarbs": 530,
+      "perServingCarbs": 44,
+      "totalFat": 352,
+      "perServingFat": 29
+    },
+    "instructions": [
+      "Preheat oven to 350°F (177°C). Line baking sheet with parchment.",
+      "In a bowl whisk eggs until smooth.",
+      "Add coconut sugar and mix 30–45 seconds until glossy and slightly thick.",
+      "Mix in peanut butter until a uniform paste forms.",
+      "Add protein powder and baking soda and stir until thick dough forms.",
+      "Fold in chocolate chips evenly.",
+      "Divide dough into 12 equal portions and roll into balls.",
+      "Place 3–4 inches apart and flatten to about ¾-inch thick disks.",
+      "Bake 10–12 minutes (10 min soft center, 12 min firm).",
+      "Cool on tray 10 minutes before moving."
+    ],
+    "cookingTime": "10-12 minutes"
   }
 ]
+
+
+
+
+
+

@@ -53,7 +53,7 @@
       "6 oz Chicken breast (cooked and sliced)",
       "1 Low-carb tortilla",
       "2 tbsp Pesto sauce",
-      "1/2 cup Shredded mozzarella"
+      "½ cup Shredded mozzarella"
     ],
     "instructions": [
       "Spread pesto sauce evenly on one side of tortilla",
@@ -122,7 +122,7 @@
     "ingredients": [
       "6 oz Chicken breast (cooked and diced)",
       "1.5 cups High-protein pasta (cooked)",
-      "1/2 cup Light cheese sauce",
+      "½ cup Light cheese sauce",
       "1 cup Steamed broccoli"
     ],
     "instructions": [
@@ -156,7 +156,7 @@
     "ingredients": [
       "1 Low-carb wrap or tortilla",
       "3 tbsp Marinara sauce",
-      "1/2 cup Shredded mozzarella",
+      "½ cup Shredded mozzarella",
       "3 oz Chicken breast (diced)"
     ],
     "instructions": [
@@ -225,7 +225,7 @@
       "1 High-protein flatbread",
       "6 oz Chicken breast (diced)",
       "1 tbsp Taco seasoning",
-      "1/2 cup Shredded cheese (Mexican blend)",
+      "½ cup Shredded cheese (Mexican blend)",
       "3 tbsp Salsa"
     ],
     "instructions": [
@@ -296,8 +296,8 @@
     "ingredients": [
       "2 slices Low-carb toast",
       "4 oz Chicken breast (diced)",
-      "1/4 cup Cauliflower alfredo sauce",
-      "1/2 cup Shredded mozzarella"
+      "¼ cup Cauliflower alfredo sauce",
+      "½ cup Shredded mozzarella"
     ],
     "instructions": [
       "Toast bread slices until lightly crispy",
@@ -365,7 +365,7 @@
       "1 Large tortilla",
       "6 oz Chicken breast (sliced)",
       "2 tbsp Pesto sauce",
-      "1/2 cup Shredded mozzarella",
+      "½ cup Shredded mozzarella",
       "Handful fresh spinach"
     ],
     "instructions": [
@@ -435,13 +435,13 @@
     "servings": 4,
     "ingredients": [
       "1 lb ground beef (85% lean) or ground turkey",
-      "1/2 cup peanut butter",
-      "1/2 cup grape jelly or strawberry jam (or sugar-free version)",
+      "½ cup peanut butter",
+      "½ cup grape jelly or strawberry jam (or sugar-free version)",
       "2 tbsp soy sauce",
       "1 tbsp apple cider vinegar",
       "1 tsp garlic powder",
-      "1/2 tsp onion powder",
-      "1/4 tsp red pepper flakes (optional)",
+      "½ tsp onion powder",
+      "¼ tsp red pepper flakes (optional)",
       "Salt and pepper to taste",
       "4 hamburger buns or low-carb buns",
       "Optional toppings: pickles, coleslaw, sliced onions"
@@ -566,12 +566,12 @@
     "description": "Greek Yogurt Dough Pizza Calzones",
     "servings": 6,
     "ingredients": [
-      "3 1/4 cups all-purpose flour",
+      "3 ¼ cups all-purpose flour",
       "2 cups nonfat Greek yogurt",
       "1 teaspoon salt",
-      "1 1/2 cups low-fat shredded mozzarella cheese",
-      "6 1/3 oz turkey pepperoni (or beef pepperoni)",
-      "1/2 cup pizza sauce",
+      "1 ½ cups low-fat shredded mozzarella cheese",
+      "6 ⅓ oz turkey pepperoni (or beef pepperoni)",
+      "½ cup pizza sauce",
       "Cooking spray",
       "Dried parsley (to taste)"
     ],
@@ -614,8 +614,8 @@
       "4 tbsp butter (melted)",
       "2 tsp garlic powder",
       "2 tbsp grated parmesan cheese",
-      "1 1/2 cups shredded mozzarella cheese",
-      "1/2 cup pizza sauce",
+      "1 ½ cups shredded mozzarella cheese",
+      "½ cup pizza sauce",
       "3 oz pepperoni slices",
       "Cooking spray (for pan)"
     ],
@@ -640,7 +640,7 @@
       "Bake for 5–7 minutes until lightly toasted",
       "Sprinkle 1 cup mozzarella evenly over the rolls",
       "Spread pizza sauce over the cheese",
-      "Top with the remaining 1/2 cup mozzarella",
+      "Top with the remaining ½ cup mozzarella",
       "Brush exposed edges with more garlic butter",
       "Evenly distribute pepperoni slices on top",
       "Bake for 10–12 minutes until cheese is melted and bubbly",
@@ -737,5 +737,53 @@
       "Finish with basil, parmesan, and extra garlic if desired"
     ],
     "cookingTime": "40-50 minutes"
+  },
+  {
+    "id": 19,
+    "name": "Custom High-Protein Mini Pizza",
+    "category": "quick-lunches",
+    "description": "Crispy high-protein mini pizza with a Greek yogurt dough and savory toppings",
+    "servings": 4,
+    "ingredients": [
+      "1 cup all-purpose flour",
+      "0.5 tbsp extra flour (for kneading)",
+      "1 tsp baking powder",
+      "¼ tsp salt",
+      "2 tbsp unflavored protein powder",
+      "¾ cup plain Greek yogurt",
+      "1 tsp Italian seasoning",
+      "1 tsp olive oil (brush crust)",
+      "1 cup pizza sauce",
+      "3 tbsp parmesan cheese",
+      "2 imitation crab sticks, sliced",
+      "1 beef stick, sliced",
+      "2 tbsp ranch"
+    ],
+    "nutrition": {
+      "totalCalories": 1010,
+      "perServingCalories": 253,
+      "totalProtein": 61,
+      "perServingProtein": 15,
+      "totalCarbs": 149,
+      "perServingCarbs": 37,
+      "totalFat": 22.5,
+      "perServingFat": 5.6
+    },
+    "instructions": [
+      "Preheat oven to 400°F (200°C).",
+      "In a bowl combine flour, baking powder, salt, protein powder, and Italian seasoning.",
+      "Add Greek yogurt and mix until dough forms.",
+      "Knead 1–2 minutes until smooth, using extra flour if sticky.",
+      "Rest dough 5 minutes.",
+      "Press dough into a 5-inch round pizza.",
+      "Brush crust edge with olive oil.",
+      "Spread sauce over base.",
+      "Add parmesan, crab, and beef stick slices.",
+      "Drizzle ranch over top.",
+      "Bake 15 minutes.",
+      "Place directly on oven rack for 2–4 minutes to crisp.",
+      "Rest 2 minutes and slice into 4 pieces."
+    ],
+    "cookingTime": "25 minutes"
   }
 ]
