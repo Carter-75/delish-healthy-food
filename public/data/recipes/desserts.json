@@ -2466,6 +2466,201 @@
       "Cool on tray 10 minutes before moving."
     ],
     "cookingTime": "10-12 minutes"
+  },
+  {
+    "id": 60,
+    "name": "7-Calorie Chocolate Chip Blondies",
+    "category": "desserts",
+    "description": "Ultra-low-calorie chocolate chip blondies made with Greek yogurt and oat flour",
+    "servings": 88,
+    "ingredients": [
+      "113 g plain or vanilla nonfat Greek yogurt (½ cup)",
+      "1 medium egg",
+      "48 mL egg white (3 tbsp)",
+      "4.2 mL vanilla extract (1 tsp) *optional*",
+      "60 g all purpose flour (½ cup)",
+      "1 scoop vanilla protein powder",
+      "30 g oat flour (¼ cup)",
+      "96 g granular sugar substitute, e.g. Swerve (½ cup)",
+      "4 g baking soda (⅔ tsp)",
+      "1 g salt (½ tsp)",
+      "21 g chocolate chips (1½ tbsp)",
+      "Extra chocolate chips to taste *optional*"
+    ],
+    "nutrition": {
+      "totalCalories": 616,
+      "perServingCalories": 7,
+      "totalProtein": 66,
+      "perServingProtein": 0.75,
+      "totalCarbs": 66,
+      "perServingCarbs": 0.75,
+      "totalFat": 13,
+      "perServingFat": 0.15
+    },
+    "instructions": [
+      "Preheat oven to 350°F (177°C).",
+      "In a bowl add all wet ingredients and mix until smooth.",
+      "In another bowl combine all dry ingredients and mix.",
+      "Combine wet and dry ingredients and mix thoroughly until a thick batter forms with no clumps.",
+      "Fold in mix-ins.",
+      "Refrigerate batter 15 minutes to firm up.",
+      "Prepare a parchment-lined cookie sheet with cooking spray and spread batter evenly.",
+      "Add topping chocolate chips if desired.",
+      "Bake at 350°F for 15 minutes.",
+      "Remove when slightly underdone — it will continue to set as it cools.",
+      "Cut into an 8×11 grid to yield 88 blondies."
+    ],
+    "cookingTime": "15 minutes"
+  },
+  {
+    "id": 61,
+    "name": "Homemade Marshmallow Fluff",
+    "category": "desserts",
+    "description": "Silky, cloud-like marshmallow fluff made with honey and egg whites",
+    "servings": 32,
+    "ingredients": [
+      "3 egg whites",
+      "¾ cup honey",
+      "⅔ cup cane sugar",
+      "¼ cup water",
+      "1 tsp vanilla extract",
+      "Pinch of salt"
+    ],
+    "nutrition": {
+      "totalCalories": 1340,
+      "perServingCalories": 42,
+      "totalProtein": 11,
+      "perServingProtein": 0.3,
+      "totalCarbs": 344,
+      "perServingCarbs": 11,
+      "totalFat": 0,
+      "perServingFat": 0
+    },
+    "instructions": [
+      "In a small saucepan combine honey, cane sugar, and water.",
+      "Place over medium heat and bring to a simmer. Cook syrup until it reaches 246°F (118°C) on a thermometer — about 8 minutes. Stir to boil evenly and avoid burn spots.",
+      "While syrup heats, add egg whites and a pinch of salt to a stand mixer fitted with the whisk attachment.",
+      "Whip on medium speed until foamy and just beginning to form soft peaks.",
+      "Once syrup reaches 246°F, reduce mixer to medium speed. Very slowly drizzle hot syrup down the side of the bowl while mixer runs.",
+      "Once all syrup is added, increase mixer speed and whip 5–7 minutes until thick, glossy, and marshmallow-like. Bowl should feel just warm — not hot — when ready.",
+      "Add vanilla extract and whip 20–30 more seconds. Result should be a silky, cloud-like fluff that holds soft peaks."
+    ],
+    "cookingTime": "15 minutes"
+  },
+  {
+    "id": 62,
+    "name": "Cosmic Brownie Loaf",
+    "category": "desserts",
+    "description": "High-protein brownie loaf with creamy Greek yogurt frosting and rainbow chips",
+    "servings": 8,
+    "ingredients": [
+      "120 g pumpkin puree (½ cup)",
+      "56 g 0% Greek yogurt (¼ cup)",
+      "60 g milk, cashew-based (¼ cup)",
+      "92 g egg whites (⅓ cup)",
+      "72 g granulated sweetener, e.g. monkfruit (⅓ cup)",
+      "1 tsp vanilla extract",
+      "40 g cocoa powder (⅓ cup)",
+      "30 g oat flour (¼ cup)",
+      "14 g coconut flour (2 tbsp)",
+      "37 g protein powder, birthday cake flavor (1 scoop)",
+      "1 tsp baking soda",
+      "Pinch of salt",
+      "FROSTING: 151 g Greek yogurt (⅔ cup)",
+      "FROSTING: 93 g pumpkin puree (⅓ cup)",
+      "FROSTING: 18 g protein powder, birthday cake flavor (½ scoop)",
+      "FROSTING: ¼ cup powdered monkfruit sweetener",
+      "TOPPING: 1–2 tbsp rainbow chocolate chips"
+    ],
+    "nutrition": {
+      "totalCalories": 748,
+      "perServingCalories": 93,
+      "totalProtein": 82,
+      "perServingProtein": 10.3,
+      "totalCarbs": 81,
+      "perServingCarbs": 10,
+      "totalFat": 15,
+      "perServingFat": 2
+    },
+    "instructions": [
+      "Preheat oven to 350°F (177°C).",
+      "In a bowl mix all wet loaf ingredients together.",
+      "In the same or separate bowl combine all dry ingredients. Mix wet and dry together until combined.",
+      "Pour into an 8×4 loaf pan and bake 45–50 minutes or until toothpick comes out clean.",
+      "Let loaf cool completely. Mix frosting ingredients together and spread over cooled loaf.",
+      "Top with rainbow chocolate chips. Add sprinkles (if using) at time of serving only."
+    ],
+    "cookingTime": "45-50 minutes"
+  },
+  {
+    "id": 63,
+    "name": "High Protein Mud Cake",
+    "category": "desserts",
+    "description": "Indulgent high-protein mug cake topped with a rich Greek yogurt and cocoa frosting",
+    "servings": 1,
+    "ingredients": [
+      "¼ cup flour",
+      "1 serve chocolate protein powder",
+      "1 tsp baking powder",
+      "⅓ cup sparkling water",
+      "1 tbsp sugar-free maple syrup",
+      "FROSTING: 1 cup vanilla or chocolate high-protein yogurt",
+      "FROSTING: 2 tbsp cocoa powder",
+      "FROSTING: 2 tbsp sugar-free chocolate fudge topping",
+      "Optional: Sweetener to taste",
+      "Optional: Sugar-free chocolate syrup drizzle"
+    ],
+    "nutrition": {
+      "totalCalories": 420,
+      "perServingCalories": 420,
+      "totalProtein": 55,
+      "perServingProtein": 55,
+      "totalCarbs": 42,
+      "perServingCarbs": 42,
+      "totalFat": 4,
+      "perServingFat": 4
+    },
+    "instructions": [
+      "In a mug or small bowl, combine flour, protein powder, baking powder, maple syrup, and sparkling water. Mix well.",
+      "Microwave the mixture for about 1–2 minutes.",
+      "In a separate bowl, mix yogurt, cocoa powder, and sugar-free chocolate fudge topping. Add sweetener if desired.",
+      "Top the mud cake with the frosting mixture.",
+      "Refrigerate overnight for best texture.",
+      "In the morning, add a drizzle of sugar-free chocolate syrup before serving."
+    ],
+    "cookingTime": "2 minutes"
+  },
+  {
+    "id": 64,
+    "name": "Homemade Hazelnut Bites",
+    "category": "desserts",
+    "description": "Crunchy whole roasted hazelnuts inside a hazelnut spread core, dipped in rich chocolate and crushed nuts",
+    "servings": 12,
+    "ingredients": [
+      "Chocolate hazelnut spread (e.g. Nutella)",
+      "Whole roasted hazelnuts",
+      "Melting chocolate (e.g. milk chocolate)",
+      "Finely crushed hazelnuts"
+    ],
+    "nutrition": {
+      "totalCalories": 1080,
+      "perServingCalories": 90,
+      "totalProtein": 18,
+      "perServingProtein": 1.5,
+      "totalCarbs": 96,
+      "perServingCarbs": 8,
+      "totalFat": 72,
+      "perServingFat": 6
+    },
+    "instructions": [
+      "Scoop small dollops of hazelnut spread onto parchment paper.",
+      "Press one whole roasted hazelnut into each dollop.",
+      "Freeze until firm.",
+      "Melt chocolate and mix in finely crushed hazelnuts to make the coating.",
+      "Quick-dip each frozen bite into the chocolate coating.",
+      "Set back on parchment paper and let it set completely."
+    ],
+    "cookingTime": "20 minutes (chill time)"
   }
 ]
 

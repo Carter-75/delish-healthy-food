@@ -785,5 +785,48 @@
       "Rest 2 minutes and slice into 4 pieces."
     ],
     "cookingTime": "25 minutes"
+  },
+  {
+    "id": 20,
+    "name": "Chicken & Seafood Alfredo Wrap",
+    "category": "quick-lunches",
+    "description": "Rich and creamy Alfredo wraps loaded with chicken, shrimp, crab, and broccoli",
+    "servings": 5,
+    "ingredients": [
+      "3 medium chicken breasts, cut into bite-sized pieces",
+      "15–30 shrimp, peeled and deveined",
+      "1 package imitation crab, cut up",
+      "1 head broccoli, chopped",
+      "Onions and garlic, chopped",
+      "1 pt. (approx. 473 mL) organic grass-fed heavy cream",
+      "¼ cup (1 stick) butter",
+      "¼ cup grated parmesan cheese",
+      "Fresh parsley and seasoning of choice",
+      "Soft shell wraps",
+      "Shredded cheese for topping",
+      "Spinach for serving or dipping"
+    ],
+    "nutrition": {
+      "totalCalories": 2100,
+      "perServingCalories": 420,
+      "totalProtein": 175,
+      "perServingProtein": 35,
+      "totalCarbs": 40,
+      "perServingCarbs": 8,
+      "totalFat": 140,
+      "perServingFat": 28
+    },
+    "instructions": [
+      "Chop onions and garlic. Sauté in a large frying pan until soft.",
+      "Add chicken pieces and cook with seasonings until done.",
+      "Add shrimp to the mixture and cook for about 1 minute.",
+      "Meanwhile, boil or steam broccoli in a separate pot until softened.",
+      "Add crab, heavy cream, butter, and parmesan cheese to the pan.",
+      "Fold in the cooked broccoli from the separate pot.",
+      "Simmer on low for about 10 minutes or until sauce thickens, stirring frequently.",
+      "Fill soft shell wraps with the mixture and top with shredded cheese.",
+      "Serve with fresh spinach on the side."
+    ],
+    "cookingTime": "30 minutes"
   }
-]
+]
