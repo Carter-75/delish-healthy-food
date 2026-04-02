@@ -321,3 +321,38 @@ export const loadSingleRecipe = async (categoryId, recipeId) => {
   const recipe = (recipes || []).find(r => Number(r.id) === numericId) || null;
   return { base, recipe };
 };
+
+export const searchAllRecipes = async (query) => {
+  if (!query || typeof query !== 'string' || query.trim().length < 2) {
+    return [];
+  }
+
+  const searchTerm = query.toLowerCase().trim();
+  const categories = await loadRecipeCategories();
+  const activeCategories = categories.filter(c => !c.comingSoon);
+
+  const allResults = await Promise.all(
+    activeCategories.map(async (category) => {
+      try {
+        const { recipes } = await loadRecipesByCategory(category.id);
+        return (recipes || []).map(recipe => ({
+          ...recipe,
+          categoryId: category.id,
+          categoryTitle: category.title
+        }));
+      } catch (err) {
+        return [];
+      }
+    })
+  );
+
+  const flatRecipes = allResults.flat();
+
+  return flatRecipes.filter(recipe => {
+    const nameMatch = recipe.name?.toLowerCase().includes(searchTerm);
+    const ingredientMatch = recipe.ingredients?.some(ing => ing.toLowerCase().includes(searchTerm));
+    const instructionMatch = recipe.instructions?.some(inst => inst.toLowerCase().includes(searchTerm));
+    
+    return nameMatch || ingredientMatch || instructionMatch;
+  });
+};

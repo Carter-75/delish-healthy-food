@@ -1,7 +1,7 @@
 import React, { useDeferredValue, useMemo, useState, useEffect } from 'react';
 import { useTheme } from '../hooks/useTheme';
 import { loadRecipeCategories, loadRecipesByCategory } from '../utils/recipeLoader';
-import { ShoppingCart, Sparkles, ChefHat } from 'lucide-react';
+import { ShoppingCart, Sparkles, ChefHat, Search, X, Zap } from 'lucide-react';
 import Seo from '../components/Seo';
 import LoadingState from '../components/LoadingState';
 
@@ -23,6 +23,7 @@ const AllIngredientsPage = () => {
 
   useEffect(() => {
     setTheme('default');
+    window.scrollTo(0, 0);
     
     const loadAllIngredients = async () => {
       try {
@@ -65,64 +66,41 @@ const AllIngredientsPage = () => {
 
         setTotalRecipes(totalRecipeCount);
 
-        // Extract all ingredients and normalize them
         const ingredientsSet = new Set();
         
         aggregatedRecipes.forEach(recipe => {
           if (recipe.ingredients && Array.isArray(recipe.ingredients)) {
             recipe.ingredients.forEach(ingredient => {
-              // Remove quantities and normalize
               let normalized = ingredient
                 .toLowerCase()
-                // Remove "optional:" prefix
                 .replace(/^optional:\s*/i, '')
-                // Remove "for topping" or "for garnish" suffixes
                 .replace(/\s*(for topping|for garnish|for serving).*$/i, '')
-                // Remove "to taste" suffix
                 .replace(/\s+to\s+taste\s*$/i, '')
-                // Remove unicode fractions (¼, ½, ¾, etc.)
                 .replace(/[¼½¾⅐⅑⅒⅓⅔⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞]/g, '')
-                // Remove anything in parentheses AND the opening parenthesis
                 .replace(/\([^)]*\)?/g, '')
-                // Remove percentages (0%, 2%, etc.)
                 .replace(/\d+%\s*/g, '')
-                // Remove numbers with or without decimals/fractions
                 .replace(/\d+\.?\d*\/?\d*/g, '')
-                // Remove measurement units (case insensitive)
                 .replace(/\b(cup|cups|tbsp|tsp|teaspoon|teaspoons|tablespoon|tablespoons|oz|ounce|ounces|g|gram|grams|lb|lbs|pound|pounds|packet|packets|scoop|scoops|ml|l|kg)\b/gi, '')
-                // Remove "of" 
                 .replace(/\bof\b/gi, '')
-                // Remove + signs and remaining numbers
                 .replace(/\+/g, '')
-                // Remove quantity descriptors
                 .replace(/\b(handful|splash|pinch|dash|drizzle|sprinkle|bunch|clove|cloves|can|pack|package|loaf|slices?)\s+/gi, '')
-                // Remove size descriptors
                 .replace(/\b(large|small|medium|mini|extra)\s+/gi, '')
-                // Remove state/preparation descriptors
                 .replace(/\b(fresh|frozen|raw|ripe)\s+/gi, '')
-                // Remove cooking action words
                 .replace(/\b(chopped|diced|sliced|minced|crushed|melted|softened|cooked|baked|roasted|steamed|grilled|sauteed|peeled|halved|quartered)\s+/gi, '')
-                // Remove common temperature/state descriptors
                 .replace(/\b(room\s+temp|warm|cold|hot|chilled)\s*/gi, '')
-                // Remove trailing commas/punctuation
                 .replace(/[,;.]+$/g, '')
-                // Remove extra spaces
                 .replace(/\s+/g, ' ')
                 .trim();
               
-              // Remove leading dashes or slashes
               normalized = normalized.replace(/^[-\/]+\s*/, '').trim();
               
-              // Split on commas, "and", "&", "or" to separate compound ingredients
               const parts = normalized.split(/\s*(?:,|and|&|or)\s+/i);
               
               parts.forEach(part => {
                 part = part.trim();
                 
                 if (part && part.length > 2) {
-                  // Normalize common variations to singular form
                   let singularized = part
-                    // Convert common plurals to singular
                     .replace(/\b(egg|chip|bean|pepper|onion|tomato|carrot|mushroom|olive|strawberr|blueberr|raspberr|blackberr|banana)s\b/gi, '$1')
                     .replace(/\bstrawberr\b/gi, 'strawberry')
                     .replace(/\bblueberr\b/gi, 'blueberry')
@@ -130,13 +108,10 @@ const AllIngredientsPage = () => {
                     .replace(/\bblackberr\b/gi, 'blackberry')
                     .replace(/\bcherries\b/gi, 'cherry')
                     .replace(/\bwedges\b/gi, 'wedge')
-                    // Normalize yolk variations
                     .replace(/\begg\s+yolks?\b/gi, 'egg yolk')
                     .replace(/\beggs?\s+yolks?\b/gi, 'egg yolk')
-                    // Normalize white variations
                     .replace(/\begg\s+whites?\b/gi, 'egg white')
                     .replace(/\beggs?\s+whites?\b/gi, 'egg white')
-                    // Standardize protein powder word order: "flavor whey protein"
                     .replace(/\bwhey\s+(vanilla|chocolate|strawberry|banana|cinnamon)\s+protein\b/gi, '$1 whey protein')
                     .replace(/\bprotein\s+(vanilla|chocolate|strawberry|banana|cinnamon)\s+whey\b/gi, '$1 whey protein')
                     .replace(/\b(vanilla|chocolate|strawberry|banana|cinnamon)\s+protein\s+powder\b/gi, '$1 whey protein')
@@ -144,31 +119,17 @@ const AllIngredientsPage = () => {
                     .replace(/\bprotein\s+powder\b/gi, 'whey protein')
                     .trim();
                   
-                  // Smart filtering using patterns instead of word lists
-                  
-                  // Filter 1: Remove if ends with space + single letter (incomplete fragment)
                   if (/\s+[a-z]$/.test(singularized)) return;
-                  
-                  // Filter 2: Remove if it's ONLY an -ing/-ed word without a noun
                   if (/^(ing|ed|en|chopped|dusting|melting|split|flat)$/i.test(singularized)) return;
-                  
-                  // Filter 3: Remove if it's a standalone preposition/article
                   if (/^(to|for|with|the|a|an)$/i.test(singularized)) return;
-                  
-                  // Filter 4: Must contain at least one vowel (real words have vowels)
                   if (!/[aeiou]/.test(singularized)) return;
-                  
-                  // Filter 5: Must be at least 3 characters
                   if (singularized.length < 3) return;
                   
-                  // Filter 6: Remove if it's ONLY a single common verb/action
                   const singleVerbs = /^(taste|wash|spray|temp|water|dusting|melting|split)$/i;
                   if (singleVerbs.test(singularized)) return;
                   
-                  // Filter 7: Normalize unicode variations (é → e, etc.)
                   singularized = singularized.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
                   
-                  // If it passes all filters, it's likely a real ingredient
                   ingredientsSet.add(singularized);
                 }
               });
@@ -176,7 +137,6 @@ const AllIngredientsPage = () => {
           }
         });
 
-        // Convert to array and sort alphabetically
         const ingredientsList = Array.from(ingredientsSet).sort();
         setAllIngredients(ingredientsList);
         setLoading(false);
@@ -190,131 +150,159 @@ const AllIngredientsPage = () => {
   }, [setTheme]);
 
   if (loading) {
-    return <LoadingState label="Loading ingredients" />;
+    return <LoadingState label="Indexing the ultimate pantry" />;
   }
 
   return (
-    <div className="container mx-auto px-4 py-12 max-w-6xl">
-      <Seo
+    <div className="pb-32">
+      <Seo 
         title="Master Shopping List - Delish Healthy Food"
         description="A complete ingredient list covering every recipe on Delish Healthy Food."
-        canonicalPath="/all-ingredients"
       />
-      {/* Header */}
-      <div className="text-center mb-12 animate-fadeInUp">
-        <div className="inline-block p-4 rounded-2xl glass-effect mb-6">
-          <ShoppingCart className="w-16 h-16 text-emerald-400 animate-pulseGlow" />
-        </div>
-        <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-          Master Shopping List
-        </h1>
-        <p className="text-xl text-emerald-300 mb-2">
-          Everything You Need for All {totalRecipes} Recipes
-        </p>
-        <p className="text-gray-400">
-          Buy these {allIngredients.length} ingredients and you can make every single recipe on this site!
-        </p>
-      </div>
 
-      {/* Stats Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12 animate-fadeInUp">
-        <div className="glass-effect rounded-xl p-6 border border-emerald-500/20 text-center">
-          <ChefHat className="w-8 h-8 text-emerald-400 mx-auto mb-2" />
-          <div className="text-3xl font-bold text-white">{totalRecipes}</div>
-          <div className="text-sm text-gray-400">Total Recipes</div>
-        </div>
-        <div className="glass-effect rounded-xl p-6 border border-blue-500/20 text-center">
-          <ShoppingCart className="w-8 h-8 text-blue-400 mx-auto mb-2" />
-          <div className="text-3xl font-bold text-white">{allIngredients.length}</div>
-          <div className="text-sm text-gray-400">Unique Ingredients</div>
-        </div>
-        <div className="glass-effect rounded-xl p-6 border border-purple-500/20 text-center">
-          <Sparkles className="w-8 h-8 text-purple-400 mx-auto mb-2" />
-          <div className="text-3xl font-bold text-white">100%</div>
-          <div className="text-sm text-gray-400">Recipe Coverage</div>
-        </div>
-      </div>
-
-      {/* Ingredients List */}
-      <div className="glass-effect rounded-2xl p-8 border border-emerald-500/20 animate-fadeInUp">
-        <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-          <ShoppingCart className="w-6 h-6 text-emerald-400" />
-          Complete Ingredient List
-        </h2>
-
-        <div className="flex flex-col md:flex-row md:items-center gap-4 mb-6">
-          <label className="text-gray-300 text-sm" htmlFor="ingredient-search">
-            Filter ingredients
-          </label>
-          <div className="flex flex-1 items-center gap-3">
-            <input
-              id="ingredient-search"
-              type="search"
-              value={searchQuery}
-              onChange={(event) => setSearchQuery(event.target.value)}
-              placeholder="Search for an ingredient"
-              className="w-full px-4 py-2 rounded-lg bg-slate-900/50 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-emerald-400/50 transition-colors-smooth"
-            />
-            <button
-              type="button"
-              onClick={() => setSearchQuery('')}
-              className="px-4 py-2 rounded-lg border border-white/10 text-gray-200 hover:bg-white/10 transition-colors-smooth"
-            >
-              Clear
-            </button>
+      {/* Hero Header */}
+      <div className="relative pt-24 pb-20 overflow-hidden text-center">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full -z-10 bg-slate-900/50 pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-500/5 blur-[120px] rounded-full" />
+        
+        <div className="container mx-auto px-4 max-w-4xl space-y-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-[10px] font-black uppercase tracking-widest animate-fadeInDown">
+            <ShoppingCart className="w-3 h-3" />
+            <span>Pantry Optimization</span>
           </div>
-          <p className="text-sm text-gray-400 md:text-right min-w-[140px]">
-            {filteredIngredients.length} shown
+          <h1 className="text-5xl sm:text-7xl font-black text-white font-serif leading-tight tracking-tight animate-fadeInUp">
+            The Master <br /><span className="text-brand-500 italic">Ingredient List</span>
+          </h1>
+          <p className="text-slate-400 text-lg leading-relaxed max-w-2xl mx-auto animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
+            A comprehensive index of every ingredient used across our entire collection. Stock your kitchen with these {allIngredients.length} essentials to master all {totalRecipes} recipes.
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      </div>
+
+       {/* Stats Cards */}
+       <div className="container mx-auto px-4 max-w-7xl -mt-8 flex flex-wrap justify-center gap-6 animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
+          <div className="glass-card rounded-2xl px-10 py-6 border-white/5 flex items-center gap-4">
+             <div className="w-10 h-10 rounded-xl bg-brand-500/10 flex items-center justify-center">
+                <ChefHat className="w-5 h-5 text-brand-400" />
+             </div>
+             <div>
+                <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold leading-none mb-1">Recipes</p>
+                <p className="text-xl font-black text-white leading-none">{totalRecipes}</p>
+             </div>
+          </div>
+          <div className="glass-card rounded-2xl px-10 py-6 border-white/5 flex items-center gap-4">
+             <div className="w-10 h-10 rounded-xl bg-brand-500/10 flex items-center justify-center">
+                <ShoppingCart className="w-5 h-5 text-brand-400" />
+             </div>
+             <div>
+                <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold leading-none mb-1">Unique Items</p>
+                <p className="text-xl font-black text-white leading-none">{allIngredients.length}</p>
+             </div>
+          </div>
+          <div className="glass-card rounded-2xl px-10 py-6 border-white/5 flex items-center gap-4">
+             <div className="w-10 h-10 rounded-xl bg-brand-500/10 flex items-center justify-center">
+                <Zap className="w-5 h-5 text-brand-400" />
+             </div>
+             <div>
+                <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold leading-none mb-1">Coverage</p>
+                <p className="text-xl font-black text-white leading-none">100%</p>
+             </div>
+          </div>
+       </div>
+
+      {/* Search & List */}
+      <div className="container mx-auto px-4 max-w-7xl mt-24 space-y-12">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
+          <div className="flex-grow max-w-2xl space-y-4">
+            <h2 className="text-3xl font-black text-white font-serif tracking-tight">Explore the Pantry</h2>
+             <div className="relative group">
+                <Search className="absolute left-6 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-500 group-focus-within:text-brand-400 transition-colors" />
+                <input 
+                  type="text" 
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Filter by ingredient name..."
+                  className="w-full pl-16 pr-16 py-6 bg-slate-900 border border-white/5 rounded-[2rem] focus:border-brand-500/30 outline-none text-white transition-all-smooth"
+                />
+                {searchQuery && (
+                  <button 
+                    onClick={() => setSearchQuery('')}
+                    className="absolute right-6 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors"
+                  >
+                    <X className="w-3.5 h-3.5 text-white" />
+                  </button>
+                )}
+             </div>
+          </div>
+          <div className="text-right pb-2">
+             <p className="text-[10px] uppercase tracking-widest text-slate-500 font-black">Showing Result</p>
+             <p className="text-2xl font-black text-white font-serif">{filteredIngredients.length} <span className="text-sm text-brand-500">Items</span></p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 animate-fadeIn">
           {filteredIngredients.length > 0 ? (
             filteredIngredients.map((ingredient, index) => (
               <div 
                 key={`${ingredient}-${index}`}
-                className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 
-                  transition-all duration-300 border border-white/10 group"
+                className="glass-card rounded-2xl p-6 flex items-center gap-4 border-white/5 hover:border-brand-500/20 group transition-all-smooth"
               >
-                <div className="w-2 h-2 rounded-full bg-emerald-400 group-hover:scale-150 transition-transform" />
-                <span className="text-gray-200 capitalize text-sm">
+                <div className="w-2 h-2 rounded-full bg-brand-500/30 group-hover:bg-brand-500 group-hover:scale-150 transition-all-smooth" />
+                <span className="text-slate-300 group-hover:text-white transition-colors font-bold capitalize text-sm tracking-tight">
                   {ingredient}
                 </span>
               </div>
             ))
           ) : (
-            <div className="col-span-full text-center text-gray-400 py-8">
-              No ingredients match that search.
+            <div className="col-span-full py-20 text-center space-y-4">
+               <div className="w-16 h-16 rounded-full bg-slate-900 border border-white/5 flex items-center justify-center mx-auto text-slate-500">
+                  <X className="w-8 h-8" />
+               </div>
+               <p className="text-slate-500 font-bold uppercase tracking-widest text-xs">No matching ingredients found</p>
             </div>
           )}
         </div>
       </div>
 
-      {/* Tips Section */}
-      <div className="mt-12 glass-effect rounded-2xl p-8 border border-purple-500/20 animate-fadeInUp">
-        <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-3">
-          <Sparkles className="w-6 h-6 text-purple-400" />
-          Shopping Tips
-        </h3>
-        <ul className="space-y-3 text-gray-300">
-          <li className="flex items-start gap-3">
-            <span className="text-purple-400 mt-1">•</span>
-            <span>Many ingredients appear in multiple recipes - you'll get great variety from your shopping trip!</span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="text-purple-400 mt-1">•</span>
-            <span>Stock up on protein powder, frozen fruits, and shelf-stable items for convenience</span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="text-purple-400 mt-1">•</span>
-            <span>Check each recipe for specific quantities before shopping</span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="text-purple-400 mt-1">•</span>
-            <span>Many recipes have optional ingredients - prioritize the essentials first</span>
-          </li>
-        </ul>
-      </div>
+       {/* Tips Footer */}
+       <div className="container mx-auto px-4 max-w-7xl mt-32">
+          <div className="glass-card rounded-[3rem] p-12 lg:p-20 border-brand-500/10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+             <div className="space-y-8">
+                <div className="space-y-4">
+                   <h3 className="text-3xl font-black text-white font-serif tracking-tight">Expert <span className="text-brand-500 italic">Shopping Tips</span></h3>
+                   <p className="text-slate-400 leading-relaxed italic">Optimize your grocery runs with these precision strategies for fitness-focused nutrition.</p>
+                </div>
+                <ul className="space-y-6">
+                   <li className="flex items-start gap-4">
+                      <div className="w-6 h-6 rounded-full bg-brand-500/20 flex items-center justify-center text-brand-400 font-black text-[10px] flex-shrink-0 mt-1">01</div>
+                      <p className="text-white font-bold leading-snug">Stock bulk essentials like whey protein, oats, and frozen berries to reduce weekly costs.</p>
+                   </li>
+                   <li className="flex items-start gap-4">
+                      <div className="w-6 h-6 rounded-full bg-brand-500/20 flex items-center justify-center text-brand-400 font-black text-[10px] flex-shrink-0 mt-1">02</div>
+                      <p className="text-white font-bold leading-snug">Many ingredients overlap; one multi-bag of spinach can fuel three different protein bowl variations.</p>
+                   </li>
+                   <li className="flex items-start gap-4">
+                      <div className="w-6 h-6 rounded-full bg-brand-500/20 flex items-center justify-center text-brand-400 font-black text-[10px] flex-shrink-0 mt-1">03</div>
+                      <p className="text-white font-bold leading-snug">Prioritize "Hero" ingredients first—protein sources—before rounding out with optional garnishes.</p>
+                   </li>
+                </ul>
+             </div>
+             <div className="relative">
+                <div className="absolute inset-0 bg-brand-500/10 blur-[80px] rounded-full" />
+                <div className="relative glass-card rounded-[2.5rem] p-10 border-brand-500/20 text-center space-y-6">
+                   <Sparkles className="w-12 h-12 text-brand-400 mx-auto" />
+                   <h4 className="text-xl font-black text-white font-serif">Ready to Begin?</h4>
+                   <p className="text-slate-400 text-sm leading-relaxed">Select a category from the home screen to start building your first performance-driven meal.</p>
+                   <button 
+                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                     className="w-full py-4 bg-brand-600 hover:bg-brand-500 text-white font-black uppercase tracking-widest text-xs rounded-xl transition-all-smooth"
+                   >
+                      Back to Top
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
     </div>
   );
 };

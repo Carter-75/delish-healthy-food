@@ -1,19 +1,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTheme } from '../hooks/useTheme';
 import { 
   Clock, 
   Flame, 
   Beef,
   ChevronRight,
-  Sparkles,
-  Wheat,
-  Droplet,
-  Apple
+  TrendingUp,
+  ChefHat
 } from 'lucide-react';
 
 const RecipeCard = ({ recipe, categoryId, delay = 0 }) => {
-  const { theme } = useTheme();
   const navigate = useNavigate();
 
   const formatMacro = (value, suffix) =>
@@ -32,7 +28,7 @@ const RecipeCard = ({ recipe, categoryId, delay = 0 }) => {
 
   return (
     <div
-      className="stagger-item hover-lift cursor-pointer group"
+      className="stagger-item group"
       style={{ '--stagger-delay': `${delay}s` }}
       onClick={handleClick}
       onKeyDown={handleKeyDown}
@@ -40,108 +36,65 @@ const RecipeCard = ({ recipe, categoryId, delay = 0 }) => {
       tabIndex={0}
       aria-label={`Open ${recipe.name} recipe`}
     >
-      <div className={`relative glass-effect rounded-2xl overflow-hidden border ${theme.border || 'border-white/10'}
-        ${theme.shadow || 'shadow-lg'} transition-all-smooth h-full`}>
-        
-        {/* Gradient overlay */}
-        <div className={`absolute inset-0 bg-gradient-to-br ${theme.gradient || 'from-blue-600/10 via-purple-600/10 to-pink-600/10'} 
-          opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
-        
+      <div className="glass-card rounded-[2rem] overflow-hidden h-full flex flex-col transition-all-smooth border-white/5 hover:border-brand-500/30">
+        {/* Visual Header / Placeholder for Image */}
+        <div className="relative h-48 bg-slate-900 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-600/20 via-brand-900/10 to-transparent z-10" />
+          <div className="absolute inset-0 flex items-center justify-center opacity-20 group-hover:opacity-30 transition-opacity duration-500">
+            <ChefHat className="w-24 h-24 text-brand-400 rotate-12" />
+          </div>
+          
+          {/* Badge */}
+          <div className="absolute top-4 left-4 z-20">
+            <div className="px-3 py-1.5 rounded-full bg-slate-950/80 backdrop-blur-md border border-white/10 flex items-center gap-2">
+              <TrendingUp className="w-3.5 h-3.5 text-brand-400" />
+              <span className="text-[10px] font-black uppercase tracking-widest text-white">High Protein</span>
+            </div>
+          </div>
+        </div>
+
         {/* Content */}
-        <div className="relative p-6">
-          {/* Header */}
-          <div className="flex items-start justify-between mb-4">
-            <h3 className={`text-xl font-bold ${theme.text || 'text-blue-400'} 
-              group-hover:text-white transition-colors-smooth pr-8`}>
+        <div className="p-8 flex flex-col flex-grow space-y-6">
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 text-brand-500 font-bold text-[10px] uppercase tracking-[0.2em]">
+              <span>{recipe.categoryTitle || 'Healthy Choice'}</span>
+            </div>
+            <h3 className="text-2xl font-black text-white font-serif leading-tight group-hover:text-brand-400 transition-colors duration-300">
               {recipe.name}
             </h3>
-            <ChevronRight className={`w-6 h-6 ${theme.text || 'text-blue-400'} 
-              transform group-hover:translate-x-1 transition-transform flex-shrink-0`} aria-hidden="true" />
           </div>
 
-          {/* Nutrition Info - Full Macros */}
-          <div className="grid grid-cols-2 gap-3 mb-4">
-            {/* Calories */}
-            <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'}`}>
-              <Flame className={`w-4 h-4 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
-              <div>
-                <p className="text-xs text-gray-400">Calories</p>
-                <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>
-                  {formatMacro(recipe.nutrition?.perServingCalories, '')}
-                </p>
-              </div>
+          {/* Key Metadata Row */}
+          <div className="flex items-center gap-6 text-slate-400">
+            <div className="flex items-center gap-1.5">
+              <Clock className="w-4 h-4 text-brand-500/60" />
+              <span className="text-xs font-bold">{recipe.cookingTime || '25 min'}</span>
             </div>
-            
-            {/* Protein */}
-            <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'}`}>
-              <Beef className={`w-4 h-4 ${theme.text || 'text-red-400'}`} aria-hidden="true" />
-              <div>
-                <p className="text-xs text-gray-400">Protein</p>
-                <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>
-                  {formatMacro(recipe.nutrition?.perServingProtein, 'g')}
-                </p>
-              </div>
-            </div>
-            
-            {/* Carbs */}
-            <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'}`}>
-              <Wheat className={`w-4 h-4 ${theme.text || 'text-yellow-400'}`} aria-hidden="true" />
-              <div>
-                <p className="text-xs text-gray-400">Carbs</p>
-                <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>
-                  {formatMacro(recipe.nutrition?.perServingCarbs, 'g')}
-                </p>
-              </div>
-            </div>
-            
-            {/* Fat */}
-            <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'}`}>
-              <Droplet className={`w-4 h-4 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
-              <div>
-                <p className="text-xs text-gray-400">Fat</p>
-                <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>
-                  {formatMacro(recipe.nutrition?.perServingFat, 'g')}
-                </p>
-              </div>
-            </div>
-            
-            {/* Fiber */}
-            <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/20'} col-span-2`}>
-              <Apple className={`w-4 h-4 ${theme.text || 'text-green-400'}`} aria-hidden="true" />
-              <div>
-                <p className="text-xs text-gray-400">Fiber</p>
-                <p className={`font-bold text-sm ${theme.text || 'text-blue-400'}`}>
-                  {formatMacro(recipe.nutrition?.perServingFiber, 'g')}
-                </p>
-              </div>
+            <div className="flex items-center gap-1.5">
+              <Flame className="w-4 h-4 text-brand-500/60" />
+              <span className="text-xs font-bold">{formatMacro(recipe.nutrition?.perServingCalories, ' cal')}</span>
             </div>
           </div>
 
-          {/* Cooking Time */}
-          {recipe.cookingTime && (
-            <div className="flex items-center gap-2 text-gray-300 mb-4">
-              <Clock className="w-4 h-4" aria-hidden="true" />
-              <span className="text-sm">{recipe.cookingTime}</span>
+          {/* Macros Grid */}
+          <div className="grid grid-cols-2 gap-2 pt-2">
+            <div className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between group-hover:bg-brand-500/5 transition-colors">
+              <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Protein</span>
+              <span className="text-sm font-black text-white">{formatMacro(recipe.nutrition?.perServingProtein, 'g')}</span>
             </div>
-          )}
-
-          {/* Description / Preview */}
-          {recipe.ingredients && (
-            <div className={`text-sm text-gray-400 border-t ${theme.border || 'border-white/10'} pt-4`}>
-              <p className="flex items-center gap-2 mb-2">
-                <Sparkles className={`w-4 h-4 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
-                <span className="font-semibold">Key Ingredients:</span>
-              </p>
-              <p className="line-clamp-2">
-                {recipe.ingredients.slice(0, 3).join(', ')}
-                {recipe.ingredients.length > 3 && '...'}
-              </p>
+            <div className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between group-hover:bg-brand-500/5 transition-colors">
+              <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Carbs</span>
+              <span className="text-sm font-black text-white">{formatMacro(recipe.nutrition?.perServingCarbs, 'g')}</span>
             </div>
-          )}
+          </div>
 
-          {/* Hover indicator */}
-          <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${theme.gradient || 'from-blue-500 via-purple-500 to-pink-500'} 
-            transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left`} />
+          {/* Action Footer */}
+          <div className="pt-4 mt-auto flex items-center justify-between border-t border-white/5">
+            <span className="text-xs font-bold text-slate-500 group-hover:text-brand-400 transition-colors uppercase tracking-widest">View Recipe</span>
+            <div className="w-8 h-8 rounded-full bg-brand-500/10 flex items-center justify-center group-hover:bg-brand-600 transition-all-smooth">
+              <ChevronRight className="w-5 h-5 text-brand-400 group-hover:text-white" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

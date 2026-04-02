@@ -1,79 +1,76 @@
 import React, { useMemo } from 'react';
-import { useTheme } from '../hooks/useTheme';
-import { Utensils, Sparkles, TrendingUp, Award } from 'lucide-react';
+import { Utensils, Sparkles, TrendingUp, Award, Search } from 'lucide-react';
 
 const formatRecipeCount = (count) => {
   if (typeof count !== 'number' || Number.isNaN(count) || count <= 0) {
     return '0';
   }
-
-  if (count < 25) {
-    return `${count}`;
-  }
-
+  if (count < 25) return `${count}`;
   const interval = Math.max(25, Math.floor((count - 1) / 25) * 25);
   return `${interval}+`;
 };
 
-const HeroSection = ({ totalRecipes }) => {
-  const { theme } = useTheme();
+const HeroSection = ({ totalRecipes, onSearch }) => {
   const displayRecipeCount = useMemo(() => formatRecipeCount(totalRecipes), [totalRecipes]);
 
   return (
-    <div className="relative py-16 sm:py-24 px-4 overflow-hidden w-full max-w-full">
-      {/* Animated accent lines - hidden on mobile/tablet, shown on large screens */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none hidden xl:block">
-        <div className={`absolute top-0 left-1/4 w-px h-full ${theme.accent || 'bg-blue-500'} opacity-20 animate-shimmer`} />
-        <div className={`absolute top-0 right-1/4 w-px h-full ${theme.accent || 'bg-blue-500'} opacity-20 animate-shimmer`} 
-          style={{ animationDelay: '1s' }} />
+    <div className="relative pt-24 pb-16 sm:pt-32 sm:pb-24 px-4 overflow-hidden w-full">
+      {/* Background shapes */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full -z-10 pointer-events-none">
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-500/10 blur-[120px] rounded-full animate-pulse" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-forest-900/10 blur-[100px] rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
       </div>
 
-      <div className="relative max-w-6xl mx-auto">
-        <div className="text-center space-y-8">
-          {/* Icon Row - more modern styling */}
-          <div className="flex items-center justify-center gap-5 animate-fadeInDown">
-            <div className={`p-4 rounded-3xl ${theme.highlight || 'bg-blue-900/30'} 
-              border ${theme.border || 'border-blue-500/20'} hover-glow animate-float shadow-xl`}>
-              <Utensils className={`w-12 h-12 sm:w-14 sm:h-14 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
-            </div>
-            <Sparkles className={`w-10 h-10 sm:w-12 sm:h-12 ${theme.text || 'text-blue-400'} animate-pulseGlow`} aria-hidden="true" />
-          </div>
+      <div className="relative max-w-5xl mx-auto text-center space-y-12">
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-sm font-bold tracking-widest uppercase animate-fadeInDown">
+          <Sparkles className="w-4 h-4" />
+          <span>Fuel Your Fitness Journey</span>
+        </div>
 
-          {/* Main Title */}
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white animate-fadeInUp text-shadow">
-            <span className="block mb-2">High-Protein</span>
-            <span className={`block bg-gradient-to-r ${theme.gradient || 'from-blue-400 via-indigo-400 to-violet-400'} 
-              bg-clip-text text-transparent animate-gradientShift`}>
-              Recipe Collection
-            </span>
+        {/* Main Title */}
+        <div className="space-y-4 animate-fadeInUp">
+          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black text-white leading-tight font-serif tracking-tight">
+            High-Protein <br />
+            <span className="text-brand-500 italic">Mastery</span>
           </h1>
-
-          {/* Subtitle */}
-          <p className={`text-lg sm:text-xl lg:text-2xl ${theme.text || 'text-amber-400'} max-w-3xl mx-auto 
-            leading-relaxed animate-fadeInUp font-medium px-4`} 
-            style={{ animationDelay: '0.2s' }}>
-            Discover protein-packed recipes crafted for your fitness goals!
+          <p className="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
+            Discover {displayRecipeCount} chef-crafted, protein-packed recipes designed to fuel your workouts and delight your palate.
           </p>
+        </div>
 
-          {/* Stats - more modern cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12 animate-fadeInUp" 
-            style={{ animationDelay: '0.4s' }}>
-            <div className={`glass-effect rounded-2xl p-8 border ${theme.border || 'border-amber-500/20'} hover-lift shadow-xl transition-all duration-300 group`}>
-              <TrendingUp className={`w-10 h-10 ${theme.text || 'text-amber-400'} mx-auto mb-4 group-hover:scale-110 transition-transform`} aria-hidden="true" />
-              <p className="text-4xl font-bold text-white mb-2">{displayRecipeCount}</p>
-              <p className="text-gray-400 text-sm font-medium">Recipes</p>
+        {/* Search Bar - Prominent & Editorial */}
+        <div className="max-w-2xl mx-auto relative group animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
+          <div className="absolute -inset-1 bg-gradient-to-r from-brand-500 to-forest-500 rounded-2xl blur opacity-20 group-focus-within:opacity-40 transition duration-500"></div>
+          <div className="relative flex items-center bg-slate-900 border border-white/10 rounded-xl overflow-hidden focus-within:border-brand-500/50 transition-all-smooth shadow-2xl">
+            <div className="pl-6 text-slate-500">
+              <Search className="w-6 h-6" />
             </div>
-            <div className={`glass-effect rounded-2xl p-8 border ${theme.border || 'border-amber-500/20'} hover-lift shadow-xl transition-all duration-300 group`}>
-              <Award className={`w-10 h-10 ${theme.text || 'text-amber-400'} mx-auto mb-4 group-hover:scale-110 transition-transform`} aria-hidden="true" />
-              <p className="text-4xl font-bold text-white mb-2">40g+</p>
-              <p className="text-gray-400 text-sm font-medium">Protein Per Serving</p>
-            </div>
-            <div className={`glass-effect rounded-2xl p-8 border ${theme.border || 'border-amber-500/20'} hover-lift shadow-xl transition-all duration-300 group`}>
-              <Sparkles className={`w-10 h-10 ${theme.text || 'text-amber-400'} mx-auto mb-4 group-hover:scale-110 transition-transform`} aria-hidden="true" />
-              <p className="text-4xl font-bold text-white mb-2">100%</p>
-              <p className="text-gray-400 text-sm font-medium">Delicious</p>
-            </div>
+            <input
+              type="text"
+              placeholder="Search recipes, ingredients, or cuisines..."
+              className="w-full py-5 px-4 bg-transparent text-white placeholder-slate-500 focus:outline-none text-lg"
+              onChange={(e) => onSearch?.(e.target.value)}
+            />
+            <button className="hidden sm:flex items-center gap-2 px-8 py-5 bg-brand-600 hover:bg-brand-500 text-white font-bold transition-all-smooth">
+              Search
+            </button>
           </div>
+        </div>
+
+        {/* Stats Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto pt-8 animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
+          {[
+            { icon: TrendingUp, value: displayRecipeCount, label: 'Curated Recipes', color: 'text-brand-400' },
+            { icon: Award, value: '40g+', label: 'Protein Avg.', color: 'text-forest-400' },
+            { icon: Utensils, value: '100%', label: 'Flavor Guaranteed', color: 'text-brand-400' }
+          ].map((stat, i) => (
+            <div key={i} className="glass-card rounded-2xl p-6 flex flex-col items-center text-center">
+              <stat.icon className={`w-8 h-8 ${stat.color} mb-3`} />
+              <div className="text-3xl font-black text-white mb-1 font-serif">{stat.value}</div>
+              <div className="text-slate-500 text-xs uppercase tracking-widest font-bold">{stat.label}</div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

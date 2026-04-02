@@ -1,27 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../hooks/useTheme';
-import { Clock, ChevronRight, Star, UtensilsCrossed } from 'lucide-react';
+import { Clock, ChevronRight, UtensilsCrossed, ArrowRight } from 'lucide-react';
 import * as LucideIcons from 'lucide-react';
 
-
 const CategoryCard = ({ category, delay = 0 }) => {
-  const { setTheme, themes } = useTheme();
+  const { setTheme } = useTheme();
   const navigate = useNavigate();
 
   const Icon = (category.icon && LucideIcons[category.icon]) || UtensilsCrossed;
-  const themeConfig = themes[category.id] || themes.default || {};
-  const themeClasses = {
-    text: themeConfig.text || 'text-blue-400',
-    border: themeConfig.border || 'border-white/10',
-    highlight: themeConfig.highlight || 'bg-blue-900/20',
-    gradient: themeConfig.gradient || 'from-blue-600/20 via-purple-600/20 to-pink-600/20',
-    shadow: themeConfig.shadow || 'shadow-lg'
-  };
-  const recipeCountLabel =
-    typeof category.totalRecipes === 'number'
-      ? `${category.totalRecipes} Recipes`
-      : 'View Recipes';
 
   const handleClick = () => {
     setTheme(category.id);
@@ -37,60 +24,38 @@ const CategoryCard = ({ category, delay = 0 }) => {
 
   return (
     <div
-      className="stagger-item"
+      className="stagger-item group block h-full focus:outline-none"
       style={{ '--stagger-delay': `${delay}s` }}
+      onClick={handleClick}
+      onKeyDown={handleKeyDown}
+      role="button"
+      tabIndex={0}
+      aria-label={`View ${category.title} recipes`}
     >
-      <div
-        onClick={handleClick}
-        onKeyDown={handleKeyDown}
-        role="button"
-        tabIndex={0}
-        aria-label={`View ${category.title} recipes`}
-        className={`relative glass-effect rounded-3xl overflow-hidden border ${themeClasses.border}
-          ${themeClasses.shadow} transition-all-smooth group hover-lift cursor-pointer
-          hover:border-opacity-40`}
-      >
-        {/* Gradient overlay - more subtle */}
-        <div className={`absolute inset-0 bg-gradient-to-br ${themeClasses.gradient} 
-          opacity-0 group-hover:opacity-60 transition-opacity duration-500`} />
-
-        {/* Content */}
-        <div className="relative p-8">
-          {/* Icon - larger and more modern */}
-          <div className={`inline-flex p-5 rounded-3xl ${themeClasses.highlight} 
-            border ${themeClasses.border} mb-6 group-hover:scale-110 transition-transform duration-300
-            shadow-lg ${themeClasses.shadow}`}>
-            <Icon className={`w-10 h-10 ${themeClasses.text}`} aria-hidden="true" />
+      <div className="glass-card rounded-[2.5rem] p-10 h-full flex flex-col items-center text-center transition-all-smooth border-white/5 hover:border-brand-500/30 hover:bg-brand-500/[0.03]">
+        <div className="relative mb-8">
+          <div className="absolute inset-0 bg-brand-500/20 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="relative w-20 h-20 rounded-[1.5rem] bg-slate-900 border border-white/5 flex items-center justify-center group-hover:scale-110 group-hover:bg-brand-600 transition-all-smooth shadow-2xl">
+            <Icon className="w-10 h-10 text-brand-400 group-hover:text-white transition-colors" />
           </div>
+        </div>
 
-          {/* Title - better spacing */}
-          <h3 className="text-2xl font-bold text-white mb-3 group-hover:translate-x-1 transition-transform leading-tight">
+        <div className="space-y-4">
+          <div className="flex items-center justify-center gap-2 text-brand-500 font-bold text-[10px] uppercase tracking-[0.2em]">
+            <Clock className="w-3 h-3" />
+            <span>{category.cookingTime || 'Quick'}</span>
+          </div>
+          <h3 className="text-2xl font-black text-white font-serif tracking-tight group-hover:text-brand-400 transition-colors">
             {category.title}
           </h3>
-
-          {/* Description */}
-          <p className={`${themeClasses.text} mb-4 flex items-center gap-2`}>
-            <Star className="w-4 h-4" aria-hidden="true" />
+          <p className="text-slate-400 text-sm leading-relaxed max-w-[220px] mx-auto">
             {category.description}
           </p>
+        </div>
 
-          {/* Meta Info */}
-          <div className="flex items-center justify-between text-sm">
-            <div className="flex items-center gap-2 text-gray-300">
-              <Clock className="w-4 h-4" aria-hidden="true" />
-              <span>{category.cookingTime}</span>
-            </div>
-            
-            <div className={`flex items-center gap-2 ${themeClasses.text} 
-              font-semibold group-hover:gap-3 transition-all`}>
-              <span>{recipeCountLabel}</span>
-              <ChevronRight className="w-5 h-5" aria-hidden="true" />
-            </div>
-          </div>
-
-          {/* Animated border - thicker and more visible */}
-          <div className={`absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r ${themeClasses.gradient} 
-            transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full`} />
+        <div className="mt-auto pt-8 flex items-center gap-2 text-brand-500 font-black text-[10px] uppercase tracking-[0.2em] opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+          <span>Explore Collection</span>
+          <ArrowRight className="w-3 h-3 translate-y-[-1px]" />
         </div>
       </div>
     </div>

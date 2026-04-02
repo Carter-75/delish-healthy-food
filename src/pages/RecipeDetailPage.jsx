@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useTheme } from '../hooks/useTheme';
 import { loadSingleRecipe } from '../utils/recipeLoader';
 import NutritionCard from '../components/NutritionCard';
 import { 
   ChevronLeft, 
-  List, 
   ChefHat, 
   Flame,
   Copy,
-  Check
+  Check,
+  Clock,
+  Users,
+  Sparkles,
+  CheckCircle2,
+  ListTodo
 } from 'lucide-react';
 import Seo from '../components/Seo';
 import LoadingState from '../components/LoadingState';
@@ -17,13 +21,14 @@ import LoadingState from '../components/LoadingState';
 const RecipeDetailPage = () => {
   const { categoryId, recipeId } = useParams();
   const navigate = useNavigate();
-  const { theme, setTheme } = useTheme();
+  const { setTheme } = useTheme();
   const [recipeData, setRecipeData] = useState({ base: null, recipe: null });
   const [loading, setLoading] = useState(true);
   const [copyState, setCopyState] = useState('idle');
 
   useEffect(() => {
     setTheme(categoryId);
+    window.scrollTo(0, 0);
     
     loadSingleRecipe(categoryId, recipeId)
       .then(data => {
@@ -78,19 +83,14 @@ const RecipeDetailPage = () => {
   };
 
   if (loading) {
-    return <LoadingState label="Loading recipe" />;
+    return <LoadingState label="Preparing your healthy masterpiece" />;
   }
 
   if (!recipeData.recipe) {
     return (
-      <div className="container mx-auto px-4 py-12 text-center">
-        <p className="text-white text-xl">Recipe not found</p>
-        <button
-          onClick={() => navigate(`/category/${categoryId}`)}
-          className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover-lift"
-        >
-          Back to Recipes
-        </button>
+      <div className="container mx-auto px-4 py-24 text-center">
+        <h2 className="text-3xl font-black text-white font-serif mb-4">Recipe Not Found</h2>
+        <Link to="/" className="text-brand-400 font-bold hover:underline">Return Home</Link>
       </div>
     );
   }
@@ -98,133 +98,156 @@ const RecipeDetailPage = () => {
   const { base, recipe } = recipeData;
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <Seo
+    <div className="pb-32">
+      <Seo 
         title={`${recipe.name} - Delish Healthy Food`}
-        description={`Ingredients, instructions, and nutrition for ${recipe.name}.`}
-        canonicalPath={`/recipe/${categoryId}/${recipeId}`}
+        description={`Healthy ${recipe.name} recipe. High-protein and delicious fitness-focused meal.`}
       />
-      <div className="max-w-5xl mx-auto">
-        {/* Back Button & Header */}
-        <div className="mb-12 animate-fadeInDown">
-          <button
-            onClick={() => navigate(`/category/${categoryId}`)}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/30'} 
-              border ${theme.border || 'border-blue-500/20'} ${theme.text || 'text-blue-400'} 
-              hover-lift transition-all-smooth mb-6`}
-          >
-            <ChevronLeft className="w-5 h-5" aria-hidden="true" />
-            <span>Back to Recipes</span>
-          </button>
 
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white">
-              {recipe.name}
-            </h1>
-            <button
+      {/* Hero Header */}
+      <div className="relative pt-12 pb-24 overflow-hidden">
+        <div className="absolute inset-0 bg-slate-900/50 -z-10" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-500/5 blur-[120px] rounded-full" />
+        
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
+            <button 
+              onClick={() => navigate(-1)}
+              className="inline-flex items-center gap-2 text-slate-400 hover:text-brand-400 transition-colors group uppercase text-xs font-black tracking-widest"
+            >
+              <ChevronLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+              Back
+            </button>
+
+             <button
               onClick={handleCopyRecipe}
-              aria-label={`Copy ${recipe.name} recipe`}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg ${theme.highlight || 'bg-blue-900/30'} 
-                border ${theme.border || 'border-blue-500/20'} ${theme.text || 'text-blue-400'} 
-                hover-lift transition-all-smooth`}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 border border-white/10 hover:border-brand-500/30 text-white font-bold text-xs uppercase tracking-widest transition-all-smooth"
             >
               {copyState === 'success' ? (
                 <>
-                  <Check className="w-5 h-5" aria-hidden="true" />
-                  <span>Copied!</span>
-                </>
-              ) : copyState === 'error' ? (
-                <>
-                  <Copy className="w-5 h-5" aria-hidden="true" />
-                  <span>Copy failed</span>
+                  <Check className="w-4 h-4 text-emerald-400" />
+                  <span>Copied to Clipboard</span>
                 </>
               ) : (
                 <>
-                  <Copy className="w-5 h-5" aria-hidden="true" />
-                  <span>Copy Recipe</span>
+                  <Copy className="w-4 h-4 text-brand-400" />
+                  <span>Copy Full Recipe</span>
                 </>
               )}
             </button>
           </div>
-        </div>
 
-        {/* Nutrition Card */}
-        <div className="mb-8">
-          <NutritionCard nutrition={recipe.nutrition} servings={recipe.servings || base?.servings || 4} />
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-8">
-          {/* Ingredients Column */}
-          <div className="space-y-8">
-            {/* Base Ingredients */}
-            {base && (
-              <div className={`glass-effect rounded-2xl p-6 border ${theme.border || 'border-white/10'} 
-                animate-fadeInUp`}>
-                <div className="flex items-center gap-3 mb-6">
-                  <List className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
-                  <h2 className="text-2xl font-bold text-white">Base Ingredients</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div className="space-y-8 animate-fadeInLeft">
+              <div className="space-y-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-[10px] font-black uppercase tracking-widest">
+                  <Sparkles className="w-3 h-3" />
+                  <span>Premium High Protein</span>
                 </div>
-                <ul className="space-y-3">
-                  {base.ingredients.map((ingredient, index) => (
-                    <li
-                      key={index}
-                      className={`flex items-start gap-3 p-3 rounded-lg ${theme.highlight || 'bg-blue-900/20'} 
-                        stagger-item`}
-                      style={{ '--stagger-delay': `${index * 0.05}s` }}
-                    >
-                      <div className={`w-2 h-2 mt-2 ${theme.accent || 'bg-blue-500'} rounded-full flex-shrink-0`} />
-                      <span className="text-gray-200">{ingredient}</span>
-                    </li>
-                  ))}
-                </ul>
+                <h1 className="text-5xl sm:text-7xl font-black text-white font-serif leading-tight tracking-tight">
+                  {recipe.name}
+                </h1>
+                <p className="text-slate-400 text-lg leading-relaxed max-w-xl italic">
+                   {base?.description ? `"${base.description}"` : "A nutritionally optimized meal designed for peak performance and exceptional taste."}
+                </p>
               </div>
-            )}
 
-            {/* Recipe Ingredients */}
-            <div className={`glass-effect rounded-2xl p-6 border ${theme.border || 'border-white/10'} 
-              animate-fadeInUp`} style={{ animationDelay: base ? '0.2s' : '0s' }}>
-              <div className="flex items-center gap-3 mb-6">
-                <ChefHat className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
-                <h2 className="text-2xl font-bold text-white">Recipe Ingredients</h2>
+              <div className="flex flex-wrap gap-8 text-white pt-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center">
+                    <Clock className="w-5 h-5 text-brand-400" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Time</p>
+                    <p className="font-bold">{recipe.cookingTime || '25 min'}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center">
+                    <Users className="w-5 h-5 text-brand-400" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Servings</p>
+                    <p className="font-bold">{recipe.servings || base?.servings || 1} { (recipe.servings || base?.servings) === 1 ? 'Person' : 'People'}</p>
+                  </div>
+                </div>
               </div>
-              <ul className="space-y-3">
-                {recipe.ingredients.map((ingredient, index) => (
-                  <li
-                    key={index}
-                    className={`flex items-start gap-3 p-3 rounded-lg ${theme.highlight || 'bg-blue-900/20'} 
-                      stagger-item`}
-                    style={{ animationDelay: `${index * 0.05}s` }}
-                  >
-                    <div className={`w-2 h-2 mt-2 ${theme.accent || 'bg-blue-500'} rounded-full flex-shrink-0`} />
-                    <span className="text-gray-200">{ingredient}</span>
-                  </li>
-                ))}
-              </ul>
+            </div>
+
+            <div className="animate-fadeInRight">
+              <NutritionCard nutrition={recipe.nutrition} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="container mx-auto px-4 max-w-7xl relative -mt-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          {/* Ingredients */}
+          <div className="lg:col-span-5 space-y-8">
+            <div className="glass-card rounded-[2.5rem] p-10 space-y-8 sticky top-24">
+              <div className="flex items-center gap-4 border-b border-white/5 pb-6">
+                <div className="w-12 h-12 rounded-2xl bg-brand-500/10 flex items-center justify-center">
+                  <ChefHat className="w-6 h-6 text-brand-400" />
+                </div>
+                <h2 className="text-2xl font-black text-white font-serif tracking-tight">Ingredients</h2>
+              </div>
+              
+              <div className="space-y-10">
+                {base && (
+                  <div className="space-y-4">
+                    <h3 className="text-xs font-black uppercase tracking-widest text-brand-500">Base Components</h3>
+                    <ul className="space-y-3">
+                      {base.ingredients.map((ing, i) => (
+                        <li key={i} className="flex items-start gap-3 group text-slate-300">
+                          <CheckCircle2 className="w-5 h-5 text-brand-500/40 group-hover:text-brand-500 mt-0.5 transition-colors" />
+                          <span className="leading-relaxed group-hover:text-white transition-colors">{ing}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                
+                <div className="space-y-4">
+                  <h3 className="text-xs font-black uppercase tracking-widest text-brand-500">Variation specifics</h3>
+                  <ul className="space-y-3">
+                    {recipe.ingredients.map((ing, i) => (
+                      <li key={i} className="flex items-start gap-3 group text-slate-300">
+                        <CheckCircle2 className="w-5 h-5 text-brand-400/40 group-hover:text-brand-400 mt-0.5 transition-colors" />
+                        <span className="leading-relaxed group-hover:text-white transition-colors">{ing}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Instructions Column */}
-          <div className={`glass-effect rounded-2xl p-6 border ${theme.border || 'border-white/10'} 
-            animate-fadeInUp h-fit`} style={{ animationDelay: '0.3s' }}>
-            <div className="flex items-center gap-3 mb-6">
-              <Flame className={`w-6 h-6 ${theme.text || 'text-blue-400'}`} aria-hidden="true" />
-              <h2 className="text-2xl font-bold text-white">Instructions</h2>
-            </div>
-            <ol className="space-y-4">
-              {recipe.instructions.map((instruction, index) => (
-                <li
-                  key={index}
-                  className={`flex gap-4 stagger-item`}
-                  style={{ '--stagger-delay': `${index * 0.1}s` }}
-                >
-                  <div className={`flex-shrink-0 w-8 h-8 rounded-full ${theme.highlight || 'bg-blue-900/30'} 
-                    border ${theme.border || 'border-blue-500/20'} flex items-center justify-center`}>
-                    <span className={`font-bold ${theme.text || 'text-blue-400'}`}>{index + 1}</span>
+          {/* Instructions */}
+          <div className="lg:col-span-7">
+            <div className="glass-card rounded-[2.5rem] p-10 lg:p-16 space-y-12">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-2xl bg-brand-500/10 flex items-center justify-center">
+                  <ListTodo className="w-6 h-6 text-brand-400" />
+                </div>
+                <h2 className="text-2xl font-black text-white font-serif tracking-tight">Preparation</h2>
+              </div>
+              <div className="space-y-12">
+                {recipe.instructions.map((step, index) => (
+                  <div key={index} className="flex gap-8 group">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-slate-900 border border-white/5 flex items-center justify-center text-brand-400 font-serif font-black text-xl group-hover:bg-brand-600 group-hover:text-white transition-all-smooth">
+                      {index + 1}
+                    </div>
+                    <div className="pt-2">
+                       <p className="text-lg text-slate-300 leading-relaxed group-hover:text-white transition-colors">
+                        {step}
+                       </p>
+                    </div>
                   </div>
-                  <p className="text-gray-200 leading-relaxed pt-1">{instruction}</p>
-                </li>
-              ))}
-            </ol>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
